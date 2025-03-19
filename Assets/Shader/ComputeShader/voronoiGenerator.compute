@@ -1,0 +1,48 @@
+#pragma kernel CSMain
+#include "Assets/Shader/HLSL/voronoi.hlsl"
+
+struct zone
+{
+    float2 cell;
+    float2 origin;
+    float2 connection0;
+    float2 connection1;
+    float2 connection2;
+    float2 connection3;
+    //float2 connection4;
+    /*float2 connection5;*/
+};
+
+RWStructuredBuffer<zone> zone_buffer;
+RWTexture2D<float4> result;
+zone zones[1024];
+float2 cell_dimensions;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    const float2 cell = float2(
+        floor(id.x/pmg_cell_size.x),
+        floor(id.y/pmg_cell_size.y));
+    const float dist = get_closest_distance(id, cell);
+
+    const int index = cell.x + (cell.y * cell_dimensions.x);
+    zone_buffer[index].cell = cell;
+    zone_buffer[index].origin = get_cell_offset(cell);
+    zone_buffer[index].connection0 = get_cell_offset(cell + float2(0,1));
+    if(cell.y%2==0)
+    {
+        zone_buffer[index].connection1 = get_cell_offset(cell + float2(1,1));        
+        zone_buffer[index].connection3 = get_cell_offset(cell + float2(1,-1));
+    }
+    else
+    {            
+        zone_buffer[index].connection1 = get_cell_offset(cell + float2(-1,1));
+        zone_buffer[index].connection3 = get_cell_offset(cell + float2(-1,-1));
+    }
+    zone_buffer[index].connection2 = get_cell_offset(cell + float2(-1,0));
+    //zone_buffer[index].connection4 = get_cell_offset(cell + float2(0,-1));
+    /*[index].connection5 = get_cell_offset(cell + float2(1,0));*/
+    
+    result[id.xy] = dist;
+}

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7df3915f2e893784a8a54d43dcaffee1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144985
+  packageName: DebugPlus
+  packageVersion: 1.1
+  assetPath: Assets/DebugPlus/Scripts/Drawing.cs
+  uploadId: 355683

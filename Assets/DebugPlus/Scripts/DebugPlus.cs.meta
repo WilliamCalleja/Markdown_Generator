@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d60e724edde2bf24b9a1e4262b1ad573
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144985
+  packageName: DebugPlus
+  packageVersion: 1.1
+  assetPath: Assets/DebugPlus/Scripts/DebugPlus.cs
+  uploadId: 355683
