@@ -3993,7 +3993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c177a7438dfb51f48aeab1da29019bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  result: {fileID: 1288739991}
+  result: {fileID: 879489725}
   voronoiGenerator: {fileID: 7200000, guid: 420cfded7f159ea43b25defe86f25c71, type: 3}
   visualizer: {fileID: 2100000, guid: 1b44be87f565cb74da841b7046513d89, type: 2}
   parameters:
@@ -4001,102 +4001,102 @@ MonoBehaviour:
     noiseScale: 2.67
     resolution: {x: 1024, y: 1024}
   zones:
-  - cell: {x: NaN, y: Infinity}
-    origin: {x: NaN, y: NaN}
-    connection0: {x: NaN, y: NaN}
-    connection1: {x: NaN, y: NaN}
-    connection2: {x: NaN, y: NaN}
-    connection3: {x: NaN, y: NaN}
   - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
-  - cell: {x: 0, y: 0}
-    origin: {x: 0, y: 0}
-    connection0: {x: 0, y: 0}
-    connection1: {x: 0, y: 0}
-    connection2: {x: 0, y: 0}
-    connection3: {x: 0, y: 0}
+    origin: {x: 190.83875, y: 73.786804}
+    connection0: {x: 184.78282, y: 373.63855}
+    connection1: {x: 426.62836, y: 369.65057}
+    connection2: {x: -49.80471, y: 78.06447}
+    connection3: {x: 347.724, y: -114.58548}
+  - cell: {x: 1, y: 0}
+    origin: {x: 431.97388, y: 23.962914}
+    connection0: {x: 426.62836, y: 369.65057}
+    connection1: {x: 537.63556, y: 397.59683}
+    connection2: {x: 190.83875, y: 73.786804}
+    connection3: {x: 623.7448, y: -123.05673}
+  - cell: {x: 2, y: 0}
+    origin: {x: 725.3028, y: 110.42205}
+    connection0: {x: 537.63556, y: 397.59683}
+    connection1: {x: 810.07855, y: 365.6901}
+    connection2: {x: 431.97388, y: 23.962914}
+    connection3: {x: 931.90936, y: -119.114975}
+  - cell: {x: 3, y: 0}
+    origin: {x: 1088.3575, y: 164.47672}
+    connection0: {x: 810.07855, y: 365.6901}
+    connection1: {x: 1151.3152, y: 353.51245}
+    connection2: {x: 725.3028, y: 110.42205}
+    connection3: {x: 1176.9414, y: -117.95267}
+  - cell: {x: 0, y: 1}
+    origin: {x: 184.78282, y: 373.63855}
+    connection0: {x: 194.92024, y: 695.74115}
+    connection1: {x: -38.194443, y: 548.75354}
+    connection2: {x: -113.374084, y: 369.6282}
+    connection3: {x: -49.80471, y: 78.06447}
+  - cell: {x: 1, y: 1}
+    origin: {x: 426.62836, y: 369.65057}
+    connection0: {x: 430.3312, y: 731.5656}
+    connection1: {x: 194.92024, y: 695.74115}
+    connection2: {x: 184.78282, y: 373.63855}
+    connection3: {x: 190.83875, y: 73.786804}
+  - cell: {x: 2, y: 1}
+    origin: {x: 537.63556, y: 397.59683}
+    connection0: {x: 729.1265, y: 605.6324}
+    connection1: {x: 430.3312, y: 731.5656}
+    connection2: {x: 426.62836, y: 369.65057}
+    connection3: {x: 431.97388, y: 23.962914}
+  - cell: {x: 3, y: 1}
+    origin: {x: 810.07855, y: 365.6901}
+    connection0: {x: 958.2667, y: 739.5345}
+    connection1: {x: 729.1265, y: 605.6324}
+    connection2: {x: 537.63556, y: 397.59683}
+    connection3: {x: 725.3028, y: 110.42205}
+  - cell: {x: 0, y: 2}
+    origin: {x: 194.92024, y: 695.74115}
+    connection0: {x: 218.4667, y: 862.53076}
+    connection1: {x: 454.02887, y: 910.7084}
+    connection2: {x: -38.194443, y: 548.75354}
+    connection3: {x: 426.62836, y: 369.65057}
+  - cell: {x: 1, y: 2}
+    origin: {x: 430.3312, y: 731.5656}
+    connection0: {x: 454.02887, y: 910.7084}
+    connection1: {x: 624.8803, y: 866.54596}
+    connection2: {x: 194.92024, y: 695.74115}
+    connection3: {x: 537.63556, y: 397.59683}
+  - cell: {x: 2, y: 2}
+    origin: {x: 729.1265, y: 605.6324}
+    connection0: {x: 624.8803, y: 866.54596}
+    connection1: {x: 929.30286, y: 912.4805}
+    connection2: {x: 430.3312, y: 731.5656}
+    connection3: {x: 810.07855, y: 365.6901}
+  - cell: {x: 3, y: 2}
+    origin: {x: 958.2667, y: 739.5345}
+    connection0: {x: 929.30286, y: 912.4805}
+    connection1: {x: 1124.5205, y: 919.5159}
+    connection2: {x: 729.1265, y: 605.6324}
+    connection3: {x: 1151.3152, y: 353.51245}
+  - cell: {x: 0, y: 3}
+    origin: {x: 218.4667, y: 862.53076}
+    connection0: {x: 240.30562, y: 1142.8182}
+    connection1: {x: -32.92372, y: 1171.3656}
+    connection2: {x: -78.94501, y: 922.36115}
+    connection3: {x: -38.194443, y: 548.75354}
+  - cell: {x: 1, y: 3}
+    origin: {x: 454.02887, y: 910.7084}
+    connection0: {x: 550.0136, y: 1135.4974}
+    connection1: {x: 240.30562, y: 1142.8182}
+    connection2: {x: 218.4667, y: 862.53076}
+    connection3: {x: 194.92024, y: 695.74115}
+  - cell: {x: 2, y: 3}
+    origin: {x: 624.8803, y: 866.54596}
+    connection0: {x: 760.5318, y: 1098.6774}
+    connection1: {x: 550.0136, y: 1135.4974}
+    connection2: {x: 454.02887, y: 910.7084}
+    connection3: {x: 430.3312, y: 731.5656}
+  - cell: {x: 3, y: 3}
+    origin: {x: 929.30286, y: 912.4805}
+    connection0: {x: 983.2147, y: 1204.8285}
+    connection1: {x: 760.5318, y: 1098.6774}
+    connection2: {x: 624.8803, y: 866.54596}
+    connection3: {x: 729.1265, y: 605.6324}
 --- !u!114 &507829399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10233,6 +10233,70 @@ MonoBehaviour:
           can choose which of the abilities to activate and deactivate. "
       boxes: []
       items: []
+  - title: Rituals
+    description:
+    - '-'
+    - Rituals are magical spells that characters that are trained in the spellcasting
+      skill can learn and use. Unlike talents which require specialised training
+      and intense concentration, rituals are slow and simple procedures that can
+      be practiced and learned by most people who can learn the basics of spellcasting.
+    - /
+    entries:
+    - title: Learning Rituals
+      content:
+      - '-'
+      - /
+      - 'A character needs to learn a ritual, adding it to their repertoire in order
+        to start using it. When learning a new ritual a character has two options,
+        either follow the instructions from a book or other source of knowledge,
+        or else be taught the ritual by someone who already knows it. Each ritual
+        has a rarity rating which determines its complexity as follows:'
+      - '[LIST]'
+      - '|'
+      - In order for a character to learn a ritual they must spend practice sessions
+        that take 2 hours and allow them to perform a spellcasting dice roll. If
+        the character is learning the ritual from a source, the difficulty is 8.
+        If the character is learning the ritual from a mentor, the difficulty is
+        6. The margin of success of this dice roll is added towards a progress value.
+        When the progress value is equal to the complexity of the Ritual, the character
+        has successfully learned it.
+      - /
+      options:
+        titleFormat: 2
+        contentFormat: 0
+      list:
+      - title: Common
+        content: Rituals have a Complexity of 5
+      - title: Uncommon
+        content: Rituals have a Complexity of 10
+      - title: Rare
+        content: Rituals have a Complexity of 15
+      - title: Legendary
+        content: Rituals have a Complexity of 20
+      boxes: []
+      items: []
+    - title: Rituals
+      content:
+      - '[BOXES2]'
+      options:
+        titleFormat: 2
+        contentFormat: 0
+      list: []
+      boxes:
+      - h1: Ritual of Identification
+        h2: Common Ritual
+        h3: 'Duration: 10 Minutes'
+        h4: 'Requirements: Spellcasting skill at trained or higher, 1 target enchanted
+          item'
+        content:
+        - '*Place the item upon a drawn magic circle and read which lines and curves
+          are vibrating...*'
+        - This ritual identifies the type and function of an enchanted item with
+          associated caveats like curses or possible malfunctions. The listed duration
+          only applies to common enchanted items. Uncommon items take twice as much,
+          Rare items three times as much and Legendary items four times as much.
+        list: []
+      items: []
   - title: Equipment
     description:
     - '-'
@@ -11888,42 +11952,66 @@ MonoBehaviour:
     intensity. Inscrutability - Inscrutable creatures can ignore solid obstacles
     when attacking allowing them to ignore armour. During your initiative you can
     choose which of the abilities to activate and deactivate. \n\n\n\n=\n\n\n\nhead(\n#
-    Equipment\n\n)\n-\nThe remnants of Katacross have a tall order trying to survive
-    out in the wilds, beset by all sides by creatures far superior in lethality than
-    them. This is why equipment is the one and only lifeline for any survivor.\n/\n\n\n##
-    Carrying Capacity\n\nCharacters are capable of carrying an amount of equipment
-    in encumbrance points (ENC) based on their Conditioning skill. The total carrying
-    capacity is equal to 5 + conditioning skill modifier x3. If a character\u2019s
-    total carried weight is less than the carrying capacity the character is unencumbered
-    and may move around as normal. If a character\u2019s total carried weight is
-    equal to or greater than their carried weight they are considered to be encumbered
-    and thus become immobile and cannot receive movement points.\n\n\n\n#### Close
-    Combat Weapons\n\nName | RNG | DMG | ENC | Cost | Rarity | Traits \n-- | --\nClub
-    | 1m | +1 | 1 | 1c | Common | Push, \nDagger | 1m | +0 | 1 | 1c | Common | Quick,
-    \nShield, Wooden | 1m | +0 | 1 | 1c | Common | Parry, \nThrowing Knife | 1m |
-    +0 | 1 | 1c | Common | Throw [10m], Batch [5], \nHatchet | 1m | +1 | 1 | 3c |
-    Common | Maim, \nHunting Net | 2m | +0 | 1 | 3c | Common | Harmless, Throw [5m],
-    Tangle, \nPike | 2m | +1 | 1 | 3c | Common | Pierce, Throw [20m], \nShield, Metal
-    | 1m | +0 | 1 | 3c | Common | Parry, Durable [1], \nShortsword | 1m | +1 | 1
-    | 3c | Common | Parry, \nJavelin | 2m | +0 | 2 | 5c | Common | Pierce, Throw
-    [20m], Batch [5], \nTower Shield, Wooden | 1m | +0 | 1 | 5c | Common | Parry,
-    Cover, Durable [1], \nMace | 1m | +2 | 1 | 3c | Uncommon | Slam, \nLongsword
-    | 1m | +2 | 1 | 5c | Uncommon | Slash, Parry, \nMaul | 1m | +3 | 1 | 5c | Uncommon
-    | Push, Slam, Slow, \nMorningstar | 1m | +1 | 1 | 5c | Uncommon | Slam, Pierce,
-    \nSpear | 2m | +1 | 1 | 5c | Uncommon | Pierce, Two Handed, \nWaraxe | 1m | +1
-    | 1 | 5c | Uncommon | Sweep, Maim, \nTower Shield, Metal | 1m | +0 | 2 | 10c
-    | Uncommon | Parry, Cover, Durable [2], \nBattleaxe | 2m | +2 | 2 | 10c | Rare
-    | Maim, Sweep, Two Handed, Slow, \nFlail | 1m | +1 | 1 | 10c | Rare | Exotic,
-    Fluid, Pierce, Slow, \nGlaive | 2m | +3 | 2 | 10c | Rare | Slash, Sweep, Two
-    Handed, Slow, \nGreatsword | 2m | +3 | 2 | 10c | Rare | Slash, Parry, Sweep,
-    Two Handed, Slow, \nHalberd | 2m | +3 | 2 | 10c | Rare | Pierce, Sweep, Slam,
-    Two Handed, Slow, \nWarhammer | 2m | +3 | 2 | 10c | Rare | Push, Slam, Sweep,
-    Two Handed, Slow, \n\n\n\n\n#### Ranged Combat Weapons\n\nName | RNG | DMG |
-    ENC | Cost | Rarity | Traits \n-- | --\nSling | 20m | +0 | 1 | 1c | Common |
-    Slam, Reload [Pebble], \nHand Crossbow | 20m | +0 | 1 | 3c | Uncommon | Quick,
-    Reload [Arrow], \nCrossbow | 50m | +1 | 1 | 5c | Uncommon | Slow Reload [Arrow],
-    Two Handed, \nShortbow | 100m | +1 | 1 | 5c | Uncommon | Pin, Reload [Arrow],
-    Two Handed, \nPistol | 50m | +2 | 1 | 10c | Uncommon | Slow Reload [Cartridge],
+    Rituals\n\n)\n-\nRituals are magical spells that characters that are trained
+    in the spellcasting skill can learn and use. Unlike talents which require specialised
+    training and intense concentration, rituals are slow and simple procedures that
+    can be practiced and learned by most people who can learn the basics of spellcasting.\n/\n\n\n##
+    Learning Rituals\n\n-\n\n/\n\nA character needs to learn a ritual, adding it
+    to their repertoire in order to start using it. When learning a new ritual a
+    character has two options, either follow the instructions from a book or other
+    source of knowledge, or else be taught the ritual by someone who already knows
+    it. Each ritual has a rarity rating which determines its complexity as follows:\n\n-
+    **Common -** Rituals have a Complexity of 5\n- **Uncommon -** Rituals have a
+    Complexity of 10\n- **Rare -** Rituals have a Complexity of 15\n- **Legendary
+    -** Rituals have a Complexity of 20\n\n\n|\n\nIn order for a character to learn
+    a ritual they must spend practice sessions that take 2 hours and allow them to
+    perform a spellcasting dice roll. If the character is learning the ritual from
+    a source, the difficulty is 8. If the character is learning the ritual from a
+    mentor, the difficulty is 6. The margin of success of this dice roll is added
+    towards a progress value. When the progress value is equal to the complexity
+    of the Ritual, the character has successfully learned it.\n\n/\n\n\n\n## Rituals\n\n\nnote(\n#Ritual
+    of Identification\n##Common Ritual\n-\n###Duration: 10 Minutes\n####Requirements:
+    Spellcasting skill at trained or higher, 1 target enchanted item\n*Place the
+    item upon a drawn magic circle and read which lines and curves are vibrating...*\nThis
+    ritual identifies the type and function of an enchanted item with associated
+    caveats like curses or possible malfunctions. The listed duration only applies
+    to common enchanted items. Uncommon items take twice as much, Rare items three
+    times as much and Legendary items four times as much.\n)/\n\n\n\nhead(\n# Equipment\n\n)\n-\nThe
+    remnants of Katacross have a tall order trying to survive out in the wilds, beset
+    by all sides by creatures far superior in lethality than them. This is why equipment
+    is the one and only lifeline for any survivor.\n/\n\n\n## Carrying Capacity\n\nCharacters
+    are capable of carrying an amount of equipment in encumbrance points (ENC) based
+    on their Conditioning skill. The total carrying capacity is equal to 5 + conditioning
+    skill modifier x3. If a character\u2019s total carried weight is less than the
+    carrying capacity the character is unencumbered and may move around as normal.
+    If a character\u2019s total carried weight is equal to or greater than their
+    carried weight they are considered to be encumbered and thus become immobile
+    and cannot receive movement points.\n\n\n\n#### Close Combat Weapons\n\nName
+    | RNG | DMG | ENC | Cost | Rarity | Traits \n-- | --\nClub | 1m | +1 | 1 | 1c
+    | Common | Push, \nDagger | 1m | +0 | 1 | 1c | Common | Quick, \nShield, Wooden
+    | 1m | +0 | 1 | 1c | Common | Parry, \nThrowing Knife | 1m | +0 | 1 | 1c | Common
+    | Throw [10m], Batch [5], \nHatchet | 1m | +1 | 1 | 3c | Common | Maim, \nHunting
+    Net | 2m | +0 | 1 | 3c | Common | Harmless, Throw [5m], Tangle, \nPike | 2m |
+    +1 | 1 | 3c | Common | Pierce, Throw [20m], \nShield, Metal | 1m | +0 | 1 | 3c
+    | Common | Parry, Durable [1], \nShortsword | 1m | +1 | 1 | 3c | Common | Parry,
+    \nJavelin | 2m | +0 | 2 | 5c | Common | Pierce, Throw [20m], Batch [5], \nTower
+    Shield, Wooden | 1m | +0 | 1 | 5c | Common | Parry, Cover, Durable [1], \nMace
+    | 1m | +2 | 1 | 3c | Uncommon | Slam, \nLongsword | 1m | +2 | 1 | 5c | Uncommon
+    | Slash, Parry, \nMaul | 1m | +3 | 1 | 5c | Uncommon | Push, Slam, Slow, \nMorningstar
+    | 1m | +1 | 1 | 5c | Uncommon | Slam, Pierce, \nSpear | 2m | +1 | 1 | 5c | Uncommon
+    | Pierce, Two Handed, \nWaraxe | 1m | +1 | 1 | 5c | Uncommon | Sweep, Maim, \nTower
+    Shield, Metal | 1m | +0 | 2 | 10c | Uncommon | Parry, Cover, Durable [2], \nBattleaxe
+    | 2m | +2 | 2 | 10c | Rare | Maim, Sweep, Two Handed, Slow, \nFlail | 1m | +1
+    | 1 | 10c | Rare | Exotic, Fluid, Pierce, Slow, \nGlaive | 2m | +3 | 2 | 10c
+    | Rare | Slash, Sweep, Two Handed, Slow, \nGreatsword | 2m | +3 | 2 | 10c | Rare
+    | Slash, Parry, Sweep, Two Handed, Slow, \nHalberd | 2m | +3 | 2 | 10c | Rare
+    | Pierce, Sweep, Slam, Two Handed, Slow, \nWarhammer | 2m | +3 | 2 | 10c | Rare
+    | Push, Slam, Sweep, Two Handed, Slow, \n\n\n\n\n#### Ranged Combat Weapons\n\nName
+    | RNG | DMG | ENC | Cost | Rarity | Traits \n-- | --\nSling | 20m | +0 | 1 |
+    1c | Common | Slam, Reload [Pebble], \nHand Crossbow | 20m | +0 | 1 | 3c | Uncommon
+    | Quick, Reload [Arrow], \nCrossbow | 50m | +1 | 1 | 5c | Uncommon | Slow Reload
+    [Arrow], Two Handed, \nShortbow | 100m | +1 | 1 | 5c | Uncommon | Pin, Reload
+    [Arrow], Two Handed, \nPistol | 50m | +2 | 1 | 10c | Uncommon | Slow Reload [Cartridge],
     \nArbalest | 50m | +2 | 2 | 10c | Rare | Maim, Slow Reload [Arrow], Two Handed,
     \nLongbow | 200m | +2 | 1 | 10c | Rare | Pin, Reload [Arrow], Two Handed, \nBlunderbuss
     | 20m | +3 | 2 | 15c | Rare | Slam, Slow Reload [Cartridge], Two Handed, \nRifle
@@ -12044,9 +12132,9 @@ MonoBehaviour:
     until the toxicity value is reduced. A character that receives a full rest reduces
     their toxicity by 1.\n\n\nName | Toxicity | ENC | Cost | Rarity | Traits \n--
     | --\nAntibiotic Infusion | 1 | 1 | 5c | Uncommon | Batch [5], \nTravelling Ration
-    | 0 | 1 | 1c | Common | Batch [5], \nDeprivation Toxin Coating | 0 | 1 | 20c
-    | Common | Coating, Deprivation [5], Batch [5], \nEnervation Toxin Coating |
-    0 | 1 | 20c | Common | Coating, Enervation [5], Batch [5], \nParalysis Toxin
+    | 0 | 1 | 1c | Common | Meal, Batch [5], \nDeprivation Toxin Coating | 0 | 1
+    | 20c | Common | Coating, Deprivation [5], Batch [5], \nEnervation Toxin Coating
+    | 0 | 1 | 20c | Common | Coating, Enervation [5], Batch [5], \nParalysis Toxin
     Coating | 0 | 1 | 20c | Common | Coating, Paralysis [5], Batch [5], \nCleansing
     Salve | 1 | 1 | 20c | Common | Cleansign [4], Batch [5], \nCoagulation Salve
     | 1 | 1 | 20c | Common | Coagulation [4], Batch [5], \nFortification Salve |
@@ -13466,7 +13554,7 @@ MonoBehaviour:
 
     24
     | Wark, Imperial [Bird Legendary 11] | 3'
---- !u!84 &1288739991
+--- !u!84 &879489725
 RenderTexture:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

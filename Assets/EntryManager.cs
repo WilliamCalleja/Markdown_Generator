@@ -215,6 +215,13 @@ public class Entry
         var item8 = items is { Count: > 8 } ? items[8].GetEntry("item") : "";
         var item9 = items is { Count: > 9 } ? items[9].GetEntry("item") : "";
         
+        var boxes2 = "";
+        for (var i = 0; i < boxes.Count; i++)
+        {
+            boxes2 += boxes[i].GetEntry("note");
+            boxes2 += (i % 2 != 0) ? "|" : "/";
+        }
+        
         var itemText = items.Aggregate("", (prev, next) => $"{prev}\n{next.GetEntry("item")}");
 
         if (items is { Count: > 4 })
@@ -262,7 +269,8 @@ public class Entry
             .Replace("[ITEM6]", $"\n{item6}")
             .Replace("[ITEM7]", $"\n{item7}")
             .Replace("[ITEM8]", $"\n{item8}")
-            .Replace("[ITEM9]", $"\n{item9}");
+            .Replace("[ITEM9]", $"\n{item9}")
+            .Replace("[BOXES2]", $"\n{boxes2}");
         return $"{titleEntry.GetTitle()}{contentText}";
     }
 }
