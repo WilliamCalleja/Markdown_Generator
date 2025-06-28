@@ -191,7 +191,8 @@ public class EquipmentManager : MonoBehaviour
     public List<ConsumableCategory> consumableCategories;
     public string output;
 
-    private void OnValidate()
+    [ContextMenu("Refresh")]
+    private void Refresh()
     {
         output = "";
         foreach (var weaponCategory in weaponCategories)

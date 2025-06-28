@@ -248,7 +248,8 @@ public class BestiaryManager : MonoBehaviour
     public ChapterData chapter;
     public string list;
 
-    private void OnValidate()
+    [ContextMenu("Refresh")]
+    private void Refresh()
     {
         chapter.UpdateOutput();
         GenerateCreatureList();

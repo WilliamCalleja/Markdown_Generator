@@ -310,7 +310,8 @@ public class EntryManager : MonoBehaviour
     public string output;
     private EquipmentManager _equipmentManager;
 
-    private void OnValidate()
+    [ContextMenu("Refresh")]
+    private void Refresh()
     {
         if (_equipmentManager == null) _equipmentManager = FindFirstObjectByType<EquipmentManager>();
         var equipmentChapter = _equipmentManager.output;

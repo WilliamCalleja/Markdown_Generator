@@ -3993,7 +3993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c177a7438dfb51f48aeab1da29019bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  result: {fileID: 879489725}
+  result: {fileID: 1231818911}
   voronoiGenerator: {fileID: 7200000, guid: 420cfded7f159ea43b25defe86f25c71, type: 3}
   visualizer: {fileID: 2100000, guid: 1b44be87f565cb74da841b7046513d89, type: 2}
   parameters:
@@ -6632,6 +6632,33 @@ MonoBehaviour:
       list: []
       boxes: []
       items: []
+    - title: Immediate and Extended Actions
+      content:
+      - '-'
+      - 'All actions that characters perform fall into two broad time categories
+        being immediate and extended. An immediate action yields a result immediately,
+        i.e. the character that performs such an action doesn''t have to wasit to
+        see the outcome or the action itself can be performed in less than an in-game
+        turn (about 6 seconds). Extended actions on the other hand take long, are
+        laborious and require a characte to wait until they can see if they have
+        succeeded or not. '
+      - '[H3LIST]'
+      - =
+      options:
+        titleFormat: 2
+        contentFormat: 0
+      list:
+      - title: Immediate Actions
+        content: All immediate actions are performed within a combat round. They
+          do not all require dice rolls, as some are risky and others are not.
+      - title: Extended Actions
+        content: Extended actions are activities that usualy inclue crafting, repairing,
+          upgrading, or researching items. A character that performs an extended
+          action can choose to either perform a dice roll as normal or else 'take
+          5'. A character that chooses to take 5 does not roll a die and instead
+          receives a result of 5 on their action for the purposes of their dice roll.
+      boxes: []
+      items: []
   - title: Characters
     description:
     - '-'
@@ -8737,12 +8764,35 @@ MonoBehaviour:
           their turn ends automatically when it starts.
       - title: Turn
         content: A turn generally lasts around 6 seconds in real time and each turn
-          one participant, in order of initiative, may perform their actions.
+          one participant, in order of initiative, may perform their actions. At
+          the start of a player's turn their character gains a number of action points
+          with which to perform individual actions.
       - title: Action
-        content: 'An action lasts until it is resolved. There are three types of
-          actions, movement, main and bonus and characters are allowed to perform
-          1 main action, 1 bonus action and as many movement actions as they have
-          movement points to perform them with. '
+        content: 'An action lasts until it is resolved. Each action costs 1 or more
+          action points but one action may allow a character to perform multiple
+          things at once such as actions that grant multiple attacks or movement
+          which allows a character to perform several different movements types as
+          long as they have movement points to spend. '
+      boxes: []
+      items: []
+    - title: Action Points
+      content:
+      - '-'
+      - At the start of every character's turn, they gain a number of action points
+        to spend on performing actions. Each character always receives a number of
+        action points equal to 1 + their highest skill modifier. Most actions cost
+        1 action point to perform and a character can spend any combination of actions
+        in any order as long as all actions are performed within their turn and they
+        spend their alloted action points and not more.
+      - Characters can choose to not spend any amount of action points, leaving 'open'
+        action points in reserve in order to perform certain types of actions that
+        can be performed during another character's turn. These are called reactions
+        and they cover things like parrying attacks or standing in overwatch.
+      - =
+      options:
+        titleFormat: 2
+        contentFormat: 0
+      list: []
       boxes: []
       items: []
     - title: Initiative Phase
@@ -8750,8 +8800,10 @@ MonoBehaviour:
       - '-'
       - "At the beginning of a round of combat all participants that are aware of
         danger perform an initiative dice roll which is rolling 1d10 + the character\u2019s
-        initiative modifier. The results of character\u2019s initiatives are used
-        to tally the order in which participants take turns at performing actions."
+        initiative modifier (calculated by taking the character's perception skill
+        value + any additional bonuses from traits, and talents and gear). The results
+        of character\u2019s initiatives are used to tally the order in which participants
+        take turns at performing actions."
       - '[H3LIST]'
       - =
       options:
@@ -8790,14 +8842,19 @@ MonoBehaviour:
     - title: Movement Points
       content:
       - '-'
-      - "During a character\u2019s turn a character that is able to move receives
-        movement points. A character can freely spend movement points before, after
-        and during their main action or their bonus action and in between. "
-      - "At the beginning of a player\u2019s turn they will receive a number of movement
-        points. The number of movement points gained is calculated as follows:"
+      - "During a character\u2019s turn a character that is able to move may spend
+        1 action point in orer to receive movement points. A character can freely
+        spend movement points before, after and during any action and in between. "
+      - 'When a chracter spends 1 action point to perform movement they receive a
+        number of movement points. The number of movement points gained is calculated
+        as follows:'
       - rules(
       - '**5 + (Athletics skill modifier x2)**'
       - )
+      - A character can spend more than 1 action point on movement actions. Each
+        action point spent beyond the first adds their Athletics skill modifier x2
+        again. If a character is untrained in Athletics they gain 1 movement point
+        instead.
       - Each movement point spent allows a character to do the following.
       - '[LIST]'
       - '|'
@@ -8824,53 +8881,23 @@ MonoBehaviour:
         content: Going down into a prone position takes 1 movement point.
       boxes: []
       items: []
-    - title: Movement Actions
-      content:
-      - '-'
-      - A character may spend their main action or their bonus action to further
-        increase the distance that they travel during a turn. A main action spent
-        this way grants +4 movement points and a bonus action spent this way grants
-        +2 movement points.
-      options:
-        titleFormat: 3
-        contentFormat: 0
-      list:
-      - title: Hustle
-        content: Run 1m per point spent. Walk 1m per 2 points spent to do so stealthily.
-      - title: Jump
-        content: Vault 1m per 2 points spent.
-      - title: Crawl
-        content: Scurry 1m per 2 points spent. This counts as stealthy movement.
-      - title: Swim
-        content: Paddle 1m per 2 points spent. Paddle 1m per 3 points spent to do
-          so stealthily.
-      - title: Climb
-        content: Scale 1m per 2 points spent up comfortable surfaces (ladders, knotted
-          ropes, sheer surfaces aided by grapple hooks & climbing gear) or 1m per
-          3 points spent for free climbing.
-      - title: Stand Up
-        content: Standing up from being knocked down costs 3 movement points.
-      - title: Go Prone
-        content: Going down into a prone position takes 1 movement point.
-      boxes: []
-      items: []
     - title: Hiding and Sneaking
       content:
       - '-'
-      - 'During their turn a character can spend their main action. If a character
-        is currently out of line of sight or within a source of cover, concealment
-        or any manner of environment that would obscure their presence, they may
-        spend a main action to hide. '
+      - 'During their turn a character can spend their their movement points in order
+        to hide or sneak. If a character is currently out of line of sight or within
+        a source of cover, concealment or any manner of environment that would obscure
+        their presence, they may spend a 2 movement points to hide. '
       - A character that performs a hiding action gains a stealth score equal to
         1 + their stealth skill modifier
       - 'From the moment a character performs such actions they are considered to
-        be hidden unless an observer with a perception score higher than their stealth
-        is directly looking at them. '
+        be hidden unless an observer with a perception score equal to or higher than
+        their stealth is directly looking at them. '
       - "Every action a character performs that is noticeable (such as moving objects,
         manipulating devices or attacking) reduces a character\u2019s stealth score
         by -1 or -2 depending on the circumstance."
-      - A character can spend three movement points to gain a further +1 bonus to
-        stealth or six movement points to gain a further +2 bonus to stealth.
+      - A character can gain a +1 bonus to their stealth score for every 3 additional
+        movement points they decide to spend on hiding.
       - =
       options:
         titleFormat: 3
@@ -8891,22 +8918,22 @@ MonoBehaviour:
       - title: Boosted Movement
         content: Characters that are moving in favour of a powerful current, or who
           have been given a helping push towards a direction benefit from a bonus
-          to their movement. Characters that are boosted in such ways gain up to
-          +3 movement points at the start of their turn.
+          to their movement. Characters that are boosted in such ways double the
+          distances moved per movement point spent..
       - title: Hindered Movement
         content: Characters that are encumbered, hamstrung or attempting to move
           against an overwhelming current or a hindering force suffer from a penalty
-          to their movement. Characters that are hindered in such ways lose up to
-          3 of their movement points at the start of their turn.
+          to their movement. Characters that are hindered in such ways half all the
+          distances moved per movement point spent.
       - title: Entangled
         content: Characters that are currently caught to webs, ropes, hogtied, or
-          grappled with an opponent lose all of their movement points at the beginning
-          of their turn. They may still perform actions however a lot of actions
-          that require freedom of movement may be also hindered by the character
-          being entangled.
+          grappled with an opponent may not use movement points to perform movement
+          (walk, crawl, climb, swim etc). They may still perform other actions, however
+          a lot of actions that require freedom of movement may be also hindered
+          by the character being entangled.
       - title: Knocked Down
         content: Characters that have become unbalanced and have been knocked off
-          of their feet lose 3 movement points at the beginning of their turn.
+          of their feet must spend 3 movement points in order to regain balance.
       - title: Prone
         content: Characters that went down to a prone position (not ones that were
           knocked down) gain a +1 bonus to their cover if they were within a source
@@ -8915,15 +8942,14 @@ MonoBehaviour:
           can only crawl and must stand up before being able to do any other type
           of movement action. Performing attacks from a prone position is always
           hindered.
-      - title: 
-        content: '|'
       - title: Rough Terrain
         content: "Shallow water, thick mud, deep sand or snow and uneven rocks all
           contribute to poorly transmit back a creature\u2019s footfall energy. Any
           form of rough terrain will cause a character traversing it to go slower
-          than normal. Generally rough terrain will cause a character to walk through
-          it at 1m per 2 movement points spent. More or less movement points per
-          meter traversed can occur with different types of rough terrain."
+          than normal. Generally rough terrain will cause a character to suffer from
+          hindered movement."
+      - title: 
+        content: '|'
       - title: Slippery Terrain
         content: Icy lakes, wet moss, muddy stone and most tiled sloping roofs are
           usually quite precarious and slippery for anyone attempting to traverse
@@ -8946,12 +8972,12 @@ MonoBehaviour:
     - title: Attacking
       content:
       - '-'
-      - 'Characters can perform attacks against targets during their combat turn
-        by spending their main action in order to gain attack points. When doing
-        so a character must declare if they want to perform close combat or ranged
-        combat. A character cannot perform both close combat and ranged combat at
-        the same time unless otherwise specified. When doing so they gain either
-        close combat attack points or ranged combat attack points '
+      - Characters can perform attacks against targets during their combat turn by
+        spending their main action in order to gain attack points. When doing so
+        a character must declare if they want to perform close combat or ranged combat.
+        A character can perform both close combat and ranged combat actions within
+        the same turn however they must perform a Combat Stance action to switch
+        weapons in between attacks.
       - '### Attack Dice Roll'
       - '-'
       - rules(
@@ -8959,31 +8985,26 @@ MonoBehaviour:
       - '**Ranged combat attack = ranged combat skill dice roll vs difficulty of
         6**'
       - )
-      - Both of the above take 1 attack point each.
+      - Both of the above take 1 action point each.
       options:
         titleFormat: 2
         contentFormat: 0
       list: []
       boxes: []
       items: []
-    - title: Attack Points
+    - title: Combat Stance
       content:
       - '-'
-      - 'At the start of a combat turn if a character wants to attack they can spend
-        their main action to gain a number of attack points which they can spend
-        to perform attacks on targets. The number of attack points that they gain
-        during their turn is calculated as follows:'
-      - rules(
-      - '**Close combat attack points = 1 + Close combat skill**'
-      - '**Ranged combat attack points = 1 + Ranged combat skill**'
-      - )
-      - A character can spend 1 attack point to perform 1 attack action against a
-        target within range of their weapon. Additionally a character can spend an
-        additional attack point on each attack to gain a +1 bonus on that attack
-        dice roll per point spent.
-      - '|'
+      - The combat stance action allows a character to perform certain actions during
+        a hostile situation that would divert their attention away from the enemy,
+        even if temporarily. This includes things like drawing a weapon, storing
+        it in its sheath, reloading a weapon, retreiving a weapon or ammunition from
+        a pouch or pocket, going down into a prone position or standing up from a
+        prone position. Once  a character has spent 1 action point on combat stance
+        they may perform any number of these actions any number of time as they want
+        until the start of their next turn.
       options:
-        titleFormat: 2
+        titleFormat: 3
         contentFormat: 0
       list: []
       boxes: []
@@ -9012,7 +9033,7 @@ MonoBehaviour:
       - title: Surprise
         content: Attacks that come from an enemy that a defender is not aware of
           causes their defence to go down to 4. While unaware a character cannot
-          benefit from any parry bonuses.
+          perform reactions.
       - title: Cover
         content: Characters that are within source of cover and concealment are harder
           to hit and more likely to dodge out of incoming fire. The difficulty to
@@ -10365,42 +10386,56 @@ MonoBehaviour:
     When a character performs an action and the margin is less than -5 or greater
     than +5 that dice roll results in a critical success. Most skills define what
     a critical success or failure means individually but in general extreme situations
-    occur when players over or under achieve.\n\n=\n\n\n\nhead(\n# Characters\n\n)\n-\nEvery
-    player controls one character and records their characters skills and limitations
-    on their character sheet. Each sheet is separated into various sections.At the
-    very top there\u2019s the general information section where the character\u2019s
-    name classes and main racial traits are found. Directly below it there\u2019s
-    the skills section where the character\u2019s expertise is recorded. This is
-    followed by the character\u2019s defences and fuels which are the character\u2019s
-    life lines and the tools they need to survive the harsh world. Finally below
-    that are the character\u2019s talents and equipment, the things that help a character
-    define themself and become unique.\n/\n\n\n## Character Creation\n\n-\n\nThe
-    following list of steps are needed to be taken in order to complete a character.\n\n-
-    Choose a name for your character. \n- Choose two Traits from any combination
-    of two Heritages \n- Choose a Main Class and 1 Talent from that Class \n- Choose
-    any 3 Skills and gain a Trained (+1) rank in those skills. \n- Choose one skill
-    to be gifted in and one skill to be deficient in. \n- Calculate the Defences
-    & Fuels.\n\n\n|\n\n\n\n## Experience & Advancements\n\n-\n\nPlayers that participate
-    in a campaign will receive experience points during the course of play. A good
-    rule of thumb is to consider that every game session a player will receive 1
-    experience point with extras doled out for fulfilling story goals, reaching milestones
-    or achieving major successes or dramatic scenes.\n\nExperience points can be
-    spent to gain and increase new skills and acquire new talents. During periods
-    of rest a character can spend experience points to upgrade their skills and talents.
-    The following is a cost list for each different level of skill or talent that
-    a character wishes to advance in:\n\n- **Trained skill level -** 1 Experience
-    point \n- **Expert skill level -** 2 Experience points, needs 3 skills at trained
-    level\n- **Master skill level -** 3 Experience points, needs 3 skills at expert
-    level \n- **Legend skill level -** 4 Experience points, needs 3 skills at master
-    level\n- **Talent -** 5 + the current number of Talents in experience points
-    \n\n\nA character can choose a cross class once they have learned at least 2
-    talents in their main class.\n\n=\n\n\n\nhead(\n# Traits\n\n)\n-\nAt character
-    creation a character can select a number of traits based on their ethnic and
-    genetic heritage. Traits are small passive bonuses that further define a character\u2019s
-    uniqueness. Each trait belongs to a racial heritage. A character can have traits
-    from up to a maximum of two different categories.\n/\n\n\n## Catfolk\n\n-\n\nThe
-    empire was always utterly fascinated by the colours, flavours, language, customs
-    and pure mirth that the catfolk possessed. Despite their relatively small numbers,
+    occur when players over or under achieve.\n\n=\n\n\n\n## Immediate and Extended
+    Actions\n\n-\n\nAll actions that characters perform fall into two broad time
+    categories being immediate and extended. An immediate action yields a result
+    immediately, i.e. the character that performs such an action doesn't have to
+    wasit to see the outcome or the action itself can be performed in less than an
+    in-game turn (about 6 seconds). Extended actions on the other hand take long,
+    are laborious and require a characte to wait until they can see if they have
+    succeeded or not. \n\n\n### Immediate Actions\nAll immediate actions are performed
+    within a combat round. They do not all require dice rolls, as some are risky
+    and others are not.\n\n### Extended Actions\nExtended actions are activities
+    that usualy inclue crafting, repairing, upgrading, or researching items. A character
+    that performs an extended action can choose to either perform a dice roll as
+    normal or else 'take 5'. A character that chooses to take 5 does not roll a die
+    and instead receives a result of 5 on their action for the purposes of their
+    dice roll.\n\n\n\n=\n\n\n\nhead(\n# Characters\n\n)\n-\nEvery player controls
+    one character and records their characters skills and limitations on their character
+    sheet. Each sheet is separated into various sections.At the very top there\u2019s
+    the general information section where the character\u2019s name classes and main
+    racial traits are found. Directly below it there\u2019s the skills section where
+    the character\u2019s expertise is recorded. This is followed by the character\u2019s
+    defences and fuels which are the character\u2019s life lines and the tools they
+    need to survive the harsh world. Finally below that are the character\u2019s
+    talents and equipment, the things that help a character define themself and become
+    unique.\n/\n\n\n## Character Creation\n\n-\n\nThe following list of steps are
+    needed to be taken in order to complete a character.\n\n- Choose a name for your
+    character. \n- Choose two Traits from any combination of two Heritages \n- Choose
+    a Main Class and 1 Talent from that Class \n- Choose any 3 Skills and gain a
+    Trained (+1) rank in those skills. \n- Choose one skill to be gifted in and one
+    skill to be deficient in. \n- Calculate the Defences & Fuels.\n\n\n|\n\n\n\n##
+    Experience & Advancements\n\n-\n\nPlayers that participate in a campaign will
+    receive experience points during the course of play. A good rule of thumb is
+    to consider that every game session a player will receive 1 experience point
+    with extras doled out for fulfilling story goals, reaching milestones or achieving
+    major successes or dramatic scenes.\n\nExperience points can be spent to gain
+    and increase new skills and acquire new talents. During periods of rest a character
+    can spend experience points to upgrade their skills and talents. The following
+    is a cost list for each different level of skill or talent that a character wishes
+    to advance in:\n\n- **Trained skill level -** 1 Experience point \n- **Expert
+    skill level -** 2 Experience points, needs 3 skills at trained level\n- **Master
+    skill level -** 3 Experience points, needs 3 skills at expert level \n- **Legend
+    skill level -** 4 Experience points, needs 3 skills at master level\n- **Talent
+    -** 5 + the current number of Talents in experience points \n\n\nA character
+    can choose a cross class once they have learned at least 2 talents in their main
+    class.\n\n=\n\n\n\nhead(\n# Traits\n\n)\n-\nAt character creation a character
+    can select a number of traits based on their ethnic and genetic heritage. Traits
+    are small passive bonuses that further define a character\u2019s uniqueness.
+    Each trait belongs to a racial heritage. A character can have traits from up
+    to a maximum of two different categories.\n/\n\n\n## Catfolk\n\n-\n\nThe empire
+    was always utterly fascinated by the colours, flavours, language, customs and
+    pure mirth that the catfolk possessed. Despite their relatively small numbers,
     after imperial assimilation the cultural impact that the cats had on the empire
     was palpable. In truth the catfolk were an indomitable race, one who would have
     gleefully fought the empire down to the last claw, but somehow they saw something
@@ -11232,113 +11267,124 @@ MonoBehaviour:
     Note that if a participant is rendered incapable of acting, their turn ends automatically
     when it starts.\n\n### Turn\nA turn generally lasts around 6 seconds in real
     time and each turn one participant, in order of initiative, may perform their
-    actions.\n\n### Action\nAn action lasts until it is resolved. There are three
-    types of actions, movement, main and bonus and characters are allowed to perform
-    1 main action, 1 bonus action and as many movement actions as they have movement
-    points to perform them with. \n\n\n\n|\n\n\n\n## Initiative Phase\n\n-\n\nAt
+    actions. At the start of a player's turn their character gains a number of action
+    points with which to perform individual actions.\n\n### Action\nAn action lasts
+    until it is resolved. Each action costs 1 or more action points but one action
+    may allow a character to perform multiple things at once such as actions that
+    grant multiple attacks or movement which allows a character to perform several
+    different movements types as long as they have movement points to spend. \n\n\n\n|\n\n\n\n##
+    Action Points\n\n-\n\nAt the start of every character's turn, they gain a number
+    of action points to spend on performing actions. Each character always receives
+    a number of action points equal to 1 + their highest skill modifier. Most actions
+    cost 1 action point to perform and a character can spend any combination of actions
+    in any order as long as all actions are performed within their turn and they
+    spend their alloted action points and not more.\n\nCharacters can choose to not
+    spend any amount of action points, leaving 'open' action points in reserve in
+    order to perform certain types of actions that can be performed during another
+    character's turn. These are called reactions and they cover things like parrying
+    attacks or standing in overwatch.\n\n=\n\n\n\n## Initiative Phase\n\n-\n\nAt
     the beginning of a round of combat all participants that are aware of danger
     perform an initiative dice roll which is rolling 1d10 + the character\u2019s
-    initiative modifier. The results of character\u2019s initiatives are used to
-    tally the order in which participants take turns at performing actions.\n\n\n###
-    Initiative Score\nCharacters use their perception to determine their initiative
-    score. A character\u2019s initiative bonus is equal to the character\u2019s perception
-    skill modifier. Additional initiative bonuses and penalties are applied by circumstance,
-    equipment and talents. Similarly characters that are gifted or deficient in perception
-    have boosted or hindered perception dice rolls.\n\n### Initiative Actions\nCharacters
-    and creatures benefit from talents and special abilities that may be activated
-    during the initiative phase before a combat round starts. While performing initiative
-    dice rolls, characters can choose to activate one such ability in order to gain
-    its effect. If a character has more than one ability that is activated as an
-    initiative action, they must choose which one of their initiative abilities they
-    want to choose and may never benefit from more than one at a time.\n\n\n\n=\n\n\n\n##
-    Combat Turn\n\n-\n\nDuring their combat turn characters receive a number of movement
-    points, a main action and a bonus action to spend on actions that they want to
-    perform during their turn. \n\n/\n\n\n\n### Movement Points\n\n-\n\nDuring a
-    character\u2019s turn a character that is able to move receives movement points.
-    A character can freely spend movement points before, after and during their main
-    action or their bonus action and in between. \n\nAt the beginning of a player\u2019s
-    turn they will receive a number of movement points. The number of movement points
-    gained is calculated as follows:\n\nrules(\n\n**5 + (Athletics skill modifier
-    x2)**\n\n)\n\nEach movement point spent allows a character to do the following.\n\n-
-    **Hustle -** Run 1m per point spent. Walk 1m per 2 points spent to do so stealthily.\n-
-    **Jump -** Vault 1m per 2 points spent.\n- **Crawl -** Scurry 1m per 2 points
-    spent. This counts as stealthy movement.\n- **Swim -** Paddle 1m per 2 points
-    spent. Paddle 1m per 3 points spent to do so stealthily.\n- **Climb -** Scale
-    1m per 2 points spent up comfortable surfaces (ladders, knotted ropes, sheer
-    surfaces aided by grapple hooks & climbing gear) or 1m per 3 points spent for
-    free climbing.\n- **Stand Up -** Standing up from being knocked down costs 3
-    movement points.\n- **Go Prone -** Going down into a prone position takes 1 movement
-    point.\n\n\n|\n\n\n\n### Movement Actions\n\n-\n\nA character may spend their
-    main action or their bonus action to further increase the distance that they
-    travel during a turn. A main action spent this way grants +4 movement points
-    and a bonus action spent this way grants +2 movement points.\n\n\n\n### Hiding
-    and Sneaking\n\n-\n\nDuring their turn a character can spend their main action.
-    If a character is currently out of line of sight or within a source of cover,
-    concealment or any manner of environment that would obscure their presence, they
-    may spend a main action to hide. \n\nA character that performs a hiding action
-    gains a stealth score equal to 1 + their stealth skill modifier\n\nFrom the moment
-    a character performs such actions they are considered to be hidden unless an
-    observer with a perception score higher than their stealth is directly looking
-    at them. \n\nEvery action a character performs that is noticeable (such as moving
-    objects, manipulating devices or attacking) reduces a character\u2019s stealth
-    score by -1 or -2 depending on the circumstance.\n\nA character can spend three
-    movement points to gain a further +1 bonus to stealth or six movement points
-    to gain a further +2 bonus to stealth.\n\n=\n\n\n\n## Movement Modifiers\n\n-\n\n/\n\n\n**Boosted
-    Movement -** Characters that are moving in favour of a powerful current, or who
-    have been given a helping push towards a direction benefit from a bonus to their
-    movement. Characters that are boosted in such ways gain up to +3 movement points
-    at the start of their turn.\n\n**Hindered Movement -** Characters that are encumbered,
-    hamstrung or attempting to move against an overwhelming current or a hindering
-    force suffer from a penalty to their movement. Characters that are hindered in
-    such ways lose up to 3 of their movement points at the start of their turn.\n\n**Entangled
-    -** Characters that are currently caught to webs, ropes, hogtied, or grappled
-    with an opponent lose all of their movement points at the beginning of their
-    turn. They may still perform actions however a lot of actions that require freedom
-    of movement may be also hindered by the character being entangled.\n\n**Knocked
-    Down -** Characters that have become unbalanced and have been knocked off of
-    their feet lose 3 movement points at the beginning of their turn.\n\n**Prone
-    -** Characters that went down to a prone position (not ones that were knocked
-    down) gain a +1 bonus to their cover if they were within a source of cover, they
-    gain a cover bonus of 1 if they were not previously in cover, and gain a +1 bonus
-    to their stealth score. From a prone position a character can only crawl and
-    must stand up before being able to do any other type of movement action. Performing
-    attacks from a prone position is always hindered.\n\n|\n\n**Rough Terrain -**
-    Shallow water, thick mud, deep sand or snow and uneven rocks all contribute to
-    poorly transmit back a creature\u2019s footfall energy. Any form of rough terrain
-    will cause a character traversing it to go slower than normal. Generally rough
-    terrain will cause a character to walk through it at 1m per 2 movement points
-    spent. More or less movement points per meter traversed can occur with different
-    types of rough terrain.\n\n**Slippery Terrain -** Icy lakes, wet moss, muddy
-    stone and most tiled sloping roofs are usually quite precarious and slippery
-    for anyone attempting to traverse them. In addition to being examples of rough
-    terrain, a character moving through one or more meters of slippery terrain must
-    perform an athletics dice roll in order to avoid falling prone. The basic difficulty
+    initiative modifier (calculated by taking the character's perception skill value
+    + any additional bonuses from traits, and talents and gear). The results of character\u2019s
+    initiatives are used to tally the order in which participants take turns at performing
+    actions.\n\n\n### Initiative Score\nCharacters use their perception to determine
+    their initiative score. A character\u2019s initiative bonus is equal to the character\u2019s
+    perception skill modifier. Additional initiative bonuses and penalties are applied
+    by circumstance, equipment and talents. Similarly characters that are gifted
+    or deficient in perception have boosted or hindered perception dice rolls.\n\n###
+    Initiative Actions\nCharacters and creatures benefit from talents and special
+    abilities that may be activated during the initiative phase before a combat round
+    starts. While performing initiative dice rolls, characters can choose to activate
+    one such ability in order to gain its effect. If a character has more than one
+    ability that is activated as an initiative action, they must choose which one
+    of their initiative abilities they want to choose and may never benefit from
+    more than one at a time.\n\n\n\n=\n\n\n\n## Combat Turn\n\n-\n\nDuring their
+    combat turn characters receive a number of movement points, a main action and
+    a bonus action to spend on actions that they want to perform during their turn.
+    \n\n/\n\n\n\n### Movement Points\n\n-\n\nDuring a character\u2019s turn a character
+    that is able to move may spend 1 action point in orer to receive movement points.
+    A character can freely spend movement points before, after and during any action
+    and in between. \n\nWhen a chracter spends 1 action point to perform movement
+    they receive a number of movement points. The number of movement points gained
+    is calculated as follows:\n\nrules(\n\n**5 + (Athletics skill modifier x2)**\n\n)\n\nA
+    character can spend more than 1 action point on movement actions. Each action
+    point spent beyond the first adds their Athletics skill modifier x2 again. If
+    a character is untrained in Athletics they gain 1 movement point instead.\n\nEach
+    movement point spent allows a character to do the following.\n\n- **Hustle -**
+    Run 1m per point spent. Walk 1m per 2 points spent to do so stealthily.\n- **Jump
+    -** Vault 1m per 2 points spent.\n- **Crawl -** Scurry 1m per 2 points spent.
+    This counts as stealthy movement.\n- **Swim -** Paddle 1m per 2 points spent.
+    Paddle 1m per 3 points spent to do so stealthily.\n- **Climb -** Scale 1m per
+    2 points spent up comfortable surfaces (ladders, knotted ropes, sheer surfaces
+    aided by grapple hooks & climbing gear) or 1m per 3 points spent for free climbing.\n-
+    **Stand Up -** Standing up from being knocked down costs 3 movement points.\n-
+    **Go Prone -** Going down into a prone position takes 1 movement point.\n\n\n|\n\n\n\n###
+    Hiding and Sneaking\n\n-\n\nDuring their turn a character can spend their their
+    movement points in order to hide or sneak. If a character is currently out of
+    line of sight or within a source of cover, concealment or any manner of environment
+    that would obscure their presence, they may spend a 2 movement points to hide.
+    \n\nA character that performs a hiding action gains a stealth score equal to
+    1 + their stealth skill modifier\n\nFrom the moment a character performs such
+    actions they are considered to be hidden unless an observer with a perception
+    score equal to or higher than their stealth is directly looking at them. \n\nEvery
+    action a character performs that is noticeable (such as moving objects, manipulating
+    devices or attacking) reduces a character\u2019s stealth score by -1 or -2 depending
+    on the circumstance.\n\nA character can gain a +1 bonus to their stealth score
+    for every 3 additional movement points they decide to spend on hiding.\n\n=\n\n\n\n##
+    Movement Modifiers\n\n-\n\n/\n\n\n**Boosted Movement -** Characters that are
+    moving in favour of a powerful current, or who have been given a helping push
+    towards a direction benefit from a bonus to their movement. Characters that are
+    boosted in such ways double the distances moved per movement point spent..\n\n**Hindered
+    Movement -** Characters that are encumbered, hamstrung or attempting to move
+    against an overwhelming current or a hindering force suffer from a penalty to
+    their movement. Characters that are hindered in such ways half all the distances
+    moved per movement point spent.\n\n**Entangled -** Characters that are currently
+    caught to webs, ropes, hogtied, or grappled with an opponent may not use movement
+    points to perform movement (walk, crawl, climb, swim etc). They may still perform
+    other actions, however a lot of actions that require freedom of movement may
+    be also hindered by the character being entangled.\n\n**Knocked Down -** Characters
+    that have become unbalanced and have been knocked off of their feet must spend
+    3 movement points in order to regain balance.\n\n**Prone -** Characters that
+    went down to a prone position (not ones that were knocked down) gain a +1 bonus
+    to their cover if they were within a source of cover, they gain a cover bonus
+    of 1 if they were not previously in cover, and gain a +1 bonus to their stealth
+    score. From a prone position a character can only crawl and must stand up before
+    being able to do any other type of movement action. Performing attacks from a
+    prone position is always hindered.\n\n**Rough Terrain -** Shallow water, thick
+    mud, deep sand or snow and uneven rocks all contribute to poorly transmit back
+    a creature\u2019s footfall energy. Any form of rough terrain will cause a character
+    traversing it to go slower than normal. Generally rough terrain will cause a
+    character to suffer from hindered movement.\n\n|\n\n**Slippery Terrain -** Icy
+    lakes, wet moss, muddy stone and most tiled sloping roofs are usually quite precarious
+    and slippery for anyone attempting to traverse them. In addition to being examples
+    of rough terrain, a character moving through one or more meters of slippery terrain
+    must perform an athletics dice roll in order to avoid falling prone. The basic
+    difficulty is 6 and for every 2 meters traversed within the same movement action
+    the difficulty increases by +1.\n\n**Dangerous Terrain -** Dangerous terrain
+    defines any environment that is immediately hostile to a character like acid
+    pools, magma puddles, flash fires, thorns and brambles and any form of spikes
+    and blades jutting out of the environment. In addition to being examples of rough
+    terrain a character moving through one or more meters of dangerous terrain must
+    perform an athletics dice roll in order to avoid taking a wound. The basic difficulty
     is 6 and for every 2 meters traversed within the same movement action the difficulty
-    increases by +1.\n\n**Dangerous Terrain -** Dangerous terrain defines any environment
-    that is immediately hostile to a character like acid pools, magma puddles, flash
-    fires, thorns and brambles and any form of spikes and blades jutting out of the
-    environment. In addition to being examples of rough terrain a character moving
-    through one or more meters of dangerous terrain must perform an athletics dice
-    roll in order to avoid taking a wound. The basic difficulty is 6 and for every
-    2 meters traversed within the same movement action the difficulty increases by
-    +1.\n\n\n\n=\n\n\n\n## Attacking\n\n-\n\nCharacters can perform attacks against
-    targets during their combat turn by spending their main action in order to gain
-    attack points. When doing so a character must declare if they want to perform
-    close combat or ranged combat. A character cannot perform both close combat and
-    ranged combat at the same time unless otherwise specified. When doing so they
-    gain either close combat attack points or ranged combat attack points \n\n###
-    Attack Dice Roll\n\n-\n\nrules(\n\n**Close combat attack = close combat skill
-    dice roll vs target\u2019s defence**\n\n**Ranged combat attack = ranged combat
-    skill dice roll vs difficulty of 6**\n\n)\n\nBoth of the above take 1 attack
-    point each.\n\n\n\n## Attack Points\n\n-\n\nAt the start of a combat turn if
-    a character wants to attack they can spend their main action to gain a number
-    of attack points which they can spend to perform attacks on targets. The number
-    of attack points that they gain during their turn is calculated as follows:\n\nrules(\n\n**Close
-    combat attack points = 1 + Close combat skill**\n\n**Ranged combat attack points
-    = 1 + Ranged combat skill**\n\n)\n\nA character can spend 1 attack point to perform
-    1 attack action against a target within range of their weapon. Additionally a
-    character can spend an additional attack point on each attack to gain a +1 bonus
-    on that attack dice roll per point spent.\n\n|\n\n\n\n## Attack Modifiers\n\n-\n\n\n**Flanking
+    increases by +1.\n\n\n\n=\n\n\n\n## Attacking\n\n-\n\nCharacters can perform
+    attacks against targets during their combat turn by spending their main action
+    in order to gain attack points. When doing so a character must declare if they
+    want to perform close combat or ranged combat. A character can perform both close
+    combat and ranged combat actions within the same turn however they must perform
+    a Combat Stance action to switch weapons in between attacks.\n\n### Attack Dice
+    Roll\n\n-\n\nrules(\n\n**Close combat attack = close combat skill dice roll vs
+    target\u2019s defence**\n\n**Ranged combat attack = ranged combat skill dice
+    roll vs difficulty of 6**\n\n)\n\nBoth of the above take 1 action point each.\n\n\n\n###
+    Combat Stance\n\n-\n\nThe combat stance action allows a character to perform
+    certain actions during a hostile situation that would divert their attention
+    away from the enemy, even if temporarily. This includes things like drawing a
+    weapon, storing it in its sheath, reloading a weapon, retreiving a weapon or
+    ammunition from a pouch or pocket, going down into a prone position or standing
+    up from a prone position. Once  acharactr has spent 1 action point on combat
+    stance they may perform any number of these actions any number of time as they
+    want until the start of their next turn.\n\n=\n\n\n\n## Attack Modifiers\n\n-\n\n\n**Flanking
     -** If two or more allied characters are attacking the same target and surrounding
     it in any way that causes any line drawn from their occupied squares to cross
     the target\u2019s occupied square, the attackers are considered to be flanking.
@@ -13554,7 +13600,7 @@ MonoBehaviour:
 
     24
     | Wark, Imperial [Bird Legendary 11] | 3'
---- !u!84 &879489725
+--- !u!84 &1231818911
 RenderTexture:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
