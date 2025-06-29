@@ -67,6 +67,8 @@ public class Chapter
     public string title;
     public List<string> description;
     public List<Entry> entries;
+    public string output;
+    public string chapter => GetChapter();
 
     public string GetChapter()
     {
@@ -86,10 +88,10 @@ public class Chapter
                 titleFormat = ParagraphFormat.None
             }
         };
-        
-        return titleEntry.GetChapterTitle() + 
-               descriptionEntry.GetContent() +
-               entries.Aggregate("", (prev, next) => $"{prev}{next.GetEntry()}");
+        output = titleEntry.GetChapterTitle() + 
+                   descriptionEntry.GetContent() +
+                   entries.Aggregate("", (prev, next) => $"{prev}{next.GetEntry()}");
+        return output;
     }
 }
 
@@ -101,22 +103,25 @@ public class ListEntry
 
     public string GetListEntry()
     {
+        var modContent = content.Replace(@"[\n]", "\n");
         var output = "- ";
         if (!string.IsNullOrEmpty(title)) output += $"**{title} -** ";
-        if (!string.IsNullOrEmpty(content)) output += $"{content}\n";
+        if (!string.IsNullOrEmpty(modContent)) output += $"{modContent}\n";
         return output;
     }
     public string GetUnorderedListEntry()
     {
+        var modContent = content.Replace(@"[\n]", "\n");
         var output = "";
         if (!string.IsNullOrEmpty(title)) output += $"**{title} -** ";
-        if (!string.IsNullOrEmpty(content)) output += $"{content}\n";
+        if (!string.IsNullOrEmpty(modContent)) output += $"{modContent}\n";
         output += "\n";
         return output;
     }
 
     public string GetHeaderListEntry(int h)
     {
+        var modContent = content.Replace(@"[\n]", "\n");
         var output = "";
         if (!string.IsNullOrEmpty(title))
         {
@@ -129,7 +134,7 @@ public class ListEntry
                 case 5: output += $"##### {title}\n"; break;
             }
         }
-        if (!string.IsNullOrEmpty(content)) output += $"{content}\n";
+        if (!string.IsNullOrEmpty(modContent)) output += $"{modContent}\n";
         output += "\n";
         return output;
     }
@@ -147,13 +152,14 @@ public class BoxEntry
 
     public string GetEntry(string type)
     {
+        var modContent = content.Select(c => c.Replace(@"[\n]", "\n")).ToList();
         var output = $"{type}(";
         if (!string.IsNullOrEmpty(h1)) output += $"\n#{h1}";
         if (!string.IsNullOrEmpty(h2)) output += $"\n##{h2}";
         output += $"\n-";
         if (!string.IsNullOrEmpty(h3)) output += $"\n###{h3}";
         if (!string.IsNullOrEmpty(h4)) output += $"\n####{h4}";
-        foreach (var item in content)
+        foreach (var item in modContent)
         {
             var listText = list.Aggregate("", (prev, next) => $"{prev}{next.GetListEntry()}");
             var ulistText = list.Aggregate("", (prev, next) => $"{prev}{next.GetUnorderedListEntry()}");
@@ -183,6 +189,7 @@ public class Entry
 
     public string GetEntry()
     {
+        var modContent = content.Select(c => c.Replace(@"[\n]", "\n")).ToList();
         var titleEntry = new SubEntry()
         {
             content = title,
@@ -190,7 +197,7 @@ public class Entry
         };
         var contentEntry = new SubEntry()
         {
-            content = content.Aggregate("", (prev, next) => $"{prev}{next}\n\n"),
+            content = modContent.Aggregate("", (prev, next) => $"{prev}{next}\n\n"),
             options = options
         };
         var listText = list.Aggregate("", (prev, next) => $"{prev}{next.GetListEntry()}");
@@ -285,21 +292,24 @@ public class SubEntry
 
     public string GetContent()
     {
+        var modContent = content.Replace(@"[\n]", "\n");
         var output = "";
-        output += $"{content.Format(options.contentFormat)}\n";
+        output += $"{modContent.Format(options.contentFormat)}\n";
         return output;
     }
     public string GetTitle()
     {
+        var modContent = content.Replace(@"[\n]", "\n");
         var output = "";
-        output += $"{content.Format(options.titleFormat)}\n";
+        output += $"{modContent.Format(options.titleFormat)}\n";
         return output;
     }
 
     public string GetChapterTitle()
     {
+        var modContent = content.Replace(@"[\n]", "\n");
         var output = "";
-        output += $"head(\n{content.Format(options.titleFormat)}\n)\n";
+        output += $"head(\n{modContent.Format(options.titleFormat)}\n)\n";
         return output;
     }
 }
@@ -321,7 +331,7 @@ public class EntryManager : MonoBehaviour
         output += "\nWilliam Calleja - Katacross 2025";
         output += "\n)\n";
         output += "title (\nMain Rulebook\n)\n";
-        output += chapters.Aggregate("", (prev, next) => $"{prev}{next.GetChapter()}");
+        output += chapters.Aggregate("", (prev, next) => $"{prev}{next.chapter}");
         output += equipmentChapter;
         output = output.Replace(@"[\n]", "\n");
     }
