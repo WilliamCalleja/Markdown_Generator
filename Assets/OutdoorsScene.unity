@@ -119,6 +119,43 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!84 &44656378
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &157207112
 GameObject:
   m_ObjectHideFlags: 0
@@ -3993,7 +4030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c177a7438dfb51f48aeab1da29019bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  result: {fileID: 573600579}
+  result: {fileID: 44656378}
   voronoiGenerator: {fileID: 7200000, guid: 420cfded7f159ea43b25defe86f25c71, type: 3}
   visualizer: {fileID: 2100000, guid: 1b44be87f565cb74da841b7046513d89, type: 2}
   parameters:
@@ -11088,28 +11125,24 @@ MonoBehaviour:
         titleFormat: 1
         contentFormat: 0
       list:
-      - title: 'Technique [Initiative]'
-        content: When rolling initiative, swap your movement or bonus action for
-          an extra movement or bonus action.
-      - title: 'Kata [Bonus]'
-        content: "Spend a bonus action to activate this ability. This talent\u2019s
-          effect remains active until the start of the next turn. Whenever performing
-          an unarmed attack that hits a target, you may immediately perform a close
-          combat maneuver against the same target."
-      - title: 'Jutsu [Bonus]'
-        content: "Spend a bonus action to activate this ability. This talent\u2019s
-          effect remains active until the start of the next turn. While unarmoured
-          you gain the benefit of parry against a number of attacks equal to your
-          close combat modifier x2."
-      - title: 'Counter [Main]'
-        content: "Spend a stamina point to activate this ability. This talent\u2019s
-          effect remains active until the end of the encounter. Whenever an enemy
-          performs an attack that doesn\u2019t hit you, you may immediately perform
-          an unarmed attack against them."
-      - title: 'Flurry of Blows [Main]'
-        content: "Spend a stamina point to activate this ability. This talent\u2019s
-          effect remains active until the end of the encounter. While unarmed, double
-          your close combat attack points."
+      - title: 'Technique [3 Initiative]'
+        content: Gain any 1 of the following:[\n]Double the amount of movement points
+          gained.[\n]Gain +1 AP.
+      - title: 'Kata [1AP]'
+        content: Until the start of the next turn whenever performing an unarmed
+          attack that hits a target, you may immediately perform a close combat maneuver
+          against the same target.
+      - title: 'Jutsu [1AP]'
+        content: Until the start of the next turn while unarmoured you gain the benefit
+          of parry against a number of attacks equal to your close combat modifier
+          x2.
+      - title: 'Counter [1 Stamina]'
+        content: "Until the end of the encounter whenever an enemy performs an attack
+          that doesn\u2019t hit you, you may immediately perform an unarmed attack
+          against them."
+      - title: 'Flurry of Blows [1 Stamina]'
+        content: Until the end of the encounter while unarmed, perform two unarmed
+          attacks for each attack point spent.
       boxes: []
       items: []
     - title: Necromancer
@@ -11129,50 +11162,49 @@ MonoBehaviour:
         titleFormat: 1
         contentFormat: 0
       list:
-      - title: 'Detect Life [Initiative]'
-        content: When rolling initiative cast this spell. During this turn you may
-          see the outline of living things through solid objects at a range equal
-          to half your perception range.
-      - title: 'Corpse Explosion [Bonus]'
-        content: "Spend a bonus action to make a spellcasting dice roll against a
-          target corpse\u2019s Willpower within 10m. If the dice roll is successful
-          the target corpse explodes causing damage to its surroundings. The blast
-          has an intensity value equal to the caster\u2019s spellcasting skill modifier.
-          The blasts\u2019s attack dice roll bonus is equal to the intensity and
-          its splash area is equal to the intensity x2m. If the corpse occupies a
-          large space, extend the splash from outside the corpse\u2019s base area."
-      - title: 'Undead Servant [Bonus]'
-        content: "Spend a bonus action to cast this spell. This spell\u2019s effects
-          last until the end of the turn or until the undead servant dies. An undead
-          servant has a power level equal to their summoner\u2019s spellcasting skill
-          modifier. The servant\u2019s stats are as follows: [\\n]*Defence [4+PL],
-          Soak [PL], Vigour [4+PL], Willpower [4+PL], Perception Range [PL x20m],
-          Movement Points [PL x2], Carrying Capacity  [PL x2], Max Wounds [PL], Attack
-          Points [PL]* [\\n][\\n]Additionally a necromancer can choose any one of
-          the following features: [\\n]- **Ghoul -** When this creature causes damage
-          with their close combat attacks, they restore 1 wound. [\\n]- **Wraith
-          -** This creature gains a 20m ranged attack that causes +1 damage and inflicts
-          2 stress points on successful hits. [\\n]- **Zombie -** This creature gains
-          2 extra wounds. [\\n]- **Skeleton -** This creature gains +2 soak against
-          piercing attacks and is immune to the piercing effect. [\\n][\\n]If an
-          undead servant is destroyed the necromancer must performa short rest before
-          being able to summon them again.  [\\n]|"
-      - title: 'Rise [Main]'
-        content: "Spend 1 Focus to cast this spell and make a spellcasting dice roll
-          against a target corpse\u2019s willpower within 10m. If the dice roll is
-          successful the target corpse rises as an undead servant. Undead servants
-          have an initiative score equal to their controller and will last until
-          the end of the encounter or until their controller dismisses them or dies.
-          An undead servant returns with all of its wounds repaired but any lost
-          limbs are not recovered. A necromancer can only have an amount of undead
-          servants at any one time equal to their spell casting skill modifier. Once
-          a servant is dismissed the corpse is destroyed."
+      - title: 'Detect Life [3 Initiative]'
+        content: During this turn you may see the outline of living things through
+          solid objects at a range equal to half your perception range.
+      - title: 'Corpse Explosion [1AP]'
+        content: "Make a spellcasting dice roll against a target corpse\u2019s Willpower
+          within 10m. If the dice roll is successful the target corpse explodes causing
+          damage to its surroundings. The blast has an intensity value equal to the
+          caster\u2019s spellcasting skill modifier. The blasts\u2019s attack dice
+          roll bonus is equal to the intensity and its splash area is equal to the
+          intensity x2m. If the corpse occupies a large space, extend the splash
+          from outside the corpse\u2019s base area."
+      - title: 'Undead Servant [1AP]'
+        content: "This spell\u2019s effects last until the end of the turn or until
+          the undead servant dies. An undead servant has a power level equal to their
+          summoner\u2019s spellcasting skill modifier. The servant\u2019s stats are
+          as follows: [\\n]*Defence [4+PL], Soak [PL], Vigour [4+PL], Willpower [4+PL],
+          Perception Range [PL x20m], Movement Points [PL x2], Carrying Capacity 
+          [PL x2], Max Wounds [PL], Action Points [PL]* [\\n][\\n]Additionally a
+          necromancer can choose any one of the following features: [\\n]- **Ghoul
+          -** When this creature causes damage with their close combat attacks, they
+          restore 1 wound. [\\n]- **Wraith -** This creature gains a 20m ranged attack
+          that causes +1 damage and inflicts 2 stress points on successful hits.
+          [\\n]- **Zombie -** This creature gains 2 extra wounds. [\\n]- **Skeleton
+          -** This creature gains +2 soak against piercing attacks and is immune
+          to the piercing effect. [\\n][\\n]If an undead servant is destroyed the
+          necromancer must perform a short rest before being able to summon them
+          again.  [\\n]|"
+      - title: 'Rise [1 Focus]'
+        content: "Make a spellcasting dice roll against a target corpse\u2019s willpower
+          within 10m. If the dice roll is successful the target corpse rises as an
+          undead servant. Undead servants have an initiative score equal to their
+          controller and will last until the end of the encounter or until their
+          controller dismisses them or dies. An undead servant returns with all of
+          its wounds repaired but any lost limbs are not recovered. A necromancer
+          can only have an amount of undead servants at any one time equal to their
+          spell casting skill modifier. Once a servant is dismissed the corpse is
+          destroyed."
       - title: 'Memento Mori [Main]'
-        content: "Spend 1 Focus to cast this spell against a target living creature\u2019s
-          willpower within 20m. The creature receives a memento mori mark with an
-          intensity equal to the margin of success which allows the caster to inflict
-          a number of stress points on the creature equal to the intensity once per
-          turn. If the creature\u2019s stress is equal to or greater than the target\u2019s
+        content: "Cast this spell against a target living creature\u2019s willpower
+          within 20m. The creature receives a memento mori mark with an intensity
+          equal to the margin of success which allows the caster to inflict a number
+          of stress points on the creature equal to the intensity once per turn.
+          If the creature\u2019s stress is equal to or greater than the target\u2019s
           willpower, they suffer from a wound."
       boxes: []
       items: []
@@ -11192,28 +11224,26 @@ MonoBehaviour:
         titleFormat: 1
         contentFormat: 0
       list:
-      - title: 'Relocate [Initiative]'
+      - title: 'Relocate [3 Initiative]'
         content: Gain 2 Movement Points whenever performing an attack that deals
           damage.
-      - title: 'Weave [Bonus]'
-        content: Spend a bonus action to gain a bonus to defence equal to +1 for
-          every 3 movement points used this turn on running, climbing and jumping.
-          This bonus lasts until the start of the next turn.
-      - title: 'Momentum [Bonus]'
-        content: Spend a bonus action to gain a bonus to attack damage equal to +1
-          for every 3 movement points used this turn. This bonus lasts until the
-          start of the next turn.
-      - title: 'Hail of Arrows [Main]'
-        content: Spend 1 Stamina to activate this talent. This talent lasts until
-          the start of the next turn. Reloading your ranged weapon no longer costs
-          actions, and is done automatically as part of your attack.
-      - title: 'Flurry of Blades [Main]'
-        content: Spend 1 Stamina to activate this talent. This talent lasts until
-          the start of the next turn. Gain 1 attack point for every enemy killed
-          or knocked out. These attack points must be spent immediately without performing
-          movement actions. The maximum attack points that a character can gain this
-          way within a turn is equal to the amount of attack points that they start
-          with at the beginning of the turn.
+      - title: 'Weave [1AP]'
+        content: Immediately gain Athletics x2 movement points. Gain a bonus to defence
+          equal to +1 for every 3 movement points used this turn on running, climbing
+          and jumping. This bonus lasts until the start of the next turn.
+      - title: 'Momentum [1AP]'
+        content: Immediately gain Athletics x2 movement points. Gain a bonus to attack
+          damage equal to +1 for every 3 movement points used this turn. This bonus
+          lasts until the start of the next turn.
+      - title: 'Hail of Arrows [1 Stamina and 1AP]'
+        content: Combat stance is activated. until the start of your next turn, for
+          every shot fired with your ranged weapon, you may fire an additional shot
+          as part of the same action.
+      - title: 'Flurry of Blades [1 Stamina]'
+        content: Until the start of the next turn. Gain 1 action point for every
+          enemy killed or knocked out. The maximum action points that a character
+          can gain this way within a turn is equal to the amount of action points
+          that they start with at the beginning of the turn.
       boxes: []
       items: []
     - title: Rogue
@@ -11232,25 +11262,23 @@ MonoBehaviour:
         titleFormat: 1
         contentFormat: 0
       list:
-      - title: 'Sneak [Initiative]'
-        content: Character may perform a hide action by spending a bonus action or
-          3 movement points.
-      - title: 'Infiltrator [Bonus]'
-        content: When performing actions while hidden, spend a bonus action to reduce
-          all penalties to stealth score by 1.
-      - title: 'Ambush [Bonus]'
-        content: When making an attack against a surprised opponent you may spend
-          a bonus action to gain a number of attack points equal to their stealth
-          skill modifier.
-      - title: 'Assassin [Main]'
-        content: "Spend 1 Stamina to activate this talent. This talent lasts until
-          the start of the next turn. Gain a bonus to attack dice rolls equal to
-          your stealth value - the target\u2019s perception score. This bonus can
-          only be applied against surprised targets."
-      - title: 'Ghost [Main]'
-        content: Spend 1 Stamina to activate this talent. This talent lasts until
-          the start of the next turn. Whenever using any main action or bonus action
-          you may also hide into stealth for free.
+      - title: 'Sneak [3 Initiative]'
+        content: Initiating stealth doesn't cost any movement points and gain a +1
+          bonus to stealth score for every 1 movement point spent until the start
+          of the next turn.
+      - title: 'Infiltrator [1AP]'
+        content: When performing actions while hidden reduce all penalties to stealth
+          score by 1 per stealth skill value.
+      - title: 'Ambush [1AP]'
+        content: When making an attack against a surprised opponent you may gain
+          a number of free attacks equal to their stealth skill modifier.
+      - title: 'Assassin [1 Stamina]'
+        content: "Until the start of the next turn gain a bonus to attack dice rolls
+          equal to your stealth value - the target\u2019s perception score. This
+          bonus can only be applied against surprised targets."
+      - title: 'Ghost [1 Stamina]'
+        content: Until the start of the next turn whenever using any action you may
+          also hide into stealth for free.
       boxes: []
       items: []
     - title: Samurai
@@ -11561,91 +11589,84 @@ MonoBehaviour:
       of foreigners that witnessed them but monks and their monasteries were never
       a monolith that aligned themself with any one faction or nation. Those lucky
       enough to have monks among their allies had a rare privilege.\n\n\n#### Technique
-      [Initiative]\nWhen rolling initiative, swap your movement or bonus action for
-      an extra movement or bonus action.\n\n#### Kata [Bonus]\nSpend a bonus action
-      to activate this ability. This talent\u2019s effect remains active until the
-      start of the next turn. Whenever performing an unarmed attack that hits a target,
-      you may immediately perform a close combat maneuver against the same target.\n\n####
-      Jutsu [Bonus]\nSpend a bonus action to activate this ability. This talent\u2019s
-      effect remains active until the start of the next turn. While unarmoured you
-      gain the benefit of parry against a number of attacks equal to your close combat
-      modifier x2.\n\n#### Counter [Main]\nSpend a stamina point to activate this
-      ability. This talent\u2019s effect remains active until the end of the encounter.
-      Whenever an enemy performs an attack that doesn\u2019t hit you, you may immediately
-      perform an unarmed attack against them.\n\n#### Flurry of Blows [Main]\nSpend
-      a stamina point to activate this ability. This talent\u2019s effect remains
-      active until the end of the encounter. While unarmed, double your close combat
-      attack points.\n\n\n\n=\n\n\n\n# Necromancer\n\n-\n\nOne of the most ancient
-      forms of arcane study is the study of death and the dying. Although initially
-      banned by the empire it was clear that the utility and demand for the services
-      of necromancers was too high and after decades of the nobility and aristocracy
-      secretly employing and funding necromantic studies, it became a highly regulated
-      practice and area of study with the talents of necromancers used in a variety
-      of applications within imperial life.\n\n/\n\n\n#### Detect Life [Initiative]\nWhen
-      rolling initiative cast this spell. During this turn you may see the outline
-      of living things through solid objects at a range equal to half your perception
-      range.\n\n#### Corpse Explosion [Bonus]\nSpend a bonus action to make a spellcasting
+      [3 Initiative]\nGain any 1 of the following:\nDouble the amount of movement
+      points gained.\nGain +1 AP.\n\n#### Kata [1AP]\nUntil the start of the next
+      turn whenever performing an unarmed attack that hits a target, you may immediately
+      perform a close combat maneuver against the same target.\n\n#### Jutsu [1AP]\nUntil
+      the start of the next turn while unarmoured you gain the benefit of parry against
+      a number of attacks equal to your close combat modifier x2.\n\n#### Counter
+      [1 Stamina]\nUntil the end of the encounter whenever an enemy performs an attack
+      that doesn\u2019t hit you, you may immediately perform an unarmed attack against
+      them.\n\n#### Flurry of Blows [1 Stamina]\nUntil the end of the encounter while
+      unarmed, perform two unarmed attacks for each attack point spent.\n\n\n\n=\n\n\n\n#
+      Necromancer\n\n-\n\nOne of the most ancient forms of arcane study is the study
+      of death and the dying. Although initially banned by the empire it was clear
+      that the utility and demand for the services of necromancers was too high and
+      after decades of the nobility and aristocracy secretly employing and funding
+      necromantic studies, it became a highly regulated practice and area of study
+      with the talents of necromancers used in a variety of applications within imperial
+      life.\n\n/\n\n\n#### Detect Life [3 Initiative]\nDuring this turn you may see
+      the outline of living things through solid objects at a range equal to half
+      your perception range.\n\n#### Corpse Explosion [1AP]\nMake a spellcasting
       dice roll against a target corpse\u2019s Willpower within 10m. If the dice
       roll is successful the target corpse explodes causing damage to its surroundings.
       The blast has an intensity value equal to the caster\u2019s spellcasting skill
       modifier. The blasts\u2019s attack dice roll bonus is equal to the intensity
       and its splash area is equal to the intensity x2m. If the corpse occupies a
       large space, extend the splash from outside the corpse\u2019s base area.\n\n####
-      Undead Servant [Bonus]\nSpend a bonus action to cast this spell. This spell\u2019s
-      effects last until the end of the turn or until the undead servant dies. An
-      undead servant has a power level equal to their summoner\u2019s spellcasting
-      skill modifier. The servant\u2019s stats are as follows: \n*Defence [4+PL],
-      Soak [PL], Vigour [4+PL], Willpower [4+PL], Perception Range [PL x20m], Movement
-      Points [PL x2], Carrying Capacity  [PL x2], Max Wounds [PL], Attack Points
-      [PL]* \n\nAdditionally a necromancer can choose any one of the following features:
-      \n- **Ghoul -** When this creature causes damage with their close combat attacks,
-      they restore 1 wound. \n- **Wraith -** This creature gains a 20m ranged attack
-      that causes +1 damage and inflicts 2 stress points on successful hits. \n-
-      **Zombie -** This creature gains 2 extra wounds. \n- **Skeleton -** This creature
-      gains +2 soak against piercing attacks and is immune to the piercing effect.
-      \n\nIf an undead servant is destroyed the necromancer must performa short rest
-      before being able to summon them again.  \n|\n\n#### Rise [Main]\nSpend 1 Focus
-      to cast this spell and make a spellcasting dice roll against a target corpse\u2019s
-      willpower within 10m. If the dice roll is successful the target corpse rises
-      as an undead servant. Undead servants have an initiative score equal to their
-      controller and will last until the end of the encounter or until their controller
-      dismisses them or dies. An undead servant returns with all of its wounds repaired
-      but any lost limbs are not recovered. A necromancer can only have an amount
-      of undead servants at any one time equal to their spell casting skill modifier.
-      Once a servant is dismissed the corpse is destroyed.\n\n#### Memento Mori [Main]\nSpend
-      1 Focus to cast this spell against a target living creature\u2019s willpower
-      within 20m. The creature receives a memento mori mark with an intensity equal
-      to the margin of success which allows the caster to inflict a number of stress
-      points on the creature equal to the intensity once per turn. If the creature\u2019s
-      stress is equal to or greater than the target\u2019s willpower, they suffer
-      from a wound.\n\n\n\n=\n\n\n\n# Ranger\n\n-\n\nBefore there were kingdoms,
-      or cities, or villages or tribes there was the hunter. The ranger was not invented,
-      they changed and adapted with the times leaving behind a civilization that
-      desperately tried to keep up. Those who shunned the comforts of modernity and
-      the safety of walls have embraced the wilds and became part of them. Even when
-      the civilizations of the world were at their highest the rangers were still
-      needed. Now they are needed more than ever.\n\n\n#### Relocate [Initiative]\nGain
-      2 Movement Points whenever performing an attack that deals damage.\n\n####
-      Weave [Bonus]\nSpend a bonus action to gain a bonus to defence equal to +1
-      for every 3 movement points used this turn on running, climbing and jumping.
-      This bonus lasts until the start of the next turn.\n\n#### Momentum [Bonus]\nSpend
-      a bonus action to gain a bonus to attack damage equal to +1 for every 3 movement
-      points used this turn. This bonus lasts until the start of the next turn.\n\n####
-      Hail of Arrows [Main]\nSpend 1 Stamina to activate this talent. This talent
-      lasts until the start of the next turn. Reloading your ranged weapon no longer
-      costs actions, and is done automatically as part of your attack.\n\n#### Flurry
-      of Blades [Main]\nSpend 1 Stamina to activate this talent. This talent lasts
-      until the start of the next turn. Gain 1 attack point for every enemy killed
-      or knocked out. These attack points must be spent immediately without performing
-      movement actions. The maximum attack points that a character can gain this
-      way within a turn is equal to the amount of attack points that they start with
-      at the beginning of the turn.\n\n\n\n|\n\n\n\n# Rogue\n\n-\n\nAs long as there
-      are two people alive, someone will want someone dead. Thieves, assassins, spies
-      and charlatans, the rogue\u2019s origins are inevitably tied to the lower classes
-      of society, the shadows which hide the illicit from unassuming eyes. Despite
-      this the services of the covert and the inconspicuous have always found plenty
-      of use in the highest courts of nobility and the aristocrats who often look
-      down upon the furtive, have called upon their services far more that they\u2019d
+      Undead Servant [1AP]\nThis spell\u2019s effects last until the end of the turn
+      or until the undead servant dies. An undead servant has a power level equal
+      to their summoner\u2019s spellcasting skill modifier. The servant\u2019s stats
+      are as follows: \n*Defence [4+PL], Soak [PL], Vigour [4+PL], Willpower [4+PL],
+      Perception Range [PL x20m], Movement Points [PL x2], Carrying Capacity  [PL
+      x2], Max Wounds [PL], Action Points [PL]* \n\nAdditionally a necromancer can
+      choose any one of the following features: \n- **Ghoul -** When this creature
+      causes damage with their close combat attacks, they restore 1 wound. \n- **Wraith
+      -** This creature gains a 20m ranged attack that causes +1 damage and inflicts
+      2 stress points on successful hits. \n- **Zombie -** This creature gains 2
+      extra wounds. \n- **Skeleton -** This creature gains +2 soak against piercing
+      attacks and is immune to the piercing effect. \n\nIf an undead servant is destroyed
+      the necromancer must perform a short rest before being able to summon them
+      again.  \n|\n\n#### Rise [1 Focus]\nMake a spellcasting dice roll against a
+      target corpse\u2019s willpower within 10m. If the dice roll is successful the
+      target corpse rises as an undead servant. Undead servants have an initiative
+      score equal to their controller and will last until the end of the encounter
+      or until their controller dismisses them or dies. An undead servant returns
+      with all of its wounds repaired but any lost limbs are not recovered. A necromancer
+      can only have an amount of undead servants at any one time equal to their spell
+      casting skill modifier. Once a servant is dismissed the corpse is destroyed.\n\n####
+      Memento Mori [Main]\nCast this spell against a target living creature\u2019s
+      willpower within 20m. The creature receives a memento mori mark with an intensity
+      equal to the margin of success which allows the caster to inflict a number
+      of stress points on the creature equal to the intensity once per turn. If the
+      creature\u2019s stress is equal to or greater than the target\u2019s willpower,
+      they suffer from a wound.\n\n\n\n=\n\n\n\n# Ranger\n\n-\n\nBefore there were
+      kingdoms, or cities, or villages or tribes there was the hunter. The ranger
+      was not invented, they changed and adapted with the times leaving behind a
+      civilization that desperately tried to keep up. Those who shunned the comforts
+      of modernity and the safety of walls have embraced the wilds and became part
+      of them. Even when the civilizations of the world were at their highest the
+      rangers were still needed. Now they are needed more than ever.\n\n\n#### Relocate
+      [3 Initiative]\nGain 2 Movement Points whenever performing an attack that deals
+      damage.\n\n#### Weave [1AP]\nImmediately gain Athletics x2 movement points.
+      Gain a bonus to defence equal to +1 for every 3 movement points used this turn
+      on running, climbing and jumping. This bonus lasts until the start of the next
+      turn.\n\n#### Momentum [1AP]\nImmediately gain Athletics x2 movement points.
+      Gain a bonus to attack damage equal to +1 for every 3 movement points used
+      this turn. This bonus lasts until the start of the next turn.\n\n#### Hail
+      of Arrows [1 Stamina and 1AP]\nCombat stance is activated. until the start
+      of your next turn, for every shot fired with your ranged weapon, you may fire
+      an additional shot as part of the same action.\n\n#### Flurry of Blades [1
+      Stamina]\nUntil the start of the next turn. Gain 1 action point for every enemy
+      killed or knocked out. The maximum action points that a character can gain
+      this way within a turn is equal to the amount of action points that they start
+      with at the beginning of the turn.\n\n\n\n|\n\n\n\n# Rogue\n\n-\n\nAs long
+      as there are two people alive, someone will want someone dead. Thieves, assassins,
+      spies and charlatans, the rogue\u2019s origins are inevitably tied to the lower
+      classes of society, the shadows which hide the illicit from unassuming eyes.
+      Despite this the services of the covert and the inconspicuous have always found
+      plenty of use in the highest courts of nobility and the aristocrats who often
+      look down upon the furtive, have called upon their services far more that they\u2019d
       like to admit.\n\n\n#### Sneak [Initiative]\nCharacter may perform a hide action
       by spending a bonus action or 3 movement points.\n\n#### Infiltrator [Bonus]\nWhen
       performing actions while hidden, spend a bonus action to reduce all penalties
@@ -13348,122 +13369,114 @@ MonoBehaviour:
     and superhuman dexterity had often captured the imaginations of foreigners that
     witnessed them but monks and their monasteries were never a monolith that aligned
     themself with any one faction or nation. Those lucky enough to have monks among
-    their allies had a rare privilege.\n\n\n#### Technique [Initiative]\nWhen rolling
-    initiative, swap your movement or bonus action for an extra movement or bonus
-    action.\n\n#### Kata [Bonus]\nSpend a bonus action to activate this ability.
-    This talent\u2019s effect remains active until the start of the next turn. Whenever
-    performing an unarmed attack that hits a target, you may immediately perform
-    a close combat maneuver against the same target.\n\n#### Jutsu [Bonus]\nSpend
-    a bonus action to activate this ability. This talent\u2019s effect remains active
-    until the start of the next turn. While unarmoured you gain the benefit of parry
-    against a number of attacks equal to your close combat modifier x2.\n\n#### Counter
-    [Main]\nSpend a stamina point to activate this ability. This talent\u2019s effect
-    remains active until the end of the encounter. Whenever an enemy performs an
-    attack that doesn\u2019t hit you, you may immediately perform an unarmed attack
-    against them.\n\n#### Flurry of Blows [Main]\nSpend a stamina point to activate
-    this ability. This talent\u2019s effect remains active until the end of the encounter.
-    While unarmed, double your close combat attack points.\n\n\n\n=\n\n\n\n# Necromancer\n\n-\n\nOne
+    their allies had a rare privilege.\n\n\n#### Technique [3 Initiative]\nGain any
+    1 of the following:\nDouble the amount of movement points gained.\nGain +1 AP.\n\n####
+    Kata [1AP]\nUntil the start of the next turn whenever performing an unarmed attack
+    that hits a target, you may immediately perform a close combat maneuver against
+    the same target.\n\n#### Jutsu [1AP]\nUntil the start of the next turn while
+    unarmoured you gain the benefit of parry against a number of attacks equal to
+    your close combat modifier x2.\n\n#### Counter [1 Stamina]\nUntil the end of
+    the encounter whenever an enemy performs an attack that doesn\u2019t hit you,
+    you may immediately perform an unarmed attack against them.\n\n#### Flurry of
+    Blows [1 Stamina]\nUntil the end of the encounter while unarmed, perform two
+    unarmed attacks for each attack point spent.\n\n\n\n=\n\n\n\n# Necromancer\n\n-\n\nOne
     of the most ancient forms of arcane study is the study of death and the dying.
     Although initially banned by the empire it was clear that the utility and demand
     for the services of necromancers was too high and after decades of the nobility
     and aristocracy secretly employing and funding necromantic studies, it became
     a highly regulated practice and area of study with the talents of necromancers
     used in a variety of applications within imperial life.\n\n/\n\n\n#### Detect
-    Life [Initiative]\nWhen rolling initiative cast this spell. During this turn
-    you may see the outline of living things through solid objects at a range equal
-    to half your perception range.\n\n#### Corpse Explosion [Bonus]\nSpend a bonus
-    action to make a spellcasting dice roll against a target corpse\u2019s Willpower
-    within 10m. If the dice roll is successful the target corpse explodes causing
-    damage to its surroundings. The blast has an intensity value equal to the caster\u2019s
-    spellcasting skill modifier. The blasts\u2019s attack dice roll bonus is equal
-    to the intensity and its splash area is equal to the intensity x2m. If the corpse
-    occupies a large space, extend the splash from outside the corpse\u2019s base
-    area.\n\n#### Undead Servant [Bonus]\nSpend a bonus action to cast this spell.
-    This spell\u2019s effects last until the end of the turn or until the undead
-    servant dies. An undead servant has a power level equal to their summoner\u2019s
-    spellcasting skill modifier. The servant\u2019s stats are as follows: \n*Defence
-    [4+PL], Soak [PL], Vigour [4+PL], Willpower [4+PL], Perception Range [PL x20m],
-    Movement Points [PL x2], Carrying Capacity  [PL x2], Max Wounds [PL], Attack
-    Points [PL]* \n\nAdditionally a necromancer can choose any one of the following
-    features: \n- **Ghoul -** When this creature causes damage with their close combat
-    attacks, they restore 1 wound. \n- **Wraith -** This creature gains a 20m ranged
-    attack that causes +1 damage and inflicts 2 stress points on successful hits.
-    \n- **Zombie -** This creature gains 2 extra wounds. \n- **Skeleton -** This
-    creature gains +2 soak against piercing attacks and is immune to the piercing
-    effect. \n\nIf an undead servant is destroyed the necromancer must performa short
-    rest before being able to summon them again.  \n|\n\n#### Rise [Main]\nSpend
-    1 Focus to cast this spell and make a spellcasting dice roll against a target
-    corpse\u2019s willpower within 10m. If the dice roll is successful the target
-    corpse rises as an undead servant. Undead servants have an initiative score equal
-    to their controller and will last until the end of the encounter or until their
-    controller dismisses them or dies. An undead servant returns with all of its
-    wounds repaired but any lost limbs are not recovered. A necromancer can only
-    have an amount of undead servants at any one time equal to their spell casting
-    skill modifier. Once a servant is dismissed the corpse is destroyed.\n\n####
-    Memento Mori [Main]\nSpend 1 Focus to cast this spell against a target living
-    creature\u2019s willpower within 20m. The creature receives a memento mori mark
-    with an intensity equal to the margin of success which allows the caster to inflict
-    a number of stress points on the creature equal to the intensity once per turn.
-    If the creature\u2019s stress is equal to or greater than the target\u2019s willpower,
-    they suffer from a wound.\n\n\n\n=\n\n\n\n# Ranger\n\n-\n\nBefore there were
-    kingdoms, or cities, or villages or tribes there was the hunter. The ranger was
-    not invented, they changed and adapted with the times leaving behind a civilization
-    that desperately tried to keep up. Those who shunned the comforts of modernity
-    and the safety of walls have embraced the wilds and became part of them. Even
-    when the civilizations of the world were at their highest the rangers were still
-    needed. Now they are needed more than ever.\n\n\n#### Relocate [Initiative]\nGain
-    2 Movement Points whenever performing an attack that deals damage.\n\n#### Weave
-    [Bonus]\nSpend a bonus action to gain a bonus to defence equal to +1 for every
+    Life [3 Initiative]\nDuring this turn you may see the outline of living things
+    through solid objects at a range equal to half your perception range.\n\n####
+    Corpse Explosion [1AP]\nMake a spellcasting dice roll against a target corpse\u2019s
+    Willpower within 10m. If the dice roll is successful the target corpse explodes
+    causing damage to its surroundings. The blast has an intensity value equal to
+    the caster\u2019s spellcasting skill modifier. The blasts\u2019s attack dice
+    roll bonus is equal to the intensity and its splash area is equal to the intensity
+    x2m. If the corpse occupies a large space, extend the splash from outside the
+    corpse\u2019s base area.\n\n#### Undead Servant [1AP]\nThis spell\u2019s effects
+    last until the end of the turn or until the undead servant dies. An undead servant
+    has a power level equal to their summoner\u2019s spellcasting skill modifier.
+    The servant\u2019s stats are as follows: \n*Defence [4+PL], Soak [PL], Vigour
+    [4+PL], Willpower [4+PL], Perception Range [PL x20m], Movement Points [PL x2],
+    Carrying Capacity  [PL x2], Max Wounds [PL], Action Points [PL]* \n\nAdditionally
+    a necromancer can choose any one of the following features: \n- **Ghoul -** When
+    this creature causes damage with their close combat attacks, they restore 1 wound.
+    \n- **Wraith -** This creature gains a 20m ranged attack that causes +1 damage
+    and inflicts 2 stress points on successful hits. \n- **Zombie -** This creature
+    gains 2 extra wounds. \n- **Skeleton -** This creature gains +2 soak against
+    piercing attacks and is immune to the piercing effect. \n\nIf an undead servant
+    is destroyed the necromancer must perform a short rest before being able to summon
+    them again.  \n|\n\n#### Rise [1 Focus]\nMake a spellcasting dice roll against
+    a target corpse\u2019s willpower within 10m. If the dice roll is successful the
+    target corpse rises as an undead servant. Undead servants have an initiative
+    score equal to their controller and will last until the end of the encounter
+    or until their controller dismisses them or dies. An undead servant returns with
+    all of its wounds repaired but any lost limbs are not recovered. A necromancer
+    can only have an amount of undead servants at any one time equal to their spell
+    casting skill modifier. Once a servant is dismissed the corpse is destroyed.\n\n####
+    Memento Mori [Main]\nCast this spell against a target living creature\u2019s
+    willpower within 20m. The creature receives a memento mori mark with an intensity
+    equal to the margin of success which allows the caster to inflict a number of
+    stress points on the creature equal to the intensity once per turn. If the creature\u2019s
+    stress is equal to or greater than the target\u2019s willpower, they suffer from
+    a wound.\n\n\n\n=\n\n\n\n# Ranger\n\n-\n\nBefore there were kingdoms, or cities,
+    or villages or tribes there was the hunter. The ranger was not invented, they
+    changed and adapted with the times leaving behind a civilization that desperately
+    tried to keep up. Those who shunned the comforts of modernity and the safety
+    of walls have embraced the wilds and became part of them. Even when the civilizations
+    of the world were at their highest the rangers were still needed. Now they are
+    needed more than ever.\n\n\n#### Relocate [3 Initiative]\nGain 2 Movement Points
+    whenever performing an attack that deals damage.\n\n#### Weave [1AP]\nImmediately
+    gain Athletics x2 movement points. Gain a bonus to defence equal to +1 for every
     3 movement points used this turn on running, climbing and jumping. This bonus
-    lasts until the start of the next turn.\n\n#### Momentum [Bonus]\nSpend a bonus
-    action to gain a bonus to attack damage equal to +1 for every 3 movement points
-    used this turn. This bonus lasts until the start of the next turn.\n\n#### Hail
-    of Arrows [Main]\nSpend 1 Stamina to activate this talent. This talent lasts
-    until the start of the next turn. Reloading your ranged weapon no longer costs
-    actions, and is done automatically as part of your attack.\n\n#### Flurry of
-    Blades [Main]\nSpend 1 Stamina to activate this talent. This talent lasts until
-    the start of the next turn. Gain 1 attack point for every enemy killed or knocked
-    out. These attack points must be spent immediately without performing movement
-    actions. The maximum attack points that a character can gain this way within
-    a turn is equal to the amount of attack points that they start with at the beginning
-    of the turn.\n\n\n\n|\n\n\n\n# Rogue\n\n-\n\nAs long as there are two people
-    alive, someone will want someone dead. Thieves, assassins, spies and charlatans,
-    the rogue\u2019s origins are inevitably tied to the lower classes of society,
-    the shadows which hide the illicit from unassuming eyes. Despite this the services
-    of the covert and the inconspicuous have always found plenty of use in the highest
-    courts of nobility and the aristocrats who often look down upon the furtive,
-    have called upon their services far more that they\u2019d like to admit.\n\n\n####
-    Sneak [Initiative]\nCharacter may perform a hide action by spending a bonus action
-    or 3 movement points.\n\n#### Infiltrator [Bonus]\nWhen performing actions while
-    hidden, spend a bonus action to reduce all penalties to stealth score by 1.\n\n####
-    Ambush [Bonus]\nWhen making an attack against a surprised opponent you may spend
-    a bonus action to gain a number of attack points equal to their stealth skill
-    modifier.\n\n#### Assassin [Main]\nSpend 1 Stamina to activate this talent. This
-    talent lasts until the start of the next turn. Gain a bonus to attack dice rolls
-    equal to your stealth value - the target\u2019s perception score. This bonus
-    can only be applied against surprised targets.\n\n#### Ghost [Main]\nSpend 1
-    Stamina to activate this talent. This talent lasts until the start of the next
-    turn. Whenever using any main action or bonus action you may also hide into stealth
-    for free.\n\n\n\n=\n\n\n\n# Samurai\n\n-\n\nOriginally hailing from Orienta the
-    way of the samurai is as much an immigrant as the warrior bureaucrats that brought
-    the art with them. Samurai are honourable servants of their Daimyo and Shogun
-    masters, sworn to a lifetime of service. The Samurai that travel outside of Orienta
-    were ambassadors and diplomats, often sent on missions to discover trade and
-    alliance partners abroad all the while keeping a watchful eye on the ever expanding
-    empire.\n\n/\n\n\n#### Iaido [Initiative]\nWhen rolling initiative, gain a +2
-    bonus on initiative dice rolls. This causes you to receive 3 movement points
-    less than normal.\n\n#### Kiai [Bonus]\nWhen causing damage with an attack, spend
-    your bonus action. All enemies within 5m of your target receive a number of stress
-    points equal to the damage caused by the attack.\n\n#### Kyudo [Bonus]\nWhen
-    spending a bonus action to take aim with your ranged attack, your ranged attack
-    gets boosted in addition to the aim bonus and the bonus affects all ranged attacks
-    during your turn and not just the next one.\n\n#### Bushido [Main]\nSpend 1 Stamina
-    to activate this talent. This talent lasts until the start of the next turn.
-    When performing multiple attacks against the same target, gain a cumulative +1
-    bonus to attack dice rolls for every attack beyond the first.\n\n#### Yumihiki
+    lasts until the start of the next turn.\n\n#### Momentum [1AP]\nImmediately gain
+    Athletics x2 movement points. Gain a bonus to attack damage equal to +1 for every
+    3 movement points used this turn. This bonus lasts until the start of the next
+    turn.\n\n#### Hail of Arrows [1 Stamina and 1AP]\nCombat stance is activated.
+    until the start of your next turn, for every shot fired with your ranged weapon,
+    you may fire an additional shot as part of the same action.\n\n#### Flurry of
+    Blades [1 Stamina]\nUntil the start of the next turn. Gain 1 action point for
+    every enemy killed or knocked out. The maximum action points that a character
+    can gain this way within a turn is equal to the amount of action points that
+    they start with at the beginning of the turn.\n\n\n\n|\n\n\n\n# Rogue\n\n-\n\nAs
+    long as there are two people alive, someone will want someone dead. Thieves,
+    assassins, spies and charlatans, the rogue\u2019s origins are inevitably tied
+    to the lower classes of society, the shadows which hide the illicit from unassuming
+    eyes. Despite this the services of the covert and the inconspicuous have always
+    found plenty of use in the highest courts of nobility and the aristocrats who
+    often look down upon the furtive, have called upon their services far more that
+    they\u2019d like to admit.\n\n\n#### Sneak [Initiative]\nCharacter may perform
+    a hide action by spending a bonus action or 3 movement points.\n\n#### Infiltrator
+    [Bonus]\nWhen performing actions while hidden, spend a bonus action to reduce
+    all penalties to stealth score by 1.\n\n#### Ambush [Bonus]\nWhen making an attack
+    against a surprised opponent you may spend a bonus action to gain a number of
+    attack points equal to their stealth skill modifier.\n\n#### Assassin [Main]\nSpend
+    1 Stamina to activate this talent. This talent lasts until the start of the next
+    turn. Gain a bonus to attack dice rolls equal to your stealth value - the target\u2019s
+    perception score. This bonus can only be applied against surprised targets.\n\n####
+    Ghost [Main]\nSpend 1 Stamina to activate this talent. This talent lasts until
+    the start of the next turn. Whenever using any main action or bonus action you
+    may also hide into stealth for free.\n\n\n\n=\n\n\n\n# Samurai\n\n-\n\nOriginally
+    hailing from Orienta the way of the samurai is as much an immigrant as the warrior
+    bureaucrats that brought the art with them. Samurai are honourable servants of
+    their Daimyo and Shogun masters, sworn to a lifetime of service. The Samurai
+    that travel outside of Orienta were ambassadors and diplomats, often sent on
+    missions to discover trade and alliance partners abroad all the while keeping
+    a watchful eye on the ever expanding empire.\n\n/\n\n\n#### Iaido [Initiative]\nWhen
+    rolling initiative, gain a +2 bonus on initiative dice rolls. This causes you
+    to receive 3 movement points less than normal.\n\n#### Kiai [Bonus]\nWhen causing
+    damage with an attack, spend your bonus action. All enemies within 5m of your
+    target receive a number of stress points equal to the damage caused by the attack.\n\n####
+    Kyudo [Bonus]\nWhen spending a bonus action to take aim with your ranged attack,
+    your ranged attack gets boosted in addition to the aim bonus and the bonus affects
+    all ranged attacks during your turn and not just the next one.\n\n#### Bushido
     [Main]\nSpend 1 Stamina to activate this talent. This talent lasts until the
-    start of the next turn. When performing a ranged attack you may confer any 1
-    of the following effects to your shots. Slash, Push, Slam, Maim. A character
+    start of the next turn. When performing multiple attacks against the same target,
+    gain a cumulative +1 bonus to attack dice rolls for every attack beyond the first.\n\n####
+    Yumihiki [Main]\nSpend 1 Stamina to activate this talent. This talent lasts until
+    the start of the next turn. When performing a ranged attack you may confer any
+    1 of the following effects to your shots. Slash, Push, Slam, Maim. A character
     can spend 1 attack point in order to confer three effects instead of one.\n\n\n\n|\n\n=\n\n\n\n#
     Tenebrist\n\n-\n\nOriginally Tenebral magic was attributed to the forces of the
     demon lords in their invasion. In reality tenebrothurgy was originally created
@@ -15106,43 +15119,6 @@ MonoBehaviour:
 
     24
     | Wark, Imperial [Bird Legendary 11] | 3'
---- !u!84 &573600579
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 4
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1 &1823688464
 GameObject:
   m_ObjectHideFlags: 0
