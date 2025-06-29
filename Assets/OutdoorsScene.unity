@@ -359,6 +359,43 @@ MonoBehaviour:
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
   m_ObsoleteContactShadows: 0
+--- !u!84 &185839785
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &432432459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3993,7 +4030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c177a7438dfb51f48aeab1da29019bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  result: {fileID: 2103793847}
+  result: {fileID: 185839785}
   voronoiGenerator: {fileID: 7200000, guid: 420cfded7f159ea43b25defe86f25c71, type: 3}
   visualizer: {fileID: 2100000, guid: 1b44be87f565cb74da841b7046513d89, type: 2}
   parameters:
@@ -4374,7 +4411,7 @@ MonoBehaviour:
     weapons:
     - name: Club
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 1
       rarity: 0
       type: 0
@@ -4385,7 +4422,7 @@ MonoBehaviour:
       damage: 1
     - name: Dagger
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 1
       rarity: 0
       type: 0
@@ -4396,7 +4433,7 @@ MonoBehaviour:
       damage: 0
     - name: Shield, Wooden
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 1
       rarity: 0
       type: 0
@@ -4407,7 +4444,7 @@ MonoBehaviour:
       damage: 0
     - name: Throwing Knife
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 1
       rarity: 0
       type: 0
@@ -4420,7 +4457,7 @@ MonoBehaviour:
       damage: 0
     - name: Hatchet
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 3
       rarity: 0
       type: 0
@@ -4431,7 +4468,7 @@ MonoBehaviour:
       damage: 1
     - name: Hunting Net
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 3
       rarity: 0
       type: 0
@@ -4446,7 +4483,7 @@ MonoBehaviour:
       damage: 0
     - name: Pike
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 3
       rarity: 0
       type: 0
@@ -4459,7 +4496,7 @@ MonoBehaviour:
       damage: 1
     - name: Shield, Metal
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 3
       rarity: 0
       type: 0
@@ -4472,7 +4509,7 @@ MonoBehaviour:
       damage: 0
     - name: Shortsword
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 3
       rarity: 0
       type: 0
@@ -4483,7 +4520,7 @@ MonoBehaviour:
       damage: 1
     - name: Javelin
       description: 
-      encumbrance: 2
+      encumbrance: 10
       cost: 5
       rarity: 0
       type: 0
@@ -4498,7 +4535,7 @@ MonoBehaviour:
       damage: 0
     - name: Tower Shield, Wooden
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 0
       type: 0
@@ -4513,7 +4550,7 @@ MonoBehaviour:
       damage: 0
     - name: Mace
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 3
       rarity: 1
       type: 0
@@ -4524,7 +4561,7 @@ MonoBehaviour:
       damage: 2
     - name: Longsword
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 1
       type: 0
@@ -4537,7 +4574,7 @@ MonoBehaviour:
       damage: 2
     - name: Maul
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 1
       type: 0
@@ -4552,7 +4589,7 @@ MonoBehaviour:
       damage: 3
     - name: Morningstar
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 1
       type: 0
@@ -4565,7 +4602,7 @@ MonoBehaviour:
       damage: 1
     - name: Spear
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 1
       type: 0
@@ -4578,7 +4615,7 @@ MonoBehaviour:
       damage: 1
     - name: Waraxe
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 1
       type: 0
@@ -4591,7 +4628,7 @@ MonoBehaviour:
       damage: 1
     - name: Tower Shield, Metal
       description: 
-      encumbrance: 2
+      encumbrance: 10
       cost: 10
       rarity: 1
       type: 0
@@ -4606,7 +4643,7 @@ MonoBehaviour:
       damage: 0
     - name: Battleaxe
       description: 
-      encumbrance: 2
+      encumbrance: 10
       cost: 10
       rarity: 2
       type: 0
@@ -4623,7 +4660,7 @@ MonoBehaviour:
       damage: 2
     - name: Flail
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 10
       rarity: 2
       type: 0
@@ -4640,7 +4677,7 @@ MonoBehaviour:
       damage: 1
     - name: Glaive
       description: 
-      encumbrance: 2
+      encumbrance: 10
       cost: 10
       rarity: 2
       type: 0
@@ -4657,7 +4694,7 @@ MonoBehaviour:
       damage: 3
     - name: Greatsword
       description: 
-      encumbrance: 2
+      encumbrance: 10
       cost: 10
       rarity: 2
       type: 0
@@ -4676,7 +4713,7 @@ MonoBehaviour:
       damage: 3
     - name: Halberd
       description: 
-      encumbrance: 2
+      encumbrance: 10
       cost: 10
       rarity: 2
       type: 0
@@ -4695,7 +4732,7 @@ MonoBehaviour:
       damage: 3
     - name: Warhammer
       description: 
-      encumbrance: 2
+      encumbrance: 10
       cost: 10
       rarity: 2
       type: 0
@@ -4729,7 +4766,7 @@ MonoBehaviour:
     weapons:
     - name: Sling
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 1
       rarity: 0
       type: 0
@@ -4742,7 +4779,7 @@ MonoBehaviour:
       damage: 0
     - name: Hand Crossbow
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 3
       rarity: 1
       type: 0
@@ -4755,7 +4792,7 @@ MonoBehaviour:
       damage: 0
     - name: Crossbow
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 1
       type: 0
@@ -4768,7 +4805,7 @@ MonoBehaviour:
       damage: 1
     - name: Shortbow
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 1
       type: 0
@@ -4783,7 +4820,7 @@ MonoBehaviour:
       damage: 1
     - name: Pistol
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 10
       rarity: 1
       type: 0
@@ -4794,7 +4831,7 @@ MonoBehaviour:
       damage: 2
     - name: Arbalest
       description: 
-      encumbrance: 2
+      encumbrance: 10
       cost: 10
       rarity: 2
       type: 0
@@ -4809,7 +4846,7 @@ MonoBehaviour:
       damage: 2
     - name: Longbow
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 10
       rarity: 2
       type: 0
@@ -4824,7 +4861,7 @@ MonoBehaviour:
       damage: 2
     - name: Blunderbuss
       description: 
-      encumbrance: 2
+      encumbrance: 10
       cost: 15
       rarity: 2
       type: 0
@@ -4839,7 +4876,7 @@ MonoBehaviour:
       damage: 3
     - name: Rifle
       description: 
-      encumbrance: 2
+      encumbrance: 10
       cost: 50
       rarity: 2
       type: 0
@@ -4858,7 +4895,7 @@ MonoBehaviour:
     items:
     - name: Ball Cartridge
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 1
       rarity: 0
       type: 0
@@ -4867,7 +4904,7 @@ MonoBehaviour:
         variableValue: 10
     - name: Wooden Arrows
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 1
       rarity: 0
       type: 0
@@ -4876,7 +4913,7 @@ MonoBehaviour:
         variableValue: 10
     - name: Blunthead Arrow
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 0
       type: 0
@@ -4891,7 +4928,7 @@ MonoBehaviour:
         variableValue: 
     - name: Broadhead Arrows
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 0
       type: 0
@@ -4902,7 +4939,7 @@ MonoBehaviour:
         variableValue: 
     - name: Bullethead Arrows
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 0
       type: 0
@@ -4913,7 +4950,7 @@ MonoBehaviour:
         variableValue: 
     - name: Forkhead Arrows
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 0
       type: 0
@@ -4928,7 +4965,7 @@ MonoBehaviour:
         variableValue: 
     - name: Jacketed Cartridge
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 1
       type: 0
@@ -4939,7 +4976,7 @@ MonoBehaviour:
         variableValue: 
     - name: Dovetail Arrow
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 10
       rarity: 1
       type: 0
@@ -4952,7 +4989,7 @@ MonoBehaviour:
         variableValue: 
     - name: Buck Shot Cartridge
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 10
       rarity: 2
       type: 0
@@ -4965,7 +5002,7 @@ MonoBehaviour:
         variableValue: 
     - name: Dum Dum Cartridge
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 10
       rarity: 2
       type: 0
@@ -4976,7 +5013,7 @@ MonoBehaviour:
         variableValue: 
     - name: Incendiary Arrow
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 10
       rarity: 2
       type: 0
@@ -5006,7 +5043,7 @@ MonoBehaviour:
         combat dice roll against a difficulty of 6 in order to throw and hook the
         grapple correctly against a safe landing. Once hooked the rope reduces the
         amount of movement points spent on every 1m of climbing by 1 (minimum 1).
-      encumbrance: 1
+      encumbrance: 5
       cost: 10
       rarity: 0
       type: 0
@@ -5034,7 +5071,7 @@ MonoBehaviour:
         or sterilizer. - Brewer\u2019s Set - This set of pots, containers, canisters,
         tubes and vials is designed to allow the precise measuring and mixing of
         components. A character using a brewer\u2019s set may craft brewed solutions."
-      encumbrance: 1
+      encumbrance: 5
       cost: 10
       rarity: 0
       type: 0
@@ -5046,7 +5083,7 @@ MonoBehaviour:
         but also hamstring it. Creatures that fall afoul of this trap suffer from
         a damage 4 attack that hits with a margin of 0. If the attack injures the
         target, in addition to the wound the target is also tangled.
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 0
@@ -5057,7 +5094,7 @@ MonoBehaviour:
       description: This pressurised vessel is designed to keep the unstable reactive
         materials that are mixed into solutions, safe and stable until use. A canister
         can store up to 10 components for 1 month before they decay.
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 0
@@ -5085,7 +5122,7 @@ MonoBehaviour:
         dice rolls. - Herbalist's Sickles - This set of sharp gardening blades allows
         an adept herbalist at extracting and stripping plants efficiently granting
         them with a boost on dice rolls performed to gather components."
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 0
@@ -5094,7 +5131,7 @@ MonoBehaviour:
       description: This fully sealed hyperbaric chamber allows a herbalist to swiftly
         mix up concoctions within a high pressure environment. This tool allows the
         brewer to craft solutions in 5 minutes.
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 2
       type: 0
@@ -5269,7 +5306,7 @@ MonoBehaviour:
     armours:
     - name: Padded Vest
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 10
       rarity: 0
       type: 2
@@ -5278,7 +5315,7 @@ MonoBehaviour:
       durability: 0
     - name: Woven Bone Wyrm Sash
       description: 
-      encumbrance: 0
+      encumbrance: 1
       cost: 10
       rarity: 0
       type: 2
@@ -5291,7 +5328,7 @@ MonoBehaviour:
       durability: 0
     - name: Hide Armour
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 2
@@ -5300,7 +5337,7 @@ MonoBehaviour:
       durability: 1
     - name: Leather Armour
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 2
@@ -5313,7 +5350,7 @@ MonoBehaviour:
       durability: 1
     - name: Fur Hide Coat
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 2
@@ -5326,7 +5363,7 @@ MonoBehaviour:
       durability: 1
     - name: Lizard Scale Doublet
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 2
@@ -5339,7 +5376,7 @@ MonoBehaviour:
       durability: 1
     - name: Chitin Weave Robe
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 2
@@ -5352,7 +5389,7 @@ MonoBehaviour:
       durability: 1
     - name: Chitin Meal Plate
       description: 
-      encumbrance: 3
+      encumbrance: 15
       cost: 50
       rarity: 1
       type: 2
@@ -5365,7 +5402,7 @@ MonoBehaviour:
       durability: 2
     - name: Fur and Rawhide Plate
       description: 
-      encumbrance: 3
+      encumbrance: 15
       cost: 50
       rarity: 1
       type: 2
@@ -5378,7 +5415,7 @@ MonoBehaviour:
       durability: 2
     - name: Beast Scale Armour
       description: 
-      encumbrance: 3
+      encumbrance: 15
       cost: 50
       rarity: 1
       type: 2
@@ -5391,7 +5428,7 @@ MonoBehaviour:
       durability: 2
     - name: Bone Plate Cuirass
       description: 
-      encumbrance: 3
+      encumbrance: 15
       cost: 50
       rarity: 1
       type: 2
@@ -5404,7 +5441,7 @@ MonoBehaviour:
       durability: 2
     - name: Scale Mail
       description: 
-      encumbrance: 3
+      encumbrance: 15
       cost: 100
       rarity: 1
       type: 2
@@ -5417,7 +5454,7 @@ MonoBehaviour:
       durability: 3
     - name: Chainmail
       description: 
-      encumbrance: 3
+      encumbrance: 15
       cost: 100
       rarity: 1
       type: 2
@@ -5430,7 +5467,7 @@ MonoBehaviour:
       durability: 3
     - name: Cuirass
       description: 
-      encumbrance: 3
+      encumbrance: 15
       cost: 100
       rarity: 1
       type: 2
@@ -5439,7 +5476,7 @@ MonoBehaviour:
       durability: 2
     - name: Splint Mail
       description: 
-      encumbrance: 5
+      encumbrance: 25
       cost: 200
       rarity: 2
       type: 2
@@ -5452,7 +5489,7 @@ MonoBehaviour:
       durability: 3
     - name: Plate Mail
       description: 
-      encumbrance: 5
+      encumbrance: 25
       cost: 200
       rarity: 2
       type: 2
@@ -5465,7 +5502,7 @@ MonoBehaviour:
       durability: 3
     - name: Gothic Mail
       description: 
-      encumbrance: 5
+      encumbrance: 25
       cost: 500
       rarity: 2
       type: 2
@@ -5501,7 +5538,7 @@ MonoBehaviour:
     gear:
     - name: Climbing Claws
       description: 
-      encumbrance: 0
+      encumbrance: 1
       cost: 5
       rarity: 0
       type: 0
@@ -5512,7 +5549,7 @@ MonoBehaviour:
       capacity: 0
     - name: Quiver
       description: 
-      encumbrance: 0
+      encumbrance: 1
       cost: 5
       rarity: 0
       type: 0
@@ -5525,7 +5562,7 @@ MonoBehaviour:
       capacity: 1
     - name: Sheath
       description: 
-      encumbrance: 0
+      encumbrance: 1
       cost: 5
       rarity: 0
       type: 0
@@ -5538,7 +5575,7 @@ MonoBehaviour:
       capacity: 1
     - name: "Forager\u2019s Satchel"
       description: 
-      encumbrance: 0
+      encumbrance: 1
       cost: 10
       rarity: 0
       type: 0
@@ -5553,7 +5590,7 @@ MonoBehaviour:
       capacity: 2
     - name: Satchel
       description: 
-      encumbrance: 0
+      encumbrance: 1
       cost: 10
       rarity: 0
       type: 0
@@ -5564,7 +5601,7 @@ MonoBehaviour:
       capacity: 2
     - name: Storm Cloak
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 10
       rarity: 0
       type: 0
@@ -5575,7 +5612,7 @@ MonoBehaviour:
       capacity: 0
     - name: Backpack
       description: 
-      encumbrance: 0
+      encumbrance: 1
       cost: 50
       rarity: 0
       type: 0
@@ -5586,7 +5623,7 @@ MonoBehaviour:
       capacity: 3
     - name: Bandolier
       description: 
-      encumbrance: 0
+      encumbrance: 1
       cost: 10
       rarity: 1
       type: 0
@@ -5599,7 +5636,7 @@ MonoBehaviour:
       capacity: 2
     - name: Swimming Gear
       description: 
-      encumbrance: 0
+      encumbrance: 1
       cost: 10
       rarity: 1
       type: 0
@@ -5610,7 +5647,7 @@ MonoBehaviour:
       capacity: 0
     - name: Fur Cloak
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 0
@@ -5850,7 +5887,7 @@ MonoBehaviour:
     consumables:
     - name: Antibiotic Infusion
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 5
       rarity: 1
       type: 0
@@ -5860,7 +5897,7 @@ MonoBehaviour:
       toxicity: 1
     - name: Travelling Ration
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 1
       rarity: 0
       type: 0
@@ -5872,7 +5909,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Deprivation Toxin Coating
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 5
@@ -5886,7 +5923,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Enervation Toxin Coating
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 5
@@ -5900,7 +5937,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Paralysis Toxin Coating
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 5
@@ -5914,7 +5951,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Cleansing Salve
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 5
@@ -5926,7 +5963,7 @@ MonoBehaviour:
       toxicity: 1
     - name: Coagulation Salve
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 5
@@ -5938,7 +5975,7 @@ MonoBehaviour:
       toxicity: 1
     - name: Fortification Salve
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 5
@@ -5950,7 +5987,7 @@ MonoBehaviour:
       toxicity: 1
     - name: Purification Salve
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 0
       type: 5
@@ -5962,7 +5999,7 @@ MonoBehaviour:
       toxicity: 1
     - name: Hearty Meal
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 1
       type: 5
@@ -5972,7 +6009,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Soothing Meal
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 1
       type: 5
@@ -5982,7 +6019,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Healthy Meal
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 1
       type: 5
@@ -5992,7 +6029,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Satisfying Meal
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 20
       rarity: 1
       type: 5
@@ -6002,7 +6039,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Elixir of Alertness
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6014,7 +6051,7 @@ MonoBehaviour:
       toxicity: 2
     - name: Elixir of Awareness
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6026,7 +6063,7 @@ MonoBehaviour:
       toxicity: 2
     - name: Elixir of Endurance
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6038,7 +6075,7 @@ MonoBehaviour:
       toxicity: 2
     - name: Elixir of Haste
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6050,7 +6087,7 @@ MonoBehaviour:
       toxicity: 2
     - name: Elixir of Might
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6062,7 +6099,7 @@ MonoBehaviour:
       toxicity: 2
     - name: Elixir of Speed
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6074,7 +6111,7 @@ MonoBehaviour:
       toxicity: 2
     - name: Fire Retardant Coating
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6086,7 +6123,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Anti-Freeze Coating
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6098,7 +6135,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Grounding Coating
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6110,7 +6147,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Lubricant Coating
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6122,7 +6159,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Alkalene Coating
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6134,7 +6171,7 @@ MonoBehaviour:
       toxicity: 0
     - name: Reinvigoration Elixir
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 50
       rarity: 1
       type: 5
@@ -6146,7 +6183,7 @@ MonoBehaviour:
       toxicity: 2
     - name: Regeneration Elixir
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 100
       rarity: 2
       type: 0
@@ -6158,7 +6195,7 @@ MonoBehaviour:
       toxicity: 3
     - name: Rejuvenation Elixir
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 100
       rarity: 2
       type: 0
@@ -6170,7 +6207,7 @@ MonoBehaviour:
       toxicity: 3
     - name: Revitalization Elixir
       description: 
-      encumbrance: 1
+      encumbrance: 5
       cost: 100
       rarity: 2
       type: 0
@@ -6181,61 +6218,62 @@ MonoBehaviour:
         variableValue: 5
       toxicity: 3
   output: "#### Close Combat Weapons\n\nName | RNG | DMG | ENC | Cost | Rarity |
-    Traits \n-- | --\nClub | 1m | +1 | 1 | 1c | Common | Push, \nDagger | 1m | +0
-    | 1 | 1c | Common | Quick, \nShield, Wooden | 1m | +0 | 1 | 1c | Common | Parry,
-    \nThrowing Knife | 1m | +0 | 1 | 1c | Common | Throw [10m], Batch [5], \nHatchet
-    | 1m | +1 | 1 | 3c | Common | Maim, \nHunting Net | 2m | +0 | 1 | 3c | Common
-    | Harmless, Throw [5m], Tangle, \nPike | 2m | +1 | 1 | 3c | Common | Pierce,
-    Throw [20m], \nShield, Metal | 1m | +0 | 1 | 3c | Common | Parry, Durable [1],
-    \nShortsword | 1m | +1 | 1 | 3c | Common | Parry, \nJavelin | 2m | +0 | 2 | 5c
-    | Common | Pierce, Throw [20m], Batch [5], \nTower Shield, Wooden | 1m | +0 |
-    1 | 5c | Common | Parry, Cover, Durable [1], \nMace | 1m | +2 | 1 | 3c | Uncommon
-    | Slam, \nLongsword | 1m | +2 | 1 | 5c | Uncommon | Slash, Parry, \nMaul | 1m
-    | +3 | 1 | 5c | Uncommon | Push, Slam, Slow, \nMorningstar | 1m | +1 | 1 | 5c
-    | Uncommon | Slam, Pierce, \nSpear | 2m | +1 | 1 | 5c | Uncommon | Pierce, Two
-    Handed, \nWaraxe | 1m | +1 | 1 | 5c | Uncommon | Sweep, Maim, \nTower Shield,
-    Metal | 1m | +0 | 2 | 10c | Uncommon | Parry, Cover, Durable [2], \nBattleaxe
-    | 2m | +2 | 2 | 10c | Rare | Maim, Sweep, Two Handed, Slow, \nFlail | 1m | +1
-    | 1 | 10c | Rare | Exotic, Fluid, Pierce, Slow, \nGlaive | 2m | +3 | 2 | 10c
-    | Rare | Slash, Sweep, Two Handed, Slow, \nGreatsword | 2m | +3 | 2 | 10c | Rare
-    | Slash, Parry, Sweep, Two Handed, Slow, \nHalberd | 2m | +3 | 2 | 10c | Rare
-    | Pierce, Sweep, Slam, Two Handed, Slow, \nWarhammer | 2m | +3 | 2 | 10c | Rare
-    | Push, Slam, Sweep, Two Handed, Slow, \n\n\n\n\n#### Ranged Combat Weapons\n\nName
-    | RNG | DMG | ENC | Cost | Rarity | Traits \n-- | --\nSling | 20m | +0 | 1 |
-    1c | Common | Slam, Reload [Pebble], \nHand Crossbow | 20m | +0 | 1 | 3c | Uncommon
-    | Quick, Reload [Arrow], \nCrossbow | 50m | +1 | 1 | 5c | Uncommon | Slow Reload
-    [Arrow], Two Handed, \nShortbow | 100m | +1 | 1 | 5c | Uncommon | Pin, Reload
-    [Arrow], Two Handed, \nPistol | 50m | +2 | 1 | 10c | Uncommon | Slow Reload [Cartridge],
-    \nArbalest | 50m | +2 | 2 | 10c | Rare | Maim, Slow Reload [Arrow], Two Handed,
-    \nLongbow | 200m | +2 | 1 | 10c | Rare | Pin, Reload [Arrow], Two Handed, \nBlunderbuss
-    | 20m | +3 | 2 | 15c | Rare | Slam, Slow Reload [Cartridge], Two Handed, \nRifle
-    | 100m | +2 | 2 | 50c | Rare | Maim, Slow Reload [Cartridge], Two Handed, \n\n\n=\n\n\n\n####
-    Ammunition\n\nName | ENC | Cost | Rarity | Traits \n-- | --\nBall Cartridge |
-    1 | 1c | Common | Batch [10], \nWooden Arrows | 1 | 1c | Common | Batch [10],
-    \nBlunthead Arrow | 1 | 5c | Common | Batch [10], Small Game, Recover 2, Short
-    Range, \nBroadhead Arrows | 1 | 5c | Common | Batch [10], Slash, \nBullethead
-    Arrows | 1 | 5c | Common | Batch [10], Pierce, \nForkhead Arrows | 1 | 5c | Common
-    | Batch [10], Small Game, Recover 4, Short Range, \nJacketed Cartridge | 1 |
-    5c | Uncommon | Batch [10], Pierce, \nDovetail Arrow | 1 | 10c | Uncommon | Batch
-    [10], Long Range, Perce, \nBuck Shot Cartridge | 1 | 10c | Rare | Batch [10],
-    Short Range, Pepperbox, \nDum Dum Cartridge | 1 | 10c | Rare | Batch [10], +1
-    DMG, \nIncendiary Arrow | 1 | 10c | Rare | Batch [10], Fire 3, \n\n\n\n\n####
-    Tools\n\nName | ENC | Cost | Rarity | Traits \n-- | --\nGrapple Hook & Rope |
-    1 | 10c | Common | , \nProfessional Tool Kit | 1 | 10c | Common | , \nBig Game
-    Trap | 1 | 50c | Uncommon | , \nComponent Canister | 1 | 50c | Uncommon | , \nGrandmaster
-    Tool Kit | 1 | 50c | Uncommon | \nPressure Cooker | 1 | 50c | Rare | , \n\n\n=\n\n\n\n###
-    Professional Tool Kit\n\nEvery profession that needs handiwork has a specific
-    set of tools of the trade without which performing said trade would be impossible.
-    Characters that wish to craft, repair, maintain, upgrade or scavenge items needs
-    to have the correct tool kit:\n\n- **Blacksmith\u2019s tools -** This set of
-    metalworking implements lets a character maintain hardware.\n- **Carpenter\u2019s
-    tools -** From fixing roofs, to building chairs to fletching arrows, carpenter\u2019s
-    tools are always handy.\n- **Leatherworker\u2019s tools -** This handy kit lets
-    a character do the whole process from skinning a felled beast to drying the hide
-    all the way to shaping and cutting the leather.\n- **Tailor\u2019s tools -**
-    Anything that is needed to fix and reinforce fabric if not reshape it into something
-    pleasing to the eye.\n- **Enchanter\u2019s tools -** From the making of talismans,
-    to the crafting of runes, to the scribing of scrolls the Enchanter\u2019s toolkit
+    Traits \n-- | --\nClub | 1m | +1 | 5 | 1c | Common | Push, \nDagger | 1m | +0
+    | 5 | 1c | Common | Quick, \nShield, Wooden | 1m | +0 | 5 | 1c | Common | Parry,
+    \nThrowing Knife | 1m | +0 | 5 | 1c | Common | Throw [10m], Batch [5], \nHatchet
+    | 1m | +1 | 5 | 3c | Common | Maim, \nHunting Net | 2m | +0 | 5 | 3c | Common
+    | Harmless, Throw [5m], Tangle, \nPike | 2m | +1 | 5 | 3c | Common | Pierce,
+    Throw [20m], \nShield, Metal | 1m | +0 | 5 | 3c | Common | Parry, Durable [1],
+    \nShortsword | 1m | +1 | 5 | 3c | Common | Parry, \nJavelin | 2m | +0 | 10 |
+    5c | Common | Pierce, Throw [20m], Batch [5], \nTower Shield, Wooden | 1m | +0
+    | 5 | 5c | Common | Parry, Cover, Durable [1], \nMace | 1m | +2 | 5 | 3c | Uncommon
+    | Slam, \nLongsword | 1m | +2 | 5 | 5c | Uncommon | Slash, Parry, \nMaul | 1m
+    | +3 | 5 | 5c | Uncommon | Push, Slam, Slow, \nMorningstar | 1m | +1 | 5 | 5c
+    | Uncommon | Slam, Pierce, \nSpear | 2m | +1 | 5 | 5c | Uncommon | Pierce, Two
+    Handed, \nWaraxe | 1m | +1 | 5 | 5c | Uncommon | Sweep, Maim, \nTower Shield,
+    Metal | 1m | +0 | 10 | 10c | Uncommon | Parry, Cover, Durable [2], \nBattleaxe
+    | 2m | +2 | 10 | 10c | Rare | Maim, Sweep, Two Handed, Slow, \nFlail | 1m | +1
+    | 5 | 10c | Rare | Exotic, Fluid, Pierce, Slow, \nGlaive | 2m | +3 | 10 | 10c
+    | Rare | Slash, Sweep, Two Handed, Slow, \nGreatsword | 2m | +3 | 10 | 10c |
+    Rare | Slash, Parry, Sweep, Two Handed, Slow, \nHalberd | 2m | +3 | 10 | 10c
+    | Rare | Pierce, Sweep, Slam, Two Handed, Slow, \nWarhammer | 2m | +3 | 10 |
+    10c | Rare | Push, Slam, Sweep, Two Handed, Slow, \n\n\n\n\n#### Ranged Combat
+    Weapons\n\nName | RNG | DMG | ENC | Cost | Rarity | Traits \n-- | --\nSling |
+    20m | +0 | 5 | 1c | Common | Slam, Reload [Pebble], \nHand Crossbow | 20m | +0
+    | 5 | 3c | Uncommon | Quick, Reload [Arrow], \nCrossbow | 50m | +1 | 5 | 5c |
+    Uncommon | Slow Reload [Arrow], Two Handed, \nShortbow | 100m | +1 | 5 | 5c |
+    Uncommon | Pin, Reload [Arrow], Two Handed, \nPistol | 50m | +2 | 5 | 10c | Uncommon
+    | Slow Reload [Cartridge], \nArbalest | 50m | +2 | 10 | 10c | Rare | Maim, Slow
+    Reload [Arrow], Two Handed, \nLongbow | 200m | +2 | 5 | 10c | Rare | Pin, Reload
+    [Arrow], Two Handed, \nBlunderbuss | 20m | +3 | 10 | 15c | Rare | Slam, Slow
+    Reload [Cartridge], Two Handed, \nRifle | 100m | +2 | 10 | 50c | Rare | Maim,
+    Slow Reload [Cartridge], Two Handed, \n\n\n=\n\n\n\n#### Ammunition\n\nName |
+    ENC | Cost | Rarity | Traits \n-- | --\nBall Cartridge | 5 | 1c | Common | Batch
+    [10], \nWooden Arrows | 5 | 1c | Common | Batch [10], \nBlunthead Arrow | 5 |
+    5c | Common | Batch [10], Small Game, Recover 2, Short Range, \nBroadhead Arrows
+    | 5 | 5c | Common | Batch [10], Slash, \nBullethead Arrows | 5 | 5c | Common
+    | Batch [10], Pierce, \nForkhead Arrows | 5 | 5c | Common | Batch [10], Small
+    Game, Recover 4, Short Range, \nJacketed Cartridge | 5 | 5c | Uncommon | Batch
+    [10], Pierce, \nDovetail Arrow | 5 | 10c | Uncommon | Batch [10], Long Range,
+    Perce, \nBuck Shot Cartridge | 5 | 10c | Rare | Batch [10], Short Range, Pepperbox,
+    \nDum Dum Cartridge | 5 | 10c | Rare | Batch [10], +1 DMG, \nIncendiary Arrow
+    | 5 | 10c | Rare | Batch [10], Fire 3, \n\n\n\n\n#### Tools\n\nName | ENC | Cost
+    | Rarity | Traits \n-- | --\nGrapple Hook & Rope | 5 | 10c | Common | , \nProfessional
+    Tool Kit | 5 | 10c | Common | , \nBig Game Trap | 5 | 50c | Uncommon | , \nComponent
+    Canister | 5 | 50c | Uncommon | , \nGrandmaster Tool Kit | 5 | 50c | Uncommon
+    | \nPressure Cooker | 5 | 50c | Rare | , \n\n\n=\n\n\n\n### Professional Tool
+    Kit\n\nEvery profession that needs handiwork has a specific set of tools of the
+    trade without which performing said trade would be impossible. Characters that
+    wish to craft, repair, maintain, upgrade or scavenge items needs to have the
+    correct tool kit:\n\n- **Blacksmith\u2019s tools -** This set of metalworking
+    implements lets a character maintain hardware.\n- **Carpenter\u2019s tools -**
+    From fixing roofs, to building chairs to fletching arrows, carpenter\u2019s tools
+    are always handy.\n- **Leatherworker\u2019s tools -** This handy kit lets a character
+    do the whole process from skinning a felled beast to drying the hide all the
+    way to shaping and cutting the leather.\n- **Tailor\u2019s tools -** Anything
+    that is needed to fix and reinforce fabric if not reshape it into something pleasing
+    to the eye.\n- **Enchanter\u2019s tools -** From the making of talismans, to
+    the crafting of runes, to the scribing of scrolls the Enchanter\u2019s toolkit
     lets the magically adept create wondrous items.\n- **Alchemical tools -** Brewers
     of potions and mixers of explosives alike need Alchemical tools to concoct their
     deadly solutions.\n- **First Aid kit -** This small pouch contains a collection
@@ -6287,36 +6325,36 @@ MonoBehaviour:
     instead of on their body. Every armour has a Durability (DUR) value which determines
     how many wounds worth of damage the armour can take for their wearer. DUR is
     restored through a repair action, with one repair action restoring one DUR.\n\n\n\nName
-    | ARM | DUR | ENC | Cost | Rarity | Traits \n-- | --\nPadded Vest | 1 | 0 | 1
-    | 10c | Common | \nWoven Bone Wyrm Sash | 1 | 0 | 0 | 10c | Common | Weather
-    Protection [1], Constricting, \nHide Armour | 1 | 1 | 1 | 20c | Common | \nLeather
-    Armour | 1 | 1 | 1 | 20c | Common | Fragile, Resist [Slash], \nFur Hide Coat
-    | 1 | 1 | 1 | 20c | Common | Fragile, Weather Protection [1], \nLizard Scale
-    Doublet | 1 | 1 | 1 | 20c | Common | Chameleonic, Fragile, \nChitin Weave Robe
-    | 1 | 1 | 1 | 20c | Common | Spiky, Conspicuous, \nChitin Meal Plate | 2 | 2
-    | 3 | 50c | Uncommon | Chafing, Spiky, \nFur and Rawhide Plate | 2 | 2 | 3 |
-    50c | Uncommon | Conspicuous, Weather Protection [1], \nBeast Scale Armour |
-    2 | 2 | 3 | 50c | Uncommon | Fearsome, Chafing, \nBone Plate Cuirass | 2 | 2
-    | 3 | 50c | Uncommon | Constricting, Spiky, \nScale Mail | 2 | 3 | 3 | 100c |
-    Uncommon | Constricting, Resist [Pierce], \nChainmail | 2 | 3 | 3 | 100c | Uncommon
-    | Fragile, Resist [Slash], \nCuirass | 3 | 2 | 3 | 100c | Uncommon | \nSplint
-    Mail | 3 | 3 | 5 | 200c | Rare | Resist [Pierce], Fragile, \nPlate Mail | 3 |
-    3 | 5 | 200c | Rare | Resist [Slash], Constricting, \nGothic Mail | 4 | 4 | 5
-    | 500c | Rare | Resist [Pierce & Slash], Constricting, \n\n\n/\n\n\n\n#### Gear\n\nCharacters
-    can wear gear items in order to bolster their carrying capacity or gain different
-    effects. Every gear item occupies a \u2018slot\u2019 on the character\u2019s
-    body and a character can only ever benefit from one item on any given slot.\n\nName
-    | Slot | CAP | ENC | Cost | Rarity | Traits \n-- | --\nClimbing Claws | Boots
-    & Gloves | 0 | 0 | 5c | Common | Movement Boost [Climbing], \nQuiver | 1 Shoulder
-    | 1 | 0 | 5c | Common | Container [Arrows], Quick Draw, \nSheath | Belt | 1 |
-    0 | 5c | Common | Container [Close Combat Weapon], Quick Draw, \nForager\u2019s
-    Satchel | 1 Shoulder | 2 | 0 | 10c | Common | Container [Rations], Dry Storage,
-    Food Storage, \nSatchel | 1 Shoulder | 2 | 0 | 10c | Common | Dry Storage, \nStorm
-    Cloak | Neck | 0 | 1 | 10c | Common | Weather Protection [1 Hour], \nBackpack
-    | Back | 3 | 0 | 50c | Common | Dry Storage, \nBandolier | Chest | 2 | 0 | 10c
+    | ARM | DUR | ENC | Cost | Rarity | Traits \n-- | --\nPadded Vest | 1 | 0 | 5
+    | 10c | Common | \nWoven Bone Wyrm Sash | 1 | 0 | 1 | 10c | Common | Weather
+    Protection [1], Constricting, \nHide Armour | 1 | 1 | 5 | 20c | Common | \nLeather
+    Armour | 1 | 1 | 5 | 20c | Common | Fragile, Resist [Slash], \nFur Hide Coat
+    | 1 | 1 | 5 | 20c | Common | Fragile, Weather Protection [1], \nLizard Scale
+    Doublet | 1 | 1 | 5 | 20c | Common | Chameleonic, Fragile, \nChitin Weave Robe
+    | 1 | 1 | 5 | 20c | Common | Spiky, Conspicuous, \nChitin Meal Plate | 2 | 2
+    | 15 | 50c | Uncommon | Chafing, Spiky, \nFur and Rawhide Plate | 2 | 2 | 15
+    | 50c | Uncommon | Conspicuous, Weather Protection [1], \nBeast Scale Armour
+    | 2 | 2 | 15 | 50c | Uncommon | Fearsome, Chafing, \nBone Plate Cuirass | 2 |
+    2 | 15 | 50c | Uncommon | Constricting, Spiky, \nScale Mail | 2 | 3 | 15 | 100c
+    | Uncommon | Constricting, Resist [Pierce], \nChainmail | 2 | 3 | 15 | 100c |
+    Uncommon | Fragile, Resist [Slash], \nCuirass | 3 | 2 | 15 | 100c | Uncommon
+    | \nSplint Mail | 3 | 3 | 25 | 200c | Rare | Resist [Pierce], Fragile, \nPlate
+    Mail | 3 | 3 | 25 | 200c | Rare | Resist [Slash], Constricting, \nGothic Mail
+    | 4 | 4 | 25 | 500c | Rare | Resist [Pierce & Slash], Constricting, \n\n\n/\n\n\n\n####
+    Gear\n\nCharacters can wear gear items in order to bolster their carrying capacity
+    or gain different effects. Every gear item occupies a \u2018slot\u2019 on the
+    character\u2019s body and a character can only ever benefit from one item on
+    any given slot.\n\nName | Slot | CAP | ENC | Cost | Rarity | Traits \n-- | --\nClimbing
+    Claws | Boots & Gloves | 0 | 1 | 5c | Common | Movement Boost [Climbing], \nQuiver
+    | 1 Shoulder | 1 | 1 | 5c | Common | Container [Arrows], Quick Draw, \nSheath
+    | Belt | 1 | 1 | 5c | Common | Container [Close Combat Weapon], Quick Draw, \nForager\u2019s
+    Satchel | 1 Shoulder | 2 | 1 | 10c | Common | Container [Rations], Dry Storage,
+    Food Storage, \nSatchel | 1 Shoulder | 2 | 1 | 10c | Common | Dry Storage, \nStorm
+    Cloak | Neck | 0 | 5 | 10c | Common | Weather Protection [1 Hour], \nBackpack
+    | Back | 3 | 1 | 50c | Common | Dry Storage, \nBandolier | Chest | 2 | 1 | 10c
     | Uncommon | Container [Cartridges], Quick Draw, \nSwimming Gear | Boots & Gloves
-    | 0 | 0 | 10c | Uncommon | Movement Boost [Swimming], \nFur Cloak | Neck | 0
-    | 1 | 50c | Uncommon | Weather Protection [2 Hours], \n\n\n=\n\n\n\n#### Consumables\n\nConsumable
+    | 0 | 1 | 10c | Uncommon | Movement Boost [Swimming], \nFur Cloak | Neck | 0
+    | 5 | 50c | Uncommon | Weather Protection [2 Hours], \n\n\n=\n\n\n\n#### Consumables\n\nConsumable
     items offer short temporary boosts, or useful cures from a number of ailments.
     Because a lot of alchemical solutions tend to be dangerous if taken without moderation,
     some items increase toxicity in a character\u2019s body.\n\n- **Toxicity -**
@@ -6325,30 +6363,30 @@ MonoBehaviour:
     or greater than the character\u2019s vigour, the character falls unconscious
     until the toxicity value is reduced. A character that receives a full rest reduces
     their toxicity by 1.\n\n\nName | Toxicity | ENC | Cost | Rarity | Traits \n--
-    | --\nAntibiotic Infusion | 1 | 1 | 5c | Uncommon | Batch [5], \nTravelling Ration
-    | 0 | 1 | 1c | Common | Meal, Batch [5], \nDeprivation Toxin Coating | 0 | 1
+    | --\nAntibiotic Infusion | 1 | 5 | 5c | Uncommon | Batch [5], \nTravelling Ration
+    | 0 | 5 | 1c | Common | Meal, Batch [5], \nDeprivation Toxin Coating | 0 | 5
     | 20c | Common | Coating, Deprivation [5], Batch [5], \nEnervation Toxin Coating
-    | 0 | 1 | 20c | Common | Coating, Enervation [5], Batch [5], \nParalysis Toxin
-    Coating | 0 | 1 | 20c | Common | Coating, Paralysis [5], Batch [5], \nCleansing
-    Salve | 1 | 1 | 20c | Common | Cleansign [4], Batch [5], \nCoagulation Salve
-    | 1 | 1 | 20c | Common | Coagulation [4], Batch [5], \nFortification Salve |
-    1 | 1 | 20c | Common | Fortification [4], Batch [5], \nPurification Salve | 1
-    | 1 | 20c | Common | Purification [4], Batch [5], \nHearty Meal | 0 | 1 | 20c
-    | Uncommon | Meal, \nSoothing Meal | 0 | 1 | 20c | Uncommon | Meal, \nHealthy
-    Meal | 0 | 1 | 20c | Uncommon | Meal, \nSatisfying Meal | 0 | 1 | 20c | Uncommon
-    | Meal, \nElixir of Alertness | 2 | 1 | 50c | Uncommon | Alertness [3], Batch
-    [5], \nElixir of Awareness | 2 | 1 | 50c | Uncommon | Awareness [3], Batch [5],
-    \nElixir of Endurance | 2 | 1 | 50c | Uncommon | Endurance [3], Batch [5], \nElixir
-    of Haste | 2 | 1 | 50c | Uncommon | Haste [3], Batch [5], \nElixir of Might |
-    2 | 1 | 50c | Uncommon | Might [3], Batch [5], \nElixir of Speed | 2 | 1 | 50c
-    | Uncommon | Speed [3], Batch [5], \nFire Retardant Coating | 0 | 1 | 50c | Uncommon
-    | Fire Retardant, Batch [5], \nAnti-Freeze Coating | 0 | 1 | 50c | Uncommon |
-    Anti-Freeze, Batch [5], \nGrounding Coating | 0 | 1 | 50c | Uncommon | Grounding,
-    Batch [5], \nLubricant Coating | 0 | 1 | 50c | Uncommon | Lubricant, Batch [5],
-    \nAlkalene Coating | 0 | 1 | 50c | Uncommon | Alkalene, Batch [5], \nReinvigoration
-    Elixir | 2 | 1 | 50c | Uncommon | Reinvigoration, Batch [5], \nRegeneration Elixir
-    | 3 | 1 | 100c | Rare | Regeneration, Batch [5], \nRejuvenation Elixir | 3 |
-    1 | 100c | Rare | Rejuvenation, Batch [5], \nRevitalization Elixir | 3 | 1 |
+    | 0 | 5 | 20c | Common | Coating, Enervation [5], Batch [5], \nParalysis Toxin
+    Coating | 0 | 5 | 20c | Common | Coating, Paralysis [5], Batch [5], \nCleansing
+    Salve | 1 | 5 | 20c | Common | Cleansign [4], Batch [5], \nCoagulation Salve
+    | 1 | 5 | 20c | Common | Coagulation [4], Batch [5], \nFortification Salve |
+    1 | 5 | 20c | Common | Fortification [4], Batch [5], \nPurification Salve | 1
+    | 5 | 20c | Common | Purification [4], Batch [5], \nHearty Meal | 0 | 5 | 20c
+    | Uncommon | Meal, \nSoothing Meal | 0 | 5 | 20c | Uncommon | Meal, \nHealthy
+    Meal | 0 | 5 | 20c | Uncommon | Meal, \nSatisfying Meal | 0 | 5 | 20c | Uncommon
+    | Meal, \nElixir of Alertness | 2 | 5 | 50c | Uncommon | Alertness [3], Batch
+    [5], \nElixir of Awareness | 2 | 5 | 50c | Uncommon | Awareness [3], Batch [5],
+    \nElixir of Endurance | 2 | 5 | 50c | Uncommon | Endurance [3], Batch [5], \nElixir
+    of Haste | 2 | 5 | 50c | Uncommon | Haste [3], Batch [5], \nElixir of Might |
+    2 | 5 | 50c | Uncommon | Might [3], Batch [5], \nElixir of Speed | 2 | 5 | 50c
+    | Uncommon | Speed [3], Batch [5], \nFire Retardant Coating | 0 | 5 | 50c | Uncommon
+    | Fire Retardant, Batch [5], \nAnti-Freeze Coating | 0 | 5 | 50c | Uncommon |
+    Anti-Freeze, Batch [5], \nGrounding Coating | 0 | 5 | 50c | Uncommon | Grounding,
+    Batch [5], \nLubricant Coating | 0 | 5 | 50c | Uncommon | Lubricant, Batch [5],
+    \nAlkalene Coating | 0 | 5 | 50c | Uncommon | Alkalene, Batch [5], \nReinvigoration
+    Elixir | 2 | 5 | 50c | Uncommon | Reinvigoration, Batch [5], \nRegeneration Elixir
+    | 3 | 5 | 100c | Rare | Regeneration, Batch [5], \nRejuvenation Elixir | 3 |
+    5 | 100c | Rare | Rejuvenation, Batch [5], \nRevitalization Elixir | 3 | 5 |
     100c | Rare | Revitalization, Batch [5], \n\n\n=\n\n\n\n### Hearty Meal\n\nA
     filling meal rich in substance and flavour, made with choice ingredients and
     a helping of the chef's love. A character that consumes this meal will double
@@ -10835,8 +10873,8 @@ MonoBehaviour:
       - title: 'Vampirism [1 Focus]'
         content: 'Until the start of your next turn every wound that you inflict
           on enemy living or undead creatures can be converted immediately into one
-          of the following: [/n]Reduce 5 points of stress, infection, blood loss,
-          poison or disease [/n]Restore 1 wound [/n]Restore 1 Stamina '
+          of the following: [\n]- Reduce 5 points of stress, infection, blood loss,
+          poison or disease [\n]- Restore 1 wound [\n]- Restore 1 Stamina '
       boxes: []
       items: []
     - title: Cleric
@@ -10968,8 +11006,8 @@ MonoBehaviour:
         content: 'Gain one of the following: [\n]**Wings -** Gain the ability to
           fly. [\n]**Fangs & Claws -** Gain +1 damage on unarmed close combat attack.
           [\n]**Thick Hide -** Gain +1 Soak. [\n]**Enhanced Senses -** Gain +2 Perception
-          Score. [\n]**Small size -** Gain +1 defence. [\n]**Large size -** Gain
-          +1 maximum wound. [\n]**Camouflage -** Gain +1 stealth.'
+          Score. [\n]**Instinct -** Gain +1 defence. [\n]**Grit -** Gain +1 maximum
+          wound. [\n]**Camouflage -** Gain +1 stealth.'
       - title: 'Animal Form [1AP]'
         content: 'Gain the benefits of up to three different beast aspects until
           the start of your next turn.[\n]'
@@ -11401,9 +11439,9 @@ MonoBehaviour:
       20m for each blood shot. The same enemy can be targeted with more than one
       bloodshot. Each bloodshot attack deals +1 damage.\n\n#### Vampirism [1 Focus]\nUntil
       the start of your next turn every wound that you inflict on enemy living or
-      undead creatures can be converted immediately into one of the following: [/n]Reduce
-      5 points of stress, infection, blood loss, poison or disease [/n]Restore 1
-      wound [/n]Restore 1 Stamina \n\n\n\n=\n\n\n\n# Cleric\n\n-\n\nIn the darkest
+      undead creatures can be converted immediately into one of the following: \n-
+      Reduce 5 points of stress, infection, blood loss, poison or disease \n- Restore
+      1 wound \n- Restore 1 Stamina \n\n\n\n=\n\n\n\n# Cleric\n\n-\n\nIn the darkest
       of times those who had the gift of the voice have always been powerful leaders
       in their communities. Religion and divine magic have prehistoric origin as
       every society have had shamans, mystics, diviners and clerics of some sort.
@@ -11469,30 +11507,30 @@ MonoBehaviour:
       guardian.\n\n\n#### Beast Aspect [3 Initiative]\nGain one of the following:
       \n**Wings -** Gain the ability to fly. \n**Fangs & Claws -** Gain +1 damage
       on unarmed close combat attack. \n**Thick Hide -** Gain +1 Soak. \n**Enhanced
-      Senses -** Gain +2 Perception Score. \n**Small size -** Gain +1 defence. \n**Large
-      size -** Gain +1 maximum wound. \n**Camouflage -** Gain +1 stealth.\n\n####
-      Animal Form [1AP]\nGain the benefits of up to three different beast aspects
-      until the start of your next turn.\n\n\n#### Geomancy [1AP]\nAlter an area
-      of terrain of 4mx4m (or any combination of 16 1mx1m squares). The terrain is
-      turned into mud, sand, solid rock, shallow water or ice until the start of
-      your next turn when it goes back to normal. Characters standing in or moving
-      through this terrain are hindered and it counts as rough terrain.\n\n#### Master
-      of the Wilds [1 Focus]\nUntil the end of the encounter you or another allied
-      creature within 10m of you benefit from the effects of animal form. In addition
-      to the normal beast aspects, you can now choose from the following list as
-      well. \n**Snapjaw -** Close combat attacks benefit from pierce, maim and slash.
-      \n**Venom -** Wounded targets that survive that attack are poisoned. Poisoned
-      characters are hindered when performing dice rolls. \n**Regenerate -** Spend
-      a main action to restore 1 lost wound point.\n\n#### Terraforming [1 Focus]\nPerform
-      a geomancy effect that is permanent.\n\n\n\n=\n\n\n\n# Elementalist\n\n-\n\nThe
-      first flame is legendarily attributed to have been created by Galstaff of the
-      Meridian shamans. While actual evidence is hard to come by from such ancient
-      times it is clear that elemental magic was originally known by its first name,
-      i.e. \u201CMagic\u201D. The ways of manipulating the elements have followed
-      civilization from the very start and are greatly attributed to be the pillar
-      of power that allowed the empire to form.\n\n\n#### Levitate [3 Initiative]\nDuring
-      this turn you may fly at a distance of 1m per 2 movement points spent.\n\n####
-      Blast [1AP]\nMake a spellcasting attack against a target\u2019s Willpower within
+      Senses -** Gain +2 Perception Score. \n**Instinct -** Gain +1 defence. \n**Grit
+      -** Gain +1 maximum wound. \n**Camouflage -** Gain +1 stealth.\n\n#### Animal
+      Form [1AP]\nGain the benefits of up to three different beast aspects until
+      the start of your next turn.\n\n\n#### Geomancy [1AP]\nAlter an area of terrain
+      of 4mx4m (or any combination of 16 1mx1m squares). The terrain is turned into
+      mud, sand, solid rock, shallow water or ice until the start of your next turn
+      when it goes back to normal. Characters standing in or moving through this
+      terrain are hindered and it counts as rough terrain.\n\n#### Master of the
+      Wilds [1 Focus]\nUntil the end of the encounter you or another allied creature
+      within 10m of you benefit from the effects of animal form. In addition to the
+      normal beast aspects, you can now choose from the following list as well. \n**Snapjaw
+      -** Close combat attacks benefit from pierce, maim and slash. \n**Venom -**
+      Wounded targets that survive that attack are poisoned. Poisoned characters
+      are hindered when performing dice rolls. \n**Regenerate -** Spend a main action
+      to restore 1 lost wound point.\n\n#### Terraforming [1 Focus]\nPerform a geomancy
+      effect that is permanent.\n\n\n\n=\n\n\n\n# Elementalist\n\n-\n\nThe first
+      flame is legendarily attributed to have been created by Galstaff of the Meridian
+      shamans. While actual evidence is hard to come by from such ancient times it
+      is clear that elemental magic was originally known by its first name, i.e.
+      \u201CMagic\u201D. The ways of manipulating the elements have followed civilization
+      from the very start and are greatly attributed to be the pillar of power that
+      allowed the empire to form.\n\n\n#### Levitate [3 Initiative]\nDuring this
+      turn you may fly at a distance of 1m per 2 movement points spent.\n\n#### Blast
+      [1AP]\nMake a spellcasting attack against a target\u2019s Willpower within
       20m that deals +2 damage. An attack that hits, inflicts an amount of fire,
       cold or shock tokens on the target equal to the dice roll\u2019s margin. If
       the amount of tokens is equal to or greater than the target\u2019s soak, they
@@ -11851,7 +11889,7 @@ MonoBehaviour:
       content:
       - "Characters are capable of carrying an amount of equipment in encumbrance
         points (ENC) based on their Conditioning skill. The total carrying capacity
-        is equal to 5 + conditioning skill modifier x3. If a character\u2019s total
+        is equal to 25 + conditioning skill modifier x15. If a character\u2019s total
         carried weight is less than the carrying capacity the character is unencumbered
         and may move around as normal. If a character\u2019s total carried weight
         is equal to or greater than their carried weight they are considered to be
@@ -11867,8 +11905,8 @@ MonoBehaviour:
       in lethality than them. This is why equipment is the one and only lifeline
       for any survivor.\n/\n\n\n## Carrying Capacity\n\nCharacters are capable of
       carrying an amount of equipment in encumbrance points (ENC) based on their
-      Conditioning skill. The total carrying capacity is equal to 5 + conditioning
-      skill modifier x3. If a character\u2019s total carried weight is less than
+      Conditioning skill. The total carrying capacity is equal to 25 + conditioning
+      skill modifier x15. If a character\u2019s total carried weight is less than
       the carrying capacity the character is unencumbered and may move around as
       normal. If a character\u2019s total carried weight is equal to or greater than
       their carried weight they are considered to be encumbered and thus become immobile
@@ -13173,8 +13211,8 @@ MonoBehaviour:
     blood shot. The same enemy can be targeted with more than one bloodshot. Each
     bloodshot attack deals +1 damage.\n\n#### Vampirism [1 Focus]\nUntil the start
     of your next turn every wound that you inflict on enemy living or undead creatures
-    can be converted immediately into one of the following: [/n]Reduce 5 points of
-    stress, infection, blood loss, poison or disease [/n]Restore 1 wound [/n]Restore
+    can be converted immediately into one of the following: \n- Reduce 5 points of
+    stress, infection, blood loss, poison or disease \n- Restore 1 wound \n- Restore
     1 Stamina \n\n\n\n=\n\n\n\n# Cleric\n\n-\n\nIn the darkest of times those who
     had the gift of the voice have always been powerful leaders in their communities.
     Religion and divine magic have prehistoric origin as every society have had shamans,
@@ -13240,12 +13278,12 @@ MonoBehaviour:
     Beast Aspect [3 Initiative]\nGain one of the following: \n**Wings -** Gain the
     ability to fly. \n**Fangs & Claws -** Gain +1 damage on unarmed close combat
     attack. \n**Thick Hide -** Gain +1 Soak. \n**Enhanced Senses -** Gain +2 Perception
-    Score. \n**Small size -** Gain +1 defence. \n**Large size -** Gain +1 maximum
-    wound. \n**Camouflage -** Gain +1 stealth.\n\n#### Animal Form [1AP]\nGain the
-    benefits of up to three different beast aspects until the start of your next
-    turn.\n\n\n#### Geomancy [1AP]\nAlter an area of terrain of 4mx4m (or any combination
-    of 16 1mx1m squares). The terrain is turned into mud, sand, solid rock, shallow
-    water or ice until the start of your next turn when it goes back to normal. Characters
+    Score. \n**Instinct -** Gain +1 defence. \n**Grit -** Gain +1 maximum wound.
+    \n**Camouflage -** Gain +1 stealth.\n\n#### Animal Form [1AP]\nGain the benefits
+    of up to three different beast aspects until the start of your next turn.\n\n\n####
+    Geomancy [1AP]\nAlter an area of terrain of 4mx4m (or any combination of 16 1mx1m
+    squares). The terrain is turned into mud, sand, solid rock, shallow water or
+    ice until the start of your next turn when it goes back to normal. Characters
     standing in or moving through this terrain are hindered and it counts as rough
     terrain.\n\n#### Master of the Wilds [1 Focus]\nUntil the end of the encounter
     you or another allied creature within 10m of you benefit from the effects of
@@ -13467,55 +13505,55 @@ MonoBehaviour:
     them. This is why equipment is the one and only lifeline for any survivor.\n/\n\n\n##
     Carrying Capacity\n\nCharacters are capable of carrying an amount of equipment
     in encumbrance points (ENC) based on their Conditioning skill. The total carrying
-    capacity is equal to 5 + conditioning skill modifier x3. If a character\u2019s
+    capacity is equal to 25 + conditioning skill modifier x15. If a character\u2019s
     total carried weight is less than the carrying capacity the character is unencumbered
     and may move around as normal. If a character\u2019s total carried weight is
     equal to or greater than their carried weight they are considered to be encumbered
     and thus become immobile and cannot receive movement points.\n\n\n\n#### Close
     Combat Weapons\n\nName | RNG | DMG | ENC | Cost | Rarity | Traits \n-- | --\nClub
-    | 1m | +1 | 1 | 1c | Common | Push, \nDagger | 1m | +0 | 1 | 1c | Common | Quick,
-    \nShield, Wooden | 1m | +0 | 1 | 1c | Common | Parry, \nThrowing Knife | 1m |
-    +0 | 1 | 1c | Common | Throw [10m], Batch [5], \nHatchet | 1m | +1 | 1 | 3c |
-    Common | Maim, \nHunting Net | 2m | +0 | 1 | 3c | Common | Harmless, Throw [5m],
-    Tangle, \nPike | 2m | +1 | 1 | 3c | Common | Pierce, Throw [20m], \nShield, Metal
-    | 1m | +0 | 1 | 3c | Common | Parry, Durable [1], \nShortsword | 1m | +1 | 1
-    | 3c | Common | Parry, \nJavelin | 2m | +0 | 2 | 5c | Common | Pierce, Throw
-    [20m], Batch [5], \nTower Shield, Wooden | 1m | +0 | 1 | 5c | Common | Parry,
-    Cover, Durable [1], \nMace | 1m | +2 | 1 | 3c | Uncommon | Slam, \nLongsword
-    | 1m | +2 | 1 | 5c | Uncommon | Slash, Parry, \nMaul | 1m | +3 | 1 | 5c | Uncommon
-    | Push, Slam, Slow, \nMorningstar | 1m | +1 | 1 | 5c | Uncommon | Slam, Pierce,
-    \nSpear | 2m | +1 | 1 | 5c | Uncommon | Pierce, Two Handed, \nWaraxe | 1m | +1
-    | 1 | 5c | Uncommon | Sweep, Maim, \nTower Shield, Metal | 1m | +0 | 2 | 10c
-    | Uncommon | Parry, Cover, Durable [2], \nBattleaxe | 2m | +2 | 2 | 10c | Rare
-    | Maim, Sweep, Two Handed, Slow, \nFlail | 1m | +1 | 1 | 10c | Rare | Exotic,
-    Fluid, Pierce, Slow, \nGlaive | 2m | +3 | 2 | 10c | Rare | Slash, Sweep, Two
-    Handed, Slow, \nGreatsword | 2m | +3 | 2 | 10c | Rare | Slash, Parry, Sweep,
-    Two Handed, Slow, \nHalberd | 2m | +3 | 2 | 10c | Rare | Pierce, Sweep, Slam,
-    Two Handed, Slow, \nWarhammer | 2m | +3 | 2 | 10c | Rare | Push, Slam, Sweep,
+    | 1m | +1 | 5 | 1c | Common | Push, \nDagger | 1m | +0 | 5 | 1c | Common | Quick,
+    \nShield, Wooden | 1m | +0 | 5 | 1c | Common | Parry, \nThrowing Knife | 1m |
+    +0 | 5 | 1c | Common | Throw [10m], Batch [5], \nHatchet | 1m | +1 | 5 | 3c |
+    Common | Maim, \nHunting Net | 2m | +0 | 5 | 3c | Common | Harmless, Throw [5m],
+    Tangle, \nPike | 2m | +1 | 5 | 3c | Common | Pierce, Throw [20m], \nShield, Metal
+    | 1m | +0 | 5 | 3c | Common | Parry, Durable [1], \nShortsword | 1m | +1 | 5
+    | 3c | Common | Parry, \nJavelin | 2m | +0 | 10 | 5c | Common | Pierce, Throw
+    [20m], Batch [5], \nTower Shield, Wooden | 1m | +0 | 5 | 5c | Common | Parry,
+    Cover, Durable [1], \nMace | 1m | +2 | 5 | 3c | Uncommon | Slam, \nLongsword
+    | 1m | +2 | 5 | 5c | Uncommon | Slash, Parry, \nMaul | 1m | +3 | 5 | 5c | Uncommon
+    | Push, Slam, Slow, \nMorningstar | 1m | +1 | 5 | 5c | Uncommon | Slam, Pierce,
+    \nSpear | 2m | +1 | 5 | 5c | Uncommon | Pierce, Two Handed, \nWaraxe | 1m | +1
+    | 5 | 5c | Uncommon | Sweep, Maim, \nTower Shield, Metal | 1m | +0 | 10 | 10c
+    | Uncommon | Parry, Cover, Durable [2], \nBattleaxe | 2m | +2 | 10 | 10c | Rare
+    | Maim, Sweep, Two Handed, Slow, \nFlail | 1m | +1 | 5 | 10c | Rare | Exotic,
+    Fluid, Pierce, Slow, \nGlaive | 2m | +3 | 10 | 10c | Rare | Slash, Sweep, Two
+    Handed, Slow, \nGreatsword | 2m | +3 | 10 | 10c | Rare | Slash, Parry, Sweep,
+    Two Handed, Slow, \nHalberd | 2m | +3 | 10 | 10c | Rare | Pierce, Sweep, Slam,
+    Two Handed, Slow, \nWarhammer | 2m | +3 | 10 | 10c | Rare | Push, Slam, Sweep,
     Two Handed, Slow, \n\n\n\n\n#### Ranged Combat Weapons\n\nName | RNG | DMG |
-    ENC | Cost | Rarity | Traits \n-- | --\nSling | 20m | +0 | 1 | 1c | Common |
-    Slam, Reload [Pebble], \nHand Crossbow | 20m | +0 | 1 | 3c | Uncommon | Quick,
-    Reload [Arrow], \nCrossbow | 50m | +1 | 1 | 5c | Uncommon | Slow Reload [Arrow],
-    Two Handed, \nShortbow | 100m | +1 | 1 | 5c | Uncommon | Pin, Reload [Arrow],
-    Two Handed, \nPistol | 50m | +2 | 1 | 10c | Uncommon | Slow Reload [Cartridge],
-    \nArbalest | 50m | +2 | 2 | 10c | Rare | Maim, Slow Reload [Arrow], Two Handed,
-    \nLongbow | 200m | +2 | 1 | 10c | Rare | Pin, Reload [Arrow], Two Handed, \nBlunderbuss
-    | 20m | +3 | 2 | 15c | Rare | Slam, Slow Reload [Cartridge], Two Handed, \nRifle
-    | 100m | +2 | 2 | 50c | Rare | Maim, Slow Reload [Cartridge], Two Handed, \n\n\n=\n\n\n\n####
+    ENC | Cost | Rarity | Traits \n-- | --\nSling | 20m | +0 | 5 | 1c | Common |
+    Slam, Reload [Pebble], \nHand Crossbow | 20m | +0 | 5 | 3c | Uncommon | Quick,
+    Reload [Arrow], \nCrossbow | 50m | +1 | 5 | 5c | Uncommon | Slow Reload [Arrow],
+    Two Handed, \nShortbow | 100m | +1 | 5 | 5c | Uncommon | Pin, Reload [Arrow],
+    Two Handed, \nPistol | 50m | +2 | 5 | 10c | Uncommon | Slow Reload [Cartridge],
+    \nArbalest | 50m | +2 | 10 | 10c | Rare | Maim, Slow Reload [Arrow], Two Handed,
+    \nLongbow | 200m | +2 | 5 | 10c | Rare | Pin, Reload [Arrow], Two Handed, \nBlunderbuss
+    | 20m | +3 | 10 | 15c | Rare | Slam, Slow Reload [Cartridge], Two Handed, \nRifle
+    | 100m | +2 | 10 | 50c | Rare | Maim, Slow Reload [Cartridge], Two Handed, \n\n\n=\n\n\n\n####
     Ammunition\n\nName | ENC | Cost | Rarity | Traits \n-- | --\nBall Cartridge |
-    1 | 1c | Common | Batch [10], \nWooden Arrows | 1 | 1c | Common | Batch [10],
-    \nBlunthead Arrow | 1 | 5c | Common | Batch [10], Small Game, Recover 2, Short
-    Range, \nBroadhead Arrows | 1 | 5c | Common | Batch [10], Slash, \nBullethead
-    Arrows | 1 | 5c | Common | Batch [10], Pierce, \nForkhead Arrows | 1 | 5c | Common
-    | Batch [10], Small Game, Recover 4, Short Range, \nJacketed Cartridge | 1 |
-    5c | Uncommon | Batch [10], Pierce, \nDovetail Arrow | 1 | 10c | Uncommon | Batch
-    [10], Long Range, Perce, \nBuck Shot Cartridge | 1 | 10c | Rare | Batch [10],
-    Short Range, Pepperbox, \nDum Dum Cartridge | 1 | 10c | Rare | Batch [10], +1
-    DMG, \nIncendiary Arrow | 1 | 10c | Rare | Batch [10], Fire 3, \n\n\n\n\n####
+    5 | 1c | Common | Batch [10], \nWooden Arrows | 5 | 1c | Common | Batch [10],
+    \nBlunthead Arrow | 5 | 5c | Common | Batch [10], Small Game, Recover 2, Short
+    Range, \nBroadhead Arrows | 5 | 5c | Common | Batch [10], Slash, \nBullethead
+    Arrows | 5 | 5c | Common | Batch [10], Pierce, \nForkhead Arrows | 5 | 5c | Common
+    | Batch [10], Small Game, Recover 4, Short Range, \nJacketed Cartridge | 5 |
+    5c | Uncommon | Batch [10], Pierce, \nDovetail Arrow | 5 | 10c | Uncommon | Batch
+    [10], Long Range, Perce, \nBuck Shot Cartridge | 5 | 10c | Rare | Batch [10],
+    Short Range, Pepperbox, \nDum Dum Cartridge | 5 | 10c | Rare | Batch [10], +1
+    DMG, \nIncendiary Arrow | 5 | 10c | Rare | Batch [10], Fire 3, \n\n\n\n\n####
     Tools\n\nName | ENC | Cost | Rarity | Traits \n-- | --\nGrapple Hook & Rope |
-    1 | 10c | Common | , \nProfessional Tool Kit | 1 | 10c | Common | , \nBig Game
-    Trap | 1 | 50c | Uncommon | , \nComponent Canister | 1 | 50c | Uncommon | , \nGrandmaster
-    Tool Kit | 1 | 50c | Uncommon | \nPressure Cooker | 1 | 50c | Rare | , \n\n\n=\n\n\n\n###
+    5 | 10c | Common | , \nProfessional Tool Kit | 5 | 10c | Common | , \nBig Game
+    Trap | 5 | 50c | Uncommon | , \nComponent Canister | 5 | 50c | Uncommon | , \nGrandmaster
+    Tool Kit | 5 | 50c | Uncommon | \nPressure Cooker | 5 | 50c | Rare | , \n\n\n=\n\n\n\n###
     Professional Tool Kit\n\nEvery profession that needs handiwork has a specific
     set of tools of the trade without which performing said trade would be impossible.
     Characters that wish to craft, repair, maintain, upgrade or scavenge items needs
@@ -13579,36 +13617,36 @@ MonoBehaviour:
     instead of on their body. Every armour has a Durability (DUR) value which determines
     how many wounds worth of damage the armour can take for their wearer. DUR is
     restored through a repair action, with one repair action restoring one DUR.\n\n\n\nName
-    | ARM | DUR | ENC | Cost | Rarity | Traits \n-- | --\nPadded Vest | 1 | 0 | 1
-    | 10c | Common | \nWoven Bone Wyrm Sash | 1 | 0 | 0 | 10c | Common | Weather
-    Protection [1], Constricting, \nHide Armour | 1 | 1 | 1 | 20c | Common | \nLeather
-    Armour | 1 | 1 | 1 | 20c | Common | Fragile, Resist [Slash], \nFur Hide Coat
-    | 1 | 1 | 1 | 20c | Common | Fragile, Weather Protection [1], \nLizard Scale
-    Doublet | 1 | 1 | 1 | 20c | Common | Chameleonic, Fragile, \nChitin Weave Robe
-    | 1 | 1 | 1 | 20c | Common | Spiky, Conspicuous, \nChitin Meal Plate | 2 | 2
-    | 3 | 50c | Uncommon | Chafing, Spiky, \nFur and Rawhide Plate | 2 | 2 | 3 |
-    50c | Uncommon | Conspicuous, Weather Protection [1], \nBeast Scale Armour |
-    2 | 2 | 3 | 50c | Uncommon | Fearsome, Chafing, \nBone Plate Cuirass | 2 | 2
-    | 3 | 50c | Uncommon | Constricting, Spiky, \nScale Mail | 2 | 3 | 3 | 100c |
-    Uncommon | Constricting, Resist [Pierce], \nChainmail | 2 | 3 | 3 | 100c | Uncommon
-    | Fragile, Resist [Slash], \nCuirass | 3 | 2 | 3 | 100c | Uncommon | \nSplint
-    Mail | 3 | 3 | 5 | 200c | Rare | Resist [Pierce], Fragile, \nPlate Mail | 3 |
-    3 | 5 | 200c | Rare | Resist [Slash], Constricting, \nGothic Mail | 4 | 4 | 5
-    | 500c | Rare | Resist [Pierce & Slash], Constricting, \n\n\n/\n\n\n\n#### Gear\n\nCharacters
-    can wear gear items in order to bolster their carrying capacity or gain different
-    effects. Every gear item occupies a \u2018slot\u2019 on the character\u2019s
-    body and a character can only ever benefit from one item on any given slot.\n\nName
-    | Slot | CAP | ENC | Cost | Rarity | Traits \n-- | --\nClimbing Claws | Boots
-    & Gloves | 0 | 0 | 5c | Common | Movement Boost [Climbing], \nQuiver | 1 Shoulder
-    | 1 | 0 | 5c | Common | Container [Arrows], Quick Draw, \nSheath | Belt | 1 |
-    0 | 5c | Common | Container [Close Combat Weapon], Quick Draw, \nForager\u2019s
-    Satchel | 1 Shoulder | 2 | 0 | 10c | Common | Container [Rations], Dry Storage,
-    Food Storage, \nSatchel | 1 Shoulder | 2 | 0 | 10c | Common | Dry Storage, \nStorm
-    Cloak | Neck | 0 | 1 | 10c | Common | Weather Protection [1 Hour], \nBackpack
-    | Back | 3 | 0 | 50c | Common | Dry Storage, \nBandolier | Chest | 2 | 0 | 10c
+    | ARM | DUR | ENC | Cost | Rarity | Traits \n-- | --\nPadded Vest | 1 | 0 | 5
+    | 10c | Common | \nWoven Bone Wyrm Sash | 1 | 0 | 1 | 10c | Common | Weather
+    Protection [1], Constricting, \nHide Armour | 1 | 1 | 5 | 20c | Common | \nLeather
+    Armour | 1 | 1 | 5 | 20c | Common | Fragile, Resist [Slash], \nFur Hide Coat
+    | 1 | 1 | 5 | 20c | Common | Fragile, Weather Protection [1], \nLizard Scale
+    Doublet | 1 | 1 | 5 | 20c | Common | Chameleonic, Fragile, \nChitin Weave Robe
+    | 1 | 1 | 5 | 20c | Common | Spiky, Conspicuous, \nChitin Meal Plate | 2 | 2
+    | 15 | 50c | Uncommon | Chafing, Spiky, \nFur and Rawhide Plate | 2 | 2 | 15
+    | 50c | Uncommon | Conspicuous, Weather Protection [1], \nBeast Scale Armour
+    | 2 | 2 | 15 | 50c | Uncommon | Fearsome, Chafing, \nBone Plate Cuirass | 2 |
+    2 | 15 | 50c | Uncommon | Constricting, Spiky, \nScale Mail | 2 | 3 | 15 | 100c
+    | Uncommon | Constricting, Resist [Pierce], \nChainmail | 2 | 3 | 15 | 100c |
+    Uncommon | Fragile, Resist [Slash], \nCuirass | 3 | 2 | 15 | 100c | Uncommon
+    | \nSplint Mail | 3 | 3 | 25 | 200c | Rare | Resist [Pierce], Fragile, \nPlate
+    Mail | 3 | 3 | 25 | 200c | Rare | Resist [Slash], Constricting, \nGothic Mail
+    | 4 | 4 | 25 | 500c | Rare | Resist [Pierce & Slash], Constricting, \n\n\n/\n\n\n\n####
+    Gear\n\nCharacters can wear gear items in order to bolster their carrying capacity
+    or gain different effects. Every gear item occupies a \u2018slot\u2019 on the
+    character\u2019s body and a character can only ever benefit from one item on
+    any given slot.\n\nName | Slot | CAP | ENC | Cost | Rarity | Traits \n-- | --\nClimbing
+    Claws | Boots & Gloves | 0 | 1 | 5c | Common | Movement Boost [Climbing], \nQuiver
+    | 1 Shoulder | 1 | 1 | 5c | Common | Container [Arrows], Quick Draw, \nSheath
+    | Belt | 1 | 1 | 5c | Common | Container [Close Combat Weapon], Quick Draw, \nForager\u2019s
+    Satchel | 1 Shoulder | 2 | 1 | 10c | Common | Container [Rations], Dry Storage,
+    Food Storage, \nSatchel | 1 Shoulder | 2 | 1 | 10c | Common | Dry Storage, \nStorm
+    Cloak | Neck | 0 | 5 | 10c | Common | Weather Protection [1 Hour], \nBackpack
+    | Back | 3 | 1 | 50c | Common | Dry Storage, \nBandolier | Chest | 2 | 1 | 10c
     | Uncommon | Container [Cartridges], Quick Draw, \nSwimming Gear | Boots & Gloves
-    | 0 | 0 | 10c | Uncommon | Movement Boost [Swimming], \nFur Cloak | Neck | 0
-    | 1 | 50c | Uncommon | Weather Protection [2 Hours], \n\n\n=\n\n\n\n#### Consumables\n\nConsumable
+    | 0 | 1 | 10c | Uncommon | Movement Boost [Swimming], \nFur Cloak | Neck | 0
+    | 5 | 50c | Uncommon | Weather Protection [2 Hours], \n\n\n=\n\n\n\n#### Consumables\n\nConsumable
     items offer short temporary boosts, or useful cures from a number of ailments.
     Because a lot of alchemical solutions tend to be dangerous if taken without moderation,
     some items increase toxicity in a character\u2019s body.\n\n- **Toxicity -**
@@ -13617,30 +13655,30 @@ MonoBehaviour:
     or greater than the character\u2019s vigour, the character falls unconscious
     until the toxicity value is reduced. A character that receives a full rest reduces
     their toxicity by 1.\n\n\nName | Toxicity | ENC | Cost | Rarity | Traits \n--
-    | --\nAntibiotic Infusion | 1 | 1 | 5c | Uncommon | Batch [5], \nTravelling Ration
-    | 0 | 1 | 1c | Common | Meal, Batch [5], \nDeprivation Toxin Coating | 0 | 1
+    | --\nAntibiotic Infusion | 1 | 5 | 5c | Uncommon | Batch [5], \nTravelling Ration
+    | 0 | 5 | 1c | Common | Meal, Batch [5], \nDeprivation Toxin Coating | 0 | 5
     | 20c | Common | Coating, Deprivation [5], Batch [5], \nEnervation Toxin Coating
-    | 0 | 1 | 20c | Common | Coating, Enervation [5], Batch [5], \nParalysis Toxin
-    Coating | 0 | 1 | 20c | Common | Coating, Paralysis [5], Batch [5], \nCleansing
-    Salve | 1 | 1 | 20c | Common | Cleansign [4], Batch [5], \nCoagulation Salve
-    | 1 | 1 | 20c | Common | Coagulation [4], Batch [5], \nFortification Salve |
-    1 | 1 | 20c | Common | Fortification [4], Batch [5], \nPurification Salve | 1
-    | 1 | 20c | Common | Purification [4], Batch [5], \nHearty Meal | 0 | 1 | 20c
-    | Uncommon | Meal, \nSoothing Meal | 0 | 1 | 20c | Uncommon | Meal, \nHealthy
-    Meal | 0 | 1 | 20c | Uncommon | Meal, \nSatisfying Meal | 0 | 1 | 20c | Uncommon
-    | Meal, \nElixir of Alertness | 2 | 1 | 50c | Uncommon | Alertness [3], Batch
-    [5], \nElixir of Awareness | 2 | 1 | 50c | Uncommon | Awareness [3], Batch [5],
-    \nElixir of Endurance | 2 | 1 | 50c | Uncommon | Endurance [3], Batch [5], \nElixir
-    of Haste | 2 | 1 | 50c | Uncommon | Haste [3], Batch [5], \nElixir of Might |
-    2 | 1 | 50c | Uncommon | Might [3], Batch [5], \nElixir of Speed | 2 | 1 | 50c
-    | Uncommon | Speed [3], Batch [5], \nFire Retardant Coating | 0 | 1 | 50c | Uncommon
-    | Fire Retardant, Batch [5], \nAnti-Freeze Coating | 0 | 1 | 50c | Uncommon |
-    Anti-Freeze, Batch [5], \nGrounding Coating | 0 | 1 | 50c | Uncommon | Grounding,
-    Batch [5], \nLubricant Coating | 0 | 1 | 50c | Uncommon | Lubricant, Batch [5],
-    \nAlkalene Coating | 0 | 1 | 50c | Uncommon | Alkalene, Batch [5], \nReinvigoration
-    Elixir | 2 | 1 | 50c | Uncommon | Reinvigoration, Batch [5], \nRegeneration Elixir
-    | 3 | 1 | 100c | Rare | Regeneration, Batch [5], \nRejuvenation Elixir | 3 |
-    1 | 100c | Rare | Rejuvenation, Batch [5], \nRevitalization Elixir | 3 | 1 |
+    | 0 | 5 | 20c | Common | Coating, Enervation [5], Batch [5], \nParalysis Toxin
+    Coating | 0 | 5 | 20c | Common | Coating, Paralysis [5], Batch [5], \nCleansing
+    Salve | 1 | 5 | 20c | Common | Cleansign [4], Batch [5], \nCoagulation Salve
+    | 1 | 5 | 20c | Common | Coagulation [4], Batch [5], \nFortification Salve |
+    1 | 5 | 20c | Common | Fortification [4], Batch [5], \nPurification Salve | 1
+    | 5 | 20c | Common | Purification [4], Batch [5], \nHearty Meal | 0 | 5 | 20c
+    | Uncommon | Meal, \nSoothing Meal | 0 | 5 | 20c | Uncommon | Meal, \nHealthy
+    Meal | 0 | 5 | 20c | Uncommon | Meal, \nSatisfying Meal | 0 | 5 | 20c | Uncommon
+    | Meal, \nElixir of Alertness | 2 | 5 | 50c | Uncommon | Alertness [3], Batch
+    [5], \nElixir of Awareness | 2 | 5 | 50c | Uncommon | Awareness [3], Batch [5],
+    \nElixir of Endurance | 2 | 5 | 50c | Uncommon | Endurance [3], Batch [5], \nElixir
+    of Haste | 2 | 5 | 50c | Uncommon | Haste [3], Batch [5], \nElixir of Might |
+    2 | 5 | 50c | Uncommon | Might [3], Batch [5], \nElixir of Speed | 2 | 5 | 50c
+    | Uncommon | Speed [3], Batch [5], \nFire Retardant Coating | 0 | 5 | 50c | Uncommon
+    | Fire Retardant, Batch [5], \nAnti-Freeze Coating | 0 | 5 | 50c | Uncommon |
+    Anti-Freeze, Batch [5], \nGrounding Coating | 0 | 5 | 50c | Uncommon | Grounding,
+    Batch [5], \nLubricant Coating | 0 | 5 | 50c | Uncommon | Lubricant, Batch [5],
+    \nAlkalene Coating | 0 | 5 | 50c | Uncommon | Alkalene, Batch [5], \nReinvigoration
+    Elixir | 2 | 5 | 50c | Uncommon | Reinvigoration, Batch [5], \nRegeneration Elixir
+    | 3 | 5 | 100c | Rare | Regeneration, Batch [5], \nRejuvenation Elixir | 3 |
+    5 | 100c | Rare | Rejuvenation, Batch [5], \nRevitalization Elixir | 3 | 5 |
     100c | Rare | Revitalization, Batch [5], \n\n\n=\n\n\n\n### Hearty Meal\n\nA
     filling meal rich in substance and flavour, made with choice ingredients and
     a helping of the chef's love. A character that consumes this meal will double
@@ -15321,43 +15359,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!84 &2103793847
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 4
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

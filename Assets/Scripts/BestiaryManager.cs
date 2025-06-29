@@ -195,7 +195,7 @@ public class BeastEntry
         return Mathf.FloorToInt((((defence + GetSoakValue()) * (GetWounds() + durability)) + (closeCombatAttackPoints * GetHighestAttackDamage())) / 10.0f) + 1;
     }
     private int GetDefenceValue() { return Mathf.Max(6 + closeCombat - GetSizeValue(), 0); }
-    private int GetCarryingCapacity() { return encumbrance + (conditioning * (2 + GetSizeValue())); }
+    private int GetCarryingCapacity() { return encumbrance + (conditioning * (10 + (GetSizeValue() * 5))); }
     public string UpdateOutput(List<AbilityEntry> fullAbilities)
     {
         var sizeValue = GetSizeValue();
@@ -255,6 +255,16 @@ public class BestiaryManager : MonoBehaviour
         GenerateCreatureList();
     }
 
+    [ContextMenu("UpdateENC")]
+    private void UpdateENC()
+    {
+        foreach (var beast in chapter.categories.SelectMany(category => category.beasts))
+        {
+            beast.encumbrance *= 5;
+        }
+    }
+    
+    
     private void GenerateCreatureList()
     {
         var creatures = new List<BeastEntry>();
