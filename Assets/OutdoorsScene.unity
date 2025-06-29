@@ -119,43 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!84 &44656378
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 4
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1 &157207112
 GameObject:
   m_ObjectHideFlags: 0
@@ -4030,7 +3993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c177a7438dfb51f48aeab1da29019bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  result: {fileID: 44656378}
+  result: {fileID: 2103793847}
   voronoiGenerator: {fileID: 7200000, guid: 420cfded7f159ea43b25defe86f25c71, type: 3}
   visualizer: {fileID: 2100000, guid: 1b44be87f565cb74da841b7046513d89, type: 2}
   parameters:
@@ -10811,7 +10774,7 @@ MonoBehaviour:
         as powerful barbarians joined the fray both against and on the side of the
         empire. Wherever there was war to be had, berserkers were sure to follow.
       - '[H4LIST]'
-      - =
+      - '|'
       options:
         titleFormat: 1
         contentFormat: 0
@@ -10845,7 +10808,7 @@ MonoBehaviour:
         and despised during imperial time, has survived and now that the whole world
         is out of order, the blood mages have found their niche.
       - '[H4LIST]'
-      - '|'
+      - =
       options:
         titleFormat: 1
         contentFormat: 0
@@ -10853,7 +10816,7 @@ MonoBehaviour:
       - title: 'Enhance [3 Initiative]'
         content: 'Gain a bonus to one of the following and a penalty to one of the
           following equal to the amount of Focus points remaining: Carrying Capacity,
-          Movement Points, Initiative, and Perception range (20m x point)'
+          Movement Points, and Perception range (20m x point)'
       - title: 'Conjure [1AP]'
         content: Until the start of the next turn the caster can create any number
           of solid objects with their blood whose total ENC is equal to or less than
@@ -10886,7 +10849,7 @@ MonoBehaviour:
         of time but those who carry within them the voice are and have always been
         the one and only source of divine power.
       - '[H4LIST]'
-      - =
+      - '|'
       options:
         titleFormat: 1
         contentFormat: 0
@@ -10928,7 +10891,7 @@ MonoBehaviour:
         guess who really invented the art, but it is undeniable in its beauty and
         ferociousness."
       - '[H4LIST]'
-      - '|'
+      - =
       options:
         titleFormat: 1
         contentFormat: 0
@@ -10960,7 +10923,7 @@ MonoBehaviour:
         of holding their own in small numbers and working outside of a normal military
         structure.
       - '[H4LIST]'
-      - =
+      - '|'
       options:
         titleFormat: 1
         contentFormat: 0
@@ -10996,6 +10959,7 @@ MonoBehaviour:
         of spiritual traditions and superstitious heritages that came together to
         create the way of nature\u2019s guardian."
       - '[H4LIST]'
+      - =
       options:
         titleFormat: 1
         contentFormat: 0
@@ -11024,7 +10988,7 @@ MonoBehaviour:
           Poisoned characters are hindered when performing dice rolls. [\n]**Regenerate
           -** Spend a main action to restore 1 lost wound point.
       - title: 'Terraforming [1 Focus]'
-        content: Perform a geomancy effect that is permanent.[\n]|
+        content: Perform a geomancy effect that is permanent.
       boxes: []
       items: []
     - title: Elementalist
@@ -11037,7 +11001,7 @@ MonoBehaviour:
         have followed civilization from the very start and are greatly attributed
         to be the pillar of power that allowed the empire to form."
       - '[H4LIST]'
-      - =
+      - '|'
       options:
         titleFormat: 1
         contentFormat: 0
@@ -11085,7 +11049,7 @@ MonoBehaviour:
         of their king or emperor, a defender of the lands and the interests of their
         banners.
       - '[H4LIST]'
-      - '|'
+      - =
       options:
         titleFormat: 1
         contentFormat: 0
@@ -11126,8 +11090,8 @@ MonoBehaviour:
         contentFormat: 0
       list:
       - title: 'Technique [3 Initiative]'
-        content: Gain any 1 of the following:[\n]Double the amount of movement points
-          gained.[\n]Gain +1 AP.
+        content: Gain any 1 of the following:[\n]- Double the amount of movement
+          points gained.[\n]- Gain +1 AP.
       - title: 'Kata [1AP]'
         content: Until the start of the next turn whenever performing an unarmed
           attack that hits a target, you may immediately perform a close combat maneuver
@@ -11290,36 +11254,30 @@ MonoBehaviour:
         The Samurai that travel outside of Orienta were ambassadors and diplomats,
         often sent on missions to discover trade and alliance partners abroad all
         the while keeping a watchful eye on the ever expanding empire.
-      - /
       - '[H4LIST]'
       - '|'
-      - =
       options:
         titleFormat: 1
         contentFormat: 0
       list:
-      - title: 'Iaido [Initiative]'
-        content: When rolling initiative, gain a +2 bonus on initiative dice rolls.
-          This causes you to receive 3 movement points less than normal.
-      - title: 'Kiai [Bonus]'
-        content: When causing damage with an attack, spend your bonus action. All
-          enemies within 5m of your target receive a number of stress points equal
-          to the damage caused by the attack.
-      - title: 'Kyudo [Bonus]'
-        content: When spending a bonus action to take aim with your ranged attack,
-          your ranged attack gets boosted in addition to the aim bonus and the bonus
-          affects all ranged attacks during your turn and not just the next one.
-      - title: 'Bushido [Main]'
-        content: Spend 1 Stamina to activate this talent. This talent lasts until
-          the start of the next turn. When performing multiple attacks against the
-          same target, gain a cumulative +1 bonus to attack dice rolls for every
-          attack beyond the first.
-      - title: 'Yumihiki [Main]'
-        content: Spend 1 Stamina to activate this talent. This talent lasts until
-          the start of the next turn. When performing a ranged attack you may confer
-          any 1 of the following effects to your shots. Slash, Push, Slam, Maim.
-          A character can spend 1 attack point in order to confer three effects instead
-          of one.
+      - title: 'Iaido [3 Initiative]'
+        content: Perform an attack against an enemy that targets you with an attack
+          the first time within your turn.
+      - title: 'Kiai [1AP]'
+        content: When causing damage with an attack all enemies within 5m of your
+          target receive a number of stress points equal to the damage caused by
+          the attack.
+      - title: 'Kyudo [1AP]'
+        content: Until the end of your next turn gain boosted ranged attacks.
+      - title: 'Bushido [1 Stamina]'
+        content: Until the start of the next turn when performing multiple attacks
+          against the same target, gain a cumulative +1 bonus to attack dice rolls
+          for every attack beyond the first.
+      - title: 'Yumihiki [1 Stamina]'
+        content: Until the start of the next turn when performing a ranged attack
+          you may confer any 1 of the following effects to your shots.[\n]Slash,
+          Push, Slam, Maim.[\n]A character can spend 1 action point in order to confer
+          three effects instead of one.
       boxes: []
       items: []
     - title: Tenebrist
@@ -11332,53 +11290,42 @@ MonoBehaviour:
         when travellers learned in the obscure art reached imperial borders. Even
         so all the way to the end little was ever known or discovered about tenebrists
         and their shadow dancing.
-      - /
       - '[H4LIST]'
       - =
       options:
         titleFormat: 1
         contentFormat: 0
       list:
-      - title: 'Shadow leap [Initiative]'
-        content: When rolling initiative cast this spell. You must be standing within
-          an obscured area. Choose another obscured area within range equal to your
-          spellcasting skill modifier x10m and appear there. This action can be used
-          while hiding without penalty.
-      - title: 'Dark Cloak [Bonus]'
-        content: 'Spend a bonus action to activate this spell. This spell lasts until
-          the start of the next turn. The cloak gains an intensity equal to your
-          spellcasting spell modifier. For each intensity value you can gain one
-          or more of the following abilities: Obtenebration - +2 bonus to Stealth
-          Dice rolls per intensity spent Obfuscation - +1 bonus to Defence per intensity
-          spent (also applies to ranged attacks) Occultation - Fly speed at 1m for
-          every 2 movement points per intensity spent.'
-      - title: 'Tendrils [Bonus]'
-        content: Spend a bonus action to activate this spell. The spell lasts until
-          the start of the next turn. Choose an amount of square meters within 20m
-          of you equal to your spellcasting skill modifier x2. Targets that start
-          their turn, end their turn or move into these squares become entangled.
-          Entangled targets must sacrifice their main action to become free or else
-          they lose all of their movement points.[\n]|
-      - title: 'Portals [Main]'
-        content: Spend 1 Focus point to activate this spell with an intensity equal
-          to your spellcasting skill modifier. This spell remains active until the
-          end of the encounter. Choose any two solid surfaces completely within 20m
-          x intensity of you to project two connected portals, each of which can
-          be up to 2 x intensity square meters in size. During your turn you can
-          spend a bonus action or 3 movement points to move the Portals to new locations.
-      - title: 'Displacement [Main]'
-        content: "Spend 1 Focus point to activate this spell. The spell lasts until
-          the end of the encounter or until it is dismissed. This spell has an intensity
-          equal to your spellcasting modifier. For each intensity value you can gain
-          any one or more of the following abilities: Intangibility - Intangible
-          creatures cannot manipulate the world or be manipulated becoming immune
-          to physical damage and able to pass through solid matter but becoming themselves
-          unable to cause physical damage. Magical attacks and spells still work
-          as normal. Invisibility - Invisible creatures cannot be seen and thus have
-          a permanent hidden state with a bonus to stealth equal to the spell\u2019s
-          intensity. Inscrutability - Inscrutable creatures can ignore solid obstacles
-          when attacking allowing them to ignore armour. During your initiative you
-          can choose which of the abilities to activate and deactivate. "
+      - title: 'Shadow leap [3 Initiative]'
+        content: At any point during yoru turn you may teleport from one obscured
+          area to another within a range equal to your spellcasting skill modifier
+          x10m. This action can be used while hiding without penalty.
+      - title: 'Dark Cloak [1AP]'
+        content: Choose a number of the following abilities equal to your spellcasting
+          skill modifier:[\n]**- Obtenebration -**+2 Stealth score[\n]**- Obfuscation
+          -**+1 Defence (also applies to ranged attacks)[\n]**- Occultation -** Use
+          movement points to Fly.
+      - title: 'Tendrils [1AP]'
+        content: Until the start of the next turn choose an amount of square meters
+          within 20m of you equal to your spellcasting skill value x2. Targets that
+          start their turn, end their turn or move into these squares become entangled.
+          Entangled targets must use 1AP to become free or else they become unable
+          to use movement actions.
+      - title: 'Portals [1 Focus]'
+        content: Until the end of the encounter choose any two solid surfaces completely
+          within 20m x spellcasting skill value of you to project two connected portals,
+          each of which can be up to 2 x spellcasting skill value square meters in
+          size. During your turn you can spend a bonus action or 3 movement points
+          to move the Portals to new locations.
+      - title: 'Displacement [1 Focus]'
+        content: 'Until the end of the encounter you can gain one or more of the
+          following abilities equal to your spellcasting skill value:[\n]**- Intangibility
+          -** Intangible creatures cannot be targeted by physical attacks.[\n]**-
+          Invisibility -** All actions taken against an invisible creature are hindered
+          and the creature gains a stealth score equal to 1 + the spellcasting skill
+          value.[\n]**- Inscrutability -** Any attack that the creature performs
+          that hits, always causes 1 wound.[\n]During your initiative you can choose
+          which of the abilities to activate and deactivate. '
       boxes: []
       items: []
     output: "head(\n# Classes\n\n)\n-\n/\n\n\n# Bard\n\n-\n\nHailing from all societies
@@ -11432,7 +11379,7 @@ MonoBehaviour:
       stress points removed on your next attack.\n\n#### Berserk [1 Stamina]\nUntil
       the end of the scene you can spend 1 stress point every turn to gain +1 action
       point. This action point can ony be spent on attacks or movement that gets
-      you closer to an enemy.\n\n\n\n=\n\n\n\n# Blood Mage\n\n-\n\nOriginally the
+      you closer to an enemy.\n\n\n\n|\n\n\n\n# Blood Mage\n\n-\n\nOriginally the
       ways of hemothurgy was an art created by vampires to better control and enhance
       their bodies despite their debilitating curse. However there was never anything
       inherent within their undead physiology that necessitated their condition in
@@ -11441,35 +11388,35 @@ MonoBehaviour:
       blood mages have found their niche.\n\n\n#### Enhance [3 Initiative]\nGain
       a bonus to one of the following and a penalty to one of the following equal
       to the amount of Focus points remaining: Carrying Capacity, Movement Points,
-      Initiative, and Perception range (20m x point)\n\n#### Conjure [1AP]\nUntil
-      the start of the next turn the caster can create any number of solid objects
-      with their blood whose total ENC is equal to or less than the spellcasting
-      skill modifier. Weapons, Armour, Gear and Ammunition can be generated as long
-      as their rarity is equal to or less than the spellcasting skill x5. Trained
-      spellcasting & crafting allows common items, expert allows uncommon items,
-      master allows rare items and legend allows legendary items.\n\n#### Hemomancy
-      [1AP]\nConvert 1 Stamina point into a 1 Focus point.\n\n#### Blood Rain [1
-      Focus and 1AP]\nCreate a number of blood shots equal to the amount of focus
-      points remaining +1. Perform a spellcasting attack dice roll against the willpower
-      of one target enemy within 20m for each blood shot. The same enemy can be targeted
-      with more than one bloodshot. Each bloodshot attack deals +1 damage.\n\n####
-      Vampirism [1 Focus]\nUntil the start of your next turn every wound that you
-      inflict on enemy living or undead creatures can be converted immediately into
-      one of the following: [/n]Reduce 5 points of stress, infection, blood loss,
-      poison or disease [/n]Restore 1 wound [/n]Restore 1 Stamina \n\n\n\n|\n\n\n\n#
-      Cleric\n\n-\n\nIn the darkest of times those who had the gift of the voice
-      have always been powerful leaders in their communities. Religion and divine
-      magic have prehistoric origin as every society have had shamans, mystics, diviners
-      and clerics of some sort. The gods, the pantheons and the faiths have changed
-      with the passing of time but those who carry within them the voice are and
-      have always been the one and only source of divine power.\n\n\n#### Angel Wings
-      [3 Initiative]\nDuring this turn you may ignore falling damage.\n\n#### Bless
-      [1AP]\nDuring their turn a blessed ally can boost one of their dice rolls or
-      hinder a dice roll performed directly against them. A blessing is removed from
-      a character once it is used or at the end of the scene. A character may never
-      have more than one blessing at a time.\n\n#### Castigate [1AP]\nRoll a spellcasting
-      dice roll against the target\u2019s Willpower. On a successful roll inflict
-      an amount of Intensity of this curse equal to the margin of success: \nnote(\n#Divine
+      and Perception range (20m x point)\n\n#### Conjure [1AP]\nUntil the start of
+      the next turn the caster can create any number of solid objects with their
+      blood whose total ENC is equal to or less than the spellcasting skill modifier.
+      Weapons, Armour, Gear and Ammunition can be generated as long as their rarity
+      is equal to or less than the spellcasting skill x5. Trained spellcasting &
+      crafting allows common items, expert allows uncommon items, master allows rare
+      items and legend allows legendary items.\n\n#### Hemomancy [1AP]\nConvert 1
+      Stamina point into a 1 Focus point.\n\n#### Blood Rain [1 Focus and 1AP]\nCreate
+      a number of blood shots equal to the amount of focus points remaining +1. Perform
+      a spellcasting attack dice roll against the willpower of one target enemy within
+      20m for each blood shot. The same enemy can be targeted with more than one
+      bloodshot. Each bloodshot attack deals +1 damage.\n\n#### Vampirism [1 Focus]\nUntil
+      the start of your next turn every wound that you inflict on enemy living or
+      undead creatures can be converted immediately into one of the following: [/n]Reduce
+      5 points of stress, infection, blood loss, poison or disease [/n]Restore 1
+      wound [/n]Restore 1 Stamina \n\n\n\n=\n\n\n\n# Cleric\n\n-\n\nIn the darkest
+      of times those who had the gift of the voice have always been powerful leaders
+      in their communities. Religion and divine magic have prehistoric origin as
+      every society have had shamans, mystics, diviners and clerics of some sort.
+      The gods, the pantheons and the faiths have changed with the passing of time
+      but those who carry within them the voice are and have always been the one
+      and only source of divine power.\n\n\n#### Angel Wings [3 Initiative]\nDuring
+      this turn you may ignore falling damage.\n\n#### Bless [1AP]\nDuring their
+      turn a blessed ally can boost one of their dice rolls or hinder a dice roll
+      performed directly against them. A blessing is removed from a character once
+      it is used or at the end of the scene. A character may never have more than
+      one blessing at a time.\n\n#### Castigate [1AP]\nRoll a spellcasting dice roll
+      against the target\u2019s Willpower. On a successful roll inflict an amount
+      of Intensity of this curse equal to the margin of success: \nnote(\n#Divine
       Castigation Curse\n-\nAs long as a target has 1 or more intensity points, attacks
       performed against them are boosted. If the amount of intensity points matches
       or exceeds the target\u2019s willpower they suffer from a -1 penalty to Defence.\n)\n\n####
@@ -11480,7 +11427,7 @@ MonoBehaviour:
       turn after the character has performed a dice roll, you can decide to change
       the result of the die to 2 or 9. This can be done up to three times per turn
       but each target can be cursed only once per turn. Roll a spellcasting dice
-      roll against the target\u2019s Willpower.\n\n\n\n=\n\n\n\n# Dervish\n\n-\n\nOriginally
+      roll against the target\u2019s Willpower.\n\n\n\n|\n\n\n\n# Dervish\n\n-\n\nOriginally
       an art hailing from the lands of levanta, the blade dancing dervishes and their
       true origins are a contentious subject. Both orcs and goblinoids equally claim
       to be the inventors of the art of sword dancing and wielding two weapons effectively.
@@ -11495,7 +11442,7 @@ MonoBehaviour:
       one maneuver against that opponent.\n\n#### Combat Expertise [1 Stamina]\nUntil
       the start of your next turn gain a bonus to defence equal to the amount of
       attacks performed this turn.\n\n#### Whirlwind Attack [1 Stamina and 1AP]\nPerform
-      one attack against all targets within your weapon\u2019s range.\n\n\n\n|\n\n\n\n#
+      one attack against all targets within your weapon\u2019s range.\n\n\n\n=\n\n\n\n#
       Duellist\n\n-\n\nIn the late imperial age a number of mercenary companies had
       eventually developed into fully fledged low aristocratic houses each guarding
       jealously decades if not centuries of accumulated martial knowledge. These
@@ -11512,7 +11459,7 @@ MonoBehaviour:
       gain a modifier to your attack dice roll equal to the difference in initiative
       between you and your target.\n\n#### Dazzling [1 Stamina]\nUntil the start
       of the next turn gain a bonus to Defence equal to the difference in initiative
-      between you and your attacker.\n\n\n\n=\n\n\n\n# Druid\n\n-\n\nThose who are
+      between you and your attacker.\n\n\n\n|\n\n\n\n# Druid\n\n-\n\nThose who are
       gifted in the voice haven't always sought the power of divine pantheons and
       have instead turned their ear to the primordial primal forces of nature. Shamans,
       mystics and feral mages of all ilks used to roam the lands in the era of the
@@ -11537,7 +11484,7 @@ MonoBehaviour:
       \n**Venom -** Wounded targets that survive that attack are poisoned. Poisoned
       characters are hindered when performing dice rolls. \n**Regenerate -** Spend
       a main action to restore 1 lost wound point.\n\n#### Terraforming [1 Focus]\nPerform
-      a geomancy effect that is permanent.\n|\n\n\n\n\n\n# Elementalist\n\n-\n\nThe
+      a geomancy effect that is permanent.\n\n\n\n=\n\n\n\n# Elementalist\n\n-\n\nThe
       first flame is legendarily attributed to have been created by Galstaff of the
       Meridian shamans. While actual evidence is hard to come by from such ancient
       times it is clear that elemental magic was originally known by its first name,
@@ -11565,7 +11512,7 @@ MonoBehaviour:
       cold or electricity), roll a spellcasting dice roll against the target\u2019s
       Willpower and do any of the following. \nAlter - Double or half the amount
       of tokens on the target. Halfing 1 token removes it completely. \nSwap - Swap
-      the tokens that two or more chosen targets have on them with each other.\n\n\n\n=\n\n\n\n#
+      the tokens that two or more chosen targets have on them with each other.\n\n\n\n|\n\n\n\n#
       Knight\n\n-\n\nThe chivalric code has existed for as long as there were lords
       wealthy enough to pay for their armed house warriors. Knights are more than
       mere highly paid and equipped brutes. Either born of noble stock or commoners
@@ -11582,15 +11529,15 @@ MonoBehaviour:
       point in order to confer three effects instead of one.\n\n#### Cleave [1 Stamina]\nUntil
       the start of the next turn when performing a close combat attack, choose an
       additional two targets beyond the first. All targets are affected the same
-      and must be within the weapon\u2019s range.\n\n\n\n|\n\n\n\n# Monk\n\n-\n\nAncient
+      and must be within the weapon\u2019s range.\n\n\n\n=\n\n\n\n# Monk\n\n-\n\nAncient
       arts as old as Orienta itself the ways of the warrior monks have travelled
       westward and propagated throughout the lands as a storm. The magnificent displays
       of athleticism and superhuman dexterity had often captured the imaginations
       of foreigners that witnessed them but monks and their monasteries were never
       a monolith that aligned themself with any one faction or nation. Those lucky
       enough to have monks among their allies had a rare privilege.\n\n\n#### Technique
-      [3 Initiative]\nGain any 1 of the following:\nDouble the amount of movement
-      points gained.\nGain +1 AP.\n\n#### Kata [1AP]\nUntil the start of the next
+      [3 Initiative]\nGain any 1 of the following:\n- Double the amount of movement
+      points gained.\n- Gain +1 AP.\n\n#### Kata [1AP]\nUntil the start of the next
       turn whenever performing an unarmed attack that hits a target, you may immediately
       perform a close combat maneuver against the same target.\n\n#### Jutsu [1AP]\nUntil
       the start of the next turn while unarmoured you gain the benefit of parry against
@@ -11667,79 +11614,63 @@ MonoBehaviour:
       Despite this the services of the covert and the inconspicuous have always found
       plenty of use in the highest courts of nobility and the aristocrats who often
       look down upon the furtive, have called upon their services far more that they\u2019d
-      like to admit.\n\n\n#### Sneak [Initiative]\nCharacter may perform a hide action
-      by spending a bonus action or 3 movement points.\n\n#### Infiltrator [Bonus]\nWhen
-      performing actions while hidden, spend a bonus action to reduce all penalties
-      to stealth score by 1.\n\n#### Ambush [Bonus]\nWhen making an attack against
-      a surprised opponent you may spend a bonus action to gain a number of attack
-      points equal to their stealth skill modifier.\n\n#### Assassin [Main]\nSpend
-      1 Stamina to activate this talent. This talent lasts until the start of the
-      next turn. Gain a bonus to attack dice rolls equal to your stealth value -
-      the target\u2019s perception score. This bonus can only be applied against
-      surprised targets.\n\n#### Ghost [Main]\nSpend 1 Stamina to activate this talent.
-      This talent lasts until the start of the next turn. Whenever using any main
-      action or bonus action you may also hide into stealth for free.\n\n\n\n=\n\n\n\n#
-      Samurai\n\n-\n\nOriginally hailing from Orienta the way of the samurai is as
-      much an immigrant as the warrior bureaucrats that brought the art with them.
-      Samurai are honourable servants of their Daimyo and Shogun masters, sworn to
-      a lifetime of service. The Samurai that travel outside of Orienta were ambassadors
-      and diplomats, often sent on missions to discover trade and alliance partners
-      abroad all the while keeping a watchful eye on the ever expanding empire.\n\n/\n\n\n####
-      Iaido [Initiative]\nWhen rolling initiative, gain a +2 bonus on initiative
-      dice rolls. This causes you to receive 3 movement points less than normal.\n\n####
-      Kiai [Bonus]\nWhen causing damage with an attack, spend your bonus action.
-      All enemies within 5m of your target receive a number of stress points equal
-      to the damage caused by the attack.\n\n#### Kyudo [Bonus]\nWhen spending a
-      bonus action to take aim with your ranged attack, your ranged attack gets boosted
-      in addition to the aim bonus and the bonus affects all ranged attacks during
-      your turn and not just the next one.\n\n#### Bushido [Main]\nSpend 1 Stamina
-      to activate this talent. This talent lasts until the start of the next turn.
-      When performing multiple attacks against the same target, gain a cumulative
-      +1 bonus to attack dice rolls for every attack beyond the first.\n\n#### Yumihiki
-      [Main]\nSpend 1 Stamina to activate this talent. This talent lasts until the
-      start of the next turn. When performing a ranged attack you may confer any
-      1 of the following effects to your shots. Slash, Push, Slam, Maim. A character
-      can spend 1 attack point in order to confer three effects instead of one.\n\n\n\n|\n\n=\n\n\n\n#
-      Tenebrist\n\n-\n\nOriginally Tenebral magic was attributed to the forces of
-      the demon lords in their invasion. In reality tenebrothurgy was originally
-      created by the Levantese, an arcane art that was stolen by the forces of the
-      demon realm. Tenebral art resurged with the expansion of the horde and reached
-      the empire when travellers learned in the obscure art reached imperial borders.
-      Even so all the way to the end little was ever known or discovered about tenebrists
-      and their shadow dancing.\n\n/\n\n\n#### Shadow leap [Initiative]\nWhen rolling
-      initiative cast this spell. You must be standing within an obscured area. Choose
-      another obscured area within range equal to your spellcasting skill modifier
-      x10m and appear there. This action can be used while hiding without penalty.\n\n####
-      Dark Cloak [Bonus]\nSpend a bonus action to activate this spell. This spell
-      lasts until the start of the next turn. The cloak gains an intensity equal
-      to your spellcasting spell modifier. For each intensity value you can gain
-      one or more of the following abilities: Obtenebration - +2 bonus to Stealth
-      Dice rolls per intensity spent Obfuscation - +1 bonus to Defence per intensity
-      spent (also applies to ranged attacks) Occultation - Fly speed at 1m for every
-      2 movement points per intensity spent.\n\n#### Tendrils [Bonus]\nSpend a bonus
-      action to activate this spell. The spell lasts until the start of the next
-      turn. Choose an amount of square meters within 20m of you equal to your spellcasting
-      skill modifier x2. Targets that start their turn, end their turn or move into
-      these squares become entangled. Entangled targets must sacrifice their main
-      action to become free or else they lose all of their movement points.\n|\n\n####
-      Portals [Main]\nSpend 1 Focus point to activate this spell with an intensity
-      equal to your spellcasting skill modifier. This spell remains active until
-      the end of the encounter. Choose any two solid surfaces completely within 20m
-      x intensity of you to project two connected portals, each of which can be up
-      to 2 x intensity square meters in size. During your turn you can spend a bonus
-      action or 3 movement points to move the Portals to new locations.\n\n#### Displacement
-      [Main]\nSpend 1 Focus point to activate this spell. The spell lasts until the
-      end of the encounter or until it is dismissed. This spell has an intensity
-      equal to your spellcasting modifier. For each intensity value you can gain
-      any one or more of the following abilities: Intangibility - Intangible creatures
-      cannot manipulate the world or be manipulated becoming immune to physical damage
-      and able to pass through solid matter but becoming themselves unable to cause
-      physical damage. Magical attacks and spells still work as normal. Invisibility
-      - Invisible creatures cannot be seen and thus have a permanent hidden state
-      with a bonus to stealth equal to the spell\u2019s intensity. Inscrutability
-      - Inscrutable creatures can ignore solid obstacles when attacking allowing
-      them to ignore armour. During your initiative you can choose which of the abilities
-      to activate and deactivate. \n\n\n\n=\n\n\n\n"
+      like to admit.\n\n\n#### Sneak [3 Initiative]\nInitiating stealth doesn't cost
+      any movement points and gain a +1 bonus to stealth score for every 1 movement
+      point spent until the start of the next turn.\n\n#### Infiltrator [1AP]\nWhen
+      performing actions while hidden reduce all penalties to stealth score by 1
+      per stealth skill value.\n\n#### Ambush [1AP]\nWhen making an attack against
+      a surprised opponent you may gain a number of free attacks equal to their stealth
+      skill modifier.\n\n#### Assassin [1 Stamina]\nUntil the start of the next turn
+      gain a bonus to attack dice rolls equal to your stealth value - the target\u2019s
+      perception score. This bonus can only be applied against surprised targets.\n\n####
+      Ghost [1 Stamina]\nUntil the start of the next turn whenever using any action
+      you may also hide into stealth for free.\n\n\n\n=\n\n\n\n# Samurai\n\n-\n\nOriginally
+      hailing from Orienta the way of the samurai is as much an immigrant as the
+      warrior bureaucrats that brought the art with them. Samurai are honourable
+      servants of their Daimyo and Shogun masters, sworn to a lifetime of service.
+      The Samurai that travel outside of Orienta were ambassadors and diplomats,
+      often sent on missions to discover trade and alliance partners abroad all the
+      while keeping a watchful eye on the ever expanding empire.\n\n\n#### Iaido
+      [3 Initiative]\nPerform an attack against an enemy that targets you with an
+      attack the first time within your turn.\n\n#### Kiai [1AP]\nWhen causing damage
+      with an attack all enemies within 5m of your target receive a number of stress
+      points equal to the damage caused by the attack.\n\n#### Kyudo [1AP]\nUntil
+      the end of your next turn gain boosted ranged attacks.\n\n#### Bushido [1 Stamina]\nUntil
+      the start of the next turn when performing multiple attacks against the same
+      target, gain a cumulative +1 bonus to attack dice rolls for every attack beyond
+      the first.\n\n#### Yumihiki [1 Stamina]\nUntil the start of the next turn when
+      performing a ranged attack you may confer any 1 of the following effects to
+      your shots.\nSlash, Push, Slam, Maim.\nA character can spend 1 action point
+      in order to confer three effects instead of one.\n\n\n\n|\n\n\n\n# Tenebrist\n\n-\n\nOriginally
+      Tenebral magic was attributed to the forces of the demon lords in their invasion.
+      In reality tenebrothurgy was originally created by the Levantese, an arcane
+      art that was stolen by the forces of the demon realm. Tenebral art resurged
+      with the expansion of the horde and reached the empire when travellers learned
+      in the obscure art reached imperial borders. Even so all the way to the end
+      little was ever known or discovered about tenebrists and their shadow dancing.\n\n\n####
+      Shadow leap [3 Initiative]\nAt any point during yoru turn you may teleport
+      from one obscured area to another within a range equal to your spellcasting
+      skill modifier x10m. This action can be used while hiding without penalty.\n\n####
+      Dark Cloak [1AP]\nChoose a number of the following abilities equal to your
+      spellcasting skill modifier:\n**- Obtenebration -**+2 Stealth score\n**- Obfuscation
+      -**+1 Defence (also applies to ranged attacks)\n**- Occultation -** Use movement
+      points to Fly.\n\n#### Tendrils [1AP]\nUntil the start of the next turn choose
+      an amount of square meters within 20m of you equal to your spellcasting skill
+      value x2. Targets that start their turn, end their turn or move into these
+      squares become entangled. Entangled targets must use 1AP to become free or
+      else they become unable to use movement actions.\n\n#### Portals [1 Focus]\nUntil
+      the end of the encounter choose any two solid surfaces completely within 20m
+      x spellcasting skill value of you to project two connected portals, each of
+      which can be up to 2 x spellcasting skill value square meters in size. During
+      your turn you can spend a bonus action or 3 movement points to move the Portals
+      to new locations.\n\n#### Displacement [1 Focus]\nUntil the end of the encounter
+      you can gain one or more of the following abilities equal to your spellcasting
+      skill value:\n**- Intangibility -** Intangible creatures cannot be targeted
+      by physical attacks.\n**- Invisibility -** All actions taken against an invisible
+      creature are hindered and the creature gains a stealth score equal to 1 + the
+      spellcasting skill value.\n**- Inscrutability -** Any attack that the creature
+      performs that hits, always causes 1 wound.\nDuring your initiative you can
+      choose which of the abilities to activate and deactivate. \n\n\n\n=\n\n\n\n"
   - title: Rituals
     description:
     - '-'
@@ -11785,6 +11716,7 @@ MonoBehaviour:
     - title: Rituals
       content:
       - '[BOXES2]'
+      - =
       options:
         titleFormat: 2
         contentFormat: 0
@@ -11899,6 +11831,9 @@ MonoBehaviour:
       times as much and Legendary items four times as much.
 
       )/
+
+
+      =
 
 
 
@@ -13217,7 +13152,7 @@ MonoBehaviour:
     points removed on your next attack.\n\n#### Berserk [1 Stamina]\nUntil the end
     of the scene you can spend 1 stress point every turn to gain +1 action point.
     This action point can ony be spent on attacks or movement that gets you closer
-    to an enemy.\n\n\n\n=\n\n\n\n# Blood Mage\n\n-\n\nOriginally the ways of hemothurgy
+    to an enemy.\n\n\n\n|\n\n\n\n# Blood Mage\n\n-\n\nOriginally the ways of hemothurgy
     was an art created by vampires to better control and enhance their bodies despite
     their debilitating curse. However there was never anything inherent within their
     undead physiology that necessitated their condition in order to wield such powers.
@@ -13225,28 +13160,28 @@ MonoBehaviour:
     now that the whole world is out of order, the blood mages have found their niche.\n\n\n####
     Enhance [3 Initiative]\nGain a bonus to one of the following and a penalty to
     one of the following equal to the amount of Focus points remaining: Carrying
-    Capacity, Movement Points, Initiative, and Perception range (20m x point)\n\n####
-    Conjure [1AP]\nUntil the start of the next turn the caster can create any number
-    of solid objects with their blood whose total ENC is equal to or less than the
-    spellcasting skill modifier. Weapons, Armour, Gear and Ammunition can be generated
-    as long as their rarity is equal to or less than the spellcasting skill x5. Trained
-    spellcasting & crafting allows common items, expert allows uncommon items, master
-    allows rare items and legend allows legendary items.\n\n#### Hemomancy [1AP]\nConvert
-    1 Stamina point into a 1 Focus point.\n\n#### Blood Rain [1 Focus and 1AP]\nCreate
-    a number of blood shots equal to the amount of focus points remaining +1. Perform
-    a spellcasting attack dice roll against the willpower of one target enemy within
-    20m for each blood shot. The same enemy can be targeted with more than one bloodshot.
-    Each bloodshot attack deals +1 damage.\n\n#### Vampirism [1 Focus]\nUntil the
-    start of your next turn every wound that you inflict on enemy living or undead
-    creatures can be converted immediately into one of the following: [/n]Reduce
-    5 points of stress, infection, blood loss, poison or disease [/n]Restore 1 wound
-    [/n]Restore 1 Stamina \n\n\n\n|\n\n\n\n# Cleric\n\n-\n\nIn the darkest of times
-    those who had the gift of the voice have always been powerful leaders in their
-    communities. Religion and divine magic have prehistoric origin as every society
-    have had shamans, mystics, diviners and clerics of some sort. The gods, the pantheons
-    and the faiths have changed with the passing of time but those who carry within
-    them the voice are and have always been the one and only source of divine power.\n\n\n####
-    Angel Wings [3 Initiative]\nDuring this turn you may ignore falling damage.\n\n####
+    Capacity, Movement Points, and Perception range (20m x point)\n\n#### Conjure
+    [1AP]\nUntil the start of the next turn the caster can create any number of solid
+    objects with their blood whose total ENC is equal to or less than the spellcasting
+    skill modifier. Weapons, Armour, Gear and Ammunition can be generated as long
+    as their rarity is equal to or less than the spellcasting skill x5. Trained spellcasting
+    & crafting allows common items, expert allows uncommon items, master allows rare
+    items and legend allows legendary items.\n\n#### Hemomancy [1AP]\nConvert 1 Stamina
+    point into a 1 Focus point.\n\n#### Blood Rain [1 Focus and 1AP]\nCreate a number
+    of blood shots equal to the amount of focus points remaining +1. Perform a spellcasting
+    attack dice roll against the willpower of one target enemy within 20m for each
+    blood shot. The same enemy can be targeted with more than one bloodshot. Each
+    bloodshot attack deals +1 damage.\n\n#### Vampirism [1 Focus]\nUntil the start
+    of your next turn every wound that you inflict on enemy living or undead creatures
+    can be converted immediately into one of the following: [/n]Reduce 5 points of
+    stress, infection, blood loss, poison or disease [/n]Restore 1 wound [/n]Restore
+    1 Stamina \n\n\n\n=\n\n\n\n# Cleric\n\n-\n\nIn the darkest of times those who
+    had the gift of the voice have always been powerful leaders in their communities.
+    Religion and divine magic have prehistoric origin as every society have had shamans,
+    mystics, diviners and clerics of some sort. The gods, the pantheons and the faiths
+    have changed with the passing of time but those who carry within them the voice
+    are and have always been the one and only source of divine power.\n\n\n#### Angel
+    Wings [3 Initiative]\nDuring this turn you may ignore falling damage.\n\n####
     Bless [1AP]\nDuring their turn a blessed ally can boost one of their dice rolls
     or hinder a dice roll performed directly against them. A blessing is removed
     from a character once it is used or at the end of the scene. A character may
@@ -13263,7 +13198,7 @@ MonoBehaviour:
     another character\u2019s turn after the character has performed a dice roll,
     you can decide to change the result of the die to 2 or 9. This can be done up
     to three times per turn but each target can be cursed only once per turn. Roll
-    a spellcasting dice roll against the target\u2019s Willpower.\n\n\n\n=\n\n\n\n#
+    a spellcasting dice roll against the target\u2019s Willpower.\n\n\n\n|\n\n\n\n#
     Dervish\n\n-\n\nOriginally an art hailing from the lands of levanta, the blade
     dancing dervishes and their true origins are a contentious subject. Both orcs
     and goblinoids equally claim to be the inventors of the art of sword dancing
@@ -13279,7 +13214,7 @@ MonoBehaviour:
     Combat Expertise [1 Stamina]\nUntil the start of your next turn gain a bonus
     to defence equal to the amount of attacks performed this turn.\n\n#### Whirlwind
     Attack [1 Stamina and 1AP]\nPerform one attack against all targets within your
-    weapon\u2019s range.\n\n\n\n|\n\n\n\n# Duellist\n\n-\n\nIn the late imperial
+    weapon\u2019s range.\n\n\n\n=\n\n\n\n# Duellist\n\n-\n\nIn the late imperial
     age a number of mercenary companies had eventually developed into fully fledged
     low aristocratic houses each guarding jealously decades if not centuries of accumulated
     martial knowledge. These advanced and unique martial arts had created a unique
@@ -13295,7 +13230,7 @@ MonoBehaviour:
     a modifier to your attack dice roll equal to the difference in initiative between
     you and your target.\n\n#### Dazzling [1 Stamina]\nUntil the start of the next
     turn gain a bonus to Defence equal to the difference in initiative between you
-    and your attacker.\n\n\n\n=\n\n\n\n# Druid\n\n-\n\nThose who are gifted in the
+    and your attacker.\n\n\n\n|\n\n\n\n# Druid\n\n-\n\nThose who are gifted in the
     voice haven't always sought the power of divine pantheons and have instead turned
     their ear to the primordial primal forces of nature. Shamans, mystics and feral
     mages of all ilks used to roam the lands in the era of the tribes and all of
@@ -13319,7 +13254,7 @@ MonoBehaviour:
     pierce, maim and slash. \n**Venom -** Wounded targets that survive that attack
     are poisoned. Poisoned characters are hindered when performing dice rolls. \n**Regenerate
     -** Spend a main action to restore 1 lost wound point.\n\n#### Terraforming [1
-    Focus]\nPerform a geomancy effect that is permanent.\n|\n\n\n\n\n\n# Elementalist\n\n-\n\nThe
+    Focus]\nPerform a geomancy effect that is permanent.\n\n\n\n=\n\n\n\n# Elementalist\n\n-\n\nThe
     first flame is legendarily attributed to have been created by Galstaff of the
     Meridian shamans. While actual evidence is hard to come by from such ancient
     times it is clear that elemental magic was originally known by its first name,
@@ -13347,7 +13282,7 @@ MonoBehaviour:
     dice roll against the target\u2019s Willpower and do any of the following. \nAlter
     - Double or half the amount of tokens on the target. Halfing 1 token removes
     it completely. \nSwap - Swap the tokens that two or more chosen targets have
-    on them with each other.\n\n\n\n=\n\n\n\n# Knight\n\n-\n\nThe chivalric code
+    on them with each other.\n\n\n\n|\n\n\n\n# Knight\n\n-\n\nThe chivalric code
     has existed for as long as there were lords wealthy enough to pay for their armed
     house warriors. Knights are more than mere highly paid and equipped brutes. Either
     born of noble stock or commoners elevated to a higher societal position, the
@@ -13363,23 +13298,23 @@ MonoBehaviour:
     action point in order to confer three effects instead of one.\n\n#### Cleave
     [1 Stamina]\nUntil the start of the next turn when performing a close combat
     attack, choose an additional two targets beyond the first. All targets are affected
-    the same and must be within the weapon\u2019s range.\n\n\n\n|\n\n\n\n# Monk\n\n-\n\nAncient
+    the same and must be within the weapon\u2019s range.\n\n\n\n=\n\n\n\n# Monk\n\n-\n\nAncient
     arts as old as Orienta itself the ways of the warrior monks have travelled westward
     and propagated throughout the lands as a storm. The magnificent displays of athleticism
     and superhuman dexterity had often captured the imaginations of foreigners that
     witnessed them but monks and their monasteries were never a monolith that aligned
     themself with any one faction or nation. Those lucky enough to have monks among
     their allies had a rare privilege.\n\n\n#### Technique [3 Initiative]\nGain any
-    1 of the following:\nDouble the amount of movement points gained.\nGain +1 AP.\n\n####
-    Kata [1AP]\nUntil the start of the next turn whenever performing an unarmed attack
-    that hits a target, you may immediately perform a close combat maneuver against
-    the same target.\n\n#### Jutsu [1AP]\nUntil the start of the next turn while
-    unarmoured you gain the benefit of parry against a number of attacks equal to
-    your close combat modifier x2.\n\n#### Counter [1 Stamina]\nUntil the end of
-    the encounter whenever an enemy performs an attack that doesn\u2019t hit you,
-    you may immediately perform an unarmed attack against them.\n\n#### Flurry of
-    Blows [1 Stamina]\nUntil the end of the encounter while unarmed, perform two
-    unarmed attacks for each attack point spent.\n\n\n\n=\n\n\n\n# Necromancer\n\n-\n\nOne
+    1 of the following:\n- Double the amount of movement points gained.\n- Gain +1
+    AP.\n\n#### Kata [1AP]\nUntil the start of the next turn whenever performing
+    an unarmed attack that hits a target, you may immediately perform a close combat
+    maneuver against the same target.\n\n#### Jutsu [1AP]\nUntil the start of the
+    next turn while unarmoured you gain the benefit of parry against a number of
+    attacks equal to your close combat modifier x2.\n\n#### Counter [1 Stamina]\nUntil
+    the end of the encounter whenever an enemy performs an attack that doesn\u2019t
+    hit you, you may immediately perform an unarmed attack against them.\n\n####
+    Flurry of Blows [1 Stamina]\nUntil the end of the encounter while unarmed, perform
+    two unarmed attacks for each attack point spent.\n\n\n\n=\n\n\n\n# Necromancer\n\n-\n\nOne
     of the most ancient forms of arcane study is the study of death and the dying.
     Although initially banned by the empire it was clear that the utility and demand
     for the services of necromancers was too high and after decades of the nobility
@@ -13446,77 +13381,62 @@ MonoBehaviour:
     eyes. Despite this the services of the covert and the inconspicuous have always
     found plenty of use in the highest courts of nobility and the aristocrats who
     often look down upon the furtive, have called upon their services far more that
-    they\u2019d like to admit.\n\n\n#### Sneak [Initiative]\nCharacter may perform
-    a hide action by spending a bonus action or 3 movement points.\n\n#### Infiltrator
-    [Bonus]\nWhen performing actions while hidden, spend a bonus action to reduce
-    all penalties to stealth score by 1.\n\n#### Ambush [Bonus]\nWhen making an attack
-    against a surprised opponent you may spend a bonus action to gain a number of
-    attack points equal to their stealth skill modifier.\n\n#### Assassin [Main]\nSpend
-    1 Stamina to activate this talent. This talent lasts until the start of the next
-    turn. Gain a bonus to attack dice rolls equal to your stealth value - the target\u2019s
+    they\u2019d like to admit.\n\n\n#### Sneak [3 Initiative]\nInitiating stealth
+    doesn't cost any movement points and gain a +1 bonus to stealth score for every
+    1 movement point spent until the start of the next turn.\n\n#### Infiltrator
+    [1AP]\nWhen performing actions while hidden reduce all penalties to stealth score
+    by 1 per stealth skill value.\n\n#### Ambush [1AP]\nWhen making an attack against
+    a surprised opponent you may gain a number of free attacks equal to their stealth
+    skill modifier.\n\n#### Assassin [1 Stamina]\nUntil the start of the next turn
+    gain a bonus to attack dice rolls equal to your stealth value - the target\u2019s
     perception score. This bonus can only be applied against surprised targets.\n\n####
-    Ghost [Main]\nSpend 1 Stamina to activate this talent. This talent lasts until
-    the start of the next turn. Whenever using any main action or bonus action you
-    may also hide into stealth for free.\n\n\n\n=\n\n\n\n# Samurai\n\n-\n\nOriginally
+    Ghost [1 Stamina]\nUntil the start of the next turn whenever using any action
+    you may also hide into stealth for free.\n\n\n\n=\n\n\n\n# Samurai\n\n-\n\nOriginally
     hailing from Orienta the way of the samurai is as much an immigrant as the warrior
     bureaucrats that brought the art with them. Samurai are honourable servants of
     their Daimyo and Shogun masters, sworn to a lifetime of service. The Samurai
     that travel outside of Orienta were ambassadors and diplomats, often sent on
     missions to discover trade and alliance partners abroad all the while keeping
-    a watchful eye on the ever expanding empire.\n\n/\n\n\n#### Iaido [Initiative]\nWhen
-    rolling initiative, gain a +2 bonus on initiative dice rolls. This causes you
-    to receive 3 movement points less than normal.\n\n#### Kiai [Bonus]\nWhen causing
-    damage with an attack, spend your bonus action. All enemies within 5m of your
-    target receive a number of stress points equal to the damage caused by the attack.\n\n####
-    Kyudo [Bonus]\nWhen spending a bonus action to take aim with your ranged attack,
-    your ranged attack gets boosted in addition to the aim bonus and the bonus affects
-    all ranged attacks during your turn and not just the next one.\n\n#### Bushido
-    [Main]\nSpend 1 Stamina to activate this talent. This talent lasts until the
-    start of the next turn. When performing multiple attacks against the same target,
-    gain a cumulative +1 bonus to attack dice rolls for every attack beyond the first.\n\n####
-    Yumihiki [Main]\nSpend 1 Stamina to activate this talent. This talent lasts until
-    the start of the next turn. When performing a ranged attack you may confer any
-    1 of the following effects to your shots. Slash, Push, Slam, Maim. A character
-    can spend 1 attack point in order to confer three effects instead of one.\n\n\n\n|\n\n=\n\n\n\n#
-    Tenebrist\n\n-\n\nOriginally Tenebral magic was attributed to the forces of the
-    demon lords in their invasion. In reality tenebrothurgy was originally created
-    by the Levantese, an arcane art that was stolen by the forces of the demon realm.
-    Tenebral art resurged with the expansion of the horde and reached the empire
-    when travellers learned in the obscure art reached imperial borders. Even so
-    all the way to the end little was ever known or discovered about tenebrists and
-    their shadow dancing.\n\n/\n\n\n#### Shadow leap [Initiative]\nWhen rolling initiative
-    cast this spell. You must be standing within an obscured area. Choose another
-    obscured area within range equal to your spellcasting skill modifier x10m and
-    appear there. This action can be used while hiding without penalty.\n\n#### Dark
-    Cloak [Bonus]\nSpend a bonus action to activate this spell. This spell lasts
-    until the start of the next turn. The cloak gains an intensity equal to your
-    spellcasting spell modifier. For each intensity value you can gain one or more
-    of the following abilities: Obtenebration - +2 bonus to Stealth Dice rolls per
-    intensity spent Obfuscation - +1 bonus to Defence per intensity spent (also applies
-    to ranged attacks) Occultation - Fly speed at 1m for every 2 movement points
-    per intensity spent.\n\n#### Tendrils [Bonus]\nSpend a bonus action to activate
-    this spell. The spell lasts until the start of the next turn. Choose an amount
-    of square meters within 20m of you equal to your spellcasting skill modifier
-    x2. Targets that start their turn, end their turn or move into these squares
-    become entangled. Entangled targets must sacrifice their main action to become
-    free or else they lose all of their movement points.\n|\n\n#### Portals [Main]\nSpend
-    1 Focus point to activate this spell with an intensity equal to your spellcasting
-    skill modifier. This spell remains active until the end of the encounter. Choose
-    any two solid surfaces completely within 20m x intensity of you to project two
-    connected portals, each of which can be up to 2 x intensity square meters in
-    size. During your turn you can spend a bonus action or 3 movement points to move
-    the Portals to new locations.\n\n#### Displacement [Main]\nSpend 1 Focus point
-    to activate this spell. The spell lasts until the end of the encounter or until
-    it is dismissed. This spell has an intensity equal to your spellcasting modifier.
-    For each intensity value you can gain any one or more of the following abilities:
-    Intangibility - Intangible creatures cannot manipulate the world or be manipulated
-    becoming immune to physical damage and able to pass through solid matter but
-    becoming themselves unable to cause physical damage. Magical attacks and spells
-    still work as normal. Invisibility - Invisible creatures cannot be seen and thus
-    have a permanent hidden state with a bonus to stealth equal to the spell\u2019s
-    intensity. Inscrutability - Inscrutable creatures can ignore solid obstacles
-    when attacking allowing them to ignore armour. During your initiative you can
-    choose which of the abilities to activate and deactivate. \n\n\n\n=\n\n\n\nhead(\n#
+    a watchful eye on the ever expanding empire.\n\n\n#### Iaido [3 Initiative]\nPerform
+    an attack against an enemy that targets you with an attack the first time within
+    your turn.\n\n#### Kiai [1AP]\nWhen causing damage with an attack all enemies
+    within 5m of your target receive a number of stress points equal to the damage
+    caused by the attack.\n\n#### Kyudo [1AP]\nUntil the end of your next turn gain
+    boosted ranged attacks.\n\n#### Bushido [1 Stamina]\nUntil the start of the next
+    turn when performing multiple attacks against the same target, gain a cumulative
+    +1 bonus to attack dice rolls for every attack beyond the first.\n\n#### Yumihiki
+    [1 Stamina]\nUntil the start of the next turn when performing a ranged attack
+    you may confer any 1 of the following effects to your shots.\nSlash, Push, Slam,
+    Maim.\nA character can spend 1 action point in order to confer three effects
+    instead of one.\n\n\n\n|\n\n\n\n# Tenebrist\n\n-\n\nOriginally Tenebral magic
+    was attributed to the forces of the demon lords in their invasion. In reality
+    tenebrothurgy was originally created by the Levantese, an arcane art that was
+    stolen by the forces of the demon realm. Tenebral art resurged with the expansion
+    of the horde and reached the empire when travellers learned in the obscure art
+    reached imperial borders. Even so all the way to the end little was ever known
+    or discovered about tenebrists and their shadow dancing.\n\n\n#### Shadow leap
+    [3 Initiative]\nAt any point during yoru turn you may teleport from one obscured
+    area to another within a range equal to your spellcasting skill modifier x10m.
+    This action can be used while hiding without penalty.\n\n#### Dark Cloak [1AP]\nChoose
+    a number of the following abilities equal to your spellcasting skill modifier:\n**-
+    Obtenebration -**+2 Stealth score\n**- Obfuscation -**+1 Defence (also applies
+    to ranged attacks)\n**- Occultation -** Use movement points to Fly.\n\n#### Tendrils
+    [1AP]\nUntil the start of the next turn choose an amount of square meters within
+    20m of you equal to your spellcasting skill value x2. Targets that start their
+    turn, end their turn or move into these squares become entangled. Entangled targets
+    must use 1AP to become free or else they become unable to use movement actions.\n\n####
+    Portals [1 Focus]\nUntil the end of the encounter choose any two solid surfaces
+    completely within 20m x spellcasting skill value of you to project two connected
+    portals, each of which can be up to 2 x spellcasting skill value square meters
+    in size. During your turn you can spend a bonus action or 3 movement points to
+    move the Portals to new locations.\n\n#### Displacement [1 Focus]\nUntil the
+    end of the encounter you can gain one or more of the following abilities equal
+    to your spellcasting skill value:\n**- Intangibility -** Intangible creatures
+    cannot be targeted by physical attacks.\n**- Invisibility -** All actions taken
+    against an invisible creature are hindered and the creature gains a stealth score
+    equal to 1 + the spellcasting skill value.\n**- Inscrutability -** Any attack
+    that the creature performs that hits, always causes 1 wound.\nDuring your initiative
+    you can choose which of the abilities to activate and deactivate. \n\n\n\n=\n\n\n\nhead(\n#
     Rituals\n\n)\n-\nRituals are magical spells that characters that are trained
     in the spellcasting skill can learn and use. Unlike talents which require specialised
     training and intense concentration, rituals are slow and simple procedures that
@@ -13541,42 +13461,43 @@ MonoBehaviour:
     ritual identifies the type and function of an enchanted item with associated
     caveats like curses or possible malfunctions. The listed duration only applies
     to common enchanted items. Uncommon items take twice as much, Rare items three
-    times as much and Legendary items four times as much.\n)/\n\n\n\nhead(\n# Equipment\n\n)\n-\nThe
-    remnants of Katacross have a tall order trying to survive out in the wilds, beset
-    by all sides by creatures far superior in lethality than them. This is why equipment
-    is the one and only lifeline for any survivor.\n/\n\n\n## Carrying Capacity\n\nCharacters
-    are capable of carrying an amount of equipment in encumbrance points (ENC) based
-    on their Conditioning skill. The total carrying capacity is equal to 5 + conditioning
-    skill modifier x3. If a character\u2019s total carried weight is less than the
-    carrying capacity the character is unencumbered and may move around as normal.
-    If a character\u2019s total carried weight is equal to or greater than their
-    carried weight they are considered to be encumbered and thus become immobile
-    and cannot receive movement points.\n\n\n\n#### Close Combat Weapons\n\nName
-    | RNG | DMG | ENC | Cost | Rarity | Traits \n-- | --\nClub | 1m | +1 | 1 | 1c
-    | Common | Push, \nDagger | 1m | +0 | 1 | 1c | Common | Quick, \nShield, Wooden
-    | 1m | +0 | 1 | 1c | Common | Parry, \nThrowing Knife | 1m | +0 | 1 | 1c | Common
-    | Throw [10m], Batch [5], \nHatchet | 1m | +1 | 1 | 3c | Common | Maim, \nHunting
-    Net | 2m | +0 | 1 | 3c | Common | Harmless, Throw [5m], Tangle, \nPike | 2m |
-    +1 | 1 | 3c | Common | Pierce, Throw [20m], \nShield, Metal | 1m | +0 | 1 | 3c
-    | Common | Parry, Durable [1], \nShortsword | 1m | +1 | 1 | 3c | Common | Parry,
-    \nJavelin | 2m | +0 | 2 | 5c | Common | Pierce, Throw [20m], Batch [5], \nTower
-    Shield, Wooden | 1m | +0 | 1 | 5c | Common | Parry, Cover, Durable [1], \nMace
-    | 1m | +2 | 1 | 3c | Uncommon | Slam, \nLongsword | 1m | +2 | 1 | 5c | Uncommon
-    | Slash, Parry, \nMaul | 1m | +3 | 1 | 5c | Uncommon | Push, Slam, Slow, \nMorningstar
-    | 1m | +1 | 1 | 5c | Uncommon | Slam, Pierce, \nSpear | 2m | +1 | 1 | 5c | Uncommon
-    | Pierce, Two Handed, \nWaraxe | 1m | +1 | 1 | 5c | Uncommon | Sweep, Maim, \nTower
-    Shield, Metal | 1m | +0 | 2 | 10c | Uncommon | Parry, Cover, Durable [2], \nBattleaxe
-    | 2m | +2 | 2 | 10c | Rare | Maim, Sweep, Two Handed, Slow, \nFlail | 1m | +1
-    | 1 | 10c | Rare | Exotic, Fluid, Pierce, Slow, \nGlaive | 2m | +3 | 2 | 10c
-    | Rare | Slash, Sweep, Two Handed, Slow, \nGreatsword | 2m | +3 | 2 | 10c | Rare
-    | Slash, Parry, Sweep, Two Handed, Slow, \nHalberd | 2m | +3 | 2 | 10c | Rare
-    | Pierce, Sweep, Slam, Two Handed, Slow, \nWarhammer | 2m | +3 | 2 | 10c | Rare
-    | Push, Slam, Sweep, Two Handed, Slow, \n\n\n\n\n#### Ranged Combat Weapons\n\nName
-    | RNG | DMG | ENC | Cost | Rarity | Traits \n-- | --\nSling | 20m | +0 | 1 |
-    1c | Common | Slam, Reload [Pebble], \nHand Crossbow | 20m | +0 | 1 | 3c | Uncommon
-    | Quick, Reload [Arrow], \nCrossbow | 50m | +1 | 1 | 5c | Uncommon | Slow Reload
-    [Arrow], Two Handed, \nShortbow | 100m | +1 | 1 | 5c | Uncommon | Pin, Reload
-    [Arrow], Two Handed, \nPistol | 50m | +2 | 1 | 10c | Uncommon | Slow Reload [Cartridge],
+    times as much and Legendary items four times as much.\n)/\n\n=\n\n\n\nhead(\n#
+    Equipment\n\n)\n-\nThe remnants of Katacross have a tall order trying to survive
+    out in the wilds, beset by all sides by creatures far superior in lethality than
+    them. This is why equipment is the one and only lifeline for any survivor.\n/\n\n\n##
+    Carrying Capacity\n\nCharacters are capable of carrying an amount of equipment
+    in encumbrance points (ENC) based on their Conditioning skill. The total carrying
+    capacity is equal to 5 + conditioning skill modifier x3. If a character\u2019s
+    total carried weight is less than the carrying capacity the character is unencumbered
+    and may move around as normal. If a character\u2019s total carried weight is
+    equal to or greater than their carried weight they are considered to be encumbered
+    and thus become immobile and cannot receive movement points.\n\n\n\n#### Close
+    Combat Weapons\n\nName | RNG | DMG | ENC | Cost | Rarity | Traits \n-- | --\nClub
+    | 1m | +1 | 1 | 1c | Common | Push, \nDagger | 1m | +0 | 1 | 1c | Common | Quick,
+    \nShield, Wooden | 1m | +0 | 1 | 1c | Common | Parry, \nThrowing Knife | 1m |
+    +0 | 1 | 1c | Common | Throw [10m], Batch [5], \nHatchet | 1m | +1 | 1 | 3c |
+    Common | Maim, \nHunting Net | 2m | +0 | 1 | 3c | Common | Harmless, Throw [5m],
+    Tangle, \nPike | 2m | +1 | 1 | 3c | Common | Pierce, Throw [20m], \nShield, Metal
+    | 1m | +0 | 1 | 3c | Common | Parry, Durable [1], \nShortsword | 1m | +1 | 1
+    | 3c | Common | Parry, \nJavelin | 2m | +0 | 2 | 5c | Common | Pierce, Throw
+    [20m], Batch [5], \nTower Shield, Wooden | 1m | +0 | 1 | 5c | Common | Parry,
+    Cover, Durable [1], \nMace | 1m | +2 | 1 | 3c | Uncommon | Slam, \nLongsword
+    | 1m | +2 | 1 | 5c | Uncommon | Slash, Parry, \nMaul | 1m | +3 | 1 | 5c | Uncommon
+    | Push, Slam, Slow, \nMorningstar | 1m | +1 | 1 | 5c | Uncommon | Slam, Pierce,
+    \nSpear | 2m | +1 | 1 | 5c | Uncommon | Pierce, Two Handed, \nWaraxe | 1m | +1
+    | 1 | 5c | Uncommon | Sweep, Maim, \nTower Shield, Metal | 1m | +0 | 2 | 10c
+    | Uncommon | Parry, Cover, Durable [2], \nBattleaxe | 2m | +2 | 2 | 10c | Rare
+    | Maim, Sweep, Two Handed, Slow, \nFlail | 1m | +1 | 1 | 10c | Rare | Exotic,
+    Fluid, Pierce, Slow, \nGlaive | 2m | +3 | 2 | 10c | Rare | Slash, Sweep, Two
+    Handed, Slow, \nGreatsword | 2m | +3 | 2 | 10c | Rare | Slash, Parry, Sweep,
+    Two Handed, Slow, \nHalberd | 2m | +3 | 2 | 10c | Rare | Pierce, Sweep, Slam,
+    Two Handed, Slow, \nWarhammer | 2m | +3 | 2 | 10c | Rare | Push, Slam, Sweep,
+    Two Handed, Slow, \n\n\n\n\n#### Ranged Combat Weapons\n\nName | RNG | DMG |
+    ENC | Cost | Rarity | Traits \n-- | --\nSling | 20m | +0 | 1 | 1c | Common |
+    Slam, Reload [Pebble], \nHand Crossbow | 20m | +0 | 1 | 3c | Uncommon | Quick,
+    Reload [Arrow], \nCrossbow | 50m | +1 | 1 | 5c | Uncommon | Slow Reload [Arrow],
+    Two Handed, \nShortbow | 100m | +1 | 1 | 5c | Uncommon | Pin, Reload [Arrow],
+    Two Handed, \nPistol | 50m | +2 | 1 | 10c | Uncommon | Slow Reload [Cartridge],
     \nArbalest | 50m | +2 | 2 | 10c | Rare | Maim, Slow Reload [Arrow], Two Handed,
     \nLongbow | 200m | +2 | 1 | 10c | Rare | Pin, Reload [Arrow], Two Handed, \nBlunderbuss
     | 20m | +3 | 2 | 15c | Rare | Slam, Slow Reload [Cartridge], Two Handed, \nRifle
@@ -15400,6 +15321,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &2103793847
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

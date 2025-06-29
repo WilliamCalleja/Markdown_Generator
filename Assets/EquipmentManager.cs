@@ -190,7 +190,7 @@ public class EquipmentManager : MonoBehaviour
     public List<GearCategory> gearCategories;
     public List<ConsumableCategory> consumableCategories;
     public string output;
-
+    
     [ContextMenu("Refresh")]
     private void Refresh()
     {
