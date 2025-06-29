@@ -359,43 +359,6 @@ MonoBehaviour:
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
   m_ObsoleteContactShadows: 0
---- !u!84 &402188290
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 4
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1 &432432459
 GameObject:
   m_ObjectHideFlags: 0
@@ -4030,7 +3993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c177a7438dfb51f48aeab1da29019bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  result: {fileID: 402188290}
+  result: {fileID: 573600579}
   voronoiGenerator: {fileID: 7200000, guid: 420cfded7f159ea43b25defe86f25c71, type: 3}
   visualizer: {fileID: 2100000, guid: 1b44be87f565cb74da841b7046513d89, type: 2}
   parameters:
@@ -10996,7 +10959,6 @@ MonoBehaviour:
         of spiritual traditions and superstitious heritages that came together to
         create the way of nature\u2019s guardian."
       - '[H4LIST]'
-      - =
       options:
         titleFormat: 1
         contentFormat: 0
@@ -11025,7 +10987,7 @@ MonoBehaviour:
           Poisoned characters are hindered when performing dice rolls. [\n]**Regenerate
           -** Spend a main action to restore 1 lost wound point.
       - title: 'Terraforming [1 Focus]'
-        content: Perform a geomancy effect that is permanent.|
+        content: Perform a geomancy effect that is permanent.[\n]|
       boxes: []
       items: []
     - title: Elementalist
@@ -11038,6 +11000,7 @@ MonoBehaviour:
         have followed civilization from the very start and are greatly attributed
         to be the pillar of power that allowed the empire to form."
       - '[H4LIST]'
+      - =
       options:
         titleFormat: 1
         contentFormat: 0
@@ -11052,31 +11015,27 @@ MonoBehaviour:
           If the amount of tokens is equal to or greater than the target\u2019s soak,
           they suffer from the token\u2019s effect. [\\n]**Fire -** A creature that
           is burning suffers 1 wound and gains an additional fire token at the end
-          of its turn. A creature can spend their main action, bonus action or movement
-          points to reduce 1 token for each action type spent. [\\n]**Cold -** A
-          creature that is freezing suffers from a -1 penalty to movement points
-          for every cold token and as long as they have at least 1 cold token they
-          suffer from -1 to attack points. A creature can spend their main action,
-          bonus action or movement points to reduce 1 token for each action type
-          spent. [\\n]**Shock -** A creature that is electrocuted suffers from a
-          hindrance to all dice rolls. A creature can spend their main action, bonus
-          action or movement points to reduce 1 token for each action type spent.[\\n]|"
-      - title: 'Counter [Bonus]'
-        content: "Spend a bonus action to nullify the casting of a spell within 20m
-          of you. Roll a spellcasting dice roll against the target\u2019s Willpower."
-      - title: 'Explosion [Main]'
-        content: Spend 1 Focus to cast this spell. Choose a 4x4 area fully within
-          20m of you or draw a straight line from yourself up to 20m away. All targets
-          within this area are hit with a Blast of your choice.
-      - title: 'Elemental Control [Main]'
-        content: "Spend 1 Focus to cast this spell. This spell\u2019s effects last
-          until the end of the encounter. During your turn choose any 3 targets that
-          currently have fire, cold, or shock tokens (or natural sources of heat,
-          cold or electricity), roll a spellcasting dice roll against the target\u2019s
-          Willpower and do any of the following. Alter - Double or half the amount
-          of tokens on the target. Halfing 1 token removes it completely. Swap -
-          Swap the tokens that two or more chosen targets have on them with each
-          other."
+          of its turn. [\\n]**Cold -** A creature that is freezing suffers from a
+          -1 penalty to movement points for every cold token and as long as they
+          have at least 1 cold token they suffer from -1 to action points. [\\n]**Shock
+          -** A creature that is electrocuted suffers from a hindrance to all dice
+          rolls. [\\n]A creature can spend 1AP to reduce 1 token for each action
+          point spent."
+      - title: 'Counter [1AP]'
+        content: "Nullify the casting of a spell within 20m of you. Roll a spellcasting
+          dice roll against the target\u2019s Willpower."
+      - title: 'Explosion [1 Focus]'
+        content: Choose a 4x4 area fully within 20m of you or draw a straight line
+          from yourself up to 20m away. All targets within this area are hit with
+          a Blast of your choice.
+      - title: 'Elemental Control [1 Focus]'
+        content: "Until the end of the encounter during your turn choose any 3 targets
+          that currently have fire, cold, or shock tokens (or natural sources of
+          heat, cold or electricity), roll a spellcasting dice roll against the target\u2019s
+          Willpower and do any of the following. [\\n]Alter - Double or half the
+          amount of tokens on the target. Halfing 1 token removes it completely.
+          [\\n]Swap - Swap the tokens that two or more chosen targets have on them
+          with each other."
       boxes: []
       items: []
     - title: Knight
@@ -11094,30 +11053,24 @@ MonoBehaviour:
         titleFormat: 1
         contentFormat: 0
       list:
-      - title: 'Bulwark [Initiative]'
-        content: When rolling initiative gain a +1 bonus on Soak if you are currently
-          wearing armour or holding a shield. This causes you to receive 3 movement
-          points less than normal.
-      - title: 'Guard [Bonus]'
-        content: Spend a bonus action to activate guard. This talent stays active
-          until the start of the next turn. When an enemy character walks within
+      - title: 'Bulwark [3 Initiative]'
+        content: Gain a +1 bonus on Soak if you are currently wearing armour or holding
+          a shield.
+      - title: 'Guard [1AP]'
+        content: Until the start of the next turn when an enemy character walks within
           range of your weapon, immediately perform an attack against that enemy.
-      - title: 'Protect [Bonus]'
-        content: You may grant any Parry effect to any character that is within range
-          of your Parry weapons. When you or an allied character that can receive
-          the parry effect suffers from an attack, spend a bonus action to inflict
-          a -2 penalty to the attack.
-      - title: 'Weapon Master [Main]'
-        content: Spend 1 Stamina to activate this talent. This talent lasts until
-          the start of the next turn. When performing a close combat attack you may
-          confer any of the following effects to your blow. Push, Slam, Maim, Pierce. 
-          A character can spend 1 attack point in order to confer three effects instead
-          of one.
-      - title: 'Cleave [Main]'
-        content: "Spend 1 Stamina to activate this talent. This talent lasts until
-          the start of the next turn. When performing a close combat attack, choose
-          an additional two targets beyond the first. All targets are affected the
-          same and must be within the weapon\u2019s range."
+      - title: 'Defend [1AP]'
+        content: Grant the effect of the Protect maneuvre to all allies within range
+          instead of just one.
+      - title: 'Weapon Master [1 Stamina]'
+        content: Until the start of the next turn when performing a close combat
+          attack you may confer any of the following effects to your blow. Push,
+          Slam, Maim, Pierce.  A character can spend 1 extra action point in order
+          to confer three effects instead of one.
+      - title: 'Cleave [1 Stamina]'
+        content: "Until the start of the next turn when performing a close combat
+          attack, choose an additional two targets beyond the first. All targets
+          are affected the same and must be within the weapon\u2019s range."
       boxes: []
       items: []
     - title: Monk
@@ -11556,7 +11509,7 @@ MonoBehaviour:
       \n**Venom -** Wounded targets that survive that attack are poisoned. Poisoned
       characters are hindered when performing dice rolls. \n**Regenerate -** Spend
       a main action to restore 1 lost wound point.\n\n#### Terraforming [1 Focus]\nPerform
-      a geomancy effect that is permanent.|\n\n\n\n=\n\n\n\n# Elementalist\n\n-\n\nThe
+      a geomancy effect that is permanent.\n|\n\n\n\n\n\n# Elementalist\n\n-\n\nThe
       first flame is legendarily attributed to have been created by Galstaff of the
       Meridian shamans. While actual evidence is hard to come by from such ancient
       times it is clear that elemental magic was originally known by its first name,
@@ -11570,47 +11523,36 @@ MonoBehaviour:
       the amount of tokens is equal to or greater than the target\u2019s soak, they
       suffer from the token\u2019s effect. \n**Fire -** A creature that is burning
       suffers 1 wound and gains an additional fire token at the end of its turn.
-      A creature can spend their main action, bonus action or movement points to
-      reduce 1 token for each action type spent. \n**Cold -** A creature that is
-      freezing suffers from a -1 penalty to movement points for every cold token
-      and as long as they have at least 1 cold token they suffer from -1 to attack
-      points. A creature can spend their main action, bonus action or movement points
-      to reduce 1 token for each action type spent. \n**Shock -** A creature that
-      is electrocuted suffers from a hindrance to all dice rolls. A creature can
-      spend their main action, bonus action or movement points to reduce 1 token
-      for each action type spent.\n|\n\n#### Counter [Bonus]\nSpend a bonus action
-      to nullify the casting of a spell within 20m of you. Roll a spellcasting dice
-      roll against the target\u2019s Willpower.\n\n#### Explosion [Main]\nSpend 1
-      Focus to cast this spell. Choose a 4x4 area fully within 20m of you or draw
-      a straight line from yourself up to 20m away. All targets within this area
-      are hit with a Blast of your choice.\n\n#### Elemental Control [Main]\nSpend
-      1 Focus to cast this spell. This spell\u2019s effects last until the end of
-      the encounter. During your turn choose any 3 targets that currently have fire,
-      cold, or shock tokens (or natural sources of heat, cold or electricity), roll
-      a spellcasting dice roll against the target\u2019s Willpower and do any of
-      the following. Alter - Double or half the amount of tokens on the target. Halfing
-      1 token removes it completely. Swap - Swap the tokens that two or more chosen
-      targets have on them with each other.\n\n\n\n\n\n# Knight\n\n-\n\nThe chivalric
-      code has existed for as long as there were lords wealthy enough to pay for
-      their armed house warriors. Knights are more than mere highly paid and equipped
-      brutes. Either born of noble stock or commoners elevated to a higher societal
-      position, the knight is a sworn champion in service of their king or emperor,
-      a defender of the lands and the interests of their banners.\n\n\n#### Bulwark
-      [Initiative]\nWhen rolling initiative gain a +1 bonus on Soak if you are currently
-      wearing armour or holding a shield. This causes you to receive 3 movement points
-      less than normal.\n\n#### Guard [Bonus]\nSpend a bonus action to activate guard.
-      This talent stays active until the start of the next turn. When an enemy character
-      walks within range of your weapon, immediately perform an attack against that
-      enemy.\n\n#### Protect [Bonus]\nYou may grant any Parry effect to any character
-      that is within range of your Parry weapons. When you or an allied character
-      that can receive the parry effect suffers from an attack, spend a bonus action
-      to inflict a -2 penalty to the attack.\n\n#### Weapon Master [Main]\nSpend
-      1 Stamina to activate this talent. This talent lasts until the start of the
-      next turn. When performing a close combat attack you may confer any of the
-      following effects to your blow. Push, Slam, Maim, Pierce.  A character can
-      spend 1 attack point in order to confer three effects instead of one.\n\n####
-      Cleave [Main]\nSpend 1 Stamina to activate this talent. This talent lasts until
-      the start of the next turn. When performing a close combat attack, choose an
+      \n**Cold -** A creature that is freezing suffers from a -1 penalty to movement
+      points for every cold token and as long as they have at least 1 cold token
+      they suffer from -1 to action points. \n**Shock -** A creature that is electrocuted
+      suffers from a hindrance to all dice rolls. \nA creature can spend 1AP to reduce
+      1 token for each action point spent.\n\n#### Counter [1AP]\nNullify the casting
+      of a spell within 20m of you. Roll a spellcasting dice roll against the target\u2019s
+      Willpower.\n\n#### Explosion [1 Focus]\nChoose a 4x4 area fully within 20m
+      of you or draw a straight line from yourself up to 20m away. All targets within
+      this area are hit with a Blast of your choice.\n\n#### Elemental Control [1
+      Focus]\nUntil the end of the encounter during your turn choose any 3 targets
+      that currently have fire, cold, or shock tokens (or natural sources of heat,
+      cold or electricity), roll a spellcasting dice roll against the target\u2019s
+      Willpower and do any of the following. \nAlter - Double or half the amount
+      of tokens on the target. Halfing 1 token removes it completely. \nSwap - Swap
+      the tokens that two or more chosen targets have on them with each other.\n\n\n\n=\n\n\n\n#
+      Knight\n\n-\n\nThe chivalric code has existed for as long as there were lords
+      wealthy enough to pay for their armed house warriors. Knights are more than
+      mere highly paid and equipped brutes. Either born of noble stock or commoners
+      elevated to a higher societal position, the knight is a sworn champion in service
+      of their king or emperor, a defender of the lands and the interests of their
+      banners.\n\n\n#### Bulwark [3 Initiative]\nGain a +1 bonus on Soak if you are
+      currently wearing armour or holding a shield.\n\n#### Guard [1AP]\nUntil the
+      start of the next turn when an enemy character walks within range of your weapon,
+      immediately perform an attack against that enemy.\n\n#### Defend [1AP]\nGrant
+      the effect of the Protect maneuvre to all allies within range instead of just
+      one.\n\n#### Weapon Master [1 Stamina]\nUntil the start of the next turn when
+      performing a close combat attack you may confer any of the following effects
+      to your blow. Push, Slam, Maim, Pierce.  A character can spend 1 extra action
+      point in order to confer three effects instead of one.\n\n#### Cleave [1 Stamina]\nUntil
+      the start of the next turn when performing a close combat attack, choose an
       additional two targets beyond the first. All targets are affected the same
       and must be within the weapon\u2019s range.\n\n\n\n|\n\n\n\n# Monk\n\n-\n\nAncient
       arts as old as Orienta itself the ways of the warrior monks have travelled
@@ -13356,7 +13298,7 @@ MonoBehaviour:
     pierce, maim and slash. \n**Venom -** Wounded targets that survive that attack
     are poisoned. Poisoned characters are hindered when performing dice rolls. \n**Regenerate
     -** Spend a main action to restore 1 lost wound point.\n\n#### Terraforming [1
-    Focus]\nPerform a geomancy effect that is permanent.|\n\n\n\n=\n\n\n\n# Elementalist\n\n-\n\nThe
+    Focus]\nPerform a geomancy effect that is permanent.\n|\n\n\n\n\n\n# Elementalist\n\n-\n\nThe
     first flame is legendarily attributed to have been created by Galstaff of the
     Meridian shamans. While actual evidence is hard to come by from such ancient
     times it is clear that elemental magic was originally known by its first name,
@@ -13369,46 +13311,36 @@ MonoBehaviour:
     on the target equal to the dice roll\u2019s margin. If the amount of tokens is
     equal to or greater than the target\u2019s soak, they suffer from the token\u2019s
     effect. \n**Fire -** A creature that is burning suffers 1 wound and gains an
-    additional fire token at the end of its turn. A creature can spend their main
-    action, bonus action or movement points to reduce 1 token for each action type
-    spent. \n**Cold -** A creature that is freezing suffers from a -1 penalty to
-    movement points for every cold token and as long as they have at least 1 cold
-    token they suffer from -1 to attack points. A creature can spend their main action,
-    bonus action or movement points to reduce 1 token for each action type spent.
+    additional fire token at the end of its turn. \n**Cold -** A creature that is
+    freezing suffers from a -1 penalty to movement points for every cold token and
+    as long as they have at least 1 cold token they suffer from -1 to action points.
     \n**Shock -** A creature that is electrocuted suffers from a hindrance to all
-    dice rolls. A creature can spend their main action, bonus action or movement
-    points to reduce 1 token for each action type spent.\n|\n\n#### Counter [Bonus]\nSpend
-    a bonus action to nullify the casting of a spell within 20m of you. Roll a spellcasting
-    dice roll against the target\u2019s Willpower.\n\n#### Explosion [Main]\nSpend
-    1 Focus to cast this spell. Choose a 4x4 area fully within 20m of you or draw
-    a straight line from yourself up to 20m away. All targets within this area are
-    hit with a Blast of your choice.\n\n#### Elemental Control [Main]\nSpend 1 Focus
-    to cast this spell. This spell\u2019s effects last until the end of the encounter.
-    During your turn choose any 3 targets that currently have fire, cold, or shock
+    dice rolls. \nA creature can spend 1AP to reduce 1 token for each action point
+    spent.\n\n#### Counter [1AP]\nNullify the casting of a spell within 20m of you.
+    Roll a spellcasting dice roll against the target\u2019s Willpower.\n\n#### Explosion
+    [1 Focus]\nChoose a 4x4 area fully within 20m of you or draw a straight line
+    from yourself up to 20m away. All targets within this area are hit with a Blast
+    of your choice.\n\n#### Elemental Control [1 Focus]\nUntil the end of the encounter
+    during your turn choose any 3 targets that currently have fire, cold, or shock
     tokens (or natural sources of heat, cold or electricity), roll a spellcasting
-    dice roll against the target\u2019s Willpower and do any of the following. Alter
+    dice roll against the target\u2019s Willpower and do any of the following. \nAlter
     - Double or half the amount of tokens on the target. Halfing 1 token removes
-    it completely. Swap - Swap the tokens that two or more chosen targets have on
-    them with each other.\n\n\n\n\n\n# Knight\n\n-\n\nThe chivalric code has existed
-    for as long as there were lords wealthy enough to pay for their armed house warriors.
-    Knights are more than mere highly paid and equipped brutes. Either born of noble
-    stock or commoners elevated to a higher societal position, the knight is a sworn
-    champion in service of their king or emperor, a defender of the lands and the
-    interests of their banners.\n\n\n#### Bulwark [Initiative]\nWhen rolling initiative
-    gain a +1 bonus on Soak if you are currently wearing armour or holding a shield.
-    This causes you to receive 3 movement points less than normal.\n\n#### Guard
-    [Bonus]\nSpend a bonus action to activate guard. This talent stays active until
-    the start of the next turn. When an enemy character walks within range of your
-    weapon, immediately perform an attack against that enemy.\n\n#### Protect [Bonus]\nYou
-    may grant any Parry effect to any character that is within range of your Parry
-    weapons. When you or an allied character that can receive the parry effect suffers
-    from an attack, spend a bonus action to inflict a -2 penalty to the attack.\n\n####
-    Weapon Master [Main]\nSpend 1 Stamina to activate this talent. This talent lasts
-    until the start of the next turn. When performing a close combat attack you may
-    confer any of the following effects to your blow. Push, Slam, Maim, Pierce. 
-    A character can spend 1 attack point in order to confer three effects instead
-    of one.\n\n#### Cleave [Main]\nSpend 1 Stamina to activate this talent. This
-    talent lasts until the start of the next turn. When performing a close combat
+    it completely. \nSwap - Swap the tokens that two or more chosen targets have
+    on them with each other.\n\n\n\n=\n\n\n\n# Knight\n\n-\n\nThe chivalric code
+    has existed for as long as there were lords wealthy enough to pay for their armed
+    house warriors. Knights are more than mere highly paid and equipped brutes. Either
+    born of noble stock or commoners elevated to a higher societal position, the
+    knight is a sworn champion in service of their king or emperor, a defender of
+    the lands and the interests of their banners.\n\n\n#### Bulwark [3 Initiative]\nGain
+    a +1 bonus on Soak if you are currently wearing armour or holding a shield.\n\n####
+    Guard [1AP]\nUntil the start of the next turn when an enemy character walks within
+    range of your weapon, immediately perform an attack against that enemy.\n\n####
+    Defend [1AP]\nGrant the effect of the Protect maneuvre to all allies within range
+    instead of just one.\n\n#### Weapon Master [1 Stamina]\nUntil the start of the
+    next turn when performing a close combat attack you may confer any of the following
+    effects to your blow. Push, Slam, Maim, Pierce.  A character can spend 1 extra
+    action point in order to confer three effects instead of one.\n\n#### Cleave
+    [1 Stamina]\nUntil the start of the next turn when performing a close combat
     attack, choose an additional two targets beyond the first. All targets are affected
     the same and must be within the weapon\u2019s range.\n\n\n\n|\n\n\n\n# Monk\n\n-\n\nAncient
     arts as old as Orienta itself the ways of the warrior monks have travelled westward
@@ -15174,6 +15106,43 @@ MonoBehaviour:
 
     24
     | Wark, Imperial [Bird Legendary 11] | 3'
+--- !u!84 &573600579
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1823688464
 GameObject:
   m_ObjectHideFlags: 0
