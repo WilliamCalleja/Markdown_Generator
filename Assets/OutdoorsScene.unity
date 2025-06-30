@@ -359,6 +359,43 @@ MonoBehaviour:
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
   m_ObsoleteContactShadows: 0
+--- !u!84 &250944857
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &432432459
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,9 +700,9 @@ MonoBehaviour:
       textVariable: 
     - title: Trample
       type: 6
-      description: 'When this creature knocks a target down, it immediately gains
+      description: When this creature knocks a target down, it immediately gains
         a movement point which it may use on walking. The first target that it comes
-        into contact with during this movement may be hit with a stomp attack. '
+        into contact with during this movement may be targeted with a free attack.
       hasVariable: 0
       valueVariable: 0
       textVariable: 
@@ -2883,7 +2920,7 @@ MonoBehaviour:
       *DMG* **+7**, *RNG* **50m**, *Pierce, Reload*\n\n#### Abilities\n-\n**Trample
       [Attack] -** When this creature knocks a target down, it immediately gains
       a movement point which it may use on walking. The first target that it comes
-      into contact with during this movement may be hit with a stomp attack. \n\n**Knockdown
+      into contact with during this movement may be targeted with a free attack.\n\n**Knockdown
       [Action] -** This creature can perform a Trip maneuver against a target that
       they caused damage to that hits automatically.\n\n**Construct [Passive] -**
       This creature is immune to Conditions.\n\n)\n/\n\n/\n\n## Bagrunn Cattle\n-\nThe
@@ -2899,102 +2936,103 @@ MonoBehaviour:
       *DMG* **+6**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample [Attack]
       -** When this creature knocks a target down, it immediately gains a movement
       point which it may use on walking. The first target that it comes into contact
-      with during this movement may be hit with a stomp attack. \n\n)\n|\n#### Bagrunn
-      Bull\nitem(\n# Uncommon\n## Mammal\n-\n*DEF* **0**, *ARM* **5**, *WND* **12**,
-      *VIG* **17**, *WIL* **16**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative*
-      **+2**\n*Movement Points* **13**; *Carrying Capacity* **180**\n*Size* **Humongous
-      [9]**, ENC **70**; *Threat level* **13**\n#### Action Points [4]\n-\n \n**Crest**
-      *ATT* **+3**, *DMG* **+11**, *RNG* **1m**, *Slam, Sweep*\n**Stomp** *ATT* **+3**,
-      *DMG* **+10**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample [Attack]
-      -** When this creature knocks a target down, it immediately gains a movement
-      point which it may use on walking. The first target that it comes into contact
-      with during this movement may be hit with a stomp attack. \n\n)\n/\n#### Bagrunn
-      Dire\nitem(\n# Rare\n## Mammal\n-\n*DEF* **0**, *ARM* **6**, *WND* **16**,
-      *VIG* **21**, *WIL* **20**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative*
-      **+2**\n*Movement Points* **15**; *Carrying Capacity* **240**\n*Size* **Humongous
-      [13]**, ENC **90**; *Threat level* **19**\n#### Action Points [4]\n-\n \n**Crest**
-      *ATT* **+4**, *DMG* **+15**, *RNG* **1m**, *Slam, Sweep*\n**Stomp** *ATT* **+4**,
-      *DMG* **+14**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample [Attack]
-      -** When this creature knocks a target down, it immediately gains a movement
-      point which it may use on walking. The first target that it comes into contact
-      with during this movement may be hit with a stomp attack. \n\n)\n|\n#### Bagrunn
-      Titan\nitem(\n# Rare\n## Mammal\n-\n*DEF* **0**, *ARM* **7**, *WND* **18**,
-      *VIG* **23**, *WIL* **22**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative*
-      **+2**\n*Movement Points* **16**; *Carrying Capacity* **270**\n*Size* **Humongous
-      [15]**, ENC **100**; *Threat level* **23**\n#### Action Points [4]\n-\n \n**Crest**
-      *ATT* **+4**, *DMG* **+17**, *RNG* **1m**, *Slam, Sweep*\n**Stomp** *ATT* **+4**,
-      *DMG* **+16**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample [Attack]
-      -** When this creature knocks a target down, it immediately gains a movement
-      point which it may use on walking. The first target that it comes into contact
-      with during this movement may be hit with a stomp attack. \n\n**Sprinter [Initiative]
-      -** This creature gains +10 movement points instead of +5 on the first AP spent.\n\n)\n/\n\n/\n\n##
-      Canid\n-\nFaced with a vast new slew of insurmountable challenges, only the
-      mightiest breeds of dogs and wolves managed to eke out a niche for themselves
-      in the savage world of the Kaiju. Man\u2019s best friend is not an ally of
-      war capable of felling the mighty beasts of the sundered planet and anything
-      less would have only meant extinction for our four legged friends. Travelling
-      in packs and hunting with millions of years of evolution at their backs, canids
-      are ever the apex predators even in an environment rife with competition.\n/\n####
-      Canid, Stalking\nitem(\n# Common\n## Mammal\n-\n*DEF* **10**, *ARM* **0**,
-      *WND* **1**, *VIG* **5**, *WIL* **6**\n*Perception:* *Range* **80m**, *Score*
-      **4**; *Initiative* **+3**\n*Movement Points* **6**; *Carrying Capacity* **15**\n*Size*
-      **Tiny [-2]**, ENC **15**; *Threat level* **2**\n#### Action Points [3]\n-\n
-      \n**Canines** *ATT* **+1**, *DMG* **+0**, *RNG* **1m**, *Pierce, Slam*\n**Claws**
-      *ATT* **+1**, *DMG* **+0**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Pack
+      with during this movement may be targeted with a free attack.\n\n)\n|\n####
+      Bagrunn Bull\nitem(\n# Uncommon\n## Mammal\n-\n*DEF* **0**, *ARM* **5**, *WND*
+      **12**, *VIG* **17**, *WIL* **16**\n*Perception:* *Range* **60m**, *Score*
+      **3**; *Initiative* **+2**\n*Movement Points* **13**; *Carrying Capacity* **180**\n*Size*
+      **Humongous [9]**, ENC **70**; *Threat level* **13**\n#### Action Points [4]\n-\n
+      \n**Crest** *ATT* **+3**, *DMG* **+11**, *RNG* **1m**, *Slam, Sweep*\n**Stomp**
+      *ATT* **+3**, *DMG* **+10**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample
+      [Attack] -** When this creature knocks a target down, it immediately gains
+      a movement point which it may use on walking. The first target that it comes
+      into contact with during this movement may be targeted with a free attack.\n\n)\n/\n####
+      Bagrunn Dire\nitem(\n# Rare\n## Mammal\n-\n*DEF* **0**, *ARM* **6**, *WND*
+      **16**, *VIG* **21**, *WIL* **20**\n*Perception:* *Range* **60m**, *Score*
+      **3**; *Initiative* **+2**\n*Movement Points* **15**; *Carrying Capacity* **240**\n*Size*
+      **Humongous [13]**, ENC **90**; *Threat level* **19**\n#### Action Points [4]\n-\n
+      \n**Crest** *ATT* **+4**, *DMG* **+15**, *RNG* **1m**, *Slam, Sweep*\n**Stomp**
+      *ATT* **+4**, *DMG* **+14**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample
+      [Attack] -** When this creature knocks a target down, it immediately gains
+      a movement point which it may use on walking. The first target that it comes
+      into contact with during this movement may be targeted with a free attack.\n\n)\n|\n####
+      Bagrunn Titan\nitem(\n# Rare\n## Mammal\n-\n*DEF* **0**, *ARM* **7**, *WND*
+      **18**, *VIG* **23**, *WIL* **22**\n*Perception:* *Range* **60m**, *Score*
+      **3**; *Initiative* **+2**\n*Movement Points* **16**; *Carrying Capacity* **270**\n*Size*
+      **Humongous [15]**, ENC **100**; *Threat level* **23**\n#### Action Points
+      [4]\n-\n \n**Crest** *ATT* **+4**, *DMG* **+17**, *RNG* **1m**, *Slam, Sweep*\n**Stomp**
+      *ATT* **+4**, *DMG* **+16**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample
+      [Attack] -** When this creature knocks a target down, it immediately gains
+      a movement point which it may use on walking. The first target that it comes
+      into contact with during this movement may be targeted with a free attack.\n\n**Sprinter
+      [Initiative] -** This creature gains +10 movement points instead of +5 on the
+      first AP spent.\n\n)\n/\n\n/\n\n## Canid\n-\nFaced with a vast new slew of
+      insurmountable challenges, only the mightiest breeds of dogs and wolves managed
+      to eke out a niche for themselves in the savage world of the Kaiju. Man\u2019s
+      best friend is not an ally of war capable of felling the mighty beasts of the
+      sundered planet and anything less would have only meant extinction for our
+      four legged friends. Travelling in packs and hunting with millions of years
+      of evolution at their backs, canids are ever the apex predators even in an
+      environment rife with competition.\n/\n#### Canid, Stalking\nitem(\n# Common\n##
+      Mammal\n-\n*DEF* **10**, *ARM* **0**, *WND* **1**, *VIG* **5**, *WIL* **6**\n*Perception:*
+      *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **6**;
+      *Carrying Capacity* **15**\n*Size* **Tiny [-2]**, ENC **15**; *Threat level*
+      **2**\n#### Action Points [3]\n-\n \n**Canines** *ATT* **+1**, *DMG* **+0**,
+      *RNG* **1m**, *Pierce, Slam*\n**Claws** *ATT* **+1**, *DMG* **+0**, *RNG* **1m**,
+      *Slash*\n\n#### Abilities\n-\n**Pack Mentality [Passive] -** This creature
+      gains a boost on all attacks as long as there is an ally within 2m of them.\n\n)\n|\n####
+      Canid, Wild\nitem(\n# Uncommon\n## Mammal\n-\n*DEF* **7**, *ARM* **1**, *WND*
+      **2**, *VIG* **7**, *WIL* **8**\n*Perception:* *Range* **80m**, *Score* **4**;
+      *Initiative* **+3**\n*Movement Points* **7**; *Carrying Capacity* **35**\n*Size*
+      **Medium [0]**, ENC **25**; *Threat level* **3**\n#### Action Points [2]\n-\n
+      \n**Canines** *ATT* **+1**, *DMG* **+1**, *RNG* **1m**, *Pierce, Slam*\n**Claws**
+      *ATT* **+1**, *DMG* **+2**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Pack
       Mentality [Passive] -** This creature gains a boost on all attacks as long
-      as there is an ally within 2m of them.\n\n)\n|\n#### Canid, Wild\nitem(\n#
-      Uncommon\n## Mammal\n-\n*DEF* **7**, *ARM* **1**, *WND* **2**, *VIG* **7**,
-      *WIL* **8**\n*Perception:* *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement
-      Points* **7**; *Carrying Capacity* **35**\n*Size* **Medium [0]**, ENC **25**;
-      *Threat level* **3**\n#### Action Points [2]\n-\n \n**Canines** *ATT* **+1**,
-      *DMG* **+1**, *RNG* **1m**, *Pierce, Slam*\n**Claws** *ATT* **+1**, *DMG* **+2**,
+      as there is an ally within 2m of them.\n\n**Hamstring [Attack] -** Whenever
+      this creature hits a target with an attack, that target gains a number of hamstring
+      intensity equal to the margin of success.\n\n)\n/\n#### Canid, Dire\nitem(\n#
+      Uncommon\n## Mammal\n-\n*DEF* **5**, *ARM* **1**, *WND* **5**, *VIG* **10**,
+      *WIL* **11**\n*Perception:* *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement
+      Points* **8**; *Carrying Capacity* **65**\n*Size* **Enormous [3]**, ENC **40**;
+      *Threat level* **6**\n#### Action Points [3]\n-\n \n**Canines** *ATT* **+2**,
+      *DMG* **+4**, *RNG* **1m**, *Pierce, Slam*\n**Claws** *ATT* **+2**, *DMG* **+5**,
       *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Pack Mentality [Passive] -**
       This creature gains a boost on all attacks as long as there is an ally within
       2m of them.\n\n**Hamstring [Attack] -** Whenever this creature hits a target
       with an attack, that target gains a number of hamstring intensity equal to
-      the margin of success.\n\n)\n/\n#### Canid, Dire\nitem(\n# Uncommon\n## Mammal\n-\n*DEF*
-      **5**, *ARM* **1**, *WND* **5**, *VIG* **10**, *WIL* **11**\n*Perception:*
-      *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **8**;
-      *Carrying Capacity* **65**\n*Size* **Enormous [3]**, ENC **40**; *Threat level*
-      **6**\n#### Action Points [3]\n-\n \n**Canines** *ATT* **+2**, *DMG* **+4**,
-      *RNG* **1m**, *Pierce, Slam*\n**Claws** *ATT* **+2**, *DMG* **+5**, *RNG* **1m**,
-      *Slash*\n\n#### Abilities\n-\n**Pack Mentality [Passive] -** This creature
-      gains a boost on all attacks as long as there is an ally within 2m of them.\n\n**Hamstring
-      [Attack] -** Whenever this creature hits a target with an attack, that target
-      gains a number of hamstring intensity equal to the margin of success.\n\n)\n|\n####
-      Canid, Mutant\nitem(\n# Rare\n## Mammal\n-\n*DEF* **1**, *ARM* **2**, *WND*
-      **9**, *VIG* **14**, *WIL* **15**\n*Perception:* *Range* **80m**, *Score* **4**;
-      *Initiative* **+3**\n*Movement Points* **10**; *Carrying Capacity* **105**\n*Size*
-      **Humongous [7]**, ENC **60**; *Threat level* **7**\n#### Action Points [3]\n-\n
-      \n**Canines** *ATT* **+2**, *DMG* **+8**, *RNG* **1m**, *Pierce, Slam*\n**Claws**
-      *ATT* **+2**, *DMG* **+9**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Pack
-      Mentality [Passive] -** This creature gains a boost on all attacks as long
-      as there is an ally within 2m of them.\n\n**Hamstring [Attack] -** Whenever
-      this creature hits a target with an attack, that target gains a number of hamstring
-      intensity equal to the margin of success.\n\n**Roar [Action] -** This creature
-      can let out a terrible roar causing all enemy targets within 10m suffer from
-      2 Stunned intensity.\n\n)\n/\n\n/\n\n## Chiss\n-\n/\n#### Chiss, Hatchling\nitem(\n#
-      Common\n## Cephalopod\n-\n*DEF* **7**, *ARM* **1**, *WND* **2**, *VIG* **7**,
-      *WIL* **6**\n*Perception:* *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement
-      Points* **11**; *Carrying Capacity* **35**\n*Size* **Medium [0]**, ENC **25**;
-      *Threat level* **3**\n#### Action Points [2]\n-\n \n**Horn** *ATT* **+1**,
-      *DMG* **+1**, *RNG* **1m**, *Pierce*\n\n#### Abilities\n-\n**Burrow [Movement]
+      the margin of success.\n\n)\n|\n#### Canid, Mutant\nitem(\n# Rare\n## Mammal\n-\n*DEF*
+      **1**, *ARM* **2**, *WND* **9**, *VIG* **14**, *WIL* **15**\n*Perception:*
+      *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **10**;
+      *Carrying Capacity* **105**\n*Size* **Humongous [7]**, ENC **60**; *Threat
+      level* **7**\n#### Action Points [3]\n-\n \n**Canines** *ATT* **+2**, *DMG*
+      **+8**, *RNG* **1m**, *Pierce, Slam*\n**Claws** *ATT* **+2**, *DMG* **+9**,
+      *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Pack Mentality [Passive] -**
+      This creature gains a boost on all attacks as long as there is an ally within
+      2m of them.\n\n**Hamstring [Attack] -** Whenever this creature hits a target
+      with an attack, that target gains a number of hamstring intensity equal to
+      the margin of success.\n\n**Roar [Action] -** This creature can let out a terrible
+      roar causing all enemy targets within 10m suffer from 2 Stunned intensity.\n\n)\n/\n\n/\n\n##
+      Chiss\n-\n/\n#### Chiss, Hatchling\nitem(\n# Common\n## Cephalopod\n-\n*DEF*
+      **7**, *ARM* **1**, *WND* **2**, *VIG* **7**, *WIL* **6**\n*Perception:* *Range*
+      **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **11**; *Carrying
+      Capacity* **35**\n*Size* **Medium [0]**, ENC **25**; *Threat level* **3**\n####
+      Action Points [2]\n-\n \n**Horn** *ATT* **+1**, *DMG* **+1**, *RNG* **1m**,
+      *Pierce*\n\n#### Abilities\n-\n**Burrow [Movement] -** This creature is capable
+      of moving underground through soft terrain at 1m per movement point spent.
+      While underground it can only be attacked by other creatures with burrow.\n\n**Charging
+      [Attack] -** When this creature performs a movement action of at least 5m before
+      performing an attack, they gain a boost on their first attack. Additionally
+      their attack gains the Push and Slam traits.\n\n)\n|\n#### Chiss, Juvenile\nitem(\n#
+      Common\n## Cephalopod\n-\n*DEF* **5**, *ARM* **1**, *WND* **6**, *VIG* **11**,
+      *WIL* **9**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
+      Points* **12**; *Carrying Capacity* **90**\n*Size* **Enormous [3]**, ENC **40**;
+      *Threat level* **6**\n#### Action Points [3]\n-\n \n**Horn** *ATT* **+2**,
+      *DMG* **+4**, *RNG* **1m**, *Pierce*\n\n#### Abilities\n-\n**Burrow [Movement]
       -** This creature is capable of moving underground through soft terrain at
       1m per movement point spent. While underground it can only be attacked by other
-      creatures with burrow.\n\n**Charging [Attack] -** When this creature performs
-      a movement action of at least 5m before performing an attack, they gain a boost
-      on their first attack. Additionally their attack gains the Push and Slam traits.\n\n)\n|\n####
-      Chiss, Juvenile\nitem(\n# Common\n## Cephalopod\n-\n*DEF* **5**, *ARM* **1**,
-      *WND* **6**, *VIG* **11**, *WIL* **9**\n*Perception:* *Range* **60m**, *Score*
-      **3**; *Initiative* **+2**\n*Movement Points* **12**; *Carrying Capacity* **90**\n*Size*
-      **Enormous [3]**, ENC **40**; *Threat level* **6**\n#### Action Points [3]\n-\n
-      \n**Horn** *ATT* **+2**, *DMG* **+4**, *RNG* **1m**, *Pierce*\n\n#### Abilities\n-\n**Burrow
-      [Movement] -** This creature is capable of moving underground through soft
-      terrain at 1m per movement point spent. While underground it can only be attacked
-      by other creatures with burrow.\n\n**Trample [Attack] -** When this creature
-      knocks a target down, it immediately gains a movement point which it may use
-      on walking. The first target that it comes into contact with during this movement
-      may be hit with a stomp attack. \n\n**Charging [Attack] -** When this creature
+      creatures with burrow.\n\n**Trample [Attack] -** When this creature knocks
+      a target down, it immediately gains a movement point which it may use on walking.
+      The first target that it comes into contact with during this movement may be
+      targeted with a free attack.\n\n**Charging [Attack] -** When this creature
       performs a movement action of at least 5m before performing an attack, they
       gain a boost on their first attack. Additionally their attack gains the Push
       and Slam traits.\n\n)\n/\n#### Chiss, Adult\nitem(\n# Uncommon\n## Cephalopod\n-\n*DEF*
@@ -3007,7 +3045,7 @@ MonoBehaviour:
       spent. While underground it can only be attacked by other creatures with burrow.\n\n**Trample
       [Attack] -** When this creature knocks a target down, it immediately gains
       a movement point which it may use on walking. The first target that it comes
-      into contact with during this movement may be hit with a stomp attack. \n\n**Charging
+      into contact with during this movement may be targeted with a free attack.\n\n**Charging
       [Attack] -** When this creature performs a movement action of at least 5m before
       performing an attack, they gain a boost on their first attack. Additionally
       their attack gains the Push and Slam traits.\n\n**Grapple [Action] -** This
@@ -3023,7 +3061,7 @@ MonoBehaviour:
       spent. While underground it can only be attacked by other creatures with burrow.\n\n**Trample
       [Attack] -** When this creature knocks a target down, it immediately gains
       a movement point which it may use on walking. The first target that it comes
-      into contact with during this movement may be hit with a stomp attack. \n\n**Charging
+      into contact with during this movement may be targeted with a free attack.\n\n**Charging
       [Attack] -** When this creature performs a movement action of at least 5m before
       performing an attack, they gain a boost on their first attack. Additionally
       their attack gains the Push and Slam traits.\n\n**Grapple [Action] -** This
@@ -3259,16 +3297,16 @@ MonoBehaviour:
       [Passive] -** This creature cannot be affected by knockdown, trip, push or
       slam.\n\n**Trample [Attack] -** When this creature knocks a target down, it
       immediately gains a movement point which it may use on walking. The first target
-      that it comes into contact with during this movement may be hit with a stomp
-      attack. \n\n)\n/\n#### Geode Golem\nitem(\n# Rare\n## Automata\n-\n*DEF* **3**,
-      *ARM* **5**, *WND* **12**, *VIG* **17**, *WIL* **17**\n*Perception:* *Range*
-      **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **12**; *Carrying
-      Capacity* **240**\n*Size* **Humongous [7]**, ENC **60**; *Threat level* **18**\n####
-      Action Points [5]\n-\n \n**Slam** *ATT* **+4**, *DMG* **+11**, *RNG* **1m**,
-      *Push, Slam, Pierce, Slash*\n\n#### Abilities\n-\n**Construct [Passive] -**
-      This creature is immune to Conditions.\n\n**Immovable [Passive] -** This creature
-      cannot be affected by knockdown, trip, push or slam.\n\n**Impermeable [Passive]
-      -** This creature cannot be affected by fire, cold or shock effects.\n\n)\n|\n####
+      that it comes into contact with during this movement may be targeted with a
+      free attack.\n\n)\n/\n#### Geode Golem\nitem(\n# Rare\n## Automata\n-\n*DEF*
+      **3**, *ARM* **5**, *WND* **12**, *VIG* **17**, *WIL* **17**\n*Perception:*
+      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **12**;
+      *Carrying Capacity* **240**\n*Size* **Humongous [7]**, ENC **60**; *Threat
+      level* **18**\n#### Action Points [5]\n-\n \n**Slam** *ATT* **+4**, *DMG* **+11**,
+      *RNG* **1m**, *Push, Slam, Pierce, Slash*\n\n#### Abilities\n-\n**Construct
+      [Passive] -** This creature is immune to Conditions.\n\n**Immovable [Passive]
+      -** This creature cannot be affected by knockdown, trip, push or slam.\n\n**Impermeable
+      [Passive] -** This creature cannot be affected by fire, cold or shock effects.\n\n)\n|\n####
       Crystal Golem\nitem(\n# Rare\n## Automata\n-\n*DEF* **1**, *ARM* **5**, *WND*
       **14**, *VIG* **19**, *WIL* **19**\n*Perception:* *Range* **60m**, *Score*
       **3**; *Initiative* **+2**\n*Movement Points* **13**; *Carrying Capacity* **290**\n*Size*
@@ -3569,8 +3607,8 @@ MonoBehaviour:
       this swarm suffers it loses 1 Action point and 1 attack bonus but it gains
       +1 DEF\n\n**Trample [Attack] -** When this creature knocks a target down, it
       immediately gains a movement point which it may use on walking. The first target
-      that it comes into contact with during this movement may be hit with a stomp
-      attack. \n\n)\n/\n#### Skritter Warrior\nitem(\n# Rare\n## Insect\n-\n*DEF*
+      that it comes into contact with during this movement may be targeted with a
+      free attack.\n\n)\n/\n#### Skritter Warrior\nitem(\n# Rare\n## Insect\n-\n*DEF*
       **5**, *ARM* **3**, *WND* **6**, *VIG* **11**, *WIL* **10**\n*Perception:*
       *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **10**;
       *Carrying Capacity* **90**\n*Size* **Enormous [3]**, ENC **40**; *Threat level*
@@ -3916,7 +3954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c177a7438dfb51f48aeab1da29019bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  result: {fileID: 1972970829}
+  result: {fileID: 250944857}
   voronoiGenerator: {fileID: 7200000, guid: 420cfded7f159ea43b25defe86f25c71, type: 3}
   visualizer: {fileID: 2100000, guid: 1b44be87f565cb74da841b7046513d89, type: 2}
   parameters:
@@ -4868,7 +4906,7 @@ MonoBehaviour:
         variableValue: 10
       - name: Long Range
         variableValue: 
-      - name: Perce
+      - name: Pierce
         variableValue: 
     - name: Buck Shot Cartridge
       description: 
@@ -5569,7 +5607,7 @@ MonoBehaviour:
       content:
       - A filling meal rich in substance and flavour, made with choice ingredients
         and a helping of the chef's love. A character that consumes this meal will
-        double the amount of Stamina restored with their next full rest.
+        double the amount of Stamina restored with their next partial rest.
       options:
         titleFormat: 3
         contentFormat: 0
@@ -5578,9 +5616,9 @@ MonoBehaviour:
       items: []
     - title: Soothing Meal
       content:
-      - A pleasing, intense and flavourful meal that is a feast for the eyes and
+      - ' A pleasing, intense and flavourful meal that is a feast for the eyes and
         the stomach alike. A character that consumes this meal will double the amount
-        of Focus restored with their next full rest.
+        of Focus restored with their next partial rest.'
       options:
         titleFormat: 3
         contentFormat: 0
@@ -5590,8 +5628,8 @@ MonoBehaviour:
     - title: Healthy Meal
       content:
       - A robust helping of ingredients that are needed for a recovering individual.
-        A character that consumes this meal will double the amount of Bleeding, Infection,
-        Disease or Poison intensity removed with their next full rest.
+        A character that consumes this meal will double the amount of Bloodloss,
+        Infection, Disease or Poison intensity removed with their next full rest.
       options:
         titleFormat: 3
         contentFormat: 0
@@ -5602,7 +5640,7 @@ MonoBehaviour:
       content:
       - A full and heavy flavourful meal rich in fats and flavour. A character that
         consumes this meal will double the amount of Stress removed with their next
-        full rest.
+        full or partial rest.
       options:
         titleFormat: 3
         contentFormat: 0
@@ -5677,25 +5715,25 @@ MonoBehaviour:
       list:
       - title: Fire Retardant
         content: The wearer of an armour treated with this coating will remove the
-          first 3 points of fire intensity that they receive after which the coating
+          first 3 points of burning intensity that they receive after which the coating
           is removed.
       - title: Anti-Freeze
         content: Character gainsThe wearer of an armour treated with this coating
-          will remove the first 3 points of cold intensity that they receive after
-          which the coating is removed. a number of bonus movement points per turn
-          equal to X.
+          will remove the first 3 points of freezing intensity that they receive
+          after which the coating is removed. a number of bonus movement points per
+          turn equal to X.
       - title: Grounding
         content: The wearer of an armour treated with this coating will remove the
-          first 3 points of shock intensity that they receive after which the coating
-          is removed.
+          first 3 points of shocking intensity that they receive after which the
+          coating is removed.
       - title: Lubricant
         content: The wearer of an armour treated with this coating will remove the
-          first 3 points of tangle intensity that they receive after which the coating
-          is removed.
-      - title: Alkalene
-        content: The wearer of an armour treated with this coating will remove the
-          first 3 points of corrosion intensity that they receive after which the
+          first 3 points of entangled intensity that they receive after which the
           coating is removed.
+      - title: Alkalene
+        content: The wearer of an armour treated with this coating will ignore the
+          first 3 corrosion effects that they receive after which the coating is
+          removed.
       boxes: []
       items: []
     - title: Reagent Salve
@@ -5839,7 +5877,7 @@ MonoBehaviour:
       rarity: 0
       type: 5
       traits:
-      - name: Cleansign
+      - name: Cleansing
         variableValue: 4
       - name: Batch
         variableValue: 5
@@ -6138,7 +6176,7 @@ MonoBehaviour:
     | Batch [10], Pierce, \nForkhead Arrows | 5 | 5c | Common | Batch [10], Small
     Game, Recover 4, Short Range, \nJacketed Cartridge | 5 | 5c | Uncommon | Batch
     [10], Pierce, \nDovetail Arrow | 5 | 10c | Uncommon | Batch [10], Long Range,
-    Perce, \nBuck Shot Cartridge | 5 | 10c | Rare | Batch [10], Short Range, Pepperbox,
+    Pierce, \nBuck Shot Cartridge | 5 | 10c | Rare | Batch [10], Short Range, Pepperbox,
     \nDum Dum Cartridge | 5 | 10c | Rare | Batch [10], +1 DMG, \nIncendiary Arrow
     | 5 | 10c | Rare | Batch [10], Fire 3, \n\n\n\n\n#### Tools\n\nName | ENC | Cost
     | Rarity | Traits \n-- | --\nGrapple Hook & Rope | 5 | 10c | Common | , \nProfessional
@@ -6251,7 +6289,7 @@ MonoBehaviour:
     | 20c | Common | Coating, Deprivation [5], Batch [5], \nEnervation Toxin Coating
     | 0 | 5 | 20c | Common | Coating, Enervation [5], Batch [5], \nParalysis Toxin
     Coating | 0 | 5 | 20c | Common | Coating, Paralysis [5], Batch [5], \nCleansing
-    Salve | 1 | 5 | 20c | Common | Cleansign [4], Batch [5], \nCoagulation Salve
+    Salve | 1 | 5 | 20c | Common | Cleansing [4], Batch [5], \nCoagulation Salve
     | 1 | 5 | 20c | Common | Coagulation [4], Batch [5], \nFortification Salve |
     1 | 5 | 20c | Common | Fortification [4], Batch [5], \nPurification Salve | 1
     | 5 | 20c | Common | Purification [4], Batch [5], \nHearty Meal | 0 | 5 | 20c
@@ -6273,17 +6311,17 @@ MonoBehaviour:
     100c | Rare | Revitalization, Batch [5], \n\n\n=\n\n\n\n### Hearty Meal\n\nA
     filling meal rich in substance and flavour, made with choice ingredients and
     a helping of the chef's love. A character that consumes this meal will double
-    the amount of Stamina restored with their next full rest.\n\n\n\n### Soothing
-    Meal\n\nA pleasing, intense and flavourful meal that is a feast for the eyes
+    the amount of Stamina restored with their next partial rest.\n\n\n\n### Soothing
+    Meal\n\n A pleasing, intense and flavourful meal that is a feast for the eyes
     and the stomach alike. A character that consumes this meal will double the amount
-    of Focus restored with their next full rest.\n\n\n\n### Healthy Meal\n\nA robust
-    helping of ingredients that are needed for a recovering individual. A character
-    that consumes this meal will double the amount of Bleeding, Infection, Disease
-    or Poison intensity removed with their next full rest.\n\n\n\n### Satisfying
+    of Focus restored with their next partial rest.\n\n\n\n### Healthy Meal\n\nA
+    robust helping of ingredients that are needed for a recovering individual. A
+    character that consumes this meal will double the amount of Bloodloss, Infection,
+    Disease or Poison intensity removed with their next full rest.\n\n\n\n### Satisfying
     Meal\n\nA full and heavy flavourful meal rich in fats and flavour. A character
     that consumes this meal will double the amount of Stress removed with their next
-    full rest.\n\n\n\n### Antibiotic Infusion\n\nThis foul tasting concoction is
-    commonly transported in small vials or pressed into swallowable pellets. Consuming
+    full or partial rest.\n\n\n\n### Antibiotic Infusion\n\nThis foul tasting concoction
+    is commonly transported in small vials or pressed into swallowable pellets. Consuming
     one such infusion slows down the spread of infection to double the normal time
     it would otherwise take to increase in intensity.\n\n\n\n### Travelling Ration\n\nCommon
     travelling rations are a collection of nuts, fruits and mushrooms that have been
@@ -6309,17 +6347,17 @@ MonoBehaviour:
     retain its beneficial effects until the effects are depleted, the item is cleaned
     or a new coating is added on top of the old one. Any item can only ever benefit
     from one coating at a time.\n\n- **Fire Retardant -** The wearer of an armour
-    treated with this coating will remove the first 3 points of fire intensity that
-    they receive after which the coating is removed.\n- **Anti-Freeze -** Character
+    treated with this coating will remove the first 3 points of burning intensity
+    that they receive after which the coating is removed.\n- **Anti-Freeze -** Character
     gainsThe wearer of an armour treated with this coating will remove the first
-    3 points of cold intensity that they receive after which the coating is removed.
+    3 points of freezing intensity that they receive after which the coating is removed.
     a number of bonus movement points per turn equal to X.\n- **Grounding -** The
     wearer of an armour treated with this coating will remove the first 3 points
-    of shock intensity that they receive after which the coating is removed.\n- **Lubricant
-    -** The wearer of an armour treated with this coating will remove the first 3
-    points of tangle intensity that they receive after which the coating is removed.\n-
-    **Alkalene -** The wearer of an armour treated with this coating will remove
-    the first 3 points of corrosion intensity that they receive after which the coating
+    of shocking intensity that they receive after which the coating is removed.\n-
+    **Lubricant -** The wearer of an armour treated with this coating will remove
+    the first 3 points of entangled intensity that they receive after which the coating
+    is removed.\n- **Alkalene -** The wearer of an armour treated with this coating
+    will ignore the first 3 corrosion effects that they receive after which the coating
     is removed.\n\n\n=\n\n\n\n### Reagent Salve\n\nA reagent salve is designed to
     aid the body to heal. Salves are consumed by characters as bonus action and each
     salve that a character consumes causes the character to receive 1 point of toxicity.
@@ -6527,7 +6565,7 @@ MonoBehaviour:
       - title: 'Overboosting '
         content: If a dice roll is benefitting from 2 or more boosts in addition
           to the extra die the final result of the dice roll benefits from a +1 for
-          every additional boos beyond the first, i.e. 3 boosts result in an additional
+          every additional boost beyond the first, i.e. 3 boosts result in an additional
           die and a +2 bonus. The reverse is also true, a character performing a
           dice roll with 3 hindrances will roll an additional die and choose the
           lowest of the two and apply a -2 penalty on the final result.
@@ -6612,7 +6650,7 @@ MonoBehaviour:
       boosts than hindrances counts as being boosted and the reverse is also true.
       \n\n### Overboosting \nIf a dice roll is benefitting from 2 or more boosts
       in addition to the extra die the final result of the dice roll benefits from
-      a +1 for every additional boos beyond the first, i.e. 3 boosts result in an
+      a +1 for every additional boost beyond the first, i.e. 3 boosts result in an
       additional die and a +2 bonus. The reverse is also true, a character performing
       a dice roll with 3 hindrances will roll an additional die and choose the lowest
       of the two and apply a -2 penalty on the final result.\n\n\n\n\n\n## Critical
@@ -7825,10 +7863,10 @@ MonoBehaviour:
     - '-'
     - /
     entries:
-    - title: Navigation
+    - title: Navigator
       content:
       - '-'
-      - The Navigation Profession allows characters to act as pathfinders and wayfarers,
+      - The Navigator profession allows characters to act as pathfinders and wayfarers,
         guiding their allies through the land, avoiding the worst that the terrain
         has to offer and dodging and sneaking around dangerous predators.
       - /
@@ -7883,7 +7921,7 @@ MonoBehaviour:
         - title: Favourable Defence
           content: Assign an area within the battlefield 5m in diameter. Any allies
             taking cover in that area gain a +1 bonus to their defence.
-        - title: Approach Dector
+        - title: Approach Vector
           content: Draw a line on the map that is up to 10 meters long. Any allies
             performint movement actions anywhere within 5m of that line gain an additional
             3 movement points.
@@ -7892,10 +7930,10 @@ MonoBehaviour:
             and may spend it at any time during the battle to gain an additional
             +2 action points.
       items: []
-    - title: Medicine
+    - title: Doctor
       content:
       - '-'
-      - The medicine Profession allows characters to treat wounds, prevent infections
+      - The  Doctor profession allows characters to treat wounds, prevent infections
         and promote the natural healing of injury. A character that possesses the
         medicine Profession can use medical tools and supplies to perform first aid
         and surgery.
@@ -7943,12 +7981,12 @@ MonoBehaviour:
           the infection\u2019s spread slows down to +1 intensity per 5 hours."
         list: []
       items: []
-    - title: Hunting & Foraging
+    - title: Hunter
       content:
       - '-'
-      - The hunting and foraging Profession allows a character to effectively find,
-        identify and procure rations from the nature that surrounds them allowing
-        them to provide for themselves and allies.
+      - The Hunter profession allows a character to effectively find, identify and
+        procure rations from the nature that surrounds them allowing them to provide
+        for themselves and allies.
       - /
       - '[BOX0]'
       - '[BOX1]'
@@ -7991,7 +8029,7 @@ MonoBehaviour:
         list: []
       - h1: Small Game Hunting
         h2: Camp (2 Hours)
-        h3: Survival Survival Skill vs Difficulty 8 vs Difficulty 6
+        h3: Survival Skill vs Difficulty 8
         h4: 
         content:
         - Characters can hunt for small game if they have the proper tools. Whether
@@ -8038,12 +8076,12 @@ MonoBehaviour:
           content: The current status of the creature (recently fed, tired, seeking
             mate, etc...)
       items: []
-    - title: Taming & Training
+    - title: Tamer
       content:
       - '-'
-      - The taming and training Profession allows characters to cultivate animal
-        companions to join them in their travels and perform tasks for them. A well
-        trained pet can be invaluable in most situations.
+      - The Tamer profession allows characters to cultivate animal companions to
+        join them in their travels and perform tasks for them. A well trained pet
+        can be invaluable in most situations.
       - /
       - '[BOX0]'
       - '|'
@@ -8261,20 +8299,22 @@ MonoBehaviour:
           combat attack dice roll as a bonus action. Instead of dealing damage the
           target will have their next dice roll hindered.
         list: []
-    - title: Herbalism & Brewing
+    - title: Brewer
       content:
       - '-'
-      - The herbalism & brewing Profession trains a character in the creation of
-        potions and concoctions. The herbalism portion of the knowledge empowers
-        a character with the ability to recognize components in the flora and fauna
-        around them letting characters extract materials from the environment.
+      - The Brewer profession trains a character in the creation of potions and concoctions.
+        The herbalism portion of the knowledge empowers a character with the ability
+        to recognize components in the flora and fauna around them letting characters
+        extract materials from the environment.
       - /
       - '[H3LIST]'
       - '|'
       - '[BOX0]'
       - '[BOX1]'
       - =
-      - '[ITEMS]'
+      - '[ITEM0]'
+      - '|'
+      - '[ITEM1]'
       - =
       options:
         titleFormat: 2
@@ -8393,18 +8433,21 @@ MonoBehaviour:
           content: Character restores 1 stamina.
         - title: 'Revitalization [3]'
           content: Character restores 1 focus.
-    - title: Alchemy
+    - title: Alchemist
       content:
       - '-'
-      - The Alchemy Profession allows a character to come up with and bring to bear
-        dangerous toxic solutions and explosive concoctions.
+      - The Alchemist profession allows a character to come up with and bring to
+        bear dangerous toxic solutions and explosive concoctions.
       - /
       - '[H3LIST]'
-      - '|'
       - '[BOX0]'
       - '[BOX1]'
+      - '|'
+      - '[ITEM0]'
       - =
-      - '[ITEMS]'
+      - '[ITEM1]'
+      - '|'
+      - '[ITEM2]'
       - =
       options:
         titleFormat: 2
@@ -8805,15 +8848,14 @@ MonoBehaviour:
           content: Armour gains the Fearsome Trait
         - title: Threatening
           content: Armour gains the Spiky Trait
-    - title: Talisman Making & Rune Crafting
+    - title: Enchanter
       content:
       - '-'
-      - The talisman making profession allows a character to create magical trinkets
-        which can grant temporary power to their wielders, be they in the form of
-        small charms or inscribed insignias and tattoos.
-      - The runecrafting making profession allows a character to create wondrous
-        items which can grant permanent power to their wielders in the form of enchanted
-        objects.
+      - The Enchanter profession allows a character to create magical trinkets which
+        can grant temporary power to their wielders, be they in the form of small
+        charms or inscribed insignias and tattoos.
+      - It also allows a character to create wondrous items which can grant permanent
+        power to their wielders in the form of enchanted objects.
       - /
       - '[BOX0]'
       - '|'
@@ -8872,8 +8914,8 @@ MonoBehaviour:
         - title: Legendary
           content: 30 Mana essence, Craft Time 45
       items: []
-    output: "head(\n# Professions\n\n)\n-\n/\n\n\n## Navigation\n\n-\n\nThe Navigation
-      Profession allows characters to act as pathfinders and wayfarers, guiding their
+    output: "head(\n# Professions\n\n)\n-\n/\n\n\n## Navigator\n\n-\n\nThe Navigator
+      profession allows characters to act as pathfinders and wayfarers, guiding their
       allies through the land, avoiding the worst that the terrain has to offer and
       dodging and sneaking around dangerous predators.\n\n/\n\n\nnote(\n#Trailblaze\n##March
       Action\n-\nA navigator can use their skill to find favorable ground, shortcuts,
@@ -8894,13 +8936,13 @@ MonoBehaviour:
       **Tag Enemy -** Tag a single enemy or a small group of up to 3. Attacks performed
       against these enemies during the first turn are boosted.\n- **Favourable Defence
       -** Assign an area within the battlefield 5m in diameter. Any allies taking
-      cover in that area gain a +1 bonus to their defence.\n- **Approach Dector -**
+      cover in that area gain a +1 bonus to their defence.\n- **Approach Vector -**
       Draw a line on the map that is up to 10 meters long. Any allies performint
       movement actions anywhere within 5m of that line gain an additional 3 movement
       points.\n- **Battle Plan -** Designate an ally within the group. That ally
       gains a recon point and may spend it at any time during the battle to gain
-      an additional +2 action points.\n\n)\n\n/\n\n\n\n## Medicine\n\n-\n\nThe medicine
-      Profession allows characters to treat wounds, prevent infections and promote
+      an additional +2 action points.\n\n)\n\n/\n\n\n\n## Doctor\n\n-\n\nThe  Doctor
+      profession allows characters to treat wounds, prevent infections and promote
       the natural healing of injury. A character that possesses the medicine Profession
       can use medical tools and supplies to perform first aid and surgery.\n\n/\n\n\nnote(\n#First
       Aid\n##Camp (5 Minutes)\n-\n###Survival or Academics Skill vs Difficulty 6\nA
@@ -8924,25 +8966,24 @@ MonoBehaviour:
       the intensity falls below 1, the infection stops. A character takes 30 minutes
       to treat wounds and can do so once per long rest. Even if an infection isn\u2019t
       removed, if the wounds are treated the infection\u2019s spread slows down to
-      +1 intensity per 5 hours.\n)\n\n=\n\n\n\n## Hunting & Foraging\n\n-\n\nThe
-      hunting and foraging Profession allows a character to effectively find, identify
-      and procure rations from the nature that surrounds them allowing them to provide
-      for themselves and allies.\n\n/\n\n\nnote(\n#Passive Foraging\n##March Action\n-\n###Automatic\nDuring
-      travel a character with the foraging Profession can collect berries, nuts,
-      fruits, mushrooms and anything halfway edible. For every march action that
-      a character performs they may add 1 day\u2019s worth of food and drink to their
-      supplies. This counts as a marching action and thus a character performing
-      passive foraging may not perform any other marching actions.\n)\n\n\nnote(\n#Active
-      Foraging\n##Camp (2 Hours)\n-\n###Survival Skill vs Difficulty 6\nA character
-      can forage actively within an area by spending 2 hours looking for food and
-      fresh clean water. A character performing active foraging rolls a survival
-      skill dice roll against a difficulty of 6. For every margin of success they
-      manage to gather enough food and drink 1 character or creature.\n)\n\n\nnote(\n#Small
-      Game Hunting\n##Camp (2 Hours)\n-\n###Survival Survival Skill vs Difficulty
-      8 vs Difficulty 6\nCharacters can hunt for small game if they have the proper
-      tools. Whether they are using traps, spears or bows, characters can spend 2
-      hours chasing small game by performing a survival skill dice roll against a
-      difficulty of 8. For every margin of success they catch one ENC 2 or smaller
+      +1 intensity per 5 hours.\n)\n\n=\n\n\n\n## Hunter\n\n-\n\nThe Hunter profession
+      allows a character to effectively find, identify and procure rations from the
+      nature that surrounds them allowing them to provide for themselves and allies.\n\n/\n\n\nnote(\n#Passive
+      Foraging\n##March Action\n-\n###Automatic\nDuring travel a character with the
+      foraging Profession can collect berries, nuts, fruits, mushrooms and anything
+      halfway edible. For every march action that a character performs they may add
+      1 day\u2019s worth of food and drink to their supplies. This counts as a marching
+      action and thus a character performing passive foraging may not perform any
+      other marching actions.\n)\n\n\nnote(\n#Active Foraging\n##Camp (2 Hours)\n-\n###Survival
+      Skill vs Difficulty 6\nA character can forage actively within an area by spending
+      2 hours looking for food and fresh clean water. A character performing active
+      foraging rolls a survival skill dice roll against a difficulty of 6. For every
+      margin of success they manage to gather enough food and drink 1 character or
+      creature.\n)\n\n\nnote(\n#Small Game Hunting\n##Camp (2 Hours)\n-\n###Survival
+      Skill vs Difficulty 8\nCharacters can hunt for small game if they have the
+      proper tools. Whether they are using traps, spears or bows, characters can
+      spend 2 hours chasing small game by performing a survival skill dice roll against
+      a difficulty of 8. For every margin of success they catch one ENC 2 or smaller
       creature, providing both food and any materials such as hides.\n)\n\n|\n\n\n###
       Big Game Hunting\nLarge and dangerous creatures can be stalked and preyed upon
       by a skilled hunter. If a character is traveling within the territory of such
@@ -8964,30 +9005,29 @@ MonoBehaviour:
       The current behaviour of the creature (seeking food, seeking shelter, etc...)\n-
       The current status of the creature (recently fed, tired, seeking mate, etc...)\n\nOnce
       a character reaches such a creature, normal combat is used to determine the
-      outcome of the hunt.\n)\n\n=\n\n\n\n## Taming & Training\n\n-\n\nThe taming
-      and training Profession allows characters to cultivate animal companions to
-      join them in their travels and perform tasks for them. A well trained pet can
-      be invaluable in most situations.\n\n/\n\n\nnote(\n#Tame\n##5 Minutes\n-\n###Survival
-      Skill vs Target's willpower\nCharacters can attempt to tame a wild beast by
-      approaching it and attempting to befriend it. This is of course dangerous in
-      the best of circumstances and a character that fails in their attempt is probably
-      going ot be faced with an ornery wild animal. On a successful dice roll a character
-      manages to befriend the animal get it to trust and follow them but the animal
-      is not yet trained. The following is a list of modifiers that can apply for
-      the taming action:\n- **Food Offering -** Gain a +1 bonus on this dice roll
-      if you bring food for the animal.\n- **Relief -** Gain a +1 bonus if you heal
-      a creature from existing wounds.\n- **Youth -** Gain a +1 bonus if the creature
-      is a youngor juvenile member of its species.\n- **Pack or Herd is Present -**
-      Suffer from a -1 penalty if the animal is in the company of members of its
-      pack or herd.\n- **Other Creatures are present -** Suffer from a -1 penalty
-      if the animal can sense other characters or creatures around them.\n- **Injury
-      and Stress -** Suffer from a -1 penalty if the animal is currently injured
-      or stressed.\n\n)\n\n|\n\n\nnote(\n#Train\n##Camp (2 Hours)\n-\n###Survival
-      Skill vs Difficulty 6\nA character can train a creature to do any number of
-      tricks on command. Each trick must be trained as a separate extended action
-      against a difficulty of 6 with a target number of complexity that the character
-      needs to reach. Each action takes 2 hours. A creature can learn any number
-      of tricks equal to their willpower score.\n)\n\n\nnote(\n#Command\n##Immediate
+      outcome of the hunt.\n)\n\n=\n\n\n\n## Tamer\n\n-\n\nThe Tamer profession allows
+      characters to cultivate animal companions to join them in their travels and
+      perform tasks for them. A well trained pet can be invaluable in most situations.\n\n/\n\n\nnote(\n#Tame\n##5
+      Minutes\n-\n###Survival Skill vs Target's willpower\nCharacters can attempt
+      to tame a wild beast by approaching it and attempting to befriend it. This
+      is of course dangerous in the best of circumstances and a character that fails
+      in their attempt is probably going ot be faced with an ornery wild animal.
+      On a successful dice roll a character manages to befriend the animal get it
+      to trust and follow them but the animal is not yet trained. The following is
+      a list of modifiers that can apply for the taming action:\n- **Food Offering
+      -** Gain a +1 bonus on this dice roll if you bring food for the animal.\n-
+      **Relief -** Gain a +1 bonus if you heal a creature from existing wounds.\n-
+      **Youth -** Gain a +1 bonus if the creature is a youngor juvenile member of
+      its species.\n- **Pack or Herd is Present -** Suffer from a -1 penalty if the
+      animal is in the company of members of its pack or herd.\n- **Other Creatures
+      are present -** Suffer from a -1 penalty if the animal can sense other characters
+      or creatures around them.\n- **Injury and Stress -** Suffer from a -1 penalty
+      if the animal is currently injured or stressed.\n\n)\n\n|\n\n\nnote(\n#Train\n##Camp
+      (2 Hours)\n-\n###Survival Skill vs Difficulty 6\nA character can train a creature
+      to do any number of tricks on command. Each trick must be trained as a separate
+      extended action against a difficulty of 6 with a target number of complexity
+      that the character needs to reach. Each action takes 2 hours. A creature can
+      learn any number of tricks equal to their willpower score.\n)\n\n\nnote(\n#Command\n##Immediate
       (1 Action Point)\n-\n###Automatic\nA character can command a trained creature
       to perform any one of their tricks during their turn by spending an action
       point. The target creature must be within line of sight and hearing range to
@@ -9045,20 +9085,20 @@ MonoBehaviour:
       to the margin of success.\n)\nitem(\n#Distract\n##Complexity 40\n-\nThis creature
       gains the Distract maneuver allowing it to perform a close combat attack dice
       roll as a bonus action. Instead of dealing damage the target will have their
-      next dice roll hindered.\n)\n=\n\n\n=\n\n\n\n## Herbalism & Brewing\n\n-\n\nThe
-      herbalism & brewing Profession trains a character in the creation of potions
-      and concoctions. The herbalism portion of the knowledge empowers a character
-      with the ability to recognize components in the flora and fauna around them
-      letting characters extract materials from the environment.\n\n/\n\n\n### Components\nCharacters
-      need to gather a different variety of components in order to brew herbalist
-      solutions. These are reagents and mutagens. Each type of component can create
-      different categories of solutions.\n\n### Toxicity\nA character that consumes
-      solutions suffers from a number of toxicity points for each solution consumed.
-      If a character\u2019s toxicity value is equal to or greater than the character\u2019s
-      vigour, the character falls unconscious until the toxicity value is reduced.
-      A character that receives a full rest reduces their toxicity by 1.\n\n### Recipes\nA
-      character that wishes to brew a solution must have the recipe in their repertoire.
-      A character that chooses this Profession immediately starts with 1 recipe of
+      next dice roll hindered.\n)\n=\n\n\n=\n\n\n\n## Brewer\n\n-\n\nThe Brewer profession
+      trains a character in the creation of potions and concoctions. The herbalism
+      portion of the knowledge empowers a character with the ability to recognize
+      components in the flora and fauna around them letting characters extract materials
+      from the environment.\n\n/\n\n\n### Components\nCharacters need to gather a
+      different variety of components in order to brew herbalist solutions. These
+      are reagents and mutagens. Each type of component can create different categories
+      of solutions.\n\n### Toxicity\nA character that consumes solutions suffers
+      from a number of toxicity points for each solution consumed. If a character\u2019s
+      toxicity value is equal to or greater than the character\u2019s vigour, the
+      character falls unconscious until the toxicity value is reduced. A character
+      that receives a full rest reduces their toxicity by 1.\n\n### Recipes\nA character
+      that wishes to brew a solution must have the recipe in their repertoire. A
+      character that chooses this Profession immediately starts with 1 recipe of
       their choice. From there on a character must either discover recipes in the
       world, learn them from mentors or spend time and resources experimenting to
       create them, themself. Each individual recipe allows a character to learn a
@@ -9076,7 +9116,7 @@ MonoBehaviour:
       if they have a brewing kit and access to open flames. Brewing a solution takes
       15 minutes and consumes 1 unit of the appropriate component. Based on a character\u2019s
       crafting skill dice roll result a solution with an intensity value can be created.
-      The intensity value is equal to the dice roll\u2019s margin of success.\n)\n\n=\n\n\n\nitem(\n#Reagent
+      The intensity value is equal to the dice roll\u2019s margin of success.\n)\n\n=\n\n\nitem(\n#Reagent
       Salve\n-\nA reagent salve is designed to aid the body to heal. Salves are consumed
       by characters as bonus action and each salve that a character consumes causes
       the character to receive 1 point of toxicity. An alchemist\u2019s salve has
@@ -9086,18 +9126,18 @@ MonoBehaviour:
       [X] -** Reduce a target character\u2019s infection intensity by an amount equal
       to X.\n- **Purification [X] -** Reduce a target character\u2019s poison intensity
       by an amount equal to X.\n- **Fortification [X] -** Reduce a target character\u2019s
-      disease intensity by an amount equal to X.\n\n)\nitem(\n#Mutagenic Elixir\n-\nA
-      mutagenic elixir is a body booster that grants a character a temporary enhancement
-      on their natural ability. Elixirs are consumed by characters as bonus actions
-      and each elixir that a character consumes causes the character to receive X
-      points of toxicity as noted in the braces. An elixir can have any one of the
-      following effects:\n- **Awareness [2] -** Character gains a boost to perception
-      dice rolls and  a +10% bonus to perception range per elixir intensity.\n- **Speed
-      [2] -** Character gains a number of bonus movement points per turn equal to
-      the elixir\u2019s intensity.\n- **Haste [2] -** Character gains a number of
-      haste tokens equal to the elixir\u2019s intensity. The character may spend
-      one haste token at the start of a turn in order to gain an additional bonus
-      action. Any unspent haste tokens are lost if a character rests.\n- **Might
+      disease intensity by an amount equal to X.\n\n)\n\n|\n\n\nitem(\n#Mutagenic
+      Elixir\n-\nA mutagenic elixir is a body booster that grants a character a temporary
+      enhancement on their natural ability. Elixirs are consumed by characters as
+      bonus actions and each elixir that a character consumes causes the character
+      to receive X points of toxicity as noted in the braces. An elixir can have
+      any one of the following effects:\n- **Awareness [2] -** Character gains a
+      boost to perception dice rolls and  a +10% bonus to perception range per elixir
+      intensity.\n- **Speed [2] -** Character gains a number of bonus movement points
+      per turn equal to the elixir\u2019s intensity.\n- **Haste [2] -** Character
+      gains a number of haste tokens equal to the elixir\u2019s intensity. The character
+      may spend one haste token at the start of a turn in order to gain an additional
+      bonus action. Any unspent haste tokens are lost if a character rests.\n- **Might
       [2] -** Character gains a number of might tokens equal to the elixir\u2019s
       intensity. The character may spend one might token at the start of a turn in
       order to gain a +1 bonus to close combat attack damage. Any unspent might tokens
@@ -9107,8 +9147,8 @@ MonoBehaviour:
       **Reinvigoration [2] -** Character restores an amount of stress points equal
       to the elixir's intensity.\n- **Regeneration [3] -** Character restores 1 wound.\n-
       **Rejuvenation [3] -** Character restores 1 stamina.\n- **Revitalization [3]
-      -** Character restores 1 focus.\n\n)\n\n=\n\n\n\n## Alchemy\n\n-\n\nThe Alchemy
-      Profession allows a character to come up with and bring to bear dangerous toxic
+      -** Character restores 1 focus.\n\n)\n\n=\n\n\n\n## Alchemist\n\n-\n\nThe Alchemist
+      profession allows a character to come up with and bring to bear dangerous toxic
       solutions and explosive concoctions.\n\n/\n\n\n### Components\nCharacters need
       to gather a different variety of components in order to create alchemical solutions.
       These are toxins and combustibles. Each type of component can create different
@@ -9118,9 +9158,9 @@ MonoBehaviour:
       must either discover recipes in the world, learn them from mentors or spend
       time and resources experimenting to create them, themself. Each individual
       recipe allows a character to learn a different effect for either Reagent Salves
-      or Mutagenic Elixirs.\n\n\n\n|\n\n\nnote(\n#Gathering Components\n##Camp 2
-      Hour or March\n-\n###Academics Skill vs Difficulty 6 (Toxin), Academics Skill
-      vs Difficulty 8 (Combustible)\nA character can spend time gathering resources
+      or Mutagenic Elixirs.\n\n\n\n\nnote(\n#Gathering Components\n##Camp 2 Hour
+      or March\n-\n###Academics Skill vs Difficulty 6 (Toxin), Academics Skill vs
+      Difficulty 8 (Combustible)\nA character can spend time gathering resources
       for their brewing. A character can either spend 2 hours to gather resources
       or do so during a march as a marching action. Every time that a character performs
       a gathering components action they may roll a skill dice roll based on Academics
@@ -9132,7 +9172,7 @@ MonoBehaviour:
       kit and access to open flames. Mixing a solution takes 15 minutes and consumes
       1 unit of the appropriate component. Based on a character\u2019s crafting skill
       dice roll result a solution with an intensity value can be created. The intensity
-      value is equal to the dice roll\u2019s margin of success.\n)\n\n=\n\n\n\nitem(\n#Toxin
+      value is equal to the dice roll\u2019s margin of success.\n)\n\n|\n\n\nitem(\n#Toxin
       Coating\n-\nToxin coatings are poured over weapons in order to impart harmful
       effects on targets. Applying a toxin coating on a weapon is a bonus action.
       A weapon that is coated with a toxin will impart its effect on the weapon\u2019s
@@ -9149,25 +9189,25 @@ MonoBehaviour:
       **Deprivation [X] -** Targets suffer from a penalty to initiative equal to
       X.\n- **Agitation [X] -** Targets suffer from a number of stress points equal
       to X.\n- **Infection [X] -** Targets suffer from a number of infection points
-      equal to X.\n\n)\nitem(\n#Armour Coating\n-\n Armour coatings are special oils
-      poured and smeared over armour and gear in order to impart beneficial and protective
-      effects on the wearer and the item. An armour that is coated will retain its
-      beneficial effects until the effects are depleted, the item is cleaned or a
-      new coating is added on top of the old one. Any item can only ever benefit
-      from one coating at a time. A coating can have any one of the following effects:\n-
-      **Fire Retardant -** The wearer of an armour treated with this coating will
-      remove the first 3 points of fire intensity that they receive after which the
-      coating is removed.\n- **Anti-Freeze -** The wearer of an armour treated with
-      this coating will remove the first 3 points of cold intensity that they receive
-      after which the coating is removed.\n- **Grounding -** The wearer of an armour
-      treated with this coating will remove the first 3 points of shock intensity
-      that they receive after which the coating is removed.\n- **Lubricant -** The
-      wearer of an armour treated with this coating will remove the first 3 points
-      of tangle intensity that they receive after which the coating is removed.\n-
-      **Alkalene -** The wearer of an armour treated with this coating will remove
-      the first 3 points of corrosion intensity that they receive after which the
-      coating is removed.\n\n)\nitem(\n#Combustible Petard\n-\nCombustible Petards
-      are small handheld improvised explosive devices that can teach an unwitting
+      equal to X.\n\n)\n\n=\n\n\nitem(\n#Armour Coating\n-\n Armour coatings are
+      special oils poured and smeared over armour and gear in order to impart beneficial
+      and protective effects on the wearer and the item. An armour that is coated
+      will retain its beneficial effects until the effects are depleted, the item
+      is cleaned or a new coating is added on top of the old one. Any item can only
+      ever benefit from one coating at a time. A coating can have any one of the
+      following effects:\n- **Fire Retardant -** The wearer of an armour treated
+      with this coating will remove the first 3 points of fire intensity that they
+      receive after which the coating is removed.\n- **Anti-Freeze -** The wearer
+      of an armour treated with this coating will remove the first 3 points of cold
+      intensity that they receive after which the coating is removed.\n- **Grounding
+      -** The wearer of an armour treated with this coating will remove the first
+      3 points of shock intensity that they receive after which the coating is removed.\n-
+      **Lubricant -** The wearer of an armour treated with this coating will remove
+      the first 3 points of tangle intensity that they receive after which the coating
+      is removed.\n- **Alkalene -** The wearer of an armour treated with this coating
+      will remove the first 3 points of corrosion intensity that they receive after
+      which the coating is removed.\n\n)\n\n|\n\n\nitem(\n#Combustible Petard\n-\nCombustible
+      Petards are small handheld improvised explosive devices that can teach an unwitting
       opponent a hard lesson about bullying chemistry nerds. Igniting and throwing
       a Combustible petard takes 2 attack action points, one to ignite and one to
       throw. A character can use a bonus action to ignite if they so choose. A petard
@@ -9277,20 +9317,19 @@ MonoBehaviour:
       loses the Chafing Trait\n- **Dampening -** Armour loses the Conspicuous Trait\n-
       **Concealing -** Armour gains the Chamaleonic Trait\n- **Intimidating -** Armour
       gains the Fearsome Trait\n- **Threatening -** Armour gains the Spiky Trait\n\n)\n\n=\n\n\n\n##
-      Talisman Making & Rune Crafting\n\n-\n\nThe talisman making profession allows
-      a character to create magical trinkets which can grant temporary power to their
-      wielders, be they in the form of small charms or inscribed insignias and tattoos.\n\nThe
-      runecrafting making profession allows a character to create wondrous items
-      which can grant permanent power to their wielders in the form of enchanted
-      objects.\n\n/\n\n\nnote(\n#Crafting Talismans\n-\nCharacters with both the
-      spellcasting skill and the crafting skill can craft talismans by imbuing seemingly
-      mundane objects with mana essence. Depending on the rarity of the talisman
-      a different amount of mana essence needs to be consumed. The crafting skill
-      requirements for each talisman needs to be met by both the crafting skill and
-      the spellcasting skill. The following lists the amount of mana essence per
-      talisman:\n- **Common -** 1 Mana essence, Craft Time 2\n- **Uncommon -** 1
-      Mana essence, Craft Time 3\n- **Rare -** 2 Mana essence, Craft Time 4\n- **Legendary
-      -** 3 Mana essence, Craft Time 5\n\n)\n\n|\n\n\nnote(\n#Rune Crafting\n-\nCharacters
+      Enchanter\n\n-\n\nThe Enchanter profession allows a character to create magical
+      trinkets which can grant temporary power to their wielders, be they in the
+      form of small charms or inscribed insignias and tattoos.\n\nIt also allows
+      a character to create wondrous items which can grant permanent power to their
+      wielders in the form of enchanted objects.\n\n/\n\n\nnote(\n#Crafting Talismans\n-\nCharacters
+      with both the spellcasting skill and the crafting skill can craft talismans
+      by imbuing seemingly mundane objects with mana essence. Depending on the rarity
+      of the talisman a different amount of mana essence needs to be consumed. The
+      crafting skill requirements for each talisman needs to be met by both the crafting
+      skill and the spellcasting skill. The following lists the amount of mana essence
+      per talisman:\n- **Common -** 1 Mana essence, Craft Time 2\n- **Uncommon -**
+      1 Mana essence, Craft Time 3\n- **Rare -** 2 Mana essence, Craft Time 4\n-
+      **Legendary -** 3 Mana essence, Craft Time 5\n\n)\n\n|\n\n\nnote(\n#Rune Crafting\n-\nCharacters
       with both the spellcasting skill and the crafting skill can craft runes by
       imbuing symbols transcribed onto objects with mana essence. Depending on the
       rarity of the rune a different amount of mana essence needs to be consumed.
@@ -10018,6 +10057,19 @@ MonoBehaviour:
           content: Character falls unconscious
         - title: Threshold x3
           content: Character dies
+      - h1: Burning
+        h2: Vigour
+        h3: Threshold
+        h4: 
+        content:
+        - Characters that set on fire run the risk of burning to death in short order.
+          A character that is set on fire gains +1 intensity at the start of every
+          turn.
+        - '[LIST]'
+        - A character on fire can spend 1AP remove 1 intensity of burning.
+        list:
+        - title: 'Threshold '
+          content: Character suffers from a wound at the start of every turn.
       - h1: Concussion
         h2: Vigour
         h3: Active, Threshold
@@ -10045,6 +10097,22 @@ MonoBehaviour:
         - title: Active
           content: Character suffers from a penalty to movement points gained equal
             to the intensity of entangled.
+      - h1: Exhaustion
+        h2: Vigour
+        h3: Threshold x1, x2
+        h4: 
+        content:
+        - Characters that do not rest become exhausted gaining 1 intensity after
+          24 hours without sleep and +1 for every hour thereafter.
+        - '[LIST]'
+        - Exhaustion can be removed by taking a full rest.
+        list:
+        - title: Active
+          content: Character cannot restore Stamina or Focus with short rest.
+        - title: 'Threshold '
+          content: Character suffers from a hindrance to dice rolls.
+        - title: Threshold x2
+          content: Character falls unconscious for 1d10 hours.
       - h1: Extreme Temperatures
         h2: Vigour
         h3: Threshold
@@ -10077,20 +10145,18 @@ MonoBehaviour:
         - title: Threshold
           content: Character automatically fails to perform any action targeting
             the source of the fascination
-      - h1: Infection
+      - h1: Freezing
         h2: Vigour
-        h3: Active, Threshold
+        h3: Threshold
         h4: 
         content:
-        - 'One hour after that a character has suffered from a wound and for every
-          hour thereafter a character gains 1 intensity of infection. '
+        - Characters that are hit with a sudden flash of extremely cold energy run
+          the risk of losing life and limb to sudden hypotermia and cold burns.
         - '[LIST]'
-        - Infection can be removed with the surgery action.
+        - A freezing character can spend 1AP remove 1 intensity of freezing.
         list:
-        - title: Active
-          content: Character suffers from a hindrance to dice rolls.
         - title: 'Threshold '
-          content: Character Dies
+          content: Character suffers from -1AP per threshold reached.
       - h1: Hamstring
         h2: Vigour
         h3: Active, Threshold
@@ -10107,6 +10173,20 @@ MonoBehaviour:
         - title: Threshold
           content: Character doesn't receive movement points and suffers from a -1
             penalty to defence.
+      - h1: Infection
+        h2: Vigour
+        h3: Active, Threshold
+        h4: 
+        content:
+        - 'One hour after that a character has suffered from a wound and for every
+          hour thereafter a character gains 1 intensity of infection. '
+        - '[LIST]'
+        - Infection can be removed with the surgery action.
+        list:
+        - title: Active
+          content: Character suffers from a hindrance to dice rolls.
+        - title: 'Threshold '
+          content: Character Dies
       - h1: Nauseated
         h2: Vigour
         h3: Active, Threshold
@@ -10121,21 +10201,20 @@ MonoBehaviour:
           content: Character suffers from a -1 penalty to defence
         - title: Threshold
           content: Character suffers from a -1 penalty to AP
-      - h1: Starvation & Dehydration
+      - h1: Shocking
         h2: Vigour
-        h3: Threshold
+        h3: Active, Threshold
         h4: 
         content:
-        - Characters need to consume 1 meal per day minimum in order to survive.
-          If they are unable to procure edible food and potable water they will suffer
-          from Starvation & Dehydration. A character gains 1 intensity of Starvation
-          every 6 days and 1 intensity of Dehydration every 2 days.
+        - Characters that are hit with a burstof electricity suffer from a massive
+          shock to the system.
         - '[LIST]'
-        - Consuming a meal removes the intensity of starvation and dehydration.
+        - An electrocuted character can spend 1AP remove 1 intensity of shocking.
         list:
+        - title: Active
+          content: Character suffers from hindrance to all dice rolls
         - title: 'Threshold '
-          content: Character loses 1 stamina every threshold. If the character's
-            stamina reaches 0, the character dies.
+          content: Character suffers from -1AP.
       - h1: Sprain
         h2: Vigour
         h3: Active, Threshold
@@ -10152,6 +10231,21 @@ MonoBehaviour:
         - title: Threshold
           content: Character cannot perform actions that require the use of that
             limb.
+      - h1: Starvation & Dehydration
+        h2: Vigour
+        h3: Threshold
+        h4: 
+        content:
+        - Characters need to consume 1 meal per day minimum in order to survive.
+          If they are unable to procure edible food and potable water they will suffer
+          from Starvation & Dehydration. A character gains 1 intensity of Starvation
+          every 6 days and 1 intensity of Dehydration every 2 days.
+        - '[LIST]'
+        - Consuming a meal removes the intensity of starvation and dehydration.
+        list:
+        - title: 'Threshold '
+          content: Character loses 1 stamina every threshold. If the character's
+            stamina reaches 0, the character dies.
       - h1: Stunned
         h2: Willpower
         h3: Active, Threshold
@@ -10225,11 +10319,11 @@ MonoBehaviour:
           reduces 1 stress point. '
       boxes: []
       items: []
-    - title: Injury & Infection
+    - title: Pain and Healing
       content:
       - '-'
       - Characters that have suffered from one or more wounds are considered to be
-        injured and thus become susceptible to blood loss and infection.
+        injured and thus become susceptible to pain
       - '[H3LIST]'
       - '|'
       options:
@@ -10277,124 +10371,6 @@ MonoBehaviour:
           and unspent movement points. If a character is hit, a falling object deals
           an amount of damage equal to its ENC +1 per meter that it fell. This attack
           is always considered a critical hit.
-      boxes: []
-      items: []
-    - title: Maladies
-      content:
-      - '-'
-      - /
-      options:
-        titleFormat: 2
-        contentFormat: 0
-      list: []
-      boxes: []
-      items: []
-    - title: Poisons and Diseases
-      content:
-      - '-'
-      - "When a creature is afflicted by a type of malady, a poison, venom, toxin
-        or disease, their Vigour comes into play. Each individual poison or disease
-        comes with an intensity value. When a player is afflicted by a malady they
-        gain a certain amount of intensity points in that malady. As long as the
-        player has at least 1 or more intensity they count as being afflicted and
-        thus suffer from the malady\u2019s effects. When the intensity of the malady
-        increases to match or exceed the character\u2019s Vigour, the character starts
-        suffering from a malady\u2019s acute effects. Certain maladies can be fatal
-        or have effects that worsen depending on how many intensity points the malady
-        reaches."
-      - 'The following is an example of a malady:'
-      options:
-        titleFormat: 3
-        contentFormat: 0
-      list: []
-      boxes: []
-      items: []
-    - title: Paralytic Poison
-      content:
-      - When a character is struck with an attack affected by paralytic poison they
-        gain +1 intensity in Paralytic poison immediately and +1 intensity at the
-        start of every turn thereafter for 2 minutes (20 rounds).
-      - '[ULIST]'
-      options:
-        titleFormat: 4
-        contentFormat: 7
-      list:
-      - title: Mild Effect
-        content: As long as a character has 1 or more intensity points in paralytic
-          poison they suffer from a penalty to movement points gained per turn equal
-          to -1 for every 2 intensity points in paralytic poison.
-      - title: Acute Effect
-        content: If a character has a number of intensity points in paralytic poison
-          equal to or greater than their Vigour score, they are slowed. A slowed
-          character must forego their main action or their bonus action at the beginning
-          of their turn.
-      boxes: []
-      items: []
-    - title: '|'
-      content: []
-      options:
-        titleFormat: 0
-        contentFormat: 0
-      list: []
-      boxes: []
-      items: []
-    - title: Curses and Hexes
-      content:
-      - '-'
-      - Characters that become cursed or are suffering from a hex are in essence
-        beneath the crushing thumb of a sickness, one that affects their soul. Curses
-        and hexes work exactly like Poisons and diseases and thus are considered
-        to be maladies. Their only difference is that instead of combating them with
-        Vigour a character combats them with Willpower.
-      - 'The following is an example of a curse:'
-      options:
-        titleFormat: 3
-        contentFormat: 0
-      list: []
-      boxes: []
-      items: []
-    - title: "Witch\u2019s Jinx"
-      content:
-      - "A character that performs any action that could cause harm to the witch
-        gains +1 intensity in Witch\u2019s Jinx immediately and +1 intensity whenever
-        they perform any action that may cause harm to the witch."
-      - '[ULIST]'
-      options:
-        titleFormat: 4
-        contentFormat: 7
-      list:
-      - title: Mild Effect
-        content: "As long as a character has 1 or more intensity points in Witch\u2019s
-          jinx they suffer from a hindrance to all dice rolls performed against the
-          witch."
-      - title: Acute Effect
-        content: "If a character has a number of intensity points in Witch\u2019s
-          jinx equal to or greater than their Willpower score, any damage they inflict
-          upon the Witch is also inflicted to them."
-      boxes: []
-      items: []
-    - title: 'Recovering from Maladies '
-      content:
-      - '-'
-      - "Every malady can be recovered from but the methods of recovery differ. Most
-        diseases can be recovered with rest and nursing. For example a full rest
-        period allows a character to reduce a disease\u2019 intensity by a value
-        equal to their Vigour as long as they are well fed and resting comfortably.
-        Poisons on the other hand require medical intervention. Immediate blood letting
-        or applying of tourniquets for instance can stop a poison\u2019s intensity
-        from worsening or at least slow it down from affecting the character every
-        minute instead of every turn. Antidotes and detoxification needs to occur
-        to remove the effect fully. Curses need to be removed by divine intervention,
-        thus most people turn to members of the clergy or exorcists although folk
-        magic and artisanal remedies are also said to work. In the case of most curses
-        an intervention will remove a curse completely or halt it from progressing
-        however certain powerful curses will require specific odd tasks to be performed
-        in order to free the afflicted from the malady."
-      - =
-      options:
-        titleFormat: 3
-        contentFormat: 0
-      list: []
       boxes: []
       items: []
     output: "head(\n# Combat\n\n)\n-\n/\n\n\n## Time\n\n-\n\nWhen a hostile situation
@@ -10650,55 +10626,72 @@ MonoBehaviour:
       a character gains 1 intensity of blood loss.\n- **Threshold -** Character suffers
       from a hindrance to dice rolls.\n- **Threshold x2 -** Character falls unconscious\n-
       **Threshold x3 -** Character dies\n\nBlood loss can be restored with the first
-      aid action.\n)\nitem(\n#Concussion\n##Vigour\n-\n###Active, Threshold\nCharacters
-      suffering from concussions lose their concentration and coordination.\n- **Active
-      -** Character suffers from a hindrance to all dice rolls\n- **Threshold -**
-      Character falls unconscious.\n\nConcussions can be removed with the surgery
-      action or when the character has fulyl healed.\n)\nitem(\n#Entangled\n##Vigour\n-\n###Active,
+      aid action.\n)\nitem(\n#Burning\n##Vigour\n-\n###Threshold\nCharacters that
+      set on fire run the risk of burning to death in short order. A character that
+      is set on fire gains +1 intensity at the start of every turn.\n- **Threshold 
+      -** Character suffers from a wound at the start of every turn.\n\nA character
+      on fire can spend 1AP remove 1 intensity of burning.\n)\nitem(\n#Concussion\n##Vigour\n-\n###Active,
+      Threshold\nCharacters suffering from concussions lose their concentration and
+      coordination.\n- **Active -** Character suffers from a hindrance to all dice
+      rolls\n- **Threshold -** Character falls unconscious.\n\nConcussions can be
+      removed with the surgery action or when the character has fulyl healed.\n)\n|\nitem(\n#Entangled\n##Vigour\n-\n###Active,
       Threshold\nCharacters suffering from entangled are trapped in a material that
       hinders their movement.\n- **Active -** Character suffers from a penalty to
       movement points gained equal to the intensity of entangled.\n\nChracters can
-      spend 1AP to remove the entangled effect.\n)\n|\nitem(\n#Extreme Temperatures\n##Vigour\n-\n###Threshold\nCharacters
-      that are navigating through terrain of extreme cold or extreme hot environs
-      suffer from Hypothermia and Hyperthermia. In both cases a character will receive
-      1 intensity of the Extreme Temperature effect for every hour that they spend
-      without shelter. \n- **Threshold  -** Character loses 1 stamina every threshold.
-      If the character's stamina reaches 0, the character dies.\n\nExposure is removed
-      by resting in shelter.\n)\nitem(\n#Fascinated\n##Willpower\n-\n###Active, Threshold\nCharacters
-      suffering from fascination are entranced by another creature or object.\n-
-      **Active -** Character suffers from a hindrance to all dice rolls performed
-      on actions targeting the source of the fascination.\n- **Threshold -** Character
-      automatically fails to perform any action targeting the source of the fascination\n\nAny
-      other non fascinated character can spend 1AP to remove the fascination effect
-      from a character. The target must be within 1m.\n)\nitem(\n#Infection\n##Vigour\n-\n###Active,
-      Threshold\nOne hour after that a character has suffered from a wound and for
-      every hour thereafter a character gains 1 intensity of infection. \n- **Active
-      -** Character suffers from a hindrance to dice rolls.\n- **Threshold  -** Character
-      Dies\n\nInfection can be removed with the surgery action.\n)\nitem(\n#Hamstring\n##Vigour\n-\n###Active,
+      spend 1AP to remove the entangled effect.\n)\nitem(\n#Exhaustion\n##Vigour\n-\n###Threshold
+      x1, x2\nCharacters that do not rest become exhausted gaining 1 intensity after
+      24 hours without sleep and +1 for every hour thereafter.\n- **Active -** Character
+      cannot restore Stamina or Focus with short rest.\n- **Threshold  -** Character
+      suffers from a hindrance to dice rolls.\n- **Threshold x2 -** Character falls
+      unconscious for 1d10 hours.\n\nExhaustion can be removed by taking a full rest.\n)\nitem(\n#Extreme
+      Temperatures\n##Vigour\n-\n###Threshold\nCharacters that are navigating through
+      terrain of extreme cold or extreme hot environs suffer from Hypothermia and
+      Hyperthermia. In both cases a character will receive 1 intensity of the Extreme
+      Temperature effect for every hour that they spend without shelter. \n- **Threshold 
+      -** Character loses 1 stamina every threshold. If the character's stamina reaches
+      0, the character dies.\n\nExposure is removed by resting in shelter.\n)\nitem(\n#Fascinated\n##Willpower\n-\n###Active,
+      Threshold\nCharacters suffering from fascination are entranced by another creature
+      or object.\n- **Active -** Character suffers from a hindrance to all dice rolls
+      performed on actions targeting the source of the fascination.\n- **Threshold
+      -** Character automatically fails to perform any action targeting the source
+      of the fascination\n\nAny other non fascinated character can spend 1AP to remove
+      the fascination effect from a character. The target must be within 1m.\n)\n=\nitem(\n#Freezing\n##Vigour\n-\n###Threshold\nCharacters
+      that are hit with a sudden flash of extremely cold energy run the risk of losing
+      life and limb to sudden hypotermia and cold burns.\n- **Threshold  -** Character
+      suffers from -1AP per threshold reached.\n\nA freezing character can spend
+      1AP remove 1 intensity of freezing.\n)\nitem(\n#Hamstring\n##Vigour\n-\n###Active,
       Threshold\nHamstrung characters cannot move as freely as normal.\n- **Active
       -** Character suffers from a penalty to movement points equal to the intensity.\n-
       **Threshold -** Character doesn't receive movement points and suffers from
       a -1 penalty to defence.\n\nHamstring can be removed with the surgery action
-      or when the character has fulyl healed.\n)\n=\nitem(\n#Nauseated\n##Vigour\n-\n###Active,
+      or when the character has fulyl healed.\n)\nitem(\n#Infection\n##Vigour\n-\n###Active,
+      Threshold\nOne hour after that a character has suffered from a wound and for
+      every hour thereafter a character gains 1 intensity of infection. \n- **Active
+      -** Character suffers from a hindrance to dice rolls.\n- **Threshold  -** Character
+      Dies\n\nInfection can be removed with the surgery action.\n)\nitem(\n#Nauseated\n##Vigour\n-\n###Active,
       Threshold\nCharacters suffering from nauseated are disgusted to the point of
       losing concentration.\n- **Active -** Character suffers from a -1 penalty to
       defence\n- **Threshold -** Character suffers from a -1 penalty to AP\n\nChracters
-      can spend 3AP to remove the nauseated effect.\n)\nitem(\n#Starvation & Dehydration\n##Vigour\n-\n###Threshold\nCharacters
+      can spend 3AP to remove the nauseated effect.\n)\n|\nitem(\n#Shocking\n##Vigour\n-\n###Active,
+      Threshold\nCharacters that are hit with a burstof electricity suffer from a
+      massive shock to the system.\n- **Active -** Character suffers from hindrance
+      to all dice rolls\n- **Threshold  -** Character suffers from -1AP.\n\nAn electrocuted
+      character can spend 1AP remove 1 intensity of shocking.\n)\nitem(\n#Sprain\n##Vigour\n-\n###Active,
+      Threshold\nCharacters suffering from sprains cannot use their limbs freely.\n-
+      **Active -** Character suffers from a hindrance to dice rolls on actions that
+      require their limbs.\n- **Threshold -** Character cannot perform actions that
+      require the use of that limb.\n\nSprains can be removed with the surgery action
+      or when the character has fully healed.\n)\nitem(\n#Starvation & Dehydration\n##Vigour\n-\n###Threshold\nCharacters
       need to consume 1 meal per day minimum in order to survive. If they are unable
       to procure edible food and potable water they will suffer from Starvation &
       Dehydration. A character gains 1 intensity of Starvation every 6 days and 1
       intensity of Dehydration every 2 days.\n- **Threshold  -** Character loses
       1 stamina every threshold. If the character's stamina reaches 0, the character
-      dies.\n\nConsuming a meal removes the intensity of starvation and dehydration.\n)\nitem(\n#Sprain\n##Vigour\n-\n###Active,
-      Threshold\nCharacters suffering from sprains cannot use their limbs freely.\n-
-      **Active -** Character suffers from a hindrance to dice rolls on actions that
-      require their limbs.\n- **Threshold -** Character cannot perform actions that
-      require the use of that limb.\n\nSprains can be removed with the surgery action
-      or when the character has fully healed.\n)\nitem(\n#Stunned\n##Willpower\n-\n###Active,
+      dies.\n\nConsuming a meal removes the intensity of starvation and dehydration.\n)\nitem(\n#Stunned\n##Willpower\n-\n###Active,
       Threshold\nCharacters suffering from stunned are shocked frozen unable to act\n-
       **Active -** Character suffers from a -1 penalty to Inititive per stunned intensity\n-
       **Threshold -** Character suffers from a -1 penalty to AP\n\nChracters can
-      spend 3AP to remove the stunned effect.\n)\n|\nitem(\n#Zombified\n##Vigour
+      spend 3AP to remove the stunned effect.\n)\n=\nitem(\n#Zombified\n##Vigour
       or Willpower (HIghest)\n-\n###Active, Threshold\nCharacters suffering from
       zombification are slowly turning into the undead. Normally a chracter gains
       an additional zombification intensity every minute.\n- **Active -** Character
@@ -10726,80 +10719,33 @@ MonoBehaviour:
       foods and drinks can further enhance this stress relieving effect.\n- **Leisure
       Time -** Characters can choose to spend their free time doing anything to take
       their minds off of things. For every hour of leisure time a chracter reduces
-      1 stress point. \n\n\n=\n\n\n\n## Injury & Infection\n\n-\n\nCharacters that
+      1 stress point. \n\n\n=\n\n\n\n## Pain and Healing\n\n-\n\nCharacters that
       have suffered from one or more wounds are considered to be injured and thus
-      become susceptible to blood loss and infection.\n\n\n### Pain\nCharacters that
-      have suffered from wounds in battle start suffering from pain. A character
-      who has a number of wounds equal to half of their total suffers from a hindrance
-      to all dice rolls. During their turn they may spend 1 action point to fight
-      through the pain and ignore the penalty until the start of their next turn.\n\n###
-      Healing\nCharacters that perform full rest in a comfortable shelter can heal
-      wounds naturally. If a character\u2019s blood loss is stopped and their wounds
-      are treated, a period of full rest will reduce the character\u2019s infection
-      by 1. If a character no longer has infection, they instead remove 1 wound.
-      Comfortable shelter requires a character to rest in dry and warm conditions.\n\n\n\n|\n\n\n\n##
-      Hazards\n\n-\n\n\n### Falling Damage\nCreatures that fall down from heights
-      suffer impact damage based on the distance that they fell. This damage is an
-      attack that automatically hits and does an amount of damage equal to 1 for
-      every meter fell. This attack is a critical hit which means that for every
-      time that the damage reaches the soak value an additional wound is inflicted.
-      For example a character with a soak of 3 that suffers 7 damage will suffer
-      from 2 wounds.\n\n### Damage from Falling Objects\nBig heavy objects crashing
-      down on characters cause an amount of damage based on the debris weight. Unless
-      a falling object is directly aimed towards a character, in which case it is
-      treated as a normal ranged attack, falling objects around characters will allow
-      potential targets to perform athletics dice rolls to dive out of the way. The
-      normal difficulty is 6 allowing a character to dive 1m out of the way per margin
-      of success and unspent movement points. If a character is hit, a falling object
-      deals an amount of damage equal to its ENC +1 per meter that it fell. This
-      attack is always considered a critical hit.\n\n\n\n=\n\n\n\n## Maladies\n\n-\n\n/\n\n\n\n###
-      Poisons and Diseases\n\n-\n\nWhen a creature is afflicted by a type of malady,
-      a poison, venom, toxin or disease, their Vigour comes into play. Each individual
-      poison or disease comes with an intensity value. When a player is afflicted
-      by a malady they gain a certain amount of intensity points in that malady.
-      As long as the player has at least 1 or more intensity they count as being
-      afflicted and thus suffer from the malady\u2019s effects. When the intensity
-      of the malady increases to match or exceed the character\u2019s Vigour, the
-      character starts suffering from a malady\u2019s acute effects. Certain maladies
-      can be fatal or have effects that worsen depending on how many intensity points
-      the malady reaches.\n\nThe following is an example of a malady:\n\n\n\n####
-      Paralytic Poison\n\nnote(\nWhen a character is struck with an attack affected
-      by paralytic poison they gain +1 intensity in Paralytic poison immediately
-      and +1 intensity at the start of every turn thereafter for 2 minutes (20 rounds).\n\n\n**Mild
-      Effect -** As long as a character has 1 or more intensity points in paralytic
-      poison they suffer from a penalty to movement points gained per turn equal
-      to -1 for every 2 intensity points in paralytic poison.\n\n**Acute Effect -**
-      If a character has a number of intensity points in paralytic poison equal to
-      or greater than their Vigour score, they are slowed. A slowed character must
-      forego their main action or their bonus action at the beginning of their turn.\n\n\n\n\n)\n\n|\n\n\n\n###
-      Curses and Hexes\n\n-\n\nCharacters that become cursed or are suffering from
-      a hex are in essence beneath the crushing thumb of a sickness, one that affects
-      their soul. Curses and hexes work exactly like Poisons and diseases and thus
-      are considered to be maladies. Their only difference is that instead of combating
-      them with Vigour a character combats them with Willpower.\n\nThe following
-      is an example of a curse:\n\n\n\n#### Witch\u2019s Jinx\n\nnote(\nA character
-      that performs any action that could cause harm to the witch gains +1 intensity
-      in Witch\u2019s Jinx immediately and +1 intensity whenever they perform any
-      action that may cause harm to the witch.\n\n\n**Mild Effect -** As long as
-      a character has 1 or more intensity points in Witch\u2019s jinx they suffer
-      from a hindrance to all dice rolls performed against the witch.\n\n**Acute
-      Effect -** If a character has a number of intensity points in Witch\u2019s
-      jinx equal to or greater than their Willpower score, any damage they inflict
-      upon the Witch is also inflicted to them.\n\n\n\n\n)\n\n### Recovering from
-      Maladies \n\n-\n\nEvery malady can be recovered from but the methods of recovery
-      differ. Most diseases can be recovered with rest and nursing. For example a
-      full rest period allows a character to reduce a disease\u2019 intensity by
-      a value equal to their Vigour as long as they are well fed and resting comfortably.
-      Poisons on the other hand require medical intervention. Immediate blood letting
-      or applying of tourniquets for instance can stop a poison\u2019s intensity
-      from worsening or at least slow it down from affecting the character every
-      minute instead of every turn. Antidotes and detoxification needs to occur to
-      remove the effect fully. Curses need to be removed by divine intervention,
-      thus most people turn to members of the clergy or exorcists although folk magic
-      and artisanal remedies are also said to work. In the case of most curses an
-      intervention will remove a curse completely or halt it from progressing however
-      certain powerful curses will require specific odd tasks to be performed in
-      order to free the afflicted from the malady.\n\n=\n\n\n\n"
+      become susceptible to pain\n\n\n### Pain\nCharacters that have suffered from
+      wounds in battle start suffering from pain. A character who has a number of
+      wounds equal to half of their total suffers from a hindrance to all dice rolls.
+      During their turn they may spend 1 action point to fight through the pain and
+      ignore the penalty until the start of their next turn.\n\n### Healing\nCharacters
+      that perform full rest in a comfortable shelter can heal wounds naturally.
+      If a character\u2019s blood loss is stopped and their wounds are treated, a
+      period of full rest will reduce the character\u2019s infection by 1. If a character
+      no longer has infection, they instead remove 1 wound. Comfortable shelter requires
+      a character to rest in dry and warm conditions.\n\n\n\n|\n\n\n\n## Hazards\n\n-\n\n\n###
+      Falling Damage\nCreatures that fall down from heights suffer impact damage
+      based on the distance that they fell. This damage is an attack that automatically
+      hits and does an amount of damage equal to 1 for every meter fell. This attack
+      is a critical hit which means that for every time that the damage reaches the
+      soak value an additional wound is inflicted. For example a character with a
+      soak of 3 that suffers 7 damage will suffer from 2 wounds.\n\n### Damage from
+      Falling Objects\nBig heavy objects crashing down on characters cause an amount
+      of damage based on the debris weight. Unless a falling object is directly aimed
+      towards a character, in which case it is treated as a normal ranged attack,
+      falling objects around characters will allow potential targets to perform athletics
+      dice rolls to dive out of the way. The normal difficulty is 6 allowing a character
+      to dive 1m out of the way per margin of success and unspent movement points.
+      If a character is hit, a falling object deals an amount of damage equal to
+      its ENC +1 per meter that it fell. This attack is always considered a critical
+      hit.\n\n\n\n=\n\n\n\n"
   - title: Classes
     description:
     - '-'
@@ -11119,17 +11065,9 @@ MonoBehaviour:
           points spent.
       - title: 'Blast [1AP]'
         content: "Make a spellcasting attack against a target\u2019s Willpower within
-          20m that deals +2 damage. An attack that hits, inflicts an amount of fire,
-          cold or shock tokens on the target equal to the dice roll\u2019s margin.
-          If the amount of tokens is equal to or greater than the target\u2019s soak,
-          they suffer from the token\u2019s effect. [\\n]**Fire -** A creature that
-          is burning suffers 1 wound and gains an additional fire token at the end
-          of its turn. [\\n]**Cold -** A creature that is freezing suffers from a
-          -1 penalty to movement points for every cold token and as long as they
-          have at least 1 cold token they suffer from -1 to action points. [\\n]**Shock
-          -** A creature that is electrocuted suffers from a hindrance to all dice
-          rolls. [\\n]A creature can spend 1AP to reduce 1 token for each action
-          point spent."
+          20m that deals +2 damage. An attack that hits, inflicts an amount of burning,
+          freezing or shocking intensity on the target equal to the dice roll\u2019s
+          margin."
       - title: 'Counter [1AP]'
         content: "Nullify the casting of a spell within 20m of you. Roll a spellcasting
           dice roll against the target\u2019s Willpower."
@@ -11139,12 +11077,12 @@ MonoBehaviour:
           a Blast of your choice.
       - title: 'Elemental Control [1 Focus]'
         content: "Until the end of the encounter during your turn choose any 3 targets
-          that currently have fire, cold, or shock tokens (or natural sources of
-          heat, cold or electricity), roll a spellcasting dice roll against the target\u2019s
-          Willpower and do any of the following. [\\n]Alter - Double or half the
-          amount of tokens on the target. Halfing 1 token removes it completely.
-          [\\n]Swap - Swap the tokens that two or more chosen targets have on them
-          with each other."
+          that currently have burning, freezing or shocking conditions (or natural
+          sources of heat, cold or electricity), roll a spellcasting dice roll against
+          the target\u2019s Willpower and do any of the following. [\\n]**Alter -**
+          Double or half the amount of intensity on the target. Halfing 1 intensity
+          removes it completely. [\\n]**Swap -** Swap the conditions that two or
+          more chosen targets have on them with each other."
       boxes: []
       items: []
     - title: Knight
@@ -11601,26 +11539,19 @@ MonoBehaviour:
       allowed the empire to form.\n\n\n#### Levitate [3 Initiative]\nDuring this
       turn you may fly at a distance of 1m per 2 movement points spent.\n\n#### Blast
       [1AP]\nMake a spellcasting attack against a target\u2019s Willpower within
-      20m that deals +2 damage. An attack that hits, inflicts an amount of fire,
-      cold or shock tokens on the target equal to the dice roll\u2019s margin. If
-      the amount of tokens is equal to or greater than the target\u2019s soak, they
-      suffer from the token\u2019s effect. \n**Fire -** A creature that is burning
-      suffers 1 wound and gains an additional fire token at the end of its turn.
-      \n**Cold -** A creature that is freezing suffers from a -1 penalty to movement
-      points for every cold token and as long as they have at least 1 cold token
-      they suffer from -1 to action points. \n**Shock -** A creature that is electrocuted
-      suffers from a hindrance to all dice rolls. \nA creature can spend 1AP to reduce
-      1 token for each action point spent.\n\n#### Counter [1AP]\nNullify the casting
-      of a spell within 20m of you. Roll a spellcasting dice roll against the target\u2019s
-      Willpower.\n\n#### Explosion [1 Focus]\nChoose a 4x4 area fully within 20m
-      of you or draw a straight line from yourself up to 20m away. All targets within
-      this area are hit with a Blast of your choice.\n\n#### Elemental Control [1
-      Focus]\nUntil the end of the encounter during your turn choose any 3 targets
-      that currently have fire, cold, or shock tokens (or natural sources of heat,
-      cold or electricity), roll a spellcasting dice roll against the target\u2019s
-      Willpower and do any of the following. \nAlter - Double or half the amount
-      of tokens on the target. Halfing 1 token removes it completely. \nSwap - Swap
-      the tokens that two or more chosen targets have on them with each other.\n\n\n\n|\n\n\n\n#
+      20m that deals +2 damage. An attack that hits, inflicts an amount of burning,
+      freezing or shocking intensity on the target equal to the dice roll\u2019s
+      margin.\n\n#### Counter [1AP]\nNullify the casting of a spell within 20m of
+      you. Roll a spellcasting dice roll against the target\u2019s Willpower.\n\n####
+      Explosion [1 Focus]\nChoose a 4x4 area fully within 20m of you or draw a straight
+      line from yourself up to 20m away. All targets within this area are hit with
+      a Blast of your choice.\n\n#### Elemental Control [1 Focus]\nUntil the end
+      of the encounter during your turn choose any 3 targets that currently have
+      burning, freezing or shocking conditions (or natural sources of heat, cold
+      or electricity), roll a spellcasting dice roll against the target\u2019s Willpower
+      and do any of the following. \n**Alter -** Double or half the amount of intensity
+      on the target. Halfing 1 intensity removes it completely. \n**Swap -** Swap
+      the conditions that two or more chosen targets have on them with each other.\n\n\n\n|\n\n\n\n#
       Knight\n\n-\n\nThe chivalric code has existed for as long as there were lords
       wealthy enough to pay for their armed house warriors. Knights are more than
       mere highly paid and equipped brutes. Either born of noble stock or commoners
@@ -12016,7 +11947,7 @@ MonoBehaviour:
     While an action that has more boosts than hindrances counts as being boosted
     and the reverse is also true. \n\n### Overboosting \nIf a dice roll is benefitting
     from 2 or more boosts in addition to the extra die the final result of the dice
-    roll benefits from a +1 for every additional boos beyond the first, i.e. 3 boosts
+    roll benefits from a +1 for every additional boost beyond the first, i.e. 3 boosts
     result in an additional die and a +2 bonus. The reverse is also true, a character
     performing a dice roll with 3 hindrances will roll an additional die and choose
     the lowest of the two and apply a -2 penalty on the final result.\n\n\n\n\n\n##
@@ -12401,7 +12332,7 @@ MonoBehaviour:
     blending in, be it with the shadows, crowds or chaos. With the stealth skill
     a character can pass by unseen, pilfer things surreptitiously or even plant dangerous
     items without the recipient\u2019s knowledge.\n\n=\n\n\n\nhead(\n# Professions\n\n)\n-\n/\n\n\n##
-    Navigation\n\n-\n\nThe Navigation Profession allows characters to act as pathfinders
+    Navigator\n\n-\n\nThe Navigator profession allows characters to act as pathfinders
     and wayfarers, guiding their allies through the land, avoiding the worst that
     the terrain has to offer and dodging and sneaking around dangerous predators.\n\n/\n\n\nnote(\n#Trailblaze\n##March
     Action\n-\nA navigator can use their skill to find favorable ground, shortcuts,
@@ -12422,12 +12353,12 @@ MonoBehaviour:
     -** Tag a single enemy or a small group of up to 3. Attacks performed against
     these enemies during the first turn are boosted.\n- **Favourable Defence -**
     Assign an area within the battlefield 5m in diameter. Any allies taking cover
-    in that area gain a +1 bonus to their defence.\n- **Approach Dector -** Draw
+    in that area gain a +1 bonus to their defence.\n- **Approach Vector -** Draw
     a line on the map that is up to 10 meters long. Any allies performint movement
     actions anywhere within 5m of that line gain an additional 3 movement points.\n-
     **Battle Plan -** Designate an ally within the group. That ally gains a recon
     point and may spend it at any time during the battle to gain an additional +2
-    action points.\n\n)\n\n/\n\n\n\n## Medicine\n\n-\n\nThe medicine Profession allows
+    action points.\n\n)\n\n/\n\n\n\n## Doctor\n\n-\n\nThe  Doctor profession allows
     characters to treat wounds, prevent infections and promote the natural healing
     of injury. A character that possesses the medicine Profession can use medical
     tools and supplies to perform first aid and surgery.\n\n/\n\n\nnote(\n#First
@@ -12451,10 +12382,10 @@ MonoBehaviour:
     success. If the intensity falls below 1, the infection stops. A character takes
     30 minutes to treat wounds and can do so once per long rest. Even if an infection
     isn\u2019t removed, if the wounds are treated the infection\u2019s spread slows
-    down to +1 intensity per 5 hours.\n)\n\n=\n\n\n\n## Hunting & Foraging\n\n-\n\nThe
-    hunting and foraging Profession allows a character to effectively find, identify
-    and procure rations from the nature that surrounds them allowing them to provide
-    for themselves and allies.\n\n/\n\n\nnote(\n#Passive Foraging\n##March Action\n-\n###Automatic\nDuring
+    down to +1 intensity per 5 hours.\n)\n\n=\n\n\n\n## Hunter\n\n-\n\nThe Hunter
+    profession allows a character to effectively find, identify and procure rations
+    from the nature that surrounds them allowing them to provide for themselves and
+    allies.\n\n/\n\n\nnote(\n#Passive Foraging\n##March Action\n-\n###Automatic\nDuring
     travel a character with the foraging Profession can collect berries, nuts, fruits,
     mushrooms and anything halfway edible. For every march action that a character
     performs they may add 1 day\u2019s worth of food and drink to their supplies.
@@ -12465,49 +12396,48 @@ MonoBehaviour:
     character performing active foraging rolls a survival skill dice roll against
     a difficulty of 6. For every margin of success they manage to gather enough food
     and drink 1 character or creature.\n)\n\n\nnote(\n#Small Game Hunting\n##Camp
-    (2 Hours)\n-\n###Survival Survival Skill vs Difficulty 8 vs Difficulty 6\nCharacters
-    can hunt for small game if they have the proper tools. Whether they are using
-    traps, spears or bows, characters can spend 2 hours chasing small game by performing
-    a survival skill dice roll against a difficulty of 8. For every margin of success
-    they catch one ENC 2 or smaller creature, providing both food and any materials
-    such as hides.\n)\n\n|\n\n\n### Big Game Hunting\nLarge and dangerous creatures
-    can be stalked and preyed upon by a skilled hunter. If a character is traveling
-    within the territory of such creatures they can use their survival skill to locate
-    and track down these mighty beasts. \n\n\n\n\nnote(\n#Locate\n##Camp (1 Hour)\n-\n###Survival
-    Skill vs Difficulty 6\nCharacters can spend an hour looking for signs of the
-    presence of big game within an area. This action cannot be performed while marching.
-    A character performs a survival skill dice roll against a difficulty of 6 in
-    order to locate a number of creatures who either consider the terrain as their
-    territory or migratory route.The maximum number of creatures located is equal
-    to or less than the dice roll\u2019s margin of success.\n)\n\n\nnote(\n#Track\n##1
-    Round\n-\n###Survival Skill vs Difficulty 6\nCharacters that successfully locate
-    the presence of a creature can choose to pursue it by tracking it down to where
-    it currently resides. A character performs a survival skill dice roll against
-    a difficulty of 6 to gain a number of tracking points equal to the margin of
-    success of the dice roll. They may spend these tracking points to determine one
-    or more of the following:\n- The route to take to reach the creature\n- The approximate
-    distance that there currently is between them and the creature\n- The current
-    behaviour of the creature (seeking food, seeking shelter, etc...)\n- The current
-    status of the creature (recently fed, tired, seeking mate, etc...)\n\nOnce a
-    character reaches such a creature, normal combat is used to determine the outcome
-    of the hunt.\n)\n\n=\n\n\n\n## Taming & Training\n\n-\n\nThe taming and training
-    Profession allows characters to cultivate animal companions to join them in their
-    travels and perform tasks for them. A well trained pet can be invaluable in most
-    situations.\n\n/\n\n\nnote(\n#Tame\n##5 Minutes\n-\n###Survival Skill vs Target's
-    willpower\nCharacters can attempt to tame a wild beast by approaching it and
-    attempting to befriend it. This is of course dangerous in the best of circumstances
-    and a character that fails in their attempt is probably going ot be faced with
-    an ornery wild animal. On a successful dice roll a character manages to befriend
-    the animal get it to trust and follow them but the animal is not yet trained.
-    The following is a list of modifiers that can apply for the taming action:\n-
-    **Food Offering -** Gain a +1 bonus on this dice roll if you bring food for the
-    animal.\n- **Relief -** Gain a +1 bonus if you heal a creature from existing
-    wounds.\n- **Youth -** Gain a +1 bonus if the creature is a youngor juvenile
-    member of its species.\n- **Pack or Herd is Present -** Suffer from a -1 penalty
-    if the animal is in the company of members of its pack or herd.\n- **Other Creatures
-    are present -** Suffer from a -1 penalty if the animal can sense other characters
-    or creatures around them.\n- **Injury and Stress -** Suffer from a -1 penalty
-    if the animal is currently injured or stressed.\n\n)\n\n|\n\n\nnote(\n#Train\n##Camp
+    (2 Hours)\n-\n###Survival Skill vs Difficulty 8\nCharacters can hunt for small
+    game if they have the proper tools. Whether they are using traps, spears or bows,
+    characters can spend 2 hours chasing small game by performing a survival skill
+    dice roll against a difficulty of 8. For every margin of success they catch one
+    ENC 2 or smaller creature, providing both food and any materials such as hides.\n)\n\n|\n\n\n###
+    Big Game Hunting\nLarge and dangerous creatures can be stalked and preyed upon
+    by a skilled hunter. If a character is traveling within the territory of such
+    creatures they can use their survival skill to locate and track down these mighty
+    beasts. \n\n\n\n\nnote(\n#Locate\n##Camp (1 Hour)\n-\n###Survival Skill vs Difficulty
+    6\nCharacters can spend an hour looking for signs of the presence of big game
+    within an area. This action cannot be performed while marching. A character performs
+    a survival skill dice roll against a difficulty of 6 in order to locate a number
+    of creatures who either consider the terrain as their territory or migratory
+    route.The maximum number of creatures located is equal to or less than the dice
+    roll\u2019s margin of success.\n)\n\n\nnote(\n#Track\n##1 Round\n-\n###Survival
+    Skill vs Difficulty 6\nCharacters that successfully locate the presence of a
+    creature can choose to pursue it by tracking it down to where it currently resides.
+    A character performs a survival skill dice roll against a difficulty of 6 to
+    gain a number of tracking points equal to the margin of success of the dice roll.
+    They may spend these tracking points to determine one or more of the following:\n-
+    The route to take to reach the creature\n- The approximate distance that there
+    currently is between them and the creature\n- The current behaviour of the creature
+    (seeking food, seeking shelter, etc...)\n- The current status of the creature
+    (recently fed, tired, seeking mate, etc...)\n\nOnce a character reaches such
+    a creature, normal combat is used to determine the outcome of the hunt.\n)\n\n=\n\n\n\n##
+    Tamer\n\n-\n\nThe Tamer profession allows characters to cultivate animal companions
+    to join them in their travels and perform tasks for them. A well trained pet
+    can be invaluable in most situations.\n\n/\n\n\nnote(\n#Tame\n##5 Minutes\n-\n###Survival
+    Skill vs Target's willpower\nCharacters can attempt to tame a wild beast by approaching
+    it and attempting to befriend it. This is of course dangerous in the best of
+    circumstances and a character that fails in their attempt is probably going ot
+    be faced with an ornery wild animal. On a successful dice roll a character manages
+    to befriend the animal get it to trust and follow them but the animal is not
+    yet trained. The following is a list of modifiers that can apply for the taming
+    action:\n- **Food Offering -** Gain a +1 bonus on this dice roll if you bring
+    food for the animal.\n- **Relief -** Gain a +1 bonus if you heal a creature from
+    existing wounds.\n- **Youth -** Gain a +1 bonus if the creature is a youngor
+    juvenile member of its species.\n- **Pack or Herd is Present -** Suffer from
+    a -1 penalty if the animal is in the company of members of its pack or herd.\n-
+    **Other Creatures are present -** Suffer from a -1 penalty if the animal can
+    sense other characters or creatures around them.\n- **Injury and Stress -** Suffer
+    from a -1 penalty if the animal is currently injured or stressed.\n\n)\n\n|\n\n\nnote(\n#Train\n##Camp
     (2 Hours)\n-\n###Survival Skill vs Difficulty 6\nA character can train a creature
     to do any number of tricks on command. Each trick must be trained as a separate
     extended action against a difficulty of 6 with a target number of complexity
@@ -12568,11 +12498,11 @@ MonoBehaviour:
     of their next turn equal to the margin of success.\n)\nitem(\n#Distract\n##Complexity
     40\n-\nThis creature gains the Distract maneuver allowing it to perform a close
     combat attack dice roll as a bonus action. Instead of dealing damage the target
-    will have their next dice roll hindered.\n)\n=\n\n\n=\n\n\n\n## Herbalism & Brewing\n\n-\n\nThe
-    herbalism & brewing Profession trains a character in the creation of potions
-    and concoctions. The herbalism portion of the knowledge empowers a character
-    with the ability to recognize components in the flora and fauna around them letting
-    characters extract materials from the environment.\n\n/\n\n\n### Components\nCharacters
+    will have their next dice roll hindered.\n)\n=\n\n\n=\n\n\n\n## Brewer\n\n-\n\nThe
+    Brewer profession trains a character in the creation of potions and concoctions.
+    The herbalism portion of the knowledge empowers a character with the ability
+    to recognize components in the flora and fauna around them letting characters
+    extract materials from the environment.\n\n/\n\n\n### Components\nCharacters
     need to gather a different variety of components in order to brew herbalist solutions.
     These are reagents and mutagens. Each type of component can create different
     categories of solutions.\n\n### Toxicity\nA character that consumes solutions
@@ -12599,7 +12529,7 @@ MonoBehaviour:
     kit and access to open flames. Brewing a solution takes 15 minutes and consumes
     1 unit of the appropriate component. Based on a character\u2019s crafting skill
     dice roll result a solution with an intensity value can be created. The intensity
-    value is equal to the dice roll\u2019s margin of success.\n)\n\n=\n\n\n\nitem(\n#Reagent
+    value is equal to the dice roll\u2019s margin of success.\n)\n\n=\n\n\nitem(\n#Reagent
     Salve\n-\nA reagent salve is designed to aid the body to heal. Salves are consumed
     by characters as bonus action and each salve that a character consumes causes
     the character to receive 1 point of toxicity. An alchemist\u2019s salve has an
@@ -12609,7 +12539,7 @@ MonoBehaviour:
     [X] -** Reduce a target character\u2019s infection intensity by an amount equal
     to X.\n- **Purification [X] -** Reduce a target character\u2019s poison intensity
     by an amount equal to X.\n- **Fortification [X] -** Reduce a target character\u2019s
-    disease intensity by an amount equal to X.\n\n)\nitem(\n#Mutagenic Elixir\n-\nA
+    disease intensity by an amount equal to X.\n\n)\n\n|\n\n\nitem(\n#Mutagenic Elixir\n-\nA
     mutagenic elixir is a body booster that grants a character a temporary enhancement
     on their natural ability. Elixirs are consumed by characters as bonus actions
     and each elixir that a character consumes causes the character to receive X points
@@ -12630,8 +12560,8 @@ MonoBehaviour:
     an amount of stress points equal to the elixir's intensity.\n- **Regeneration
     [3] -** Character restores 1 wound.\n- **Rejuvenation [3] -** Character restores
     1 stamina.\n- **Revitalization [3] -** Character restores 1 focus.\n\n)\n\n=\n\n\n\n##
-    Alchemy\n\n-\n\nThe Alchemy Profession allows a character to come up with and
-    bring to bear dangerous toxic solutions and explosive concoctions.\n\n/\n\n\n###
+    Alchemist\n\n-\n\nThe Alchemist profession allows a character to come up with
+    and bring to bear dangerous toxic solutions and explosive concoctions.\n\n/\n\n\n###
     Components\nCharacters need to gather a different variety of components in order
     to create alchemical solutions. These are toxins and combustibles. Each type
     of component can create different categories of solutions.\n\n### Recipes\nA
@@ -12640,11 +12570,11 @@ MonoBehaviour:
     their choice. From there on a character must either discover recipes in the world,
     learn them from mentors or spend time and resources experimenting to create them,
     themself. Each individual recipe allows a character to learn a different effect
-    for either Reagent Salves or Mutagenic Elixirs.\n\n\n\n|\n\n\nnote(\n#Gathering
-    Components\n##Camp 2 Hour or March\n-\n###Academics Skill vs Difficulty 6 (Toxin),
-    Academics Skill vs Difficulty 8 (Combustible)\nA character can spend time gathering
-    resources for their brewing. A character can either spend 2 hours to gather resources
-    or do so during a march as a marching action. Every time that a character performs
+    for either Reagent Salves or Mutagenic Elixirs.\n\n\n\n\nnote(\n#Gathering Components\n##Camp
+    2 Hour or March\n-\n###Academics Skill vs Difficulty 6 (Toxin), Academics Skill
+    vs Difficulty 8 (Combustible)\nA character can spend time gathering resources
+    for their brewing. A character can either spend 2 hours to gather resources or
+    do so during a march as a marching action. Every time that a character performs
     a gathering components action they may roll a skill dice roll based on Academics
     in order to gather toxins or combustibles. Gathering toxins is done at a difficulty
     of 6 and combustibles is done at a difficulty of 8. Each successful dice roll
@@ -12654,7 +12584,7 @@ MonoBehaviour:
     and access to open flames. Mixing a solution takes 15 minutes and consumes 1
     unit of the appropriate component. Based on a character\u2019s crafting skill
     dice roll result a solution with an intensity value can be created. The intensity
-    value is equal to the dice roll\u2019s margin of success.\n)\n\n=\n\n\n\nitem(\n#Toxin
+    value is equal to the dice roll\u2019s margin of success.\n)\n\n|\n\n\nitem(\n#Toxin
     Coating\n-\nToxin coatings are poured over weapons in order to impart harmful
     effects on targets. Applying a toxin coating on a weapon is a bonus action. A
     weapon that is coated with a toxin will impart its effect on the weapon\u2019s
@@ -12670,7 +12600,7 @@ MonoBehaviour:
     vigour, the target suffers from a -1 penalty to all close combat damage.\n- **Deprivation
     [X] -** Targets suffer from a penalty to initiative equal to X.\n- **Agitation
     [X] -** Targets suffer from a number of stress points equal to X.\n- **Infection
-    [X] -** Targets suffer from a number of infection points equal to X.\n\n)\nitem(\n#Armour
+    [X] -** Targets suffer from a number of infection points equal to X.\n\n)\n\n=\n\n\nitem(\n#Armour
     Coating\n-\n Armour coatings are special oils poured and smeared over armour
     and gear in order to impart beneficial and protective effects on the wearer and
     the item. An armour that is coated will retain its beneficial effects until the
@@ -12687,62 +12617,63 @@ MonoBehaviour:
     will remove the first 3 points of tangle intensity that they receive after which
     the coating is removed.\n- **Alkalene -** The wearer of an armour treated with
     this coating will remove the first 3 points of corrosion intensity that they
-    receive after which the coating is removed.\n\n)\nitem(\n#Combustible Petard\n-\nCombustible
-    Petards are small handheld improvised explosive devices that can teach an unwitting
-    opponent a hard lesson about bullying chemistry nerds. Igniting and throwing
-    a Combustible petard takes 2 attack action points, one to ignite and one to throw.
-    A character can use a bonus action to ignite if they so choose. A petard has
-    an intensity value that is used to determine how many different effects it has.
-    A petard can have any combination of the following effects:\n- **Intensity -**
-    Increase the explosion\u2019s damage by +1 per effect.\n- **Blast Radius -**
-    Grant the explosion a splash effect of 1m per effect.\n- **Shrapnel -** Grant
-    the explosion the pierce and slash effects.\n- **Concussion -** Grant the explosion
-    the push and slam effects.\n- **Incendiary -** The explosion inflicts 2 fire
-    tokens per effect.\n- **Cryostasis -** The explosion inflicts 2 cold tokens per
-    effect.\n- **Electrostatic -** The explosion inflicts 2 shock tokens per effect.\n\n)\n\n=\n\n\n\n##
-    Crafter\n\n-\n\n\n### Gunsmithing\nThe gunsmithing Profession allows a character
-    to create and maintain all forms of firearms, cannons and their ammunition. As
-    firearm designs become more intricate, components more precise and ammunition
-    more deadly, so do their crafters have to become more masterful in their art.\n\n###
-    Blacksmithing\nThe blacksmithing Profession allows a character to become an expert
-    in metallurgy, fogging or ores and beating of metal to shape it into tools, weapons,
-    armours, utensils, jewellery and any form of metallic reinforcement.\n\n### Leatherworking
-    & Tailoring\nThe leatherworking and tailoring Profession deals with all forms
-    of soft fabric crafting, harvesting and refining technique. With leatherworking
-    & tailoring a character can not only create all forms of clothing and various
-    armour but also extract, harvest and refine hides, leathers, linens, cottons,
-    wools, furs and all forms of natural fibres.\n\n\n\n/\n\n\nitem(\n#Rarity & Requirements\n-\nEvery
-    item in the game belongs to a rarity category. The four rarity categories are
-    Common, Uncommon, Rare and Legendary. In order for a character to be able to
-    repair, maintain, scavenge, craft or upgrade any item they must possess a skill
-    level in their crafting skill that is equal to or greater than the item rarity
-    rating. The rarity ratings are as follows:\n- **Common -** Rarity Rating 1, Trained
-    Skill Level\n- **Uncommon -** Rarity Rating 2, Expert Skill Level\n- **Rare -**
-    Rarity Rating 3, Master Skill Level\n- **Legendary -** Rarity Rating 4, Legend
-    Skill Level\n\n)\n\n\nitem(\n#Raw Materials\n-\nItems need an amount of raw materials
-    in order to be created. Each raw material has a type and a rarity value. Wood,
-    Metal, Leather, Fabric are all examples of types. The rarity level needs to match
-    the rarity of the item being created. For example a Longsword is an Uncommon
-    Metal Weapon with an ENC of 1 so a crafter needs 1 ENC of Uncommon Metal in order
-    to craft it.\nPerforming repairs and upgrades also need raw materials, just less
-    of them. Each repair and upgrade performed takes 1 unit of raw material (1 ENC)
-    of the appropriate type.\n)\n\n|\n\n\nitem(\n#Tools\n-\nWhether a character is
-    crafting, repairing, upgrading or scavenging, they can only do so if they have
-    prerequisite tools in their possession. Repairs and scavenging can be done with
-    portable tool kits while crafting and upgrading require workshops and crafting
-    stations.\n)\n\n\nitem(\n#Crafting Time\n-\nEvery item that is created takes
-    an amount of crafting time. This is calculated as a crafting time value which
-    is equal to the item\u2019s ENC (min 1) x its rarity rating. Every time that
-    a character spends 2 hours on a crafting action they must roll a crafting skill
-    dice roll against a difficulty of 6 and the margin of success of this dice roll
-    is added towards a total progress in the crafting of the item. Once the progress
-    value is equal to the crafting time, the item is complete.\nRegardless of the
-    crafting complexity each repair action takes 2 hours to perform.\nUpgrade actions
-    take one half of an item's crafting complexity.\n)\n\n/\n\n=\n\n### Blueprints\n\nCharacters
-    who have training in the Craft skill are able to craft any common item. For Uncommon
-    items or rarer, they need to acquire a blueprint or create it by themself. In
-    order for a character to create a blueprint from scratch they must perform a
-    crafting action that consumes 5 times the normal amount of time and raw materials.\n\n/\n\n\nnote(\n#Craft\n##Camp
+    receive after which the coating is removed.\n\n)\n\n|\n\n\nitem(\n#Combustible
+    Petard\n-\nCombustible Petards are small handheld improvised explosive devices
+    that can teach an unwitting opponent a hard lesson about bullying chemistry nerds.
+    Igniting and throwing a Combustible petard takes 2 attack action points, one
+    to ignite and one to throw. A character can use a bonus action to ignite if they
+    so choose. A petard has an intensity value that is used to determine how many
+    different effects it has. A petard can have any combination of the following
+    effects:\n- **Intensity -** Increase the explosion\u2019s damage by +1 per effect.\n-
+    **Blast Radius -** Grant the explosion a splash effect of 1m per effect.\n- **Shrapnel
+    -** Grant the explosion the pierce and slash effects.\n- **Concussion -** Grant
+    the explosion the push and slam effects.\n- **Incendiary -** The explosion inflicts
+    2 fire tokens per effect.\n- **Cryostasis -** The explosion inflicts 2 cold tokens
+    per effect.\n- **Electrostatic -** The explosion inflicts 2 shock tokens per
+    effect.\n\n)\n\n=\n\n\n\n## Crafter\n\n-\n\n\n### Gunsmithing\nThe gunsmithing
+    Profession allows a character to create and maintain all forms of firearms, cannons
+    and their ammunition. As firearm designs become more intricate, components more
+    precise and ammunition more deadly, so do their crafters have to become more
+    masterful in their art.\n\n### Blacksmithing\nThe blacksmithing Profession allows
+    a character to become an expert in metallurgy, fogging or ores and beating of
+    metal to shape it into tools, weapons, armours, utensils, jewellery and any form
+    of metallic reinforcement.\n\n### Leatherworking & Tailoring\nThe leatherworking
+    and tailoring Profession deals with all forms of soft fabric crafting, harvesting
+    and refining technique. With leatherworking & tailoring a character can not only
+    create all forms of clothing and various armour but also extract, harvest and
+    refine hides, leathers, linens, cottons, wools, furs and all forms of natural
+    fibres.\n\n\n\n/\n\n\nitem(\n#Rarity & Requirements\n-\nEvery item in the game
+    belongs to a rarity category. The four rarity categories are Common, Uncommon,
+    Rare and Legendary. In order for a character to be able to repair, maintain,
+    scavenge, craft or upgrade any item they must possess a skill level in their
+    crafting skill that is equal to or greater than the item rarity rating. The rarity
+    ratings are as follows:\n- **Common -** Rarity Rating 1, Trained Skill Level\n-
+    **Uncommon -** Rarity Rating 2, Expert Skill Level\n- **Rare -** Rarity Rating
+    3, Master Skill Level\n- **Legendary -** Rarity Rating 4, Legend Skill Level\n\n)\n\n\nitem(\n#Raw
+    Materials\n-\nItems need an amount of raw materials in order to be created. Each
+    raw material has a type and a rarity value. Wood, Metal, Leather, Fabric are
+    all examples of types. The rarity level needs to match the rarity of the item
+    being created. For example a Longsword is an Uncommon Metal Weapon with an ENC
+    of 1 so a crafter needs 1 ENC of Uncommon Metal in order to craft it.\nPerforming
+    repairs and upgrades also need raw materials, just less of them. Each repair
+    and upgrade performed takes 1 unit of raw material (1 ENC) of the appropriate
+    type.\n)\n\n|\n\n\nitem(\n#Tools\n-\nWhether a character is crafting, repairing,
+    upgrading or scavenging, they can only do so if they have prerequisite tools
+    in their possession. Repairs and scavenging can be done with portable tool kits
+    while crafting and upgrading require workshops and crafting stations.\n)\n\n\nitem(\n#Crafting
+    Time\n-\nEvery item that is created takes an amount of crafting time. This is
+    calculated as a crafting time value which is equal to the item\u2019s ENC (min
+    1) x its rarity rating. Every time that a character spends 2 hours on a crafting
+    action they must roll a crafting skill dice roll against a difficulty of 6 and
+    the margin of success of this dice roll is added towards a total progress in
+    the crafting of the item. Once the progress value is equal to the crafting time,
+    the item is complete.\nRegardless of the crafting complexity each repair action
+    takes 2 hours to perform.\nUpgrade actions take one half of an item's crafting
+    complexity.\n)\n\n/\n\n=\n\n### Blueprints\n\nCharacters who have training in
+    the Craft skill are able to craft any common item. For Uncommon items or rarer,
+    they need to acquire a blueprint or create it by themself. In order for a character
+    to create a blueprint from scratch they must perform a crafting action that consumes
+    5 times the normal amount of time and raw materials.\n\n/\n\n\nnote(\n#Craft\n##Camp
     2 Hours\n-\n###Crafting Skill vs Difficulty 6\nCharacters withthe appropriate
     crafting profession can craft different item types. Blacksmiths can craft weapons
     and heavy armour. Leatherworkers and taiors can craft gear items and light and
@@ -12794,60 +12725,59 @@ MonoBehaviour:
     Pierce, Push, Slam, Slash\n- **Smoothing -** Armour loses the Chafing Trait\n-
     **Dampening -** Armour loses the Conspicuous Trait\n- **Concealing -** Armour
     gains the Chamaleonic Trait\n- **Intimidating -** Armour gains the Fearsome Trait\n-
-    **Threatening -** Armour gains the Spiky Trait\n\n)\n\n=\n\n\n\n## Talisman Making
-    & Rune Crafting\n\n-\n\nThe talisman making profession allows a character to
-    create magical trinkets which can grant temporary power to their wielders, be
-    they in the form of small charms or inscribed insignias and tattoos.\n\nThe runecrafting
-    making profession allows a character to create wondrous items which can grant
-    permanent power to their wielders in the form of enchanted objects.\n\n/\n\n\nnote(\n#Crafting
-    Talismans\n-\nCharacters with both the spellcasting skill and the crafting skill
-    can craft talismans by imbuing seemingly mundane objects with mana essence. Depending
-    on the rarity of the talisman a different amount of mana essence needs to be
-    consumed. The crafting skill requirements for each talisman needs to be met by
-    both the crafting skill and the spellcasting skill. The following lists the amount
-    of mana essence per talisman:\n- **Common -** 1 Mana essence, Craft Time 2\n-
-    **Uncommon -** 1 Mana essence, Craft Time 3\n- **Rare -** 2 Mana essence, Craft
-    Time 4\n- **Legendary -** 3 Mana essence, Craft Time 5\n\n)\n\n|\n\n\nnote(\n#Rune
-    Crafting\n-\nCharacters with both the spellcasting skill and the crafting skill
-    can craft runes by imbuing symbols transcribed onto objects with mana essence.
-    Depending on the rarity of the rune a different amount of mana essence needs
-    to be consumed. The crafting skill requirements for each rune needs to be met
-    by both the crafting skill and the spellcasting skill. The following lists the
-    amount of mana essence per rune:\n- **Common -** 5 Mana essence, Craft Time 10\n-
-    **Uncommon -** 10 Mana essence, Craft Time 15\n- **Rare -** 20 Mana essence,
-    Craft Time 30\n- **Legendary -** 30 Mana essence, Craft Time 45\n\nThe number
-    of runes that a character can transcribe on a single item is limited by the character\u2019s
-    skill modifier in both crafting and spellcasting. A character who is a master
-    in both these skills can add up to 3 different runes on the same item. Regardless
-    of skill levels no rune may be placed on an item more than once.\n)\n\n=\n\n\n\nhead(\n#
-    Fuels\n\n)\n-\nIn addition to stats, characters have three fuel gauges that they
-    can use to aid them in their adventures. Each fuel is unique in both how it is
-    gained and restored and how it is applied. The three fuels are Stamina, Luck
-    and Focus.\n/\n\n\n## Stamina\n\n-\n\nStamina is a gauge of a character\u2019s
-    fitness and current vigor and it is restored by resting. A character that performs
-    a partial rest (one hour) restores 1 lost Stamina point. Stamina is used to fuel
-    certain talents which allow characters to perform incredible feats.\n\n\n###
-    Maximum Stamina\nTo calculate the maximum stamina of a character, choose the
-    highest grade of physical skill that the character has (Perception, Athletics,
-    Close Combat, Ranged Combat, Contitioning). The maximum stamina is equal to the
-    highest skill modifier +1.\n\n\n\n|\n\n\n\n## Focus\n\n-\n\nFocus measures the
-    overall mental faculties of a character as the cumulative pressure and mental
-    strain puts a limit to how many feats of mental prowess they can perform. A character
-    that performs a partial rest (one hour) restores 1 lost Focus point.  Focus is
-    used to fuel certain talents which allow characters to perform incredible feats.\n\n\n###
-    Maximum Focus\nTo calculate the maximum focus of a character, choose the highest
-    grade of mental skill that the character has (Academics, Profession, Spellcasting,
-    Survival, Concentration).The maximum focus is equal to the highest skill modifier
-    +1.\n\n\n\n|\n\n\n\n## Luck\n\n-\n\nLuck is a measure of a character\u2019s gumption,
-    their instinct to capitalize on every opportunity they observe, their willingness
-    to seize the moment and everything else which is out of their control. Even though
-    some are blessed by the goddess of luck, everybody's good fortune runs out eventually.
-    A character\u2019s luck is restored fully whenever they gain an advancement during
-    their adventure. Each luck point can be spent to dramatically alter the course
-    of the destiny of a character. By spending a luck point a character can change
-    the result of a dice roll to whatever number they want. The dice roll must be
-    for an action that they themself are doing, or an action that is targeting them
-    directly. \n\n\n### Maximum Luck\nTo calculate the maximum luck of a character,
+    **Threatening -** Armour gains the Spiky Trait\n\n)\n\n=\n\n\n\n## Enchanter\n\n-\n\nThe
+    Enchanter profession allows a character to create magical trinkets which can
+    grant temporary power to their wielders, be they in the form of small charms
+    or inscribed insignias and tattoos.\n\nIt also allows a character to create wondrous
+    items which can grant permanent power to their wielders in the form of enchanted
+    objects.\n\n/\n\n\nnote(\n#Crafting Talismans\n-\nCharacters with both the spellcasting
+    skill and the crafting skill can craft talismans by imbuing seemingly mundane
+    objects with mana essence. Depending on the rarity of the talisman a different
+    amount of mana essence needs to be consumed. The crafting skill requirements
+    for each talisman needs to be met by both the crafting skill and the spellcasting
+    skill. The following lists the amount of mana essence per talisman:\n- **Common
+    -** 1 Mana essence, Craft Time 2\n- **Uncommon -** 1 Mana essence, Craft Time
+    3\n- **Rare -** 2 Mana essence, Craft Time 4\n- **Legendary -** 3 Mana essence,
+    Craft Time 5\n\n)\n\n|\n\n\nnote(\n#Rune Crafting\n-\nCharacters with both the
+    spellcasting skill and the crafting skill can craft runes by imbuing symbols
+    transcribed onto objects with mana essence. Depending on the rarity of the rune
+    a different amount of mana essence needs to be consumed. The crafting skill requirements
+    for each rune needs to be met by both the crafting skill and the spellcasting
+    skill. The following lists the amount of mana essence per rune:\n- **Common -**
+    5 Mana essence, Craft Time 10\n- **Uncommon -** 10 Mana essence, Craft Time 15\n-
+    **Rare -** 20 Mana essence, Craft Time 30\n- **Legendary -** 30 Mana essence,
+    Craft Time 45\n\nThe number of runes that a character can transcribe on a single
+    item is limited by the character\u2019s skill modifier in both crafting and spellcasting.
+    A character who is a master in both these skills can add up to 3 different runes
+    on the same item. Regardless of skill levels no rune may be placed on an item
+    more than once.\n)\n\n=\n\n\n\nhead(\n# Fuels\n\n)\n-\nIn addition to stats,
+    characters have three fuel gauges that they can use to aid them in their adventures.
+    Each fuel is unique in both how it is gained and restored and how it is applied.
+    The three fuels are Stamina, Luck and Focus.\n/\n\n\n## Stamina\n\n-\n\nStamina
+    is a gauge of a character\u2019s fitness and current vigor and it is restored
+    by resting. A character that performs a partial rest (one hour) restores 1 lost
+    Stamina point. Stamina is used to fuel certain talents which allow characters
+    to perform incredible feats.\n\n\n### Maximum Stamina\nTo calculate the maximum
+    stamina of a character, choose the highest grade of physical skill that the character
+    has (Perception, Athletics, Close Combat, Ranged Combat, Contitioning). The maximum
+    stamina is equal to the highest skill modifier +1.\n\n\n\n|\n\n\n\n## Focus\n\n-\n\nFocus
+    measures the overall mental faculties of a character as the cumulative pressure
+    and mental strain puts a limit to how many feats of mental prowess they can perform.
+    A character that performs a partial rest (one hour) restores 1 lost Focus point. 
+    Focus is used to fuel certain talents which allow characters to perform incredible
+    feats.\n\n\n### Maximum Focus\nTo calculate the maximum focus of a character,
+    choose the highest grade of mental skill that the character has (Academics, Profession,
+    Spellcasting, Survival, Concentration).The maximum focus is equal to the highest
+    skill modifier +1.\n\n\n\n|\n\n\n\n## Luck\n\n-\n\nLuck is a measure of a character\u2019s
+    gumption, their instinct to capitalize on every opportunity they observe, their
+    willingness to seize the moment and everything else which is out of their control.
+    Even though some are blessed by the goddess of luck, everybody's good fortune
+    runs out eventually. A character\u2019s luck is restored fully whenever they
+    gain an advancement during their adventure. Each luck point can be spent to dramatically
+    alter the course of the destiny of a character. By spending a luck point a character
+    can change the result of a dice roll to whatever number they want. The dice roll
+    must be for an action that they themself are doing, or an action that is targeting
+    them directly. \n\n\n### Maximum Luck\nTo calculate the maximum luck of a character,
     choose the highest grade of social skill that the character has (Persuasion,
     Intimidation, Insight, Performance, Conviction). The maximum luck is equal to
     the highest skill modifier +1.\n\n\n\n=\n\n\n\nhead(\n# Combat\n\n)\n-\n/\n\n\n##
@@ -13098,54 +13028,72 @@ MonoBehaviour:
     every minute thereafter a character gains 1 intensity of blood loss.\n- **Threshold
     -** Character suffers from a hindrance to dice rolls.\n- **Threshold x2 -** Character
     falls unconscious\n- **Threshold x3 -** Character dies\n\nBlood loss can be restored
-    with the first aid action.\n)\nitem(\n#Concussion\n##Vigour\n-\n###Active, Threshold\nCharacters
-    suffering from concussions lose their concentration and coordination.\n- **Active
-    -** Character suffers from a hindrance to all dice rolls\n- **Threshold -** Character
-    falls unconscious.\n\nConcussions can be removed with the surgery action or when
-    the character has fulyl healed.\n)\nitem(\n#Entangled\n##Vigour\n-\n###Active,
+    with the first aid action.\n)\nitem(\n#Burning\n##Vigour\n-\n###Threshold\nCharacters
+    that set on fire run the risk of burning to death in short order. A character
+    that is set on fire gains +1 intensity at the start of every turn.\n- **Threshold 
+    -** Character suffers from a wound at the start of every turn.\n\nA character
+    on fire can spend 1AP remove 1 intensity of burning.\n)\nitem(\n#Concussion\n##Vigour\n-\n###Active,
+    Threshold\nCharacters suffering from concussions lose their concentration and
+    coordination.\n- **Active -** Character suffers from a hindrance to all dice
+    rolls\n- **Threshold -** Character falls unconscious.\n\nConcussions can be removed
+    with the surgery action or when the character has fulyl healed.\n)\n|\nitem(\n#Entangled\n##Vigour\n-\n###Active,
     Threshold\nCharacters suffering from entangled are trapped in a material that
     hinders their movement.\n- **Active -** Character suffers from a penalty to movement
     points gained equal to the intensity of entangled.\n\nChracters can spend 1AP
-    to remove the entangled effect.\n)\n|\nitem(\n#Extreme Temperatures\n##Vigour\n-\n###Threshold\nCharacters
-    that are navigating through terrain of extreme cold or extreme hot environs suffer
-    from Hypothermia and Hyperthermia. In both cases a character will receive 1 intensity
-    of the Extreme Temperature effect for every hour that they spend without shelter.
-    \n- **Threshold  -** Character loses 1 stamina every threshold. If the character's
-    stamina reaches 0, the character dies.\n\nExposure is removed by resting in shelter.\n)\nitem(\n#Fascinated\n##Willpower\n-\n###Active,
+    to remove the entangled effect.\n)\nitem(\n#Exhaustion\n##Vigour\n-\n###Threshold
+    x1, x2\nCharacters that do not rest become exhausted gaining 1 intensity after
+    24 hours without sleep and +1 for every hour thereafter.\n- **Active -** Character
+    cannot restore Stamina or Focus with short rest.\n- **Threshold  -** Character
+    suffers from a hindrance to dice rolls.\n- **Threshold x2 -** Character falls
+    unconscious for 1d10 hours.\n\nExhaustion can be removed by taking a full rest.\n)\nitem(\n#Extreme
+    Temperatures\n##Vigour\n-\n###Threshold\nCharacters that are navigating through
+    terrain of extreme cold or extreme hot environs suffer from Hypothermia and Hyperthermia.
+    In both cases a character will receive 1 intensity of the Extreme Temperature
+    effect for every hour that they spend without shelter. \n- **Threshold  -** Character
+    loses 1 stamina every threshold. If the character's stamina reaches 0, the character
+    dies.\n\nExposure is removed by resting in shelter.\n)\nitem(\n#Fascinated\n##Willpower\n-\n###Active,
     Threshold\nCharacters suffering from fascination are entranced by another creature
     or object.\n- **Active -** Character suffers from a hindrance to all dice rolls
     performed on actions targeting the source of the fascination.\n- **Threshold
     -** Character automatically fails to perform any action targeting the source
     of the fascination\n\nAny other non fascinated character can spend 1AP to remove
-    the fascination effect from a character. The target must be within 1m.\n)\nitem(\n#Infection\n##Vigour\n-\n###Active,
-    Threshold\nOne hour after that a character has suffered from a wound and for
-    every hour thereafter a character gains 1 intensity of infection. \n- **Active
-    -** Character suffers from a hindrance to dice rolls.\n- **Threshold  -** Character
-    Dies\n\nInfection can be removed with the surgery action.\n)\nitem(\n#Hamstring\n##Vigour\n-\n###Active,
+    the fascination effect from a character. The target must be within 1m.\n)\n=\nitem(\n#Freezing\n##Vigour\n-\n###Threshold\nCharacters
+    that are hit with a sudden flash of extremely cold energy run the risk of losing
+    life and limb to sudden hypotermia and cold burns.\n- **Threshold  -** Character
+    suffers from -1AP per threshold reached.\n\nA freezing character can spend 1AP
+    remove 1 intensity of freezing.\n)\nitem(\n#Hamstring\n##Vigour\n-\n###Active,
     Threshold\nHamstrung characters cannot move as freely as normal.\n- **Active
     -** Character suffers from a penalty to movement points equal to the intensity.\n-
     **Threshold -** Character doesn't receive movement points and suffers from a
     -1 penalty to defence.\n\nHamstring can be removed with the surgery action or
-    when the character has fulyl healed.\n)\n=\nitem(\n#Nauseated\n##Vigour\n-\n###Active,
+    when the character has fulyl healed.\n)\nitem(\n#Infection\n##Vigour\n-\n###Active,
+    Threshold\nOne hour after that a character has suffered from a wound and for
+    every hour thereafter a character gains 1 intensity of infection. \n- **Active
+    -** Character suffers from a hindrance to dice rolls.\n- **Threshold  -** Character
+    Dies\n\nInfection can be removed with the surgery action.\n)\nitem(\n#Nauseated\n##Vigour\n-\n###Active,
     Threshold\nCharacters suffering from nauseated are disgusted to the point of
     losing concentration.\n- **Active -** Character suffers from a -1 penalty to
     defence\n- **Threshold -** Character suffers from a -1 penalty to AP\n\nChracters
-    can spend 3AP to remove the nauseated effect.\n)\nitem(\n#Starvation & Dehydration\n##Vigour\n-\n###Threshold\nCharacters
+    can spend 3AP to remove the nauseated effect.\n)\n|\nitem(\n#Shocking\n##Vigour\n-\n###Active,
+    Threshold\nCharacters that are hit with a burstof electricity suffer from a massive
+    shock to the system.\n- **Active -** Character suffers from hindrance to all
+    dice rolls\n- **Threshold  -** Character suffers from -1AP.\n\nAn electrocuted
+    character can spend 1AP remove 1 intensity of shocking.\n)\nitem(\n#Sprain\n##Vigour\n-\n###Active,
+    Threshold\nCharacters suffering from sprains cannot use their limbs freely.\n-
+    **Active -** Character suffers from a hindrance to dice rolls on actions that
+    require their limbs.\n- **Threshold -** Character cannot perform actions that
+    require the use of that limb.\n\nSprains can be removed with the surgery action
+    or when the character has fully healed.\n)\nitem(\n#Starvation & Dehydration\n##Vigour\n-\n###Threshold\nCharacters
     need to consume 1 meal per day minimum in order to survive. If they are unable
     to procure edible food and potable water they will suffer from Starvation & Dehydration.
     A character gains 1 intensity of Starvation every 6 days and 1 intensity of Dehydration
     every 2 days.\n- **Threshold  -** Character loses 1 stamina every threshold.
     If the character's stamina reaches 0, the character dies.\n\nConsuming a meal
-    removes the intensity of starvation and dehydration.\n)\nitem(\n#Sprain\n##Vigour\n-\n###Active,
-    Threshold\nCharacters suffering from sprains cannot use their limbs freely.\n-
-    **Active -** Character suffers from a hindrance to dice rolls on actions that
-    require their limbs.\n- **Threshold -** Character cannot perform actions that
-    require the use of that limb.\n\nSprains can be removed with the surgery action
-    or when the character has fully healed.\n)\nitem(\n#Stunned\n##Willpower\n-\n###Active,
+    removes the intensity of starvation and dehydration.\n)\nitem(\n#Stunned\n##Willpower\n-\n###Active,
     Threshold\nCharacters suffering from stunned are shocked frozen unable to act\n-
     **Active -** Character suffers from a -1 penalty to Inititive per stunned intensity\n-
     **Threshold -** Character suffers from a -1 penalty to AP\n\nChracters can spend
-    3AP to remove the stunned effect.\n)\n|\nitem(\n#Zombified\n##Vigour or Willpower
+    3AP to remove the stunned effect.\n)\n=\nitem(\n#Zombified\n##Vigour or Willpower
     (HIghest)\n-\n###Active, Threshold\nCharacters suffering from zombification are
     slowly turning into the undead. Normally a chracter gains an additional zombification
     intensity every minute.\n- **Active -** Character must spend 2AP to perform movement
@@ -13172,181 +13120,135 @@ MonoBehaviour:
     can further enhance this stress relieving effect.\n- **Leisure Time -** Characters
     can choose to spend their free time doing anything to take their minds off of
     things. For every hour of leisure time a chracter reduces 1 stress point. \n\n\n=\n\n\n\n##
-    Injury & Infection\n\n-\n\nCharacters that have suffered from one or more wounds
-    are considered to be injured and thus become susceptible to blood loss and infection.\n\n\n###
-    Pain\nCharacters that have suffered from wounds in battle start suffering from
-    pain. A character who has a number of wounds equal to half of their total suffers
-    from a hindrance to all dice rolls. During their turn they may spend 1 action
-    point to fight through the pain and ignore the penalty until the start of their
-    next turn.\n\n### Healing\nCharacters that perform full rest in a comfortable
-    shelter can heal wounds naturally. If a character\u2019s blood loss is stopped
-    and their wounds are treated, a period of full rest will reduce the character\u2019s
-    infection by 1. If a character no longer has infection, they instead remove 1
-    wound. Comfortable shelter requires a character to rest in dry and warm conditions.\n\n\n\n|\n\n\n\n##
-    Hazards\n\n-\n\n\n### Falling Damage\nCreatures that fall down from heights suffer
-    impact damage based on the distance that they fell. This damage is an attack
-    that automatically hits and does an amount of damage equal to 1 for every meter
-    fell. This attack is a critical hit which means that for every time that the
-    damage reaches the soak value an additional wound is inflicted. For example a
-    character with a soak of 3 that suffers 7 damage will suffer from 2 wounds.\n\n###
-    Damage from Falling Objects\nBig heavy objects crashing down on characters cause
-    an amount of damage based on the debris weight. Unless a falling object is directly
-    aimed towards a character, in which case it is treated as a normal ranged attack,
-    falling objects around characters will allow potential targets to perform athletics
-    dice rolls to dive out of the way. The normal difficulty is 6 allowing a character
-    to dive 1m out of the way per margin of success and unspent movement points.
-    If a character is hit, a falling object deals an amount of damage equal to its
-    ENC +1 per meter that it fell. This attack is always considered a critical hit.\n\n\n\n=\n\n\n\n##
-    Maladies\n\n-\n\n/\n\n\n\n### Poisons and Diseases\n\n-\n\nWhen a creature is
-    afflicted by a type of malady, a poison, venom, toxin or disease, their Vigour
-    comes into play. Each individual poison or disease comes with an intensity value.
-    When a player is afflicted by a malady they gain a certain amount of intensity
-    points in that malady. As long as the player has at least 1 or more intensity
-    they count as being afflicted and thus suffer from the malady\u2019s effects.
-    When the intensity of the malady increases to match or exceed the character\u2019s
-    Vigour, the character starts suffering from a malady\u2019s acute effects. Certain
-    maladies can be fatal or have effects that worsen depending on how many intensity
-    points the malady reaches.\n\nThe following is an example of a malady:\n\n\n\n####
-    Paralytic Poison\n\nnote(\nWhen a character is struck with an attack affected
-    by paralytic poison they gain +1 intensity in Paralytic poison immediately and
-    +1 intensity at the start of every turn thereafter for 2 minutes (20 rounds).\n\n\n**Mild
-    Effect -** As long as a character has 1 or more intensity points in paralytic
-    poison they suffer from a penalty to movement points gained per turn equal to
-    -1 for every 2 intensity points in paralytic poison.\n\n**Acute Effect -** If
-    a character has a number of intensity points in paralytic poison equal to or
-    greater than their Vigour score, they are slowed. A slowed character must forego
-    their main action or their bonus action at the beginning of their turn.\n\n\n\n\n)\n\n|\n\n\n\n###
-    Curses and Hexes\n\n-\n\nCharacters that become cursed or are suffering from
-    a hex are in essence beneath the crushing thumb of a sickness, one that affects
-    their soul. Curses and hexes work exactly like Poisons and diseases and thus
-    are considered to be maladies. Their only difference is that instead of combating
-    them with Vigour a character combats them with Willpower.\n\nThe following is
-    an example of a curse:\n\n\n\n#### Witch\u2019s Jinx\n\nnote(\nA character that
-    performs any action that could cause harm to the witch gains +1 intensity in
-    Witch\u2019s Jinx immediately and +1 intensity whenever they perform any action
-    that may cause harm to the witch.\n\n\n**Mild Effect -** As long as a character
-    has 1 or more intensity points in Witch\u2019s jinx they suffer from a hindrance
-    to all dice rolls performed against the witch.\n\n**Acute Effect -** If a character
-    has a number of intensity points in Witch\u2019s jinx equal to or greater than
-    their Willpower score, any damage they inflict upon the Witch is also inflicted
-    to them.\n\n\n\n\n)\n\n### Recovering from Maladies \n\n-\n\nEvery malady can
-    be recovered from but the methods of recovery differ. Most diseases can be recovered
-    with rest and nursing. For example a full rest period allows a character to reduce
-    a disease\u2019 intensity by a value equal to their Vigour as long as they are
-    well fed and resting comfortably. Poisons on the other hand require medical intervention.
-    Immediate blood letting or applying of tourniquets for instance can stop a poison\u2019s
-    intensity from worsening or at least slow it down from affecting the character
-    every minute instead of every turn. Antidotes and detoxification needs to occur
-    to remove the effect fully. Curses need to be removed by divine intervention,
-    thus most people turn to members of the clergy or exorcists although folk magic
-    and artisanal remedies are also said to work. In the case of most curses an intervention
-    will remove a curse completely or halt it from progressing however certain powerful
-    curses will require specific odd tasks to be performed in order to free the afflicted
-    from the malady.\n\n=\n\n\n\nhead(\n# Classes\n\n)\n-\n/\n\n\n# Bard\n\n-\n\nHailing
-    from all societies the warrior poets and minstrels of the land have brought with
-    them joy and ardour in equal measure. The tales of heroes, kings, empires and
-    legends all get brought down from generation to generation through the silvery
-    tongues of able bard who are capable of not only espousing the virtues of the
-    characters that they subject, but also capable of revealing the vile vitriol
-    of villains that they insult. Either way, anyone with the coin to spare knows
-    to toss a coin to their minstrel from time to time.\n\n\n#### March [3 Initiative]\nGrant
-    all allies within 10m a +2 bonus to movement points gained.\n\n#### Mockery [1AP]\nCause
-    one target creature within 20m to suffer from one of the following effects: \n-
-    **Distracting insults -** This creature\u2019s next dice roll is hindered. \n-
-    **Intimidating omen -** This creature suffers from a number of stress points
-    equal to the bard\u2019s skill modifier. A bard can use any appropriate social
-    skill.\n\n#### Glory [1AP]\nCause one target creature within 20m to benefit from
-    one of the following effects: \n- **Emboldening praise -** This creature\u2019s
-    next dice roll is boosted. \n- **Soothing reassurance -** This creature restores
-    a number of stress points equal to the bard\u2019s skill modifier \n\n\n####
-    Reinvigorate [1 Focus]\nUp to three allies within 10m gain 1 Inspiration point.\n\n####
-    Influence [1 Focus]\nThis talent lasts until the start of the next turn. Any
-    bard ability that would affect 1 target will now affect all available targets.\n\n\n\n|\n\n\n\n#
-    Beastmaster\n\n-\n\nIn a world ravaged by mighty Kaiju the once pastoral role
-    of the beastmaster has now become a vital component of every community that wishhes
-    to thrive.\n\n\n#### Menagerie [3 Initiative]\nUntil the start of the next turn
-    you can assign commands to multiple creatures at once, equal to the survival
-    skill value.\n\n#### Beast Bond [1AP]\nWhen commanding a beast, the beast master
-    can choose one of the beast's abilities and benefit from it until the beginning
-    of the next turn.\n\n#### Master Bond [1AP]\nWhen commanding a beast, you can
-    choose any one skill of your choice. The beast gains a skill value equal to the
-    skill that you chose until the start of the next turn.\n\n#### Pack Protection
-    [1 Stamina]\nWhen the beastmaster or one of their beasts gets attacked, they
-    may immediately turn any received wounds into stress.\n\n#### Strength of the
-    Wild [1 Stamina]\nThe beastmaster and all their beasts gain a boost to all attack
-    dice rolls for each member in the group. This talent remains active until the
-    start of the next turn.\n\n\n\n=\n\n\n\n# Berserker\n\n-\n\nOf the warriors that
-    embrace the way of murder, the berserkers are the ones who weaponise the blood
-    haze the most effectively. Berserkers are a tradition found in the Borean mountains
-    and embraced by Septentrian tribes. From the icy north the berserker fruity travelled
-    all over the lands through the empire as powerful barbarians joined the fray
-    both against and on the side of the empire. Wherever there was war to be had,
-    berserkers were sure to follow.\n\n\n#### Fury [3 Initiative]\nActivating fury
-    adds 1 stress point. While fury is active gain +1 soak and bonus to movement
-    points equal to the current amount of stress points.\n\n#### Threaten [1AP]\nUntil
-    the start of your next turn whenever an enemy creature enters within range of
-    your close combat weapon they gain 1 stress point.\n\n#### Frenzy [1AP]\nUntil
-    the start of your next turn ignore all injury penalties and remove 1 stress point
-    to gain a +1 bonus to attack dice rolls.\n\n#### Rage Explosion [1 Stamina]\nRemove
-    all stress points and gain a bonus to attack damage equal to the amount of stress
-    points removed on your next attack.\n\n#### Berserk [1 Stamina]\nUntil the end
-    of the scene you can spend 1 stress point every turn to gain +1 action point.
-    This action point can ony be spent on attacks or movement that gets you closer
-    to an enemy.\n\n\n\n|\n\n\n\n# Blood Mage\n\n-\n\nOriginally the ways of hemothurgy
-    was an art created by vampires to better control and enhance their bodies despite
-    their debilitating curse. However there was never anything inherent within their
-    undead physiology that necessitated their condition in order to wield such powers.
-    Blood magic, while shunned and despised during imperial time, has survived and
-    now that the whole world is out of order, the blood mages have found their niche.\n\n\n####
-    Enhance [3 Initiative]\nGain a bonus to one of the following and a penalty to
-    one of the following equal to the amount of Focus points remaining: Carrying
-    Capacity, Movement Points, and Perception range (20m x point)\n\n#### Conjure
-    [1AP]\nUntil the start of the next turn the caster can create any number of solid
-    objects with their blood whose total ENC is equal to or less than the spellcasting
-    skill modifier. Weapons, Armour, Gear and Ammunition can be generated as long
-    as their rarity is equal to or less than the spellcasting skill x5. Trained spellcasting
-    & crafting allows common items, expert allows uncommon items, master allows rare
-    items and legend allows legendary items.\n\n#### Hemomancy [1AP]\nConvert 1 Stamina
-    point into a 1 Focus point.\n\n#### Blood Rain [1 Focus and 1AP]\nCreate a number
-    of blood shots equal to the amount of focus points remaining +1. Perform a spellcasting
-    attack dice roll against the willpower of one target enemy within 20m for each
-    blood shot. The same enemy can be targeted with more than one bloodshot. Each
-    bloodshot attack deals +1 damage.\n\n#### Vampirism [1 Focus]\nUntil the start
-    of your next turn every wound that you inflict on enemy living or undead creatures
-    can be converted immediately into one of the following: \n- Reduce 5 points of
-    stress, infection, blood loss, poison or disease \n- Restore 1 wound \n- Restore
-    1 Stamina \n\n\n\n=\n\n\n\n# Cleric\n\n-\n\nIn the darkest of times those who
-    had the gift of the voice have always been powerful leaders in their communities.
-    Religion and divine magic have prehistoric origin as every society have had shamans,
-    mystics, diviners and clerics of some sort. The gods, the pantheons and the faiths
-    have changed with the passing of time but those who carry within them the voice
-    are and have always been the one and only source of divine power.\n\n\n#### Angel
-    Wings [3 Initiative]\nDuring this turn you may ignore falling damage.\n\n####
-    Bless [1AP]\nDuring their turn a blessed ally can boost one of their dice rolls
-    or hinder a dice roll performed directly against them. A blessing is removed
-    from a character once it is used or at the end of the scene. A character may
-    never have more than one blessing at a time.\n\n#### Castigate [1AP]\nRoll a
-    spellcasting dice roll against the target\u2019s Willpower. On a successful roll
-    inflict an amount of Intensity of this curse equal to the margin of success:
-    \nnote(\n#Divine Castigation Curse\n-\nAs long as a target has 1 or more intensity
-    points, attacks performed against them are boosted. If the amount of intensity
-    points matches or exceeds the target\u2019s willpower they suffer from a -1 penalty
-    to Defence.\n)\n\n#### Heal [1 Focus]\nTarget one creature within 10m to benefit
-    from Heal. When a creature receives heal choose one of the following effects:\n-
-    **Cure -** Restore 1 wound.\n- **Ward -** Reduce the intensity of a curse or
-    hex by 2.\n\n#### Intervention [1 Focus]\nUntil the start of the next turn during
-    another character\u2019s turn after the character has performed a dice roll,
-    you can decide to change the result of the die to 2 or 9. This can be done up
-    to three times per turn but each target can be cursed only once per turn. Roll
-    a spellcasting dice roll against the target\u2019s Willpower.\n\n\n\n|\n\n\n\n#
-    Dervish\n\n-\n\nOriginally an art hailing from the lands of levanta, the blade
-    dancing dervishes and their true origins are a contentious subject. Both orcs
-    and goblinoids equally claim to be the inventors of the art of sword dancing
-    and wielding two weapons effectively. Because the art\u2019s roots predate the
-    demonic invasion and the subsequent enslavement of the orcs and goblins it is
-    anybody\u2019s guess who really invented the art, but it is undeniable in its
-    beauty and ferociousness.\n\n\n#### Blade Dance [3 Initiative]\nActivating blade
-    dance grants the user the effects of Parry.\n\n#### Ambidexterity [1AP]\nUntil
+    Pain and Healing\n\n-\n\nCharacters that have suffered from one or more wounds
+    are considered to be injured and thus become susceptible to pain\n\n\n### Pain\nCharacters
+    that have suffered from wounds in battle start suffering from pain. A character
+    who has a number of wounds equal to half of their total suffers from a hindrance
+    to all dice rolls. During their turn they may spend 1 action point to fight through
+    the pain and ignore the penalty until the start of their next turn.\n\n### Healing\nCharacters
+    that perform full rest in a comfortable shelter can heal wounds naturally. If
+    a character\u2019s blood loss is stopped and their wounds are treated, a period
+    of full rest will reduce the character\u2019s infection by 1. If a character
+    no longer has infection, they instead remove 1 wound. Comfortable shelter requires
+    a character to rest in dry and warm conditions.\n\n\n\n|\n\n\n\n## Hazards\n\n-\n\n\n###
+    Falling Damage\nCreatures that fall down from heights suffer impact damage based
+    on the distance that they fell. This damage is an attack that automatically hits
+    and does an amount of damage equal to 1 for every meter fell. This attack is
+    a critical hit which means that for every time that the damage reaches the soak
+    value an additional wound is inflicted. For example a character with a soak of
+    3 that suffers 7 damage will suffer from 2 wounds.\n\n### Damage from Falling
+    Objects\nBig heavy objects crashing down on characters cause an amount of damage
+    based on the debris weight. Unless a falling object is directly aimed towards
+    a character, in which case it is treated as a normal ranged attack, falling objects
+    around characters will allow potential targets to perform athletics dice rolls
+    to dive out of the way. The normal difficulty is 6 allowing a character to dive
+    1m out of the way per margin of success and unspent movement points. If a character
+    is hit, a falling object deals an amount of damage equal to its ENC +1 per meter
+    that it fell. This attack is always considered a critical hit.\n\n\n\n=\n\n\n\nhead(\n#
+    Classes\n\n)\n-\n/\n\n\n# Bard\n\n-\n\nHailing from all societies the warrior
+    poets and minstrels of the land have brought with them joy and ardour in equal
+    measure. The tales of heroes, kings, empires and legends all get brought down
+    from generation to generation through the silvery tongues of able bard who are
+    capable of not only espousing the virtues of the characters that they subject,
+    but also capable of revealing the vile vitriol of villains that they insult.
+    Either way, anyone with the coin to spare knows to toss a coin to their minstrel
+    from time to time.\n\n\n#### March [3 Initiative]\nGrant all allies within 10m
+    a +2 bonus to movement points gained.\n\n#### Mockery [1AP]\nCause one target
+    creature within 20m to suffer from one of the following effects: \n- **Distracting
+    insults -** This creature\u2019s next dice roll is hindered. \n- **Intimidating
+    omen -** This creature suffers from a number of stress points equal to the bard\u2019s
+    skill modifier. A bard can use any appropriate social skill.\n\n#### Glory [1AP]\nCause
+    one target creature within 20m to benefit from one of the following effects:
+    \n- **Emboldening praise -** This creature\u2019s next dice roll is boosted.
+    \n- **Soothing reassurance -** This creature restores a number of stress points
+    equal to the bard\u2019s skill modifier \n\n\n#### Reinvigorate [1 Focus]\nUp
+    to three allies within 10m gain 1 Inspiration point.\n\n#### Influence [1 Focus]\nThis
+    talent lasts until the start of the next turn. Any bard ability that would affect
+    1 target will now affect all available targets.\n\n\n\n|\n\n\n\n# Beastmaster\n\n-\n\nIn
+    a world ravaged by mighty Kaiju the once pastoral role of the beastmaster has
+    now become a vital component of every community that wishhes to thrive.\n\n\n####
+    Menagerie [3 Initiative]\nUntil the start of the next turn you can assign commands
+    to multiple creatures at once, equal to the survival skill value.\n\n#### Beast
+    Bond [1AP]\nWhen commanding a beast, the beast master can choose one of the beast's
+    abilities and benefit from it until the beginning of the next turn.\n\n#### Master
+    Bond [1AP]\nWhen commanding a beast, you can choose any one skill of your choice.
+    The beast gains a skill value equal to the skill that you chose until the start
+    of the next turn.\n\n#### Pack Protection [1 Stamina]\nWhen the beastmaster or
+    one of their beasts gets attacked, they may immediately turn any received wounds
+    into stress.\n\n#### Strength of the Wild [1 Stamina]\nThe beastmaster and all
+    their beasts gain a boost to all attack dice rolls for each member in the group.
+    This talent remains active until the start of the next turn.\n\n\n\n=\n\n\n\n#
+    Berserker\n\n-\n\nOf the warriors that embrace the way of murder, the berserkers
+    are the ones who weaponise the blood haze the most effectively. Berserkers are
+    a tradition found in the Borean mountains and embraced by Septentrian tribes.
+    From the icy north the berserker fruity travelled all over the lands through
+    the empire as powerful barbarians joined the fray both against and on the side
+    of the empire. Wherever there was war to be had, berserkers were sure to follow.\n\n\n####
+    Fury [3 Initiative]\nActivating fury adds 1 stress point. While fury is active
+    gain +1 soak and bonus to movement points equal to the current amount of stress
+    points.\n\n#### Threaten [1AP]\nUntil the start of your next turn whenever an
+    enemy creature enters within range of your close combat weapon they gain 1 stress
+    point.\n\n#### Frenzy [1AP]\nUntil the start of your next turn ignore all injury
+    penalties and remove 1 stress point to gain a +1 bonus to attack dice rolls.\n\n####
+    Rage Explosion [1 Stamina]\nRemove all stress points and gain a bonus to attack
+    damage equal to the amount of stress points removed on your next attack.\n\n####
+    Berserk [1 Stamina]\nUntil the end of the scene you can spend 1 stress point
+    every turn to gain +1 action point. This action point can ony be spent on attacks
+    or movement that gets you closer to an enemy.\n\n\n\n|\n\n\n\n# Blood Mage\n\n-\n\nOriginally
+    the ways of hemothurgy was an art created by vampires to better control and enhance
+    their bodies despite their debilitating curse. However there was never anything
+    inherent within their undead physiology that necessitated their condition in
+    order to wield such powers. Blood magic, while shunned and despised during imperial
+    time, has survived and now that the whole world is out of order, the blood mages
+    have found their niche.\n\n\n#### Enhance [3 Initiative]\nGain a bonus to one
+    of the following and a penalty to one of the following equal to the amount of
+    Focus points remaining: Carrying Capacity, Movement Points, and Perception range
+    (20m x point)\n\n#### Conjure [1AP]\nUntil the start of the next turn the caster
+    can create any number of solid objects with their blood whose total ENC is equal
+    to or less than the spellcasting skill modifier. Weapons, Armour, Gear and Ammunition
+    can be generated as long as their rarity is equal to or less than the spellcasting
+    skill x5. Trained spellcasting & crafting allows common items, expert allows
+    uncommon items, master allows rare items and legend allows legendary items.\n\n####
+    Hemomancy [1AP]\nConvert 1 Stamina point into a 1 Focus point.\n\n#### Blood
+    Rain [1 Focus and 1AP]\nCreate a number of blood shots equal to the amount of
+    focus points remaining +1. Perform a spellcasting attack dice roll against the
+    willpower of one target enemy within 20m for each blood shot. The same enemy
+    can be targeted with more than one bloodshot. Each bloodshot attack deals +1
+    damage.\n\n#### Vampirism [1 Focus]\nUntil the start of your next turn every
+    wound that you inflict on enemy living or undead creatures can be converted immediately
+    into one of the following: \n- Reduce 5 points of stress, infection, blood loss,
+    poison or disease \n- Restore 1 wound \n- Restore 1 Stamina \n\n\n\n=\n\n\n\n#
+    Cleric\n\n-\n\nIn the darkest of times those who had the gift of the voice have
+    always been powerful leaders in their communities. Religion and divine magic
+    have prehistoric origin as every society have had shamans, mystics, diviners
+    and clerics of some sort. The gods, the pantheons and the faiths have changed
+    with the passing of time but those who carry within them the voice are and have
+    always been the one and only source of divine power.\n\n\n#### Angel Wings [3
+    Initiative]\nDuring this turn you may ignore falling damage.\n\n#### Bless [1AP]\nDuring
+    their turn a blessed ally can boost one of their dice rolls or hinder a dice
+    roll performed directly against them. A blessing is removed from a character
+    once it is used or at the end of the scene. A character may never have more than
+    one blessing at a time.\n\n#### Castigate [1AP]\nRoll a spellcasting dice roll
+    against the target\u2019s Willpower. On a successful roll inflict an amount of
+    Intensity of this curse equal to the margin of success: \nnote(\n#Divine Castigation
+    Curse\n-\nAs long as a target has 1 or more intensity points, attacks performed
+    against them are boosted. If the amount of intensity points matches or exceeds
+    the target\u2019s willpower they suffer from a -1 penalty to Defence.\n)\n\n####
+    Heal [1 Focus]\nTarget one creature within 10m to benefit from Heal. When a creature
+    receives heal choose one of the following effects:\n- **Cure -** Restore 1 wound.\n-
+    **Ward -** Reduce the intensity of a curse or hex by 2.\n\n#### Intervention
+    [1 Focus]\nUntil the start of the next turn during another character\u2019s turn
+    after the character has performed a dice roll, you can decide to change the result
+    of the die to 2 or 9. This can be done up to three times per turn but each target
+    can be cursed only once per turn. Roll a spellcasting dice roll against the target\u2019s
+    Willpower.\n\n\n\n|\n\n\n\n# Dervish\n\n-\n\nOriginally an art hailing from the
+    lands of levanta, the blade dancing dervishes and their true origins are a contentious
+    subject. Both orcs and goblinoids equally claim to be the inventors of the art
+    of sword dancing and wielding two weapons effectively. Because the art\u2019s
+    roots predate the demonic invasion and the subsequent enslavement of the orcs
+    and goblins it is anybody\u2019s guess who really invented the art, but it is
+    undeniable in its beauty and ferociousness.\n\n\n#### Blade Dance [3 Initiative]\nActivating
+    blade dance grants the user the effects of Parry.\n\n#### Ambidexterity [1AP]\nUntil
     the start of your next turn you gain an attack with your off hand weapon for
     every attack performed with your main hand weapon.\n\n#### Riposte [1AP]\nWhen
     an enemy attack fails to hit you spend an action point to immediately perform
@@ -13403,31 +13305,24 @@ MonoBehaviour:
     allowed the empire to form.\n\n\n#### Levitate [3 Initiative]\nDuring this turn
     you may fly at a distance of 1m per 2 movement points spent.\n\n#### Blast [1AP]\nMake
     a spellcasting attack against a target\u2019s Willpower within 20m that deals
-    +2 damage. An attack that hits, inflicts an amount of fire, cold or shock tokens
-    on the target equal to the dice roll\u2019s margin. If the amount of tokens is
-    equal to or greater than the target\u2019s soak, they suffer from the token\u2019s
-    effect. \n**Fire -** A creature that is burning suffers 1 wound and gains an
-    additional fire token at the end of its turn. \n**Cold -** A creature that is
-    freezing suffers from a -1 penalty to movement points for every cold token and
-    as long as they have at least 1 cold token they suffer from -1 to action points.
-    \n**Shock -** A creature that is electrocuted suffers from a hindrance to all
-    dice rolls. \nA creature can spend 1AP to reduce 1 token for each action point
-    spent.\n\n#### Counter [1AP]\nNullify the casting of a spell within 20m of you.
-    Roll a spellcasting dice roll against the target\u2019s Willpower.\n\n#### Explosion
-    [1 Focus]\nChoose a 4x4 area fully within 20m of you or draw a straight line
-    from yourself up to 20m away. All targets within this area are hit with a Blast
-    of your choice.\n\n#### Elemental Control [1 Focus]\nUntil the end of the encounter
-    during your turn choose any 3 targets that currently have fire, cold, or shock
-    tokens (or natural sources of heat, cold or electricity), roll a spellcasting
-    dice roll against the target\u2019s Willpower and do any of the following. \nAlter
-    - Double or half the amount of tokens on the target. Halfing 1 token removes
-    it completely. \nSwap - Swap the tokens that two or more chosen targets have
-    on them with each other.\n\n\n\n|\n\n\n\n# Knight\n\n-\n\nThe chivalric code
-    has existed for as long as there were lords wealthy enough to pay for their armed
-    house warriors. Knights are more than mere highly paid and equipped brutes. Either
-    born of noble stock or commoners elevated to a higher societal position, the
-    knight is a sworn champion in service of their king or emperor, a defender of
-    the lands and the interests of their banners.\n\n\n#### Bulwark [3 Initiative]\nGain
+    +2 damage. An attack that hits, inflicts an amount of burning, freezing or shocking
+    intensity on the target equal to the dice roll\u2019s margin.\n\n#### Counter
+    [1AP]\nNullify the casting of a spell within 20m of you. Roll a spellcasting
+    dice roll against the target\u2019s Willpower.\n\n#### Explosion [1 Focus]\nChoose
+    a 4x4 area fully within 20m of you or draw a straight line from yourself up to
+    20m away. All targets within this area are hit with a Blast of your choice.\n\n####
+    Elemental Control [1 Focus]\nUntil the end of the encounter during your turn
+    choose any 3 targets that currently have burning, freezing or shocking conditions
+    (or natural sources of heat, cold or electricity), roll a spellcasting dice roll
+    against the target\u2019s Willpower and do any of the following. \n**Alter -**
+    Double or half the amount of intensity on the target. Halfing 1 intensity removes
+    it completely. \n**Swap -** Swap the conditions that two or more chosen targets
+    have on them with each other.\n\n\n\n|\n\n\n\n# Knight\n\n-\n\nThe chivalric
+    code has existed for as long as there were lords wealthy enough to pay for their
+    armed house warriors. Knights are more than mere highly paid and equipped brutes.
+    Either born of noble stock or commoners elevated to a higher societal position,
+    the knight is a sworn champion in service of their king or emperor, a defender
+    of the lands and the interests of their banners.\n\n\n#### Bulwark [3 Initiative]\nGain
     a +1 bonus on Soak if you are currently wearing armour or holding a shield.\n\n####
     Guard [1AP]\nUntil the start of the next turn when an enemy character walks within
     range of your weapon, immediately perform an attack against that enemy.\n\n####
@@ -13649,7 +13544,7 @@ MonoBehaviour:
     Arrows | 5 | 5c | Common | Batch [10], Pierce, \nForkhead Arrows | 5 | 5c | Common
     | Batch [10], Small Game, Recover 4, Short Range, \nJacketed Cartridge | 5 |
     5c | Uncommon | Batch [10], Pierce, \nDovetail Arrow | 5 | 10c | Uncommon | Batch
-    [10], Long Range, Perce, \nBuck Shot Cartridge | 5 | 10c | Rare | Batch [10],
+    [10], Long Range, Pierce, \nBuck Shot Cartridge | 5 | 10c | Rare | Batch [10],
     Short Range, Pepperbox, \nDum Dum Cartridge | 5 | 10c | Rare | Batch [10], +1
     DMG, \nIncendiary Arrow | 5 | 10c | Rare | Batch [10], Fire 3, \n\n\n\n\n####
     Tools\n\nName | ENC | Cost | Rarity | Traits \n-- | --\nGrapple Hook & Rope |
@@ -13762,7 +13657,7 @@ MonoBehaviour:
     | 20c | Common | Coating, Deprivation [5], Batch [5], \nEnervation Toxin Coating
     | 0 | 5 | 20c | Common | Coating, Enervation [5], Batch [5], \nParalysis Toxin
     Coating | 0 | 5 | 20c | Common | Coating, Paralysis [5], Batch [5], \nCleansing
-    Salve | 1 | 5 | 20c | Common | Cleansign [4], Batch [5], \nCoagulation Salve
+    Salve | 1 | 5 | 20c | Common | Cleansing [4], Batch [5], \nCoagulation Salve
     | 1 | 5 | 20c | Common | Coagulation [4], Batch [5], \nFortification Salve |
     1 | 5 | 20c | Common | Fortification [4], Batch [5], \nPurification Salve | 1
     | 5 | 20c | Common | Purification [4], Batch [5], \nHearty Meal | 0 | 5 | 20c
@@ -13820,17 +13715,17 @@ MonoBehaviour:
     retain its beneficial effects until the effects are depleted, the item is cleaned
     or a new coating is added on top of the old one. Any item can only ever benefit
     from one coating at a time.\n\n- **Fire Retardant -** The wearer of an armour
-    treated with this coating will remove the first 3 points of fire intensity that
-    they receive after which the coating is removed.\n- **Anti-Freeze -** Character
+    treated with this coating will remove the first 3 points of burning intensity
+    that they receive after which the coating is removed.\n- **Anti-Freeze -** Character
     gainsThe wearer of an armour treated with this coating will remove the first
-    3 points of cold intensity that they receive after which the coating is removed.
+    3 points of freezing intensity that they receive after which the coating is removed.
     a number of bonus movement points per turn equal to X.\n- **Grounding -** The
     wearer of an armour treated with this coating will remove the first 3 points
-    of shock intensity that they receive after which the coating is removed.\n- **Lubricant
-    -** The wearer of an armour treated with this coating will remove the first 3
-    points of tangle intensity that they receive after which the coating is removed.\n-
-    **Alkalene -** The wearer of an armour treated with this coating will remove
-    the first 3 points of corrosion intensity that they receive after which the coating
+    of shocking intensity that they receive after which the coating is removed.\n-
+    **Lubricant -** The wearer of an armour treated with this coating will remove
+    the first 3 points of entangled intensity that they receive after which the coating
+    is removed.\n- **Alkalene -** The wearer of an armour treated with this coating
+    will ignore the first 3 corrosion effects that they receive after which the coating
     is removed.\n\n\n=\n\n\n\n### Reagent Salve\n\nA reagent salve is designed to
     aid the body to heal. Salves are consumed by characters as bonus action and each
     salve that a character consumes causes the character to receive 1 point of toxicity.
@@ -15409,43 +15304,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!84 &1972970829
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 4
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1 &2013410473
 GameObject:
   m_ObjectHideFlags: 1
