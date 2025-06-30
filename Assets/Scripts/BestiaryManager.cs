@@ -57,7 +57,7 @@ public enum AttackType
 public enum ActionType
 {
     Movement,
-    Bonus,
+    Action,
     Main,
     Passive,
     Initiative,
@@ -177,7 +177,7 @@ public class BeastEntry
     public List<string> abilities;
 
     public int GetWounds() { return Mathf.Max(1 + conditioning + GetSizeValue(), 1); }
-    public int GetSizeValue() { return Mathf.FloorToInt((encumbrance - 5) / 3.0f); }
+    public int GetSizeValue() { return Mathf.FloorToInt(encumbrance / 5.0f) -5; }
     public int GetSoakValue() { return Mathf.Max(0 + soakBonus + (Mathf.FloorToInt(GetSizeValue() / 5.0f)),0); }
     public int GetHighestAttackDamage()
     {
@@ -224,7 +224,7 @@ public class BeastEntry
         output += $"\n*Perception:* *Range* **{perceptionRange}m**, *Score* **{perceptionScore}**; *Initiative* **+{perception}**";
         output += $"\n*Movement Points* **{movementPoints}**; *Carrying Capacity* **{carryingCapacity}**";
         output += $"\n*Size* **{sizeCategory} [{sizeValue}]**, ENC **{encumbrance}**; *Threat level* **{threatLevel}**";
-        output += $"\n#### Attack Points [{closeCombatAttackPoints}/{rangedCombatAttackPoints}]";
+        output += $"\n#### Action Points [{Mathf.Max(closeCombatAttackPoints,rangedCombatAttackPoints)}]";
         output += "\n-";
         output += "\n \n";
         output = attacks
@@ -255,16 +255,6 @@ public class BestiaryManager : MonoBehaviour
         GenerateCreatureList();
     }
 
-    [ContextMenu("UpdateENC")]
-    private void UpdateENC()
-    {
-        foreach (var beast in chapter.categories.SelectMany(category => category.beasts))
-        {
-            beast.encumbrance *= 5;
-        }
-    }
-    
-    
     private void GenerateCreatureList()
     {
         var creatures = new List<BeastEntry>();
