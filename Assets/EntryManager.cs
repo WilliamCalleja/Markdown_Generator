@@ -178,6 +178,32 @@ public class BoxEntry
 }
 
 [Serializable]
+public class TableEntry
+{
+    public List<RowEntry> rows;
+    public string Text => GetText();
+
+    public string GetText()
+    {
+        var output = rows[0].Text;
+        output += "\n-- | --\n";
+        output += rows.Skip(1).Aggregate("", (prev, next) => $"{prev}\n{next.Text}");
+        return output;
+    }
+}
+
+[Serializable]
+public class RowEntry
+{
+    public List<string> cells;
+    public string Text => GetText();
+
+    public string GetText()
+    {
+        return cells.Aggregate("", (prev, next) => $"{prev} | {next}");
+    }
+}
+[Serializable]
 public class Entry
 {
     public string title;
@@ -186,6 +212,7 @@ public class Entry
     public List<ListEntry> list;
     public List<BoxEntry> boxes;
     public List<BoxEntry> items;
+    public List<TableEntry> tables;
 
     public string GetEntry()
     {
@@ -221,16 +248,19 @@ public class Entry
         var item7 = items is { Count: > 7 } ? items[7].GetEntry("item") : "";
         var item8 = items is { Count: > 8 } ? items[8].GetEntry("item") : "";
         var item9 = items is { Count: > 9 } ? items[9].GetEntry("item") : "";
+
+        var tableText = tables.Aggregate("", (prev, next) => $"{prev}\n\n{next.Text}");
         
         var boxes2 = "";
         for (var i = 0; i < boxes.Count; i++)
         {
             boxes2 += boxes[i].GetEntry("note");
-            boxes2 += (i % 2 != 0) ? "|" : "/";
+            boxes2 += (i % 2 == 0) ? "\n|\n" : "\n/\n";
+            boxes2 += ((i+1) % 6 == 0) ? "\n=\n" : "";
         }
-        
-        var itemText = items.Aggregate("", (prev, next) => $"{prev}\n{next.GetEntry("item")}");
 
+        var itemText = items.Aggregate("", (prev, next) => $"{prev}\n{next.GetEntry("item")}");
+        var uItemText = itemText;
         if (items is { Count: > 4 })
         {
             var count = 0;
@@ -267,6 +297,7 @@ public class Entry
             .Replace("[BOX3]", $"\n{box3}")
             .Replace("[BOX4]", $"\n{box4}")
             .Replace("[ITEMS]", $"\n{itemText}")
+            .Replace("[UITEMS]", $"\n{uItemText}")
             .Replace("[ITEM0]", $"\n{item0}")
             .Replace("[ITEM1]", $"\n{item1}")
             .Replace("[ITEM2]", $"\n{item2}")
@@ -277,7 +308,8 @@ public class Entry
             .Replace("[ITEM7]", $"\n{item7}")
             .Replace("[ITEM8]", $"\n{item8}")
             .Replace("[ITEM9]", $"\n{item9}")
-            .Replace("[BOXES2]", $"\n{boxes2}");
+            .Replace("[BOXES2]", $"\n{boxes2}")
+            .Replace("[TABLES]", $"\n{tableText}");
         return $"{titleEntry.GetTitle()}{contentText}";
     }
 }
@@ -316,9 +348,92 @@ public class SubEntry
 
 public class EntryManager : MonoBehaviour
 {
+    public string input;
+    public List<BoxEntry> entries;
+    public List<ListEntry> list;
+    public TableEntry table;
     public List<Chapter> chapters;
     public string output;
     private EquipmentManager _equipmentManager;
+
+
+    [ContextMenu("ConvertToList")]
+    public void ConvertToList()
+    {
+        list = new List<ListEntry>();
+        var lines = input.Split("- **").Where(i => !string.IsNullOrEmpty(i)).ToList();
+        foreach (var line in lines)
+        {
+            list.Add(new ListEntry()
+            {
+                title = line.Split("-**")[0],
+                content = line.Split("-**")[1]
+            });
+        }
+    }
+    
+
+    [ContextMenu("ConvertToEntries")]
+    public void ConvertToEntries()
+    {
+        input = input.Replace(")", "");
+        input = input.Replace("|", "");
+        input = input.Replace("=", "");
+        input = input.Replace("-", "");
+        input = input.Replace("/", "");
+        var data = input.Split("note(").Where(i => !string.IsNullOrEmpty(i.Trim())).ToList();
+        
+        entries = new List<BoxEntry>();
+        Debug.Log(data.Aggregate("", (prev, next) => $"{prev}\n{next}"));
+        foreach (var line in data)
+        {
+            var value = line.Trim();
+            var h1 = value.Substring(value.IndexOf("#") + 1, value.IndexOf("##") -1);
+            var h2 = value.Substring(value.IndexOf("##") + 2, value.IndexOf("###") - value.IndexOf("##") - 2);
+            var h3 = value.Substring(value.IndexOf("###") + 3, value.IndexOf("####") - value.IndexOf("###") - 3);
+            var h4 = value.Substring(value.IndexOf("####") + 4, value.IndexOf("*") - value.IndexOf("####") - 4);
+            var desc = value.Split("*")[1];
+            var mech = value.Split("*")[2];
+            entries.Add(new BoxEntry()
+            {
+                h1 = h1.Trim(),
+                h2 = h2.Trim(),
+                h3 = h3.Trim(),
+                h4 = h4.Trim(),
+                content = new List<string>() {
+                    $"*{desc.Trim()}*", mech.Trim()
+                }
+            });
+            Debug.Log($"H1 {h1}, H2 {h2}, H3 {h3}, H4 {h4}, D {desc}, m {mech}");
+        }
+    }
+    [ContextMenu("ConvertToTable")]
+    public void ConvertToTable()
+    {
+        table = new TableEntry()
+        {
+            rows = new List<RowEntry>()
+        };
+        input = input.Replace("-- | --", "");
+        var entries = input
+            .Split("|")
+            .Where(i => !string.IsNullOrEmpty(i.Trim()))
+            .Select(i => i.Trim())
+            .ToList();
+        
+        for (var i = 0; i < entries.Count; i+= 5)
+        {
+            table.rows.Add(new RowEntry()
+            {
+                cells = entries.Skip(i).Take(5).ToList()
+            });
+        }
+        
+        foreach (var row in table.rows)
+        {
+            Debug.Log(row.cells.Aggregate("", (prev, next) => $"{prev}|{next}"));
+        }
+    }
 
     [ContextMenu("Refresh")]
     private void Refresh()
