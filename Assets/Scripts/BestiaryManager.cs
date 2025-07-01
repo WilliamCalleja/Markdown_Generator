@@ -175,10 +175,11 @@ public class BeastEntry
     
     public List<AttackEntry> attacks;
     public List<string> abilities;
+    public List<string> commands;
 
     public int GetWounds() { return Mathf.Max(1 + conditioning + GetSizeValue(), 1); }
     public int GetSizeValue() { return Mathf.FloorToInt(encumbrance / 5.0f) -5; }
-    public int GetSoakValue() { return Mathf.Max(0 + soakBonus + (Mathf.FloorToInt(GetSizeValue() / 5.0f)),0); }
+    public int GetSoakValue() { return Mathf.Max(1 + soakBonus + (Mathf.FloorToInt(GetSizeValue() / 5.0f)),0); }
     public int GetHighestAttackDamage()
     {
         var highestAttack = attacks
@@ -194,7 +195,7 @@ public class BeastEntry
         var closeCombatAttackPoints = 1 + closeCombat;
         return Mathf.FloorToInt((((defence + GetSoakValue()) * (GetWounds() + durability)) + (closeCombatAttackPoints * GetHighestAttackDamage())) / 10.0f) + 1;
     }
-    private int GetDefenceValue() { return Mathf.Max(6 + closeCombat - GetSizeValue(), 0); }
+    private int GetDefenceValue() { return Mathf.Max(6 + closeCombat - Mathf.FloorToInt(GetSizeValue() / 2.0f), 0); }
     private int GetCarryingCapacity() { return encumbrance + (conditioning * (10 + (GetSizeValue() * 5))); }
     public string UpdateOutput(List<AbilityEntry> fullAbilities)
     {
@@ -203,11 +204,11 @@ public class BeastEntry
         var defence = GetDefenceValue();
         var soak = GetSoakValue();
         var wounds = Mathf.Max(1 + conditioning + sizeValue, 1);
-        var vigour = 6 + conditioning + sizeValue;
-        var willpower = 6 + conviction + sizeValue;
+        var vigour = 6 + conditioning + Mathf.FloorToInt(sizeValue / 4.0f);
+        var willpower = 6 + conviction + Mathf.FloorToInt(sizeValue / 4.0f);
         var perceptionRange = (perception + 1) * 20;
         var perceptionScore = perception + 1;
-        var movementPoints = 5 + (athletics * 2) + Mathf.FloorToInt(sizeValue / 2.0f);
+        var movementPoints = 5 + (athletics * 2) + Mathf.FloorToInt(sizeValue / 4.0f);
         var carryingCapacity = GetCarryingCapacity();
         var closeCombatAttackPoints = 1 + closeCombat;
         var rangedCombatAttackPoints = 1 + rangedCombat;
@@ -227,17 +228,35 @@ public class BeastEntry
         output += $"\n#### Action Points [{Mathf.Max(closeCombatAttackPoints,rangedCombatAttackPoints)}]";
         output += "\n-";
         output += "\n \n";
-        output = attacks
-            .Aggregate(output, (current, attack) => 
-                current + attack.UpdateOutput(closeCombat, rangedCombat, GetSizeValue()));
+        
+        if (attacks?.Count > 0)
+        {
+            output = attacks
+                .Aggregate(output, (current, attack) => 
+                    current + attack.UpdateOutput(closeCombat, rangedCombat, GetSizeValue()));
 
-        output += "\n#### Abilities";
-        output += "\n-";
-        output = abilities
-            .Select(ability => 
-                fullAbilities.First(a => a.title == ability))
-            .Aggregate(output, (current, data) => 
-                current + $"\n{data.UpdateOutput()}\n");
+        }
+
+        if (abilities?.Count > 0)
+        {
+            output += "\n#### Abilities";
+            output += "\n-";
+            output = abilities
+                .Select(ability => 
+                    fullAbilities.First(a => a.title == ability))
+                .Aggregate(output, (current, data) => 
+                    current + $"\n{data.UpdateOutput()}\n");
+        }
+
+        if (commands?.Count > 0)
+        {
+            output += "\n#### Commands";
+            output += "\n-\n";
+            output += commands
+                .Aggregate("", (prev, next) => 
+                    $"{prev}{next}, ");
+        }
+        
         output += "\n)";
         return output;
     }

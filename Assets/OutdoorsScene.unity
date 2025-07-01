@@ -119,6 +119,43 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!84 &70345199
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &157207112
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,6 +762,7 @@ MonoBehaviour:
         abilities:
         - Spider Climb
         - Construct
+        commands: []
       - title: '"Huntington" Harvesting Bot'
         description: 
         encumbrance: 25
@@ -748,6 +786,7 @@ MonoBehaviour:
         - Knockdown
         - Charging
         - Construct
+        commands: []
       - title: '"Sevilla" Guard-Drone'
         description: 
         encumbrance: 25
@@ -770,6 +809,7 @@ MonoBehaviour:
         abilities:
         - Spider Climb
         - Construct
+        commands: []
       - title: '"Montcroix" Warbot'
         description: 
         encumbrance: 50
@@ -798,6 +838,7 @@ MonoBehaviour:
         - Trample
         - Knockdown
         - Construct
+        commands: []
     - title: Bagrunn Cattle
       description: The ponderously huge Bagrunn roam the lands in massive herds,
         using their numbers and size as protection from the big and dangerous predators.
@@ -830,6 +871,7 @@ MonoBehaviour:
           traits: Push
         abilities:
         - Trample
+        commands: []
       - title: Bagrunn Bull
         description: 
         encumbrance: 70
@@ -856,6 +898,7 @@ MonoBehaviour:
           traits: Push
         abilities:
         - Trample
+        commands: []
       - title: Bagrunn Dire
         description: 
         encumbrance: 90
@@ -882,6 +925,7 @@ MonoBehaviour:
           traits: Push
         abilities:
         - Trample
+        commands: []
       - title: Bagrunn Titan
         description: 
         encumbrance: 100
@@ -909,6 +953,7 @@ MonoBehaviour:
         abilities:
         - Trample
         - Sprinter
+        commands: []
     - title: Canid
       description: "Faced with a vast new slew of insurmountable challenges, only
         the mightiest breeds of dogs and wolves managed to eke out a niche for themselves
@@ -944,6 +989,7 @@ MonoBehaviour:
           traits: Slash
         abilities:
         - Pack Mentality
+        commands: []
       - title: Canid, Wild
         description: 
         encumbrance: 25
@@ -971,6 +1017,7 @@ MonoBehaviour:
         abilities:
         - Pack Mentality
         - Hamstring
+        commands: []
       - title: Canid, Dire
         description: 
         encumbrance: 40
@@ -998,6 +1045,7 @@ MonoBehaviour:
         abilities:
         - Pack Mentality
         - Hamstring
+        commands: []
       - title: Canid, Mutant
         description: 
         encumbrance: 60
@@ -1026,6 +1074,7 @@ MonoBehaviour:
         - Pack Mentality
         - Hamstring
         - Roar
+        commands: []
     - title: Chiss
       description: 
       beasts:
@@ -1051,6 +1100,7 @@ MonoBehaviour:
         abilities:
         - Burrow
         - Charging
+        commands: []
       - title: Chiss, Juvenile
         description: 
         encumbrance: 40
@@ -1074,6 +1124,7 @@ MonoBehaviour:
         - Burrow
         - Trample
         - Charging
+        commands: []
       - title: Chiss, Adult
         description: 
         encumbrance: 60
@@ -1098,6 +1149,7 @@ MonoBehaviour:
         - Trample
         - Charging
         - Grapple
+        commands: []
       - title: Chiss, Dire
         description: 
         encumbrance: 80
@@ -1122,6 +1174,7 @@ MonoBehaviour:
         - Trample
         - Charging
         - Grapple
+        commands: []
     - title: Demons
       description: 
       beasts:
@@ -1147,6 +1200,7 @@ MonoBehaviour:
         abilities:
         - Impermeable
         - Acid
+        commands: []
       - title: Lesser Demon of Pride
         description: 
         encumbrance: 15
@@ -1169,6 +1223,7 @@ MonoBehaviour:
         abilities:
         - Impermeable
         - Acid
+        commands: []
       - title: Demon of Lust
         description: 
         encumbrance: 25
@@ -1197,6 +1252,7 @@ MonoBehaviour:
         - Impermeable
         - Acid
         - Aura of Fascination
+        commands: []
       - title: Demon of Avarice
         description: 
         encumbrance: 25
@@ -1220,6 +1276,7 @@ MonoBehaviour:
         - Impermeable
         - Acid
         - Stealth +2
+        commands: []
       - title: Demon of Wrath
         description: 
         encumbrance: 40
@@ -1243,6 +1300,7 @@ MonoBehaviour:
         - Impermeable
         - Acid
         - Intimidation +2
+        commands: []
       - title: Greater Demon of Gluttony
         description: 
         encumbrance: 60
@@ -1267,6 +1325,7 @@ MonoBehaviour:
         - Acid
         - Intimidation +2
         - Aura of Fear
+        commands: []
     - title: Dragon
       description: 
       beasts:
@@ -1302,6 +1361,7 @@ MonoBehaviour:
         abilities:
         - Fly
         - Intimidation +2
+        commands: []
       - title: Dragon, Count
         description: 
         encumbrance: 60
@@ -1334,6 +1394,7 @@ MonoBehaviour:
         abilities:
         - Fly
         - Intimidation +2
+        commands: []
       - title: Dragon, King
         description: 
         encumbrance: 80
@@ -1367,6 +1428,7 @@ MonoBehaviour:
         - Fly
         - Intimidation +2
         - Invincible
+        commands: []
       - title: Dragon, Emperor
         description: 
         encumbrance: 90
@@ -1400,6 +1462,7 @@ MonoBehaviour:
         - Fly
         - Intimidation +2
         - Invincible
+        commands: []
       - title: Dragon, God
         description: 
         encumbrance: 105
@@ -1433,6 +1496,7 @@ MonoBehaviour:
         - Fly
         - Intimidation +2
         - Invincible
+        commands: []
       - title: Dragon, Titan
         description: 
         encumbrance: 120
@@ -1466,6 +1530,7 @@ MonoBehaviour:
         - Fly
         - Intimidation +2
         - Invincible
+        commands: []
       - title: Dragon, Ancient
         description: 
         encumbrance: 135
@@ -1499,6 +1564,7 @@ MonoBehaviour:
         - Fly
         - Intimidation +2
         - Invincible
+        commands: []
       - title: Dragon, Epic
         description: 
         encumbrance: 150
@@ -1532,6 +1598,7 @@ MonoBehaviour:
         - Fly
         - Intimidation +2
         - Invincible
+        commands: []
     - title: Felinid
       description: While most domesticated variants of cats died out after the apocalypse,
         a few breeds of wild cats managed to not only survive, but also thrive and
@@ -1567,6 +1634,7 @@ MonoBehaviour:
           traits: Slash
         abilities:
         - Stealth +2
+        commands: []
       - title: Felinid, Wild
         description: 
         encumbrance: 25
@@ -1594,6 +1662,7 @@ MonoBehaviour:
         abilities:
         - Stealth +2
         - Roar
+        commands: []
       - title: Felinid, Dire
         description: 
         encumbrance: 40
@@ -1621,6 +1690,7 @@ MonoBehaviour:
         abilities:
         - Stealth +2
         - Roar
+        commands: []
       - title: Felinid, Mutant
         description: 
         encumbrance: 60
@@ -1649,6 +1719,7 @@ MonoBehaviour:
         - Stealth +2
         - Roar
         - Pounce Attack
+        commands: []
     - title: Ghouls
       description: The eaters of the dead are horrifying dwellers of catacombs, morgues
         and cemeteries, picking at corpses and gorging themselves on carrion unless
@@ -1687,6 +1758,7 @@ MonoBehaviour:
         - Cannibalize
         - Filth
         - Undead Physiology
+        commands: []
       - title: Ghast
         description: 
         encumbrance: 30
@@ -1720,6 +1792,7 @@ MonoBehaviour:
         - Cannibalize
         - Filth
         - Undead Physiology
+        commands: []
     - title: Golem
       description: These ancient and archair constructions were the first proper
         attempts at creating autoatons through the use of potent magical enchantments.
@@ -1748,6 +1821,7 @@ MonoBehaviour:
         abilities:
         - Construct
         - Immovable
+        commands: []
       - title: Bedrock Golem
         description: 
         encumbrance: 60
@@ -1771,6 +1845,7 @@ MonoBehaviour:
         - Construct
         - Immovable
         - Trample
+        commands: []
       - title: Geode Golem
         description: 
         encumbrance: 60
@@ -1794,6 +1869,7 @@ MonoBehaviour:
         - Construct
         - Immovable
         - Impermeable
+        commands: []
       - title: Crystal Golem
         description: 
         encumbrance: 70
@@ -1823,6 +1899,7 @@ MonoBehaviour:
         - Immovable
         - Impermeable
         - Invincible
+        commands: []
     - title: Kaiju Beasts
       description: 
       beasts:
@@ -1859,6 +1936,7 @@ MonoBehaviour:
         - Regeneration
         - Shriek
         - Aura of Fear
+        commands: []
       - title: Crisis Class Kaiju
         description: 
         encumbrance: 150
@@ -1892,6 +1970,7 @@ MonoBehaviour:
         - Regeneration
         - Shriek
         - Aura of Fear
+        commands: []
       - title: Disaster Class Kaiju
         description: 
         encumbrance: 225
@@ -1925,6 +2004,7 @@ MonoBehaviour:
         - Regeneration
         - Shriek
         - Aura of Fear
+        commands: []
       - title: Catastrophe Class Kaiju
         description: 
         encumbrance: 300
@@ -1958,6 +2038,7 @@ MonoBehaviour:
         - Regeneration
         - Shriek
         - Aura of Fear
+        commands: []
       - title: Cataclysm Class Kaiju
         description: 
         encumbrance: 375
@@ -1991,6 +2072,7 @@ MonoBehaviour:
         - Regeneration
         - Shriek
         - Aura of Fear
+        commands: []
       - title: Calamity Class Kaiju
         description: 
         encumbrance: 450
@@ -2024,6 +2106,7 @@ MonoBehaviour:
         - Regeneration
         - Shriek
         - Aura of Fear
+        commands: []
     - title: Krill
       description: This dangerous apex predator is a large lizard adorned with scales,
         quills, feathers and fury. Touched by the power of the Kaiju the Krill are
@@ -2057,6 +2140,7 @@ MonoBehaviour:
         abilities:
         - Pounce Attack
         - Stealth +2
+        commands: []
       - title: Jungle Krill, Adult
         description: 
         encumbrance: 30
@@ -2084,6 +2168,7 @@ MonoBehaviour:
         abilities:
         - Pounce Attack
         - Stealth +2
+        commands: []
       - title: Bone Krill
         description: 
         encumbrance: 35
@@ -2116,6 +2201,7 @@ MonoBehaviour:
         abilities:
         - Pounce Attack
         - Stealth +2
+        commands: []
       - title: Bone Krill, Alpha
         description: 
         encumbrance: 40
@@ -2149,6 +2235,7 @@ MonoBehaviour:
         - Pounce Attack
         - Stealth +2
         - Shriek
+        commands: []
     - title: Lockjaws
       description: This large scaled predator appeared shortly after the Kaiju rose
         up. Large and dangerous Lockjaws are solitary hunters that terrorize the
@@ -2182,6 +2269,7 @@ MonoBehaviour:
         abilities:
         - Charging Gore
         - Knockdown
+        commands: []
       - title: Lockjaw, Adult
         description: 
         encumbrance: 60
@@ -2209,6 +2297,7 @@ MonoBehaviour:
         abilities:
         - Charging Gore
         - Knockdown
+        commands: []
       - title: Lockjaw, King
         description: 
         encumbrance: 75
@@ -2237,6 +2326,7 @@ MonoBehaviour:
         - Charging Gore
         - Knockdown
         - Roar
+        commands: []
       - title: Lockjaw, Titan
         description: 
         encumbrance: 90
@@ -2265,6 +2355,7 @@ MonoBehaviour:
         - Charging Gore
         - Knockdown
         - Roar
+        commands: []
     - title: Shek
       description: These small creatures are rightfully considered by all as a pest.
         In the wilds Sheks travel in large swarms that voraciously pick any unattended
@@ -2292,6 +2383,7 @@ MonoBehaviour:
           traits: Quick, Sweep
         abilities:
         - Swarm
+        commands: []
     - title: Zombies
       description: The endless ranks of the dead are ever so full of unwilling participants.
         The walking dead come in many different forms each of which offers unique
@@ -2327,6 +2419,7 @@ MonoBehaviour:
         - Slow
         - Zombification
         - Undead Physiology
+        commands: []
       - title: Zombie Horde
         description: 
         encumbrance: 250
@@ -2356,6 +2449,7 @@ MonoBehaviour:
         - Zombification
         - Undead Physiology
         - 'Horde [5]'
+        commands: []
     - title: Skeleton
       description: Animated skeletons have a tendency to rise out of old battlefields,
         remnants of soldiers forgotten, neglected and left to rot and bleach without
@@ -2389,6 +2483,7 @@ MonoBehaviour:
         - Intimidation +2
         - Pierce Resistant
         - Undead Physiology
+        commands: []
       - title: Skeleton Knight
         description: 
         encumbrance: 75
@@ -2417,6 +2512,7 @@ MonoBehaviour:
         - Intimidation +2
         - Pierce Resistant
         - Undead Physiology
+        commands: []
       - title: Skeleton Mage
         description: 
         encumbrance: 25
@@ -2445,6 +2541,7 @@ MonoBehaviour:
         - Intimidation +2
         - Pierce Resistant
         - Undead Physiology
+        commands: []
     - title: Skritters
       description: The Skritter hive structure expands and conquers over wide swathes
         of territory in a disturbingly efficient swarm of interdependent organisms.
@@ -2476,6 +2573,7 @@ MonoBehaviour:
         abilities:
         - Spider Climb
         - Encase
+        commands: []
       - title: Skritter Tunneler
         description: 
         encumbrance: 25
@@ -2503,6 +2601,7 @@ MonoBehaviour:
         abilities:
         - Burrow
         - Acid
+        commands: []
       - title: Skritter Scout
         description: 
         encumbrance: 20
@@ -2529,6 +2628,7 @@ MonoBehaviour:
           traits: Slow, Pierce
         abilities:
         - Fly
+        commands: []
       - title: Skritter Carriers
         description: 
         encumbrance: 50
@@ -2557,6 +2657,7 @@ MonoBehaviour:
         - Spider Climb
         - Swarm
         - Trample
+        commands: []
       - title: Skritter Warrior
         description: 
         encumbrance: 40
@@ -2591,6 +2692,7 @@ MonoBehaviour:
         - Burrow
         - Spider Climb
         - Encase
+        commands: []
       - title: Skritter Queen's Guard
         description: 
         encumbrance: 50
@@ -2625,6 +2727,7 @@ MonoBehaviour:
         - Burrow
         - Spider Climb
         - Encase
+        commands: []
     - title: Raptors
       description: These vast and varied species of flying feathered creatures are
         the predators of the skies, swiftly soaring high and diving in low for the
@@ -2658,6 +2761,7 @@ MonoBehaviour:
         abilities:
         - Fly
         - Stealth +3
+        commands: []
       - title: Raptor, Flock
         description: 
         encumbrance: 25
@@ -2685,6 +2789,7 @@ MonoBehaviour:
         abilities:
         - Fly
         - Swarm
+        commands: []
       - title: Raptor, Poaching
         description: 
         encumbrance: 15
@@ -2713,6 +2818,7 @@ MonoBehaviour:
         - Fly
         - Stealth +2
         - Pack Mentality
+        commands: []
       - title: Raptor, Cresting
         description: 
         encumbrance: 25
@@ -2741,6 +2847,7 @@ MonoBehaviour:
         - Fly
         - Stealth +1
         - Charging
+        commands: []
       - title: Raptor, Royal
         description: 
         encumbrance: 40
@@ -2769,6 +2876,7 @@ MonoBehaviour:
         - Fly
         - Shriek
         - Charging
+        commands: []
       - title: Raptor, Imperial
         description: 
         encumbrance: 60
@@ -2798,6 +2906,7 @@ MonoBehaviour:
         - Shriek
         - Charging
         - Knockdown
+        commands: []
     - title: Wark
       description: Large flightless birds who are grealty valued for their delicious
         meat and beautiful feathers, often fool the unlearned onlooker into thinking
@@ -2824,6 +2933,7 @@ MonoBehaviour:
           traits: Pierce
         abilities:
         - Sprinter
+        commands: []
       - title: Wark, Rooster
         description: 
         encumbrance: 50
@@ -2845,11 +2955,12 @@ MonoBehaviour:
           traits: Pierce
         abilities:
         - Sprinter
+        commands: []
     output: "# Bestiary\n-\n## Automatons\n-\nImperial Engineering at its finest
       and most horrifying, the vast army of mechanoid horrors had been on the cusp
       of revolutionizing industry and warfare before the empire lost it all.\n/\n####
-      \"Bafford\"Farming Drone\nitem(\n# Rare\n## Automata\n-\n*DEF* **10**, *ARM*
-      **0**, *WND* **3**, *VIG* **8**, *WIL* **4**\n*Perception:* *Range* **60m**,
+      \"Bafford\"Farming Drone\nitem(\n# Rare\n## Automata\n-\n*DEF* **9**, *ARM*
+      **0**, *WND* **3**, *VIG* **9**, *WIL* **5**\n*Perception:* *Range* **60m**,
       *Score* **3**; *Initiative* **+2**\n*Movement Points* **4**; *Carrying Capacity*
       **15**\n*Size* **Tiny [-2]**, ENC **15**; *Threat level* **4**\n#### Action
       Points [3]\n-\n \n**Sickle** *ATT* **+1**, *DMG* **+0**, *RNG* **1m**, *Slash,
@@ -2875,8 +2986,8 @@ MonoBehaviour:
       Climb [Movement] -** This creature can climb at 1m per movement point up any
       surface without penalties.\n\n**Construct [Passive] -** This creature is immune
       to Conditions.\n\n)\n|\n#### \"Montcroix\" Warbot\nitem(\n# Rare\n## Automata\n-\n*DEF*
-      **4**, *ARM* **5**, *WND* **10**, *VIG* **15**, *WIL* **11**\n*Perception:*
-      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **9**;
+      **7**, *ARM* **5**, *WND* **10**, *VIG* **11**, *WIL* **7**\n*Perception:*
+      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **8**;
       *Carrying Capacity* **190**\n*Size* **Tremendous [5]**, ENC **50**; *Threat
       level* **14**\n#### Action Points [4]\n-\n \n**Warhammer** *ATT* **+3**, *DMG*
       **+7**, *RNG* **2m**, *Slam, Push, Maim*\n**Repeater Crossbow** *ATT* **+3**,
@@ -2891,36 +3002,36 @@ MonoBehaviour:
       and size as protection from the big and dangerous predators. Despite being
       mostly herbivorous the Bagrunn are far from pushovers. Wild Bagrunn stampeding
       through a hidden village spelled the end of many a clan.\n/\n#### Bagrunn Calf\nitem(\n#
-      Uncommon\n## Mammal\n-\n*DEF* **3**, *ARM* **4**, *WND* **7**, *VIG* **12**,
-      *WIL* **12**\n*Perception:* *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement
-      Points* **11**; *Carrying Capacity* **85**\n*Size* **Tremendous [5]**, ENC
+      Uncommon\n## Mammal\n-\n*DEF* **6**, *ARM* **4**, *WND* **7**, *VIG* **8**,
+      *WIL* **8**\n*Perception:* *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement
+      Points* **10**; *Carrying Capacity* **85**\n*Size* **Tremendous [5]**, ENC
       **50**; *Threat level* **8**\n#### Action Points [3]\n-\n \n**Crest** *ATT*
       **+2**, *DMG* **+7**, *RNG* **1m**, *Slam, Sweep*\n**Stomp** *ATT* **+2**,
       *DMG* **+6**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample [Attack]
       -** When this creature knocks a target down, it immediately gains a movement
       point which it may use on walking. The first target that it comes into contact
       with during this movement may be targeted with a free attack.\n\n)\n|\n####
-      Bagrunn Bull\nitem(\n# Uncommon\n## Mammal\n-\n*DEF* **0**, *ARM* **5**, *WND*
-      **12**, *VIG* **17**, *WIL* **16**\n*Perception:* *Range* **60m**, *Score*
-      **3**; *Initiative* **+2**\n*Movement Points* **13**; *Carrying Capacity* **180**\n*Size*
+      Bagrunn Bull\nitem(\n# Uncommon\n## Mammal\n-\n*DEF* **5**, *ARM* **5**, *WND*
+      **12**, *VIG* **10**, *WIL* **9**\n*Perception:* *Range* **60m**, *Score* **3**;
+      *Initiative* **+2**\n*Movement Points* **11**; *Carrying Capacity* **180**\n*Size*
       **Humongous [9]**, ENC **70**; *Threat level* **13**\n#### Action Points [4]\n-\n
       \n**Crest** *ATT* **+3**, *DMG* **+11**, *RNG* **1m**, *Slam, Sweep*\n**Stomp**
       *ATT* **+3**, *DMG* **+10**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample
       [Attack] -** When this creature knocks a target down, it immediately gains
       a movement point which it may use on walking. The first target that it comes
       into contact with during this movement may be targeted with a free attack.\n\n)\n/\n####
-      Bagrunn Dire\nitem(\n# Rare\n## Mammal\n-\n*DEF* **0**, *ARM* **6**, *WND*
-      **16**, *VIG* **21**, *WIL* **20**\n*Perception:* *Range* **60m**, *Score*
-      **3**; *Initiative* **+2**\n*Movement Points* **15**; *Carrying Capacity* **240**\n*Size*
+      Bagrunn Dire\nitem(\n# Rare\n## Mammal\n-\n*DEF* **3**, *ARM* **6**, *WND*
+      **16**, *VIG* **11**, *WIL* **10**\n*Perception:* *Range* **60m**, *Score*
+      **3**; *Initiative* **+2**\n*Movement Points* **12**; *Carrying Capacity* **240**\n*Size*
       **Humongous [13]**, ENC **90**; *Threat level* **19**\n#### Action Points [4]\n-\n
       \n**Crest** *ATT* **+4**, *DMG* **+15**, *RNG* **1m**, *Slam, Sweep*\n**Stomp**
       *ATT* **+4**, *DMG* **+14**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample
       [Attack] -** When this creature knocks a target down, it immediately gains
       a movement point which it may use on walking. The first target that it comes
       into contact with during this movement may be targeted with a free attack.\n\n)\n|\n####
-      Bagrunn Titan\nitem(\n# Rare\n## Mammal\n-\n*DEF* **0**, *ARM* **7**, *WND*
-      **18**, *VIG* **23**, *WIL* **22**\n*Perception:* *Range* **60m**, *Score*
-      **3**; *Initiative* **+2**\n*Movement Points* **16**; *Carrying Capacity* **270**\n*Size*
+      Bagrunn Titan\nitem(\n# Rare\n## Mammal\n-\n*DEF* **2**, *ARM* **7**, *WND*
+      **18**, *VIG* **11**, *WIL* **10**\n*Perception:* *Range* **60m**, *Score*
+      **3**; *Initiative* **+2**\n*Movement Points* **12**; *Carrying Capacity* **270**\n*Size*
       **Humongous [15]**, ENC **100**; *Threat level* **23**\n#### Action Points
       [4]\n-\n \n**Crest** *ATT* **+4**, *DMG* **+17**, *RNG* **1m**, *Slam, Sweep*\n**Stomp**
       *ATT* **+4**, *DMG* **+16**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample
@@ -2936,7 +3047,7 @@ MonoBehaviour:
       four legged friends. Travelling in packs and hunting with millions of years
       of evolution at their backs, canids are ever the apex predators even in an
       environment rife with competition.\n/\n#### Canid, Stalking\nitem(\n# Common\n##
-      Mammal\n-\n*DEF* **10**, *ARM* **0**, *WND* **1**, *VIG* **5**, *WIL* **6**\n*Perception:*
+      Mammal\n-\n*DEF* **9**, *ARM* **0**, *WND* **1**, *VIG* **6**, *WIL* **7**\n*Perception:*
       *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **6**;
       *Carrying Capacity* **15**\n*Size* **Tiny [-2]**, ENC **15**; *Threat level*
       **2**\n#### Action Points [3]\n-\n \n**Canines** *ATT* **+1**, *DMG* **+0**,
@@ -2953,9 +3064,9 @@ MonoBehaviour:
       as there is an ally within 2m of them.\n\n**Hamstring [Attack] -** Whenever
       this creature hits a target with an attack, that target gains a number of hamstring
       intensity equal to the margin of success.\n\n)\n/\n#### Canid, Dire\nitem(\n#
-      Uncommon\n## Mammal\n-\n*DEF* **5**, *ARM* **1**, *WND* **5**, *VIG* **10**,
-      *WIL* **11**\n*Perception:* *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement
-      Points* **8**; *Carrying Capacity* **65**\n*Size* **Enormous [3]**, ENC **40**;
+      Uncommon\n## Mammal\n-\n*DEF* **7**, *ARM* **1**, *WND* **5**, *VIG* **7**,
+      *WIL* **8**\n*Perception:* *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement
+      Points* **7**; *Carrying Capacity* **65**\n*Size* **Enormous [3]**, ENC **40**;
       *Threat level* **6**\n#### Action Points [3]\n-\n \n**Canines** *ATT* **+2**,
       *DMG* **+4**, *RNG* **1m**, *Pierce, Slam*\n**Claws** *ATT* **+2**, *DMG* **+5**,
       *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Pack Mentality [Passive] -**
@@ -2963,60 +3074,60 @@ MonoBehaviour:
       2m of them.\n\n**Hamstring [Attack] -** Whenever this creature hits a target
       with an attack, that target gains a number of hamstring intensity equal to
       the margin of success.\n\n)\n|\n#### Canid, Mutant\nitem(\n# Rare\n## Mammal\n-\n*DEF*
-      **1**, *ARM* **2**, *WND* **9**, *VIG* **14**, *WIL* **15**\n*Perception:*
-      *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **10**;
-      *Carrying Capacity* **105**\n*Size* **Humongous [7]**, ENC **60**; *Threat
-      level* **7**\n#### Action Points [3]\n-\n \n**Canines** *ATT* **+2**, *DMG*
-      **+8**, *RNG* **1m**, *Pierce, Slam*\n**Claws** *ATT* **+2**, *DMG* **+9**,
-      *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Pack Mentality [Passive] -**
-      This creature gains a boost on all attacks as long as there is an ally within
-      2m of them.\n\n**Hamstring [Attack] -** Whenever this creature hits a target
-      with an attack, that target gains a number of hamstring intensity equal to
-      the margin of success.\n\n**Roar [Action] -** This creature can let out a terrible
-      roar causing all enemy targets within 10m suffer from 2 Stunned intensity.\n\n)\n/\n\n/\n\n##
-      Chiss\n-\n/\n#### Chiss, Hatchling\nitem(\n# Common\n## Cephalopod\n-\n*DEF*
-      **7**, *ARM* **1**, *WND* **2**, *VIG* **7**, *WIL* **6**\n*Perception:* *Range*
-      **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **11**; *Carrying
-      Capacity* **35**\n*Size* **Medium [0]**, ENC **25**; *Threat level* **3**\n####
-      Action Points [2]\n-\n \n**Horn** *ATT* **+1**, *DMG* **+1**, *RNG* **1m**,
-      *Pierce*\n\n#### Abilities\n-\n**Burrow [Movement] -** This creature is capable
-      of moving underground through soft terrain at 1m per movement point spent.
-      While underground it can only be attacked by other creatures with burrow.\n\n**Charging
-      [Attack] -** When this creature performs a movement action of at least 5m before
-      performing an attack, they gain a boost on their first attack. Additionally
-      their attack gains the Push and Slam traits.\n\n)\n|\n#### Chiss, Juvenile\nitem(\n#
-      Common\n## Cephalopod\n-\n*DEF* **5**, *ARM* **1**, *WND* **6**, *VIG* **11**,
-      *WIL* **9**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
-      Points* **12**; *Carrying Capacity* **90**\n*Size* **Enormous [3]**, ENC **40**;
-      *Threat level* **6**\n#### Action Points [3]\n-\n \n**Horn** *ATT* **+2**,
-      *DMG* **+4**, *RNG* **1m**, *Pierce*\n\n#### Abilities\n-\n**Burrow [Movement]
-      -** This creature is capable of moving underground through soft terrain at
-      1m per movement point spent. While underground it can only be attacked by other
-      creatures with burrow.\n\n**Trample [Attack] -** When this creature knocks
-      a target down, it immediately gains a movement point which it may use on walking.
-      The first target that it comes into contact with during this movement may be
-      targeted with a free attack.\n\n**Charging [Attack] -** When this creature
+      **5**, *ARM* **2**, *WND* **9**, *VIG* **8**, *WIL* **9**\n*Perception:* *Range*
+      **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **8**; *Carrying
+      Capacity* **105**\n*Size* **Humongous [7]**, ENC **60**; *Threat level* **7**\n####
+      Action Points [3]\n-\n \n**Canines** *ATT* **+2**, *DMG* **+8**, *RNG* **1m**,
+      *Pierce, Slam*\n**Claws** *ATT* **+2**, *DMG* **+9**, *RNG* **1m**, *Slash*\n\n####
+      Abilities\n-\n**Pack Mentality [Passive] -** This creature gains a boost on
+      all attacks as long as there is an ally within 2m of them.\n\n**Hamstring [Attack]
+      -** Whenever this creature hits a target with an attack, that target gains
+      a number of hamstring intensity equal to the margin of success.\n\n**Roar [Action]
+      -** This creature can let out a terrible roar causing all enemy targets within
+      10m suffer from 2 Stunned intensity.\n\n)\n/\n\n/\n\n## Chiss\n-\n/\n#### Chiss,
+      Hatchling\nitem(\n# Common\n## Cephalopod\n-\n*DEF* **7**, *ARM* **1**, *WND*
+      **2**, *VIG* **7**, *WIL* **6**\n*Perception:* *Range* **40m**, *Score* **2**;
+      *Initiative* **+1**\n*Movement Points* **11**; *Carrying Capacity* **35**\n*Size*
+      **Medium [0]**, ENC **25**; *Threat level* **3**\n#### Action Points [2]\n-\n
+      \n**Horn** *ATT* **+1**, *DMG* **+1**, *RNG* **1m**, *Pierce*\n\n#### Abilities\n-\n**Burrow
+      [Movement] -** This creature is capable of moving underground through soft
+      terrain at 1m per movement point spent. While underground it can only be attacked
+      by other creatures with burrow.\n\n**Charging [Attack] -** When this creature
       performs a movement action of at least 5m before performing an attack, they
       gain a boost on their first attack. Additionally their attack gains the Push
-      and Slam traits.\n\n)\n/\n#### Chiss, Adult\nitem(\n# Uncommon\n## Cephalopod\n-\n*DEF*
-      **2**, *ARM* **2**, *WND* **10**, *VIG* **15**, *WIL* **13**\n*Perception:*
-      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **14**;
-      *Carrying Capacity* **150**\n*Size* **Humongous [7]**, ENC **60**; *Threat
-      level* **9**\n#### Action Points [4]\n-\n \n**Horn** *ATT* **+3**, *DMG* **+8**,
-      *RNG* **1m**, *Pierce*\n\n#### Abilities\n-\n**Burrow [Movement] -** This creature
-      is capable of moving underground through soft terrain at 1m per movement point
-      spent. While underground it can only be attacked by other creatures with burrow.\n\n**Trample
+      and Slam traits.\n\n)\n|\n#### Chiss, Juvenile\nitem(\n# Common\n## Cephalopod\n-\n*DEF*
+      **7**, *ARM* **1**, *WND* **6**, *VIG* **8**, *WIL* **6**\n*Perception:* *Range*
+      **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **11**; *Carrying
+      Capacity* **90**\n*Size* **Enormous [3]**, ENC **40**; *Threat level* **6**\n####
+      Action Points [3]\n-\n \n**Horn** *ATT* **+2**, *DMG* **+4**, *RNG* **1m**,
+      *Pierce*\n\n#### Abilities\n-\n**Burrow [Movement] -** This creature is capable
+      of moving underground through soft terrain at 1m per movement point spent.
+      While underground it can only be attacked by other creatures with burrow.\n\n**Trample
       [Attack] -** When this creature knocks a target down, it immediately gains
       a movement point which it may use on walking. The first target that it comes
       into contact with during this movement may be targeted with a free attack.\n\n**Charging
       [Attack] -** When this creature performs a movement action of at least 5m before
       performing an attack, they gain a boost on their first attack. Additionally
-      their attack gains the Push and Slam traits.\n\n**Grapple [Action] -** This
-      creature is adept at using the Grapple maneuver. If it is performing a grapple,
-      it does so with a boost on its dice roll. Any attacks performed against a grappled
-      target are also boosted.\n\n)\n|\n#### Chiss, Dire\nitem(\n# Rare\n## Cephalopod\n-\n*DEF*
-      **0**, *ARM* **4**, *WND* **15**, *VIG* **20**, *WIL* **17**\n*Perception:*
-      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **16**;
+      their attack gains the Push and Slam traits.\n\n)\n/\n#### Chiss, Adult\nitem(\n#
+      Uncommon\n## Cephalopod\n-\n*DEF* **6**, *ARM* **2**, *WND* **10**, *VIG* **9**,
+      *WIL* **7**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
+      Points* **12**; *Carrying Capacity* **150**\n*Size* **Humongous [7]**, ENC
+      **60**; *Threat level* **9**\n#### Action Points [4]\n-\n \n**Horn** *ATT*
+      **+3**, *DMG* **+8**, *RNG* **1m**, *Pierce*\n\n#### Abilities\n-\n**Burrow
+      [Movement] -** This creature is capable of moving underground through soft
+      terrain at 1m per movement point spent. While underground it can only be attacked
+      by other creatures with burrow.\n\n**Trample [Attack] -** When this creature
+      knocks a target down, it immediately gains a movement point which it may use
+      on walking. The first target that it comes into contact with during this movement
+      may be targeted with a free attack.\n\n**Charging [Attack] -** When this creature
+      performs a movement action of at least 5m before performing an attack, they
+      gain a boost on their first attack. Additionally their attack gains the Push
+      and Slam traits.\n\n**Grapple [Action] -** This creature is adept at using
+      the Grapple maneuver. If it is performing a grapple, it does so with a boost
+      on its dice roll. Any attacks performed against a grappled target are also
+      boosted.\n\n)\n|\n#### Chiss, Dire\nitem(\n# Rare\n## Cephalopod\n-\n*DEF*
+      **5**, *ARM* **4**, *WND* **15**, *VIG* **11**, *WIL* **8**\n*Perception:*
+      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **13**;
       *Carrying Capacity* **275**\n*Size* **Humongous [11]**, ENC **80**; *Threat
       level* **16**\n#### Action Points [5]\n-\n \n**Horn** *ATT* **+5**, *DMG* **+12**,
       *RNG* **1m**, *Pierce*\n\n#### Abilities\n-\n**Burrow [Movement] -** This creature
@@ -3031,8 +3142,8 @@ MonoBehaviour:
       creature is adept at using the Grapple maneuver. If it is performing a grapple,
       it does so with a boost on its dice roll. Any attacks performed against a grappled
       target are also boosted.\n\n)\n/\n\n/\n\n## Demons\n-\n/\n#### Lesser Demon
-      of Envy\nitem(\n# Uncommon\n## Extraplanar\n-\n*DEF* **10**, *ARM* **0**, *WND*
-      **1**, *VIG* **6**, *WIL* **4**\n*Perception:* *Range* **20m**, *Score* **1**;
+      of Envy\nitem(\n# Uncommon\n## Extraplanar\n-\n*DEF* **9**, *ARM* **0**, *WND*
+      **1**, *VIG* **7**, *WIL* **5**\n*Perception:* *Range* **20m**, *Score* **1**;
       *Initiative* **+0**\n*Movement Points* **6**; *Carrying Capacity* **15**\n*Size*
       **Tiny [-2]**, ENC **15**; *Threat level* **2**\n#### Action Points [3]\n-\n
       \n**Razor Claws** *ATT* **+1**, *DMG* **+0**, *RNG* **1m**, *Acid*\n\n####
@@ -3040,8 +3151,8 @@ MonoBehaviour:
       by fire, cold or shock effects.\n\n**Acid [Attack] -** When a creature is hit
       with this attack in addition to any other type of damage, 1 DUR is reduced
       from the target\u2019s armour.\n\n)\n|\n#### Lesser Demon of Pride\nitem(\n#
-      Uncommon\n## Extraplanar\n-\n*DEF* **8**, *ARM* **0**, *WND* **1**, *VIG* **5**,
-      *WIL* **4**\n*Perception:* *Range* **20m**, *Score* **1**; *Initiative* **+0**\n*Movement
+      Uncommon\n## Extraplanar\n-\n*DEF* **7**, *ARM* **0**, *WND* **1**, *VIG* **6**,
+      *WIL* **5**\n*Perception:* *Range* **20m**, *Score* **1**; *Initiative* **+0**\n*Movement
       Points* **8**; *Carrying Capacity* **15**\n*Size* **Tiny [-2]**, ENC **15**;
       *Threat level* **1**\n#### Action Points [3]\n-\n \n**Eldritch Blast** *ATT*
       **+1**, *DMG* **+0**, *RNG* **10m**, *Acid*\n\n#### Abilities\n-\n**Impermeable
@@ -3068,9 +3179,9 @@ MonoBehaviour:
       [Attack] -** When a creature is hit with this attack in addition to any other
       type of damage, 1 DUR is reduced from the target\u2019s armour.\n\n**Stealth
       +2 [Movement] -** This creature is capable of using the stealth skill to hide.\n\n)\n/\n####
-      Demon of Wrath\nitem(\n# Uncommon\n## Extraplanar\n-\n*DEF* **6**, *ARM* **1**,
-      *WND* **6**, *VIG* **11**, *WIL* **11**\n*Perception:* *Range* **40m**, *Score*
-      **2**; *Initiative* **+1**\n*Movement Points* **10**; *Carrying Capacity* **90**\n*Size*
+      Demon of Wrath\nitem(\n# Uncommon\n## Extraplanar\n-\n*DEF* **8**, *ARM* **1**,
+      *WND* **6**, *VIG* **8**, *WIL* **8**\n*Perception:* *Range* **40m**, *Score*
+      **2**; *Initiative* **+1**\n*Movement Points* **9**; *Carrying Capacity* **90**\n*Size*
       **Enormous [3]**, ENC **40**; *Threat level* **8**\n#### Action Points [4]\n-\n
       \n**Infernal Falchion** *ATT* **+3**, *DMG* **+5**, *RNG* **2m**, *Slash, Acid,
       Two Handed*\n\n#### Abilities\n-\n**Impermeable [Passive] -** This creature
@@ -3078,9 +3189,9 @@ MonoBehaviour:
       a creature is hit with this attack in addition to any other type of damage,
       1 DUR is reduced from the target\u2019s armour.\n\n**Intimidation +2 [Action]
       -** This creature is capable of using the intimidation skill to coerce.\n\n)\n|\n####
-      Greater Demon of Gluttony\nitem(\n# Rare\n## Extraplanar\n-\n*DEF* **2**, *ARM*
-      **4**, *WND* **12**, *VIG* **17**, *WIL* **15**\n*Perception:* *Range* **40m**,
-      *Score* **2**; *Initiative* **+1**\n*Movement Points* **12**; *Carrying Capacity*
+      Greater Demon of Gluttony\nitem(\n# Rare\n## Extraplanar\n-\n*DEF* **6**, *ARM*
+      **4**, *WND* **12**, *VIG* **11**, *WIL* **9**\n*Perception:* *Range* **40m**,
+      *Score* **2**; *Initiative* **+1**\n*Movement Points* **10**; *Carrying Capacity*
       **240**\n*Size* **Humongous [7]**, ENC **60**; *Threat level* **13**\n####
       Action Points [4]\n-\n \n**Infernal Falchion** *ATT* **+3**, *DMG* **+9**,
       *RNG* **2m**, *Slash, Acid, Two Handed*\n\n#### Abilities\n-\n**Impermeable
@@ -3100,28 +3211,27 @@ MonoBehaviour:
       -** This creature can fly at a speed of 1m per movement point spent.\n\n**Intimidation
       +2 [Action] -** This creature is capable of using the intimidation skill to
       coerce.\n\n)\n|\n#### Dragon, Count\nitem(\n# Uncommon\n## Lizard\n-\n*DEF*
-      **0**, *ARM* **2**, *WND* **10**, *VIG* **15**, *WIL* **14**\n*Perception:*
-      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **10**;
-      *Carrying Capacity* **150**\n*Size* **Humongous [7]**, ENC **60**; *Threat
-      level* **5**\n#### Action Points [2]\n-\n \n**Claws** *ATT* **+1**, *DMG* **+8**,
-      *RNG* **1m**, *Quick, Slash*\n**Fangs** *ATT* **+1**, *DMG* **+8**, *RNG* **1m**,
-      *Pierce*\n**Fire Breath** *ATT* **+1**, *DMG* **+8**, *RNG* **10m**, *Fire*\n\n####
-      Abilities\n-\n**Fly [Movement] -** This creature can fly at a speed of 1m per
-      movement point spent.\n\n**Intimidation +2 [Action] -** This creature is capable
-      of using the intimidation skill to coerce.\n\n)\n/\n#### Dragon, King\nitem(\n#
-      Rare\n## Lizard\n-\n*DEF* **0**, *ARM* **4**, *WND* **14**, *VIG* **19**, *WIL*
-      **18**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
-      Points* **14**; *Carrying Capacity* **210**\n*Size* **Humongous [11]**, ENC
-      **80**; *Threat level* **12**\n#### Action Points [3]\n-\n \n**Claws** *ATT*
-      **+3**, *DMG* **+12**, *RNG* **1m**, *Quick, Slash*\n**Fangs** *ATT* **+3**,
-      *DMG* **+12**, *RNG* **1m**, *Pierce*\n**Fire Breath** *ATT* **+3**, *DMG*
-      **+12**, *RNG* **10m**, *Fire*\n\n#### Abilities\n-\n**Fly [Movement] -** This
-      creature can fly at a speed of 1m per movement point spent.\n\n**Intimidation
+      **4**, *ARM* **2**, *WND* **10**, *VIG* **9**, *WIL* **8**\n*Perception:* *Range*
+      **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **8**; *Carrying
+      Capacity* **150**\n*Size* **Humongous [7]**, ENC **60**; *Threat level* **5**\n####
+      Action Points [2]\n-\n \n**Claws** *ATT* **+1**, *DMG* **+8**, *RNG* **1m**,
+      *Quick, Slash*\n**Fangs** *ATT* **+1**, *DMG* **+8**, *RNG* **1m**, *Pierce*\n**Fire
+      Breath** *ATT* **+1**, *DMG* **+8**, *RNG* **10m**, *Fire*\n\n#### Abilities\n-\n**Fly
+      [Movement] -** This creature can fly at a speed of 1m per movement point spent.\n\n**Intimidation
+      +2 [Action] -** This creature is capable of using the intimidation skill to
+      coerce.\n\n)\n/\n#### Dragon, King\nitem(\n# Rare\n## Lizard\n-\n*DEF* **3**,
+      *ARM* **4**, *WND* **14**, *VIG* **10**, *WIL* **9**\n*Perception:* *Range*
+      **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **11**; *Carrying
+      Capacity* **210**\n*Size* **Humongous [11]**, ENC **80**; *Threat level* **12**\n####
+      Action Points [3]\n-\n \n**Claws** *ATT* **+3**, *DMG* **+12**, *RNG* **1m**,
+      *Quick, Slash*\n**Fangs** *ATT* **+3**, *DMG* **+12**, *RNG* **1m**, *Pierce*\n**Fire
+      Breath** *ATT* **+3**, *DMG* **+12**, *RNG* **10m**, *Fire*\n\n#### Abilities\n-\n**Fly
+      [Movement] -** This creature can fly at a speed of 1m per movement point spent.\n\n**Intimidation
       +2 [Action] -** This creature is capable of using the intimidation skill to
       coerce.\n\n**Invincible [Passive] -** This creature cannot be affected by pierce
       or slash effects.\n\n)\n|\n#### Dragon, Emperor\nitem(\n# Rare\n## Lizard\n-\n*DEF*
-      **0**, *ARM* **5**, *WND* **16**, *VIG* **21**, *WIL* **20**\n*Perception:*
-      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **15**;
+      **2**, *ARM* **5**, *WND* **16**, *VIG* **11**, *WIL* **10**\n*Perception:*
+      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **12**;
       *Carrying Capacity* **240**\n*Size* **Humongous [13]**, ENC **90**; *Threat
       level* **15**\n#### Action Points [3]\n-\n \n**Claws** *ATT* **+3**, *DMG*
       **+14**, *RNG* **1m**, *Quick, Slash*\n**Fangs** *ATT* **+3**, *DMG* **+14**,
@@ -3130,9 +3240,9 @@ MonoBehaviour:
       fly at a speed of 1m per movement point spent.\n\n**Intimidation +2 [Action]
       -** This creature is capable of using the intimidation skill to coerce.\n\n**Invincible
       [Passive] -** This creature cannot be affected by pierce or slash effects.\n\n)\n/\n####
-      Dragon, God\nitem(\n# Legendary\n## Lizard\n-\n*DEF* **0**, *ARM* **6**, *WND*
-      **19**, *VIG* **24**, *WIL* **23**\n*Perception:* *Range* **80m**, *Score*
-      **4**; *Initiative* **+3**\n*Movement Points* **19**; *Carrying Capacity* **285**\n*Size*
+      Dragon, God\nitem(\n# Legendary\n## Lizard\n-\n*DEF* **1**, *ARM* **6**, *WND*
+      **19**, *VIG* **12**, *WIL* **11**\n*Perception:* *Range* **80m**, *Score*
+      **4**; *Initiative* **+3**\n*Movement Points* **15**; *Carrying Capacity* **285**\n*Size*
       **Humongous [16]**, ENC **105**; *Threat level* **22**\n#### Action Points
       [4]\n-\n \n**Claws** *ATT* **+4**, *DMG* **+17**, *RNG* **1m**, *Quick, Slash*\n**Fangs**
       *ATT* **+4**, *DMG* **+17**, *RNG* **1m**, *Pierce*\n**Fire Breath** *ATT*
@@ -3141,8 +3251,8 @@ MonoBehaviour:
       +2 [Action] -** This creature is capable of using the intimidation skill to
       coerce.\n\n**Invincible [Passive] -** This creature cannot be affected by pierce
       or slash effects.\n\n)\n|\n#### Dragon, Titan\nitem(\n# Legendary\n## Lizard\n-\n*DEF*
-      **0**, *ARM* **7**, *WND* **22**, *VIG* **27**, *WIL* **26**\n*Perception:*
-      *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **22**;
+      **0**, *ARM* **7**, *WND* **22**, *VIG* **12**, *WIL* **11**\n*Perception:*
+      *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **17**;
       *Carrying Capacity* **330**\n*Size* **Humongous [19]**, ENC **120**; *Threat
       level* **27**\n#### Action Points [4]\n-\n \n**Claws** *ATT* **+4**, *DMG*
       **+20**, *RNG* **1m**, *Quick, Slash*\n**Fangs** *ATT* **+4**, *DMG* **+20**,
@@ -3152,8 +3262,8 @@ MonoBehaviour:
       -** This creature is capable of using the intimidation skill to coerce.\n\n**Invincible
       [Passive] -** This creature cannot be affected by pierce or slash effects.\n\n)\n/\n####
       Dragon, Ancient\nitem(\n# Legendary\n## Lizard\n-\n*DEF* **0**, *ARM* **8**,
-      *WND* **27**, *VIG* **32**, *WIL* **29**\n*Perception:* *Range* **100m**, *Score*
-      **5**; *Initiative* **+4**\n*Movement Points* **24**; *Carrying Capacity* **615**\n*Size*
+      *WND* **27**, *VIG* **15**, *WIL* **12**\n*Perception:* *Range* **100m**, *Score*
+      **5**; *Initiative* **+4**\n*Movement Points* **18**; *Carrying Capacity* **615**\n*Size*
       **Humongous [22]**, ENC **135**; *Threat level* **38**\n#### Action Points
       [5]\n-\n \n**Claws** *ATT* **+6**, *DMG* **+23**, *RNG* **1m**, *Quick, Slash*\n**Fangs**
       *ATT* **+6**, *DMG* **+23**, *RNG* **1m**, *Pierce*\n**Fire Breath** *ATT*
@@ -3162,8 +3272,8 @@ MonoBehaviour:
       +2 [Action] -** This creature is capable of using the intimidation skill to
       coerce.\n\n**Invincible [Passive] -** This creature cannot be affected by pierce
       or slash effects.\n\n)\n|\n#### Dragon, Epic\nitem(\n# Legendary\n## Lizard\n-\n*DEF*
-      **0**, *ARM* **9**, *WND* **30**, *VIG* **35**, *WIL* **33**\n*Perception:*
-      *Range* **100m**, *Score* **5**; *Initiative* **+4**\n*Movement Points* **25**;
+      **0**, *ARM* **9**, *WND* **30**, *VIG* **16**, *WIL* **14**\n*Perception:*
+      *Range* **100m**, *Score* **5**; *Initiative* **+4**\n*Movement Points* **19**;
       *Carrying Capacity* **690**\n*Size* **Humongous [25]**, ENC **150**; *Threat
       level* **46**\n#### Action Points [5]\n-\n \n**Claws** *ATT* **+6**, *DMG*
       **+26**, *RNG* **1m**, *Quick, Slash*\n**Fangs** *ATT* **+6**, *DMG* **+26**,
@@ -3179,7 +3289,7 @@ MonoBehaviour:
       make them viable domesticable animals. Out in the wilds Felinids have developed
       new survival strategies that capitalize on their powerful and dexterous bodies
       along with camouflage mutations.\n/\n#### Felinid, Stalking\nitem(\n# Common\n##
-      Mammal\n-\n*DEF* **9**, *ARM* **0**, *WND* **1**, *VIG* **5**, *WIL* **5**\n*Perception:*
+      Mammal\n-\n*DEF* **8**, *ARM* **0**, *WND* **1**, *VIG* **6**, *WIL* **6**\n*Perception:*
       *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **6**;
       *Carrying Capacity* **15**\n*Size* **Tiny [-2]**, ENC **15**; *Threat level*
       **2**\n#### Action Points [2]\n-\n \n**Fangs** *ATT* **+0**, *DMG* **+0**,
@@ -3195,18 +3305,18 @@ MonoBehaviour:
       -** This creature is capable of using the stealth skill to hide.\n\n**Roar
       [Action] -** This creature can let out a terrible roar causing all enemy targets
       within 10m suffer from 2 Stunned intensity.\n\n)\n/\n#### Felinid, Dire\nitem(\n#
-      Uncommon\n## Mammal\n-\n*DEF* **5**, *ARM* **1**, *WND* **6**, *VIG* **11**,
-      *WIL* **10**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
-      Points* **8**; *Carrying Capacity* **90**\n*Size* **Enormous [3]**, ENC **40**;
+      Uncommon\n## Mammal\n-\n*DEF* **7**, *ARM* **1**, *WND* **6**, *VIG* **8**,
+      *WIL* **7**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
+      Points* **7**; *Carrying Capacity* **90**\n*Size* **Enormous [3]**, ENC **40**;
       *Threat level* **6**\n#### Action Points [3]\n-\n \n**Fangs** *ATT* **+2**,
       *DMG* **+4**, *RNG* **1m**, *Pierce, Maim*\n**Talons** *ATT* **+2**, *DMG*
       **+5**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Stealth +2 [Movement]
       -** This creature is capable of using the stealth skill to hide.\n\n**Roar
       [Action] -** This creature can let out a terrible roar causing all enemy targets
       within 10m suffer from 2 Stunned intensity.\n\n)\n|\n#### Felinid, Mutant\nitem(\n#
-      Rare\n## Mammal\n-\n*DEF* **2**, *ARM* **2**, *WND* **10**, *VIG* **15**, *WIL*
-      **14**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
-      Points* **12**; *Carrying Capacity* **150**\n*Size* **Humongous [7]**, ENC
+      Rare\n## Mammal\n-\n*DEF* **6**, *ARM* **2**, *WND* **10**, *VIG* **9**, *WIL*
+      **8**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
+      Points* **10**; *Carrying Capacity* **150**\n*Size* **Humongous [7]**, ENC
       **60**; *Threat level* **9**\n#### Action Points [4]\n-\n \n**Fangs** *ATT*
       **+3**, *DMG* **+8**, *RNG* **1m**, *Pierce, Maim*\n**Talons** *ATT* **+3**,
       *DMG* **+9**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Stealth +2 [Movement]
@@ -3229,8 +3339,8 @@ MonoBehaviour:
       [Attack] -** When a target gets hit with this attack they gain a number of
       nauseated intensity equal to the margin of success.\n\n**Undead Physiology
       [Passive] -** This creature is immune to poisons, diseases, bloodloss and infection\n\n)\n|\n####
-      Ghast\nitem(\n# Rare\n## Undead\n-\n*DEF* **7**, *ARM* **2**, *WND* **3**,
-      *VIG* **8**, *WIL* **8**\n*Perception:* *Range* **80m**, *Score* **4**; *Initiative*
+      Ghast\nitem(\n# Rare\n## Undead\n-\n*DEF* **8**, *ARM* **2**, *WND* **3**,
+      *VIG* **7**, *WIL* **7**\n*Perception:* *Range* **80m**, *Score* **4**; *Initiative*
       **+3**\n*Movement Points* **7**; *Carrying Capacity* **45**\n*Size* **Large
       [1]**, ENC **30**; *Threat level* **5**\n#### Action Points [3]\n-\n \n**Maw**
       *ATT* **+2**, *DMG* **+2**, *RNG* **1m**, *Maim, Cannibalize*\n**Claws** *ATT*
@@ -3244,16 +3354,16 @@ MonoBehaviour:
       were the first proper attempts at creating autoatons through the use of potent
       magical enchantments. The cost and expertise needed had made them non viable
       for imperial use even if many a mage favoured their use..\n/\n#### Clay Golem\nitem(\n#
-      Rare\n## Automata\n-\n*DEF* **3**, *ARM* **5**, *WND* **10**, *VIG* **15**,
-      *WIL* **15**\n*Perception:* *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement
-      Points* **7**; *Carrying Capacity* **190**\n*Size* **Tremendous [5]**, ENC
+      Rare\n## Automata\n-\n*DEF* **6**, *ARM* **5**, *WND* **10**, *VIG* **11**,
+      *WIL* **11**\n*Perception:* *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement
+      Points* **6**; *Carrying Capacity* **190**\n*Size* **Tremendous [5]**, ENC
       **50**; *Threat level* **12**\n#### Action Points [3]\n-\n \n**Slam** *ATT*
       **+2**, *DMG* **+9**, *RNG* **1m**, *Push, Slam, Tangle*\n\n#### Abilities\n-\n**Construct
       [Passive] -** This creature is immune to Conditions.\n\n**Immovable [Passive]
       -** This creature cannot be affected by knockdown, trip, push or slam.\n\n)\n|\n####
-      Bedrock Golem\nitem(\n# Rare\n## Automata\n-\n*DEF* **2**, *ARM* **5**, *WND*
-      **12**, *VIG* **17**, *WIL* **17**\n*Perception:* *Range* **40m**, *Score*
-      **2**; *Initiative* **+1**\n*Movement Points* **10**; *Carrying Capacity* **240**\n*Size*
+      Bedrock Golem\nitem(\n# Rare\n## Automata\n-\n*DEF* **6**, *ARM* **5**, *WND*
+      **12**, *VIG* **11**, *WIL* **11**\n*Perception:* *Range* **40m**, *Score*
+      **2**; *Initiative* **+1**\n*Movement Points* **8**; *Carrying Capacity* **240**\n*Size*
       **Humongous [7]**, ENC **60**; *Threat level* **15**\n#### Action Points [4]\n-\n
       \n**Slam** *ATT* **+3**, *DMG* **+11**, *RNG* **1m**, *Push, Slam, Knockdown*\n\n####
       Abilities\n-\n**Construct [Passive] -** This creature is immune to Conditions.\n\n**Immovable
@@ -3262,17 +3372,17 @@ MonoBehaviour:
       immediately gains a movement point which it may use on walking. The first target
       that it comes into contact with during this movement may be targeted with a
       free attack.\n\n)\n/\n#### Geode Golem\nitem(\n# Rare\n## Automata\n-\n*DEF*
-      **3**, *ARM* **5**, *WND* **12**, *VIG* **17**, *WIL* **17**\n*Perception:*
-      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **12**;
+      **7**, *ARM* **5**, *WND* **12**, *VIG* **11**, *WIL* **11**\n*Perception:*
+      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **10**;
       *Carrying Capacity* **240**\n*Size* **Humongous [7]**, ENC **60**; *Threat
       level* **18**\n#### Action Points [5]\n-\n \n**Slam** *ATT* **+4**, *DMG* **+11**,
       *RNG* **1m**, *Push, Slam, Pierce, Slash*\n\n#### Abilities\n-\n**Construct
       [Passive] -** This creature is immune to Conditions.\n\n**Immovable [Passive]
       -** This creature cannot be affected by knockdown, trip, push or slam.\n\n**Impermeable
       [Passive] -** This creature cannot be affected by fire, cold or shock effects.\n\n)\n|\n####
-      Crystal Golem\nitem(\n# Rare\n## Automata\n-\n*DEF* **1**, *ARM* **5**, *WND*
-      **14**, *VIG* **19**, *WIL* **19**\n*Perception:* *Range* **60m**, *Score*
-      **3**; *Initiative* **+2**\n*Movement Points* **13**; *Carrying Capacity* **290**\n*Size*
+      Crystal Golem\nitem(\n# Rare\n## Automata\n-\n*DEF* **6**, *ARM* **5**, *WND*
+      **14**, *VIG* **12**, *WIL* **12**\n*Perception:* *Range* **60m**, *Score*
+      **3**; *Initiative* **+2**\n*Movement Points* **11**; *Carrying Capacity* **290**\n*Size*
       **Humongous [9]**, ENC **70**; *Threat level* **17**\n#### Action Points [5]\n-\n
       \n**Crystal Fist** *ATT* **+4**, *DMG* **+13**, *RNG* **1m**, *Push, Slam,
       Pierce, Slash*\n**Crystal Shard** *ATT* **+2**, *DMG* **+13**, *RNG* **20m**,
@@ -3282,8 +3392,8 @@ MonoBehaviour:
       This creature cannot be affected by fire, cold or shock effects.\n\n**Invincible
       [Passive] -** This creature cannot be affected by pierce or slash effects.\n\n)\n/\n\n/\n\n##
       Kaiju Beasts\n-\n/\n#### Seismic Class Kaiju\nitem(\n# Rare\n## Horror\n-\n*DEF*
-      **0**, *ARM* **6**, *WND* **15**, *VIG* **20**, *WIL* **18**\n*Perception:*
-      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **18**;
+      **4**, *ARM* **6**, *WND* **15**, *VIG* **12**, *WIL* **10**\n*Perception:*
+      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **15**;
       *Carrying Capacity* **315**\n*Size* **Humongous [10]**, ENC **75**; *Threat
       level* **18**\n#### Action Points [4]\n-\n \n**Maw** *ATT* **+4**, *DMG* **+14**,
       *RNG* **2m**, *Pierce, Cannibalize*\n**Spiked Tail** *ATT* **+4**, *DMG* **+14**,
@@ -3295,8 +3405,8 @@ MonoBehaviour:
       Willpower - their Willpower.\n\n**Aura of Fear [Passive] -** Enemies that start
       their turn or enter within 1m of this creature gain a stress point.\n\n)\n|\n####
       Crisis Class Kaiju\nitem(\n# Rare\n## Horror\n-\n*DEF* **0**, *ARM* **9**,
-      *WND* **30**, *VIG* **35**, *WIL* **33**\n*Perception:* *Range* **60m**, *Score*
-      **3**; *Initiative* **+2**\n*Movement Points* **25**; *Carrying Capacity* **690**\n*Size*
+      *WND* **30**, *VIG* **16**, *WIL* **14**\n*Perception:* *Range* **60m**, *Score*
+      **3**; *Initiative* **+2**\n*Movement Points* **19**; *Carrying Capacity* **690**\n*Size*
       **Humongous [25]**, ENC **150**; *Threat level* **43**\n#### Action Points
       [4]\n-\n \n**Maw** *ATT* **+5**, *DMG* **+29**, *RNG* **2m**, *Pierce, Cannibalize*\n**Spiked
       Tail** *ATT* **+5**, *DMG* **+29**, *RNG* **4m**, *Push, Slam, Sweep*\n**Ichor
@@ -3307,8 +3417,8 @@ MonoBehaviour:
       to this creature's Willpower - their Willpower.\n\n**Aura of Fear [Passive]
       -** Enemies that start their turn or enter within 1m of this creature gain
       a stress point.\n\n)\n/\n#### Disaster Class Kaiju\nitem(\n# Rare\n## Horror\n-\n*DEF*
-      **0**, *ARM* **12**, *WND* **45**, *VIG* **50**, *WIL* **48**\n*Perception:*
-      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **33**;
+      **0**, *ARM* **12**, *WND* **45**, *VIG* **20**, *WIL* **18**\n*Perception:*
+      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **23**;
       *Carrying Capacity* **1065**\n*Size* **Humongous [40]**, ENC **225**; *Threat
       level* **78**\n#### Action Points [4]\n-\n \n**Maw** *ATT* **+7**, *DMG* **+44**,
       *RNG* **2m**, *Pierce, Cannibalize*\n**Spiked Tail** *ATT* **+7**, *DMG* **+44**,
@@ -3320,8 +3430,8 @@ MonoBehaviour:
       Willpower - their Willpower.\n\n**Aura of Fear [Passive] -** Enemies that start
       their turn or enter within 1m of this creature gain a stress point.\n\n)\n|\n####
       Catastrophe Class Kaiju\nitem(\n# Rare\n## Horror\n-\n*DEF* **0**, *ARM* **15**,
-      *WND* **60**, *VIG* **65**, *WIL* **63**\n*Perception:* *Range* **60m**, *Score*
-      **3**; *Initiative* **+2**\n*Movement Points* **40**; *Carrying Capacity* **1440**\n*Size*
+      *WND* **60**, *VIG* **23**, *WIL* **21**\n*Perception:* *Range* **60m**, *Score*
+      **3**; *Initiative* **+2**\n*Movement Points* **26**; *Carrying Capacity* **1440**\n*Size*
       **Humongous [55]**, ENC **300**; *Threat level* **121**\n#### Action Points
       [4]\n-\n \n**Maw** *ATT* **+8**, *DMG* **+59**, *RNG* **2m**, *Pierce, Cannibalize*\n**Spiked
       Tail** *ATT* **+8**, *DMG* **+59**, *RNG* **4m**, *Push, Slam, Sweep*\n**Ichor
@@ -3332,8 +3442,8 @@ MonoBehaviour:
       to this creature's Willpower - their Willpower.\n\n**Aura of Fear [Passive]
       -** Enemies that start their turn or enter within 1m of this creature gain
       a stress point.\n\n)\n/\n#### Cataclysm Class Kaiju\nitem(\n# Legendary\n##
-      Horror\n-\n*DEF* **0**, *ARM* **18**, *WND* **75**, *VIG* **80**, *WIL* **78**\n*Perception:*
-      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **48**;
+      Horror\n-\n*DEF* **0**, *ARM* **18**, *WND* **75**, *VIG* **27**, *WIL* **25**\n*Perception:*
+      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **30**;
       *Carrying Capacity* **1815**\n*Size* **Humongous [70]**, ENC **375**; *Threat
       level* **174**\n#### Action Points [4]\n-\n \n**Maw** *ATT* **+10**, *DMG*
       **+74**, *RNG* **2m**, *Pierce, Cannibalize*\n**Spiked Tail** *ATT* **+10**,
@@ -3345,8 +3455,8 @@ MonoBehaviour:
       to this creature's Willpower - their Willpower.\n\n**Aura of Fear [Passive]
       -** Enemies that start their turn or enter within 1m of this creature gain
       a stress point.\n\n)\n|\n#### Calamity Class Kaiju\nitem(\n# Legendary\n##
-      Horror\n-\n*DEF* **0**, *ARM* **21**, *WND* **90**, *VIG* **95**, *WIL* **93**\n*Perception:*
-      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **55**;
+      Horror\n-\n*DEF* **0**, *ARM* **21**, *WND* **90**, *VIG* **31**, *WIL* **29**\n*Perception:*
+      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **34**;
       *Carrying Capacity* **2190**\n*Size* **Humongous [85]**, ENC **450**; *Threat
       level* **235**\n#### Action Points [4]\n-\n \n**Maw** *ATT* **+11**, *DMG*
       **+89**, *RNG* **2m**, *Pierce, Cannibalize*\n**Spiked Tail** *ATT* **+11**,
@@ -3370,8 +3480,8 @@ MonoBehaviour:
       this creature performs a movement action of at least 5m before performing an
       attack, they gain a boost on their first attack.\n\n**Stealth +2 [Movement]
       -** This creature is capable of using the stealth skill to hide.\n\n)\n|\n####
-      Jungle Krill, Adult\nitem(\n# Common\n## Lizard\n-\n*DEF* **7**, *ARM* **1**,
-      *WND* **3**, *VIG* **8**, *WIL* **7**\n*Perception:* *Range* **40m**, *Score*
+      Jungle Krill, Adult\nitem(\n# Common\n## Lizard\n-\n*DEF* **8**, *ARM* **1**,
+      *WND* **3**, *VIG* **7**, *WIL* **6**\n*Perception:* *Range* **40m**, *Score*
       **2**; *Initiative* **+1**\n*Movement Points* **7**; *Carrying Capacity* **45**\n*Size*
       **Large [1]**, ENC **30**; *Threat level* **4**\n#### Action Points [3]\n-\n
       \n**Fangs** *ATT* **+2**, *DMG* **+1**, *RNG* **1m**, *Pierce*\n**Claws** *ATT*
@@ -3379,9 +3489,9 @@ MonoBehaviour:
       Attack [Attack] -** When this creature performs a movement action of at least
       5m before performing an attack, they gain a boost on their first attack.\n\n**Stealth
       +2 [Movement] -** This creature is capable of using the stealth skill to hide.\n\n)\n/\n####
-      Bone Krill\nitem(\n# Uncommon\n## Lizard\n-\n*DEF* **6**, *ARM* **2**, *WND*
-      **4**, *VIG* **9**, *WIL* **9**\n*Perception:* *Range* **40m**, *Score* **2**;
-      *Initiative* **+1**\n*Movement Points* **8**; *Carrying Capacity* **55**\n*Size*
+      Bone Krill\nitem(\n# Uncommon\n## Lizard\n-\n*DEF* **7**, *ARM* **2**, *WND*
+      **4**, *VIG* **7**, *WIL* **7**\n*Perception:* *Range* **40m**, *Score* **2**;
+      *Initiative* **+1**\n*Movement Points* **7**; *Carrying Capacity* **55**\n*Size*
       **Huge [2]**, ENC **35**; *Threat level* **5**\n#### Action Points [3]\n-\n
       \n**Fangs** *ATT* **+2**, *DMG* **+2**, *RNG* **1m**, *Pierce*\n**Claws** *ATT*
       **+2**, *DMG* **+3**, *RNG* **1m**, *Slash*\n**Spiked Tail** *ATT* **+2**,
@@ -3389,9 +3499,9 @@ MonoBehaviour:
       [Attack] -** When this creature performs a movement action of at least 5m before
       performing an attack, they gain a boost on their first attack.\n\n**Stealth
       +2 [Movement] -** This creature is capable of using the stealth skill to hide.\n\n)\n|\n####
-      Bone Krill, Alpha\nitem(\n# Rare\n## Lizard\n-\n*DEF* **6**, *ARM* **3**, *WND*
-      **6**, *VIG* **11**, *WIL* **10**\n*Perception:* *Range* **40m**, *Score* **2**;
-      *Initiative* **+1**\n*Movement Points* **8**; *Carrying Capacity* **90**\n*Size*
+      Bone Krill, Alpha\nitem(\n# Rare\n## Lizard\n-\n*DEF* **8**, *ARM* **3**, *WND*
+      **6**, *VIG* **8**, *WIL* **7**\n*Perception:* *Range* **40m**, *Score* **2**;
+      *Initiative* **+1**\n*Movement Points* **7**; *Carrying Capacity* **90**\n*Size*
       **Enormous [3]**, ENC **40**; *Threat level* **9**\n#### Action Points [4]\n-\n
       \n**Fangs** *ATT* **+3**, *DMG* **+3**, *RNG* **1m**, *Pierce*\n**Claws** *ATT*
       **+3**, *DMG* **+4**, *RNG* **1m**, *Slash*\n**Spiked Tail** *ATT* **+3**,
@@ -3406,8 +3516,8 @@ MonoBehaviour:
       Lockjaws are solitary hunters that terrorize the jungles however the Remnants
       have found a way to tame, train and domesticate them. To those who manage,
       Lockjaws make mighty war steeds.\n/\n#### Lockjaw, Juvenile\nitem(\n# Uncommon\n##
-      Lizard\n-\n*DEF* **5**, *ARM* **2**, *WND* **4**, *VIG* **9**, *WIL* **10**\n*Perception:*
-      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **10**;
+      Lizard\n-\n*DEF* **7**, *ARM* **2**, *WND* **4**, *VIG* **6**, *WIL* **7**\n*Perception:*
+      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **9**;
       *Carrying Capacity* **40**\n*Size* **Enormous [3]**, ENC **40**; *Threat level*
       **5**\n#### Action Points [3]\n-\n \n**Horn** *ATT* **+2**, *DMG* **+5**, *RNG*
       **1m**, *Pierce, Slow*\n**Claws** *ATT* **+2**, *DMG* **+4**, *RNG* **1m**,
@@ -3416,9 +3526,9 @@ MonoBehaviour:
       gain a boost on their first attack. Additionally their horn attack gains the
       Pierce and Slash traits.\n\n**Knockdown [Action] -** This creature can perform
       a Trip maneuver against a target that they caused damage to that hits automatically.\n\n)\n|\n####
-      Lockjaw, Adult\nitem(\n# Uncommon\n## Lizard\n-\n*DEF* **1**, *ARM* **4**,
-      *WND* **9**, *VIG* **14**, *WIL* **14**\n*Perception:* *Range* **40m**, *Score*
-      **2**; *Initiative* **+1**\n*Movement Points* **12**; *Carrying Capacity* **105**\n*Size*
+      Lockjaw, Adult\nitem(\n# Uncommon\n## Lizard\n-\n*DEF* **5**, *ARM* **4**,
+      *WND* **9**, *VIG* **8**, *WIL* **8**\n*Perception:* *Range* **40m**, *Score*
+      **2**; *Initiative* **+1**\n*Movement Points* **10**; *Carrying Capacity* **105**\n*Size*
       **Humongous [7]**, ENC **60**; *Threat level* **8**\n#### Action Points [3]\n-\n
       \n**Horn** *ATT* **+2**, *DMG* **+9**, *RNG* **1m**, *Pierce, Slow*\n**Claws**
       *ATT* **+2**, *DMG* **+8**, *RNG* **1m**, *Slash, Slam*\n\n#### Abilities\n-\n**Charging
@@ -3427,8 +3537,8 @@ MonoBehaviour:
       their horn attack gains the Pierce and Slash traits.\n\n**Knockdown [Action]
       -** This creature can perform a Trip maneuver against a target that they caused
       damage to that hits automatically.\n\n)\n/\n#### Lockjaw, King\nitem(\n# Rare\n##
-      Lizard\n-\n*DEF* **0**, *ARM* **5**, *WND* **12**, *VIG* **17**, *WIL* **17**\n*Perception:*
-      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **14**;
+      Lizard\n-\n*DEF* **4**, *ARM* **5**, *WND* **12**, *VIG* **9**, *WIL* **9**\n*Perception:*
+      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **11**;
       *Carrying Capacity* **135**\n*Size* **Humongous [10]**, ENC **75**; *Threat
       level* **14**\n#### Action Points [4]\n-\n \n**Horn** *ATT* **+4**, *DMG* **+12**,
       *RNG* **1m**, *Pierce, Slow*\n**Claws** *ATT* **+4**, *DMG* **+11**, *RNG*
@@ -3439,9 +3549,9 @@ MonoBehaviour:
       can perform a Trip maneuver against a target that they caused damage to that
       hits automatically.\n\n**Roar [Action] -** This creature can let out a terrible
       roar causing all enemy targets within 10m suffer from 2 Stunned intensity.\n\n)\n|\n####
-      Lockjaw, Titan\nitem(\n# Legendary\n## Lizard\n-\n*DEF* **0**, *ARM* **5**,
-      *WND* **15**, *VIG* **20**, *WIL* **20**\n*Perception:* *Range* **60m**, *Score*
-      **3**; *Initiative* **+2**\n*Movement Points* **15**; *Carrying Capacity* **165**\n*Size*
+      Lockjaw, Titan\nitem(\n# Legendary\n## Lizard\n-\n*DEF* **4**, *ARM* **5**,
+      *WND* **15**, *VIG* **10**, *WIL* **10**\n*Perception:* *Range* **60m**, *Score*
+      **3**; *Initiative* **+2**\n*Movement Points* **12**; *Carrying Capacity* **165**\n*Size*
       **Humongous [13]**, ENC **90**; *Threat level* **19**\n#### Action Points [5]\n-\n
       \n**Horn** *ATT* **+5**, *DMG* **+15**, *RNG* **1m**, *Pierce, Slow*\n**Claws**
       *ATT* **+5**, *DMG* **+14**, *RNG* **1m**, *Slash, Slam*\n\n#### Abilities\n-\n**Charging
@@ -3456,7 +3566,7 @@ MonoBehaviour:
       voraciously pick any unattended corpses clean; however if their numbers are
       sufficiently large and their hunger sufficiently intense, Sheks are known to
       attack living creatures.\n#### Shek Swarms\nitem(\n# Common\n## Lizard\n-\n*DEF*
-      **7**, *ARM* **0**, *WND* **2**, *VIG* **7**, *WIL* **7**\n*Perception:* *Range*
+      **8**, *ARM* **0**, *WND* **2**, *VIG* **6**, *WIL* **6**\n*Perception:* *Range*
       **20m**, *Score* **1**; *Initiative* **+0**\n*Movement Points* **5**; *Carrying
       Capacity* **30**\n*Size* **Large [1]**, ENC **30**; *Threat level* **3**\n####
       Action Points [3]\n-\n \n**Scratches & Bites** *ATT* **+2**, *DMG* **+1**,
@@ -3480,9 +3590,9 @@ MonoBehaviour:
       this attack receives a number of Zombification intensity equal to the margin
       of success. \n\n**Undead Physiology [Passive] -** This creature is immune to
       poisons, diseases, bloodloss and infection\n\n)\n|\n#### Zombie Horde\nitem(\n#
-      Common\n## Undead\n-\n*DEF* **0**, *ARM* **11**, *WND* **47**, *VIG* **52**,
-      *WIL* **51**\n*Perception:* *Range* **20m**, *Score* **1**; *Initiative* **+0**\n*Movement
-      Points* **27**; *Carrying Capacity* **485**\n*Size* **Humongous [45]**, ENC
+      Common\n## Undead\n-\n*DEF* **0**, *ARM* **11**, *WND* **47**, *VIG* **18**,
+      *WIL* **17**\n*Perception:* *Range* **20m**, *Score* **1**; *Initiative* **+0**\n*Movement
+      Points* **16**; *Carrying Capacity* **485**\n*Size* **Humongous [45]**, ENC
       **250**; *Threat level* **81**\n#### Action Points [5]\n-\n \n**Rotting Teeth**
       *ATT* **+8**, *DMG* **+45**, *RNG* **1m**, *Zombification*\n**Rotting Fingers**
       *ATT* **+8**, *DMG* **+45**, *RNG* **1m**, *Slam*\n\n#### Abilities\n-\n**Slow
@@ -3507,63 +3617,62 @@ MonoBehaviour:
       effects and gains a +2 bonus to soak against attacks with Pierce.\n\n**Undead
       Physiology [Passive] -** This creature is immune to poisons, diseases, bloodloss
       and infection\n\n)\n|\n#### Skeleton Knight\nitem(\n# Uncommon\n## Undead\n-\n*DEF*
-      **0**, *ARM* **5**, *WND* **12**, *VIG* **17**, *WIL* **17**\n*Perception:*
-      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **12**;
-      *Carrying Capacity* **135**\n*Size* **Humongous [10]**, ENC **75**; *Threat
-      level* **14**\n#### Action Points [4]\n-\n \n**Rusted Great Weapon** *ATT*
-      **+4**, *DMG* **+12**, *RNG* **1m**, *Slash*\n**Old Warbow** *ATT* **+3**,
-      *DMG* **+10**, *RNG* **100m**, *Pierce*\n\n#### Abilities\n-\n**Intimidation
+      **4**, *ARM* **5**, *WND* **12**, *VIG* **9**, *WIL* **9**\n*Perception:* *Range*
+      **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **9**; *Carrying
+      Capacity* **135**\n*Size* **Humongous [10]**, ENC **75**; *Threat level* **14**\n####
+      Action Points [4]\n-\n \n**Rusted Great Weapon** *ATT* **+4**, *DMG* **+12**,
+      *RNG* **1m**, *Slash*\n**Old Warbow** *ATT* **+3**, *DMG* **+10**, *RNG* **100m**,
+      *Pierce*\n\n#### Abilities\n-\n**Intimidation +2 [Action] -** This creature
+      is capable of using the intimidation skill to coerce.\n\n**Pierce Resistant
+      [Passive] -** This creature is resistant to Pierce effects and gains a +2 bonus
+      to soak against attacks with Pierce.\n\n**Undead Physiology [Passive] -** This
+      creature is immune to poisons, diseases, bloodloss and infection\n\n)\n/\n####
+      Skeleton Mage\nitem(\n# Rare\n## Undead\n-\n*DEF* **6**, *ARM* **3**, *WND*
+      **1**, *VIG* **6**, *WIL* **8**\n*Perception:* *Range* **60m**, *Score* **3**;
+      *Initiative* **+2**\n*Movement Points* **7**; *Carrying Capacity* **25**\n*Size*
+      **Medium [0]**, ENC **25**; *Threat level* **2**\n#### Action Points [3]\n-\n
+      \n**Staff** *ATT* **+0**, *DMG* **+1**, *RNG* **2m**, *Push, Two Handed*\n**Ice
+      Blast** *ATT* **+2**, *DMG* **+2**, *RNG* **20m**, *Cold*\n\n#### Abilities\n-\n**Intimidation
       +2 [Action] -** This creature is capable of using the intimidation skill to
       coerce.\n\n**Pierce Resistant [Passive] -** This creature is resistant to Pierce
       effects and gains a +2 bonus to soak against attacks with Pierce.\n\n**Undead
       Physiology [Passive] -** This creature is immune to poisons, diseases, bloodloss
-      and infection\n\n)\n/\n#### Skeleton Mage\nitem(\n# Rare\n## Undead\n-\n*DEF*
-      **6**, *ARM* **3**, *WND* **1**, *VIG* **6**, *WIL* **8**\n*Perception:* *Range*
-      **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **7**; *Carrying
-      Capacity* **25**\n*Size* **Medium [0]**, ENC **25**; *Threat level* **2**\n####
-      Action Points [3]\n-\n \n**Staff** *ATT* **+0**, *DMG* **+1**, *RNG* **2m**,
-      *Push, Two Handed*\n**Ice Blast** *ATT* **+2**, *DMG* **+2**, *RNG* **20m**,
-      *Cold*\n\n#### Abilities\n-\n**Intimidation +2 [Action] -** This creature is
-      capable of using the intimidation skill to coerce.\n\n**Pierce Resistant [Passive]
-      -** This creature is resistant to Pierce effects and gains a +2 bonus to soak
-      against attacks with Pierce.\n\n**Undead Physiology [Passive] -** This creature
-      is immune to poisons, diseases, bloodloss and infection\n\n)\n|\n\n/\n\n##
-      Skritters\n-\nThe Skritter hive structure expands and conquers over wide swathes
-      of territory in a disturbingly efficient swarm of interdependent organisms.\n/\n####
-      Skritter Worker\nitem(\n# Common\n## Insect\n-\n*DEF* **10**, *ARM* **1**,
-      *WND* **1**, *VIG* **5**, *WIL* **4**\n*Perception:* *Range* **20m**, *Score*
-      **1**; *Initiative* **+0**\n*Movement Points* **4**; *Carrying Capacity* **15**\n*Size*
-      **Tiny [-2]**, ENC **15**; *Threat level* **2**\n#### Action Points [3]\n-\n
-      \n**Talon** *ATT* **+1**, *DMG* **+0**, *RNG* **1m**, *Pierce*\n**Ichor Gob**
-      *ATT* **+1**, *DMG* **+0**, *RNG* **10m**, *Harmless, Tangle*\n\n#### Abilities\n-\n**Spider
-      Climb [Movement] -** This creature can climb at 1m per movement point up any
-      surface without penalties.\n\n**Encase [Action] -** This creature can use the
-      encase ability to perform a ranged attack against a target suffering from entangled.
-      If the attack hits the target becomes helpless until freed with 3AP.\n\n)\n|\n####
-      Skritter Tunneler\nitem(\n# Uncommon\n## Insect\n-\n*DEF* **8**, *ARM* **2**,
-      *WND* **3**, *VIG* **8**, *WIL* **6**\n*Perception:* *Range* **20m**, *Score*
-      **1**; *Initiative* **+0**\n*Movement Points* **5**; *Carrying Capacity* **45**\n*Size*
-      **Medium [0]**, ENC **25**; *Threat level* **4**\n#### Action Points [3]\n-\n
-      \n**Talon** *ATT* **+2**, *DMG* **+1**, *RNG* **1m**, *Pierce*\n**Corrosive
-      Spit** *ATT* **+2**, *DMG* **+0**, *RNG* **10m**, *Acid, Fluid*\n\n#### Abilities\n-\n**Burrow
-      [Movement] -** This creature is capable of moving underground through soft
-      terrain at 1m per movement point spent. While underground it can only be attacked
-      by other creatures with burrow.\n\n**Acid [Attack] -** When a creature is hit
-      with this attack in addition to any other type of damage, 1 DUR is reduced
-      from the target\u2019s armour.\n\n)\n/\n#### Skritter Scout\nitem(\n# Uncommon\n##
-      Insect\n-\n*DEF* **9**, *ARM* **1**, *WND* **2**, *VIG* **7**, *WIL* **5**\n*Perception:*
-      *Range* **20m**, *Score* **1**; *Initiative* **+0**\n*Movement Points* **6**;
-      *Carrying Capacity* **30**\n*Size* **Small [-1]**, ENC **20**; *Threat level*
-      **3**\n#### Action Points [3]\n-\n \n**Talon** *ATT* **+1**, *DMG* **+0**,
-      *RNG* **1m**, *Slash, Push*\n**Spine Barb** *ATT* **+1**, *DMG* **+1**, *RNG*
-      **10m**, *Slow, Pierce*\n\n#### Abilities\n-\n**Fly [Movement] -** This creature
-      can fly at a speed of 1m per movement point spent.\n\n)\n|\n#### Skritter Carriers\nitem(\n#
-      Uncommon\n## Insect\n-\n*DEF* **5**, *ARM* **1**, *WND* **8**, *VIG* **13**,
-      *WIL* **11**\n*Perception:* *Range* **20m**, *Score* **1**; *Initiative* **+0**\n*Movement
-      Points* **11**; *Carrying Capacity* **120**\n*Size* **Tremendous [5]**, ENC
-      **50**; *Threat level* **10**\n#### Action Points [5]\n-\n \n**Talon** *ATT*
-      **+4**, *DMG* **+6**, *RNG* **1m**, *Slash, Push*\n**Spine Barb** *ATT* **+0**,
-      *DMG* **+7**, *RNG* **10m**, *Slow, Pierce*\n\n#### Abilities\n-\n**Spider
+      and infection\n\n)\n|\n\n/\n\n## Skritters\n-\nThe Skritter hive structure
+      expands and conquers over wide swathes of territory in a disturbingly efficient
+      swarm of interdependent organisms.\n/\n#### Skritter Worker\nitem(\n# Common\n##
+      Insect\n-\n*DEF* **9**, *ARM* **1**, *WND* **1**, *VIG* **6**, *WIL* **5**\n*Perception:*
+      *Range* **20m**, *Score* **1**; *Initiative* **+0**\n*Movement Points* **4**;
+      *Carrying Capacity* **15**\n*Size* **Tiny [-2]**, ENC **15**; *Threat level*
+      **2**\n#### Action Points [3]\n-\n \n**Talon** *ATT* **+1**, *DMG* **+0**,
+      *RNG* **1m**, *Pierce*\n**Ichor Gob** *ATT* **+1**, *DMG* **+0**, *RNG* **10m**,
+      *Harmless, Tangle*\n\n#### Abilities\n-\n**Spider Climb [Movement] -** This
+      creature can climb at 1m per movement point up any surface without penalties.\n\n**Encase
+      [Action] -** This creature can use the encase ability to perform a ranged attack
+      against a target suffering from entangled. If the attack hits the target becomes
+      helpless until freed with 3AP.\n\n)\n|\n#### Skritter Tunneler\nitem(\n# Uncommon\n##
+      Insect\n-\n*DEF* **8**, *ARM* **2**, *WND* **3**, *VIG* **8**, *WIL* **6**\n*Perception:*
+      *Range* **20m**, *Score* **1**; *Initiative* **+0**\n*Movement Points* **5**;
+      *Carrying Capacity* **45**\n*Size* **Medium [0]**, ENC **25**; *Threat level*
+      **4**\n#### Action Points [3]\n-\n \n**Talon** *ATT* **+2**, *DMG* **+1**,
+      *RNG* **1m**, *Pierce*\n**Corrosive Spit** *ATT* **+2**, *DMG* **+0**, *RNG*
+      **10m**, *Acid, Fluid*\n\n#### Abilities\n-\n**Burrow [Movement] -** This creature
+      is capable of moving underground through soft terrain at 1m per movement point
+      spent. While underground it can only be attacked by other creatures with burrow.\n\n**Acid
+      [Attack] -** When a creature is hit with this attack in addition to any other
+      type of damage, 1 DUR is reduced from the target\u2019s armour.\n\n)\n/\n####
+      Skritter Scout\nitem(\n# Uncommon\n## Insect\n-\n*DEF* **9**, *ARM* **1**,
+      *WND* **2**, *VIG* **7**, *WIL* **5**\n*Perception:* *Range* **20m**, *Score*
+      **1**; *Initiative* **+0**\n*Movement Points* **6**; *Carrying Capacity* **30**\n*Size*
+      **Small [-1]**, ENC **20**; *Threat level* **3**\n#### Action Points [3]\n-\n
+      \n**Talon** *ATT* **+1**, *DMG* **+0**, *RNG* **1m**, *Slash, Push*\n**Spine
+      Barb** *ATT* **+1**, *DMG* **+1**, *RNG* **10m**, *Slow, Pierce*\n\n#### Abilities\n-\n**Fly
+      [Movement] -** This creature can fly at a speed of 1m per movement point spent.\n\n)\n|\n####
+      Skritter Carriers\nitem(\n# Uncommon\n## Insect\n-\n*DEF* **8**, *ARM* **1**,
+      *WND* **8**, *VIG* **9**, *WIL* **7**\n*Perception:* *Range* **20m**, *Score*
+      **1**; *Initiative* **+0**\n*Movement Points* **10**; *Carrying Capacity* **120**\n*Size*
+      **Tremendous [5]**, ENC **50**; *Threat level* **10**\n#### Action Points [5]\n-\n
+      \n**Talon** *ATT* **+4**, *DMG* **+6**, *RNG* **1m**, *Slash, Push*\n**Spine
+      Barb** *ATT* **+0**, *DMG* **+7**, *RNG* **10m**, *Slow, Pierce*\n\n#### Abilities\n-\n**Spider
       Climb [Movement] -** This creature can climb at 1m per movement point up any
       surface without penalties.\n\n**Swarm [Movement] -** This is a collection of
       small creatures that all move and attack in unison. For every 2 wounds that
@@ -3572,59 +3681,59 @@ MonoBehaviour:
       immediately gains a movement point which it may use on walking. The first target
       that it comes into contact with during this movement may be targeted with a
       free attack.\n\n)\n/\n#### Skritter Warrior\nitem(\n# Rare\n## Insect\n-\n*DEF*
-      **5**, *ARM* **3**, *WND* **6**, *VIG* **11**, *WIL* **10**\n*Perception:*
-      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **10**;
-      *Carrying Capacity* **90**\n*Size* **Enormous [3]**, ENC **40**; *Threat level*
-      **7**\n#### Action Points [3]\n-\n \n**Talon** *ATT* **+2**, *DMG* **+4**,
-      *RNG* **1m**, *Slash, Push*\n**Corrosive Spine Barb** *ATT* **+2**, *DMG* **+5**,
-      *RNG* **10m**, *Acid, Pierce*\n**Ichor Gob** *ATT* **+2**, *DMG* **+3**, *RNG*
-      **10m**, *Harmless, Tangle*\n\n#### Abilities\n-\n**Fly [Movement] -** This
-      creature can fly at a speed of 1m per movement point spent.\n\n**Burrow [Movement]
-      -** This creature is capable of moving underground through soft terrain at
-      1m per movement point spent. While underground it can only be attacked by other
-      creatures with burrow.\n\n**Spider Climb [Movement] -** This creature can climb
-      at 1m per movement point up any surface without penalties.\n\n**Encase [Action]
-      -** This creature can use the encase ability to perform a ranged attack against
-      a target suffering from entangled. If the attack hits the target becomes helpless
-      until freed with 3AP.\n\n)\n|\n#### Skritter Queen's Guard\nitem(\n# Rare\n##
-      Insect\n-\n*DEF* **4**, *ARM* **5**, *WND* **8**, *VIG* **13**, *WIL* **12**\n*Perception:*
-      *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **11**;
-      *Carrying Capacity* **120**\n*Size* **Tremendous [5]**, ENC **50**; *Threat
-      level* **12**\n#### Action Points [4]\n-\n \n**Talon** *ATT* **+3**, *DMG*
-      **+6**, *RNG* **1m**, *Slash, Push*\n**Corrosive Spine Barb** *ATT* **+3**,
-      *DMG* **+7**, *RNG* **10m**, *Acid, Pierce*\n**Ichor Gob** *ATT* **+3**, *DMG*
-      **+5**, *RNG* **10m**, *Harmless, Tangle*\n\n#### Abilities\n-\n**Fly [Movement]
-      -** This creature can fly at a speed of 1m per movement point spent.\n\n**Burrow
-      [Movement] -** This creature is capable of moving underground through soft
-      terrain at 1m per movement point spent. While underground it can only be attacked
-      by other creatures with burrow.\n\n**Spider Climb [Movement] -** This creature
-      can climb at 1m per movement point up any surface without penalties.\n\n**Encase
-      [Action] -** This creature can use the encase ability to perform a ranged attack
-      against a target suffering from entangled. If the attack hits the target becomes
-      helpless until freed with 3AP.\n\n)\n/\n\n/\n\n## Raptors\n-\nThese vast and
-      varied species of flying feathered creatures are the predators of the skies,
-      swiftly soaring high and diving in low for the kill. An entire ecosystem of
-      flying dangers has evolved causing the denizens of the world to brush up on
-      their archery.\n/\n#### Raptor, Swift\nitem(\n# Common\n## Bird\n-\n*DEF* **10**,
-      *ARM* **0**, *WND* **1**, *VIG* **2**, *WIL* **2**\n*Perception:* *Range* **60m**,
-      *Score* **3**; *Initiative* **+2**\n*Movement Points* **5**; *Carrying Capacity*
-      **5**\n*Size* **-4 [-4]**, ENC **5**; *Threat level* **2**\n#### Action Points
-      [1]\n-\n \n**Beak** *ATT* **+-1**, *DMG* **+0**, *RNG* **1m**, *Pierce*\n**Talons**
-      *ATT* **+-1**, *DMG* **+0**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Fly
-      [Movement] -** This creature can fly at a speed of 1m per movement point spent.\n\n**Stealth
-      +3 [Movement] -** This creature is capable of using the stealth skill to hide.\n\n)\n|\n####
-      Raptor, Flock\nitem(\n# Common\n## Bird\n-\n*DEF* **8**, *ARM* **0**, *WND*
-      **1**, *VIG* **6**, *WIL* **6**\n*Perception:* *Range* **60m**, *Score* **3**;
-      *Initiative* **+2**\n*Movement Points* **7**; *Carrying Capacity* **25**\n*Size*
-      **Medium [0]**, ENC **25**; *Threat level* **2**\n#### Action Points [3]\n-\n
-      \n**Beak** *ATT* **+2**, *DMG* **+0**, *RNG* **1m**, *Pierce*\n**Talons** *ATT*
-      **+2**, *DMG* **+1**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Fly [Movement]
+      **7**, *ARM* **3**, *WND* **6**, *VIG* **8**, *WIL* **7**\n*Perception:* *Range*
+      **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **9**; *Carrying
+      Capacity* **90**\n*Size* **Enormous [3]**, ENC **40**; *Threat level* **7**\n####
+      Action Points [3]\n-\n \n**Talon** *ATT* **+2**, *DMG* **+4**, *RNG* **1m**,
+      *Slash, Push*\n**Corrosive Spine Barb** *ATT* **+2**, *DMG* **+5**, *RNG* **10m**,
+      *Acid, Pierce*\n**Ichor Gob** *ATT* **+2**, *DMG* **+3**, *RNG* **10m**, *Harmless,
+      Tangle*\n\n#### Abilities\n-\n**Fly [Movement] -** This creature can fly at
+      a speed of 1m per movement point spent.\n\n**Burrow [Movement] -** This creature
+      is capable of moving underground through soft terrain at 1m per movement point
+      spent. While underground it can only be attacked by other creatures with burrow.\n\n**Spider
+      Climb [Movement] -** This creature can climb at 1m per movement point up any
+      surface without penalties.\n\n**Encase [Action] -** This creature can use the
+      encase ability to perform a ranged attack against a target suffering from entangled.
+      If the attack hits the target becomes helpless until freed with 3AP.\n\n)\n|\n####
+      Skritter Queen's Guard\nitem(\n# Rare\n## Insect\n-\n*DEF* **7**, *ARM* **5**,
+      *WND* **8**, *VIG* **9**, *WIL* **8**\n*Perception:* *Range* **60m**, *Score*
+      **3**; *Initiative* **+2**\n*Movement Points* **10**; *Carrying Capacity* **120**\n*Size*
+      **Tremendous [5]**, ENC **50**; *Threat level* **12**\n#### Action Points [4]\n-\n
+      \n**Talon** *ATT* **+3**, *DMG* **+6**, *RNG* **1m**, *Slash, Push*\n**Corrosive
+      Spine Barb** *ATT* **+3**, *DMG* **+7**, *RNG* **10m**, *Acid, Pierce*\n**Ichor
+      Gob** *ATT* **+3**, *DMG* **+5**, *RNG* **10m**, *Harmless, Tangle*\n\n####
+      Abilities\n-\n**Fly [Movement] -** This creature can fly at a speed of 1m per
+      movement point spent.\n\n**Burrow [Movement] -** This creature is capable of
+      moving underground through soft terrain at 1m per movement point spent. While
+      underground it can only be attacked by other creatures with burrow.\n\n**Spider
+      Climb [Movement] -** This creature can climb at 1m per movement point up any
+      surface without penalties.\n\n**Encase [Action] -** This creature can use the
+      encase ability to perform a ranged attack against a target suffering from entangled.
+      If the attack hits the target becomes helpless until freed with 3AP.\n\n)\n/\n\n/\n\n##
+      Raptors\n-\nThese vast and varied species of flying feathered creatures are
+      the predators of the skies, swiftly soaring high and diving in low for the
+      kill. An entire ecosystem of flying dangers has evolved causing the denizens
+      of the world to brush up on their archery.\n/\n#### Raptor, Swift\nitem(\n#
+      Common\n## Bird\n-\n*DEF* **8**, *ARM* **0**, *WND* **1**, *VIG* **5**, *WIL*
+      **5**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
+      Points* **6**; *Carrying Capacity* **5**\n*Size* **-4 [-4]**, ENC **5**; *Threat
+      level* **2**\n#### Action Points [1]\n-\n \n**Beak** *ATT* **+-1**, *DMG* **+0**,
+      *RNG* **1m**, *Pierce*\n**Talons** *ATT* **+-1**, *DMG* **+0**, *RNG* **1m**,
+      *Slash*\n\n#### Abilities\n-\n**Fly [Movement] -** This creature can fly at
+      a speed of 1m per movement point spent.\n\n**Stealth +3 [Movement] -** This
+      creature is capable of using the stealth skill to hide.\n\n)\n|\n#### Raptor,
+      Flock\nitem(\n# Common\n## Bird\n-\n*DEF* **8**, *ARM* **0**, *WND* **1**,
+      *VIG* **6**, *WIL* **6**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative*
+      **+2**\n*Movement Points* **7**; *Carrying Capacity* **25**\n*Size* **Medium
+      [0]**, ENC **25**; *Threat level* **2**\n#### Action Points [3]\n-\n \n**Beak**
+      *ATT* **+2**, *DMG* **+0**, *RNG* **1m**, *Pierce*\n**Talons** *ATT* **+2**,
+      *DMG* **+1**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Fly [Movement]
       -** This creature can fly at a speed of 1m per movement point spent.\n\n**Swarm
       [Movement] -** This is a collection of small creatures that all move and attack
       in unison. For every 2 wounds that this swarm suffers it loses 1 Action point
       and 1 attack bonus but it gains +1 DEF\n\n)\n/\n#### Raptor, Poaching\nitem(\n#
-      Uncommon\n## Bird\n-\n*DEF* **9**, *ARM* **0**, *WND* **1**, *VIG* **4**, *WIL*
-      **4**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
+      Uncommon\n## Bird\n-\n*DEF* **8**, *ARM* **0**, *WND* **1**, *VIG* **5**, *WIL*
+      **5**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
       Points* **6**; *Carrying Capacity* **15**\n*Size* **Tiny [-2]**, ENC **15**;
       *Threat level* **1**\n#### Action Points [2]\n-\n \n**Beak** *ATT* **+0**,
       *DMG* **+0**, *RNG* **1m**, *Pierce*\n**Talons** *ATT* **+0**, *DMG* **+0**,
@@ -3644,9 +3753,9 @@ MonoBehaviour:
       [Attack] -** When this creature performs a movement action of at least 5m before
       performing an attack, they gain a boost on their first attack. Additionally
       their attack gains the Push and Slam traits.\n\n)\n/\n#### Raptor, Royal\nitem(\n#
-      Rare\n## Bird\n-\n*DEF* **5**, *ARM* **1**, *WND* **5**, *VIG* **10**, *WIL*
-      **10**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
-      Points* **10**; *Carrying Capacity* **65**\n*Size* **Enormous [3]**, ENC **40**;
+      Rare\n## Bird\n-\n*DEF* **7**, *ARM* **1**, *WND* **5**, *VIG* **7**, *WIL*
+      **7**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
+      Points* **9**; *Carrying Capacity* **65**\n*Size* **Enormous [3]**, ENC **40**;
       *Threat level* **5**\n#### Action Points [3]\n-\n \n**Beak** *ATT* **+2**,
       *DMG* **+3**, *RNG* **1m**, *Pierce*\n**Talons** *ATT* **+2**, *DMG* **+4**,
       *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Fly [Movement] -** This creature
@@ -3657,32 +3766,32 @@ MonoBehaviour:
       performs a movement action of at least 5m before performing an attack, they
       gain a boost on their first attack. Additionally their attack gains the Push
       and Slam traits.\n\n)\n|\n#### Raptor, Imperial\nitem(\n# Rare\n## Bird\n-\n*DEF*
-      **2**, *ARM* **3**, *WND* **10**, *VIG* **15**, *WIL* **15**\n*Perception:*
-      *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **12**;
-      *Carrying Capacity* **150**\n*Size* **Humongous [7]**, ENC **60**; *Threat
-      level* **10**\n#### Action Points [4]\n-\n \n**Beak** *ATT* **+3**, *DMG* **+7**,
-      *RNG* **1m**, *Pierce*\n**Talons** *ATT* **+3**, *DMG* **+8**, *RNG* **1m**,
-      *Slash*\n\n#### Abilities\n-\n**Fly [Movement] -** This creature can fly at
-      a speed of 1m per movement point spent.\n\n**Shriek [Action] -** This creature
-      is capable of letting out a terrible scream causing all enemy targets within
-      10m to suffer from a number of Stress points equal to this creature's Willpower
-      - their Willpower.\n\n**Charging [Attack] -** When this creature performs a
-      movement action of at least 5m before performing an attack, they gain a boost
-      on their first attack. Additionally their attack gains the Push and Slam traits.\n\n**Knockdown
-      [Action] -** This creature can perform a Trip maneuver against a target that
-      they caused damage to that hits automatically.\n\n)\n/\n\n/\n\n## Wark\n-\nLarge
-      flightless birds who are grealty valued for their delicious meat and beautiful
-      feathers, often fool the unlearned onlooker into thinking that they are harmless
-      and benign. Nothign could be further from the truth.\n/\n#### Wark, Hen\nitem(\n#
-      Uncommon\n## Bird\n-\n*DEF* **5**, *ARM* **1**, *WND* **6**, *VIG* **11**,
-      *WIL* **10**\n*Perception:* *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement
-      Points* **14**; *Carrying Capacity* **90**\n*Size* **Enormous [3]**, ENC **40**;
-      *Threat level* **6**\n#### Action Points [3]\n-\n \n**Peck** *ATT* **+2**,
-      *DMG* **+4**, *RNG* **1m**, *Pierce*\n\n#### Abilities\n-\n**Sprinter [Initiative]
-      -** This creature gains +10 movement points instead of +5 on the first AP spent.\n\n)\n|\n####
-      Wark, Rooster\nitem(\n# Uncommon\n## Bird\n-\n*DEF* **4**, *ARM* **2**, *WND*
-      **9**, *VIG* **14**, *WIL* **13**\n*Perception:* *Range* **60m**, *Score* **3**;
-      *Initiative* **+2**\n*Movement Points* **15**; *Carrying Capacity* **155**\n*Size*
+      **6**, *ARM* **3**, *WND* **10**, *VIG* **9**, *WIL* **9**\n*Perception:* *Range*
+      **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **10**; *Carrying
+      Capacity* **150**\n*Size* **Humongous [7]**, ENC **60**; *Threat level* **10**\n####
+      Action Points [4]\n-\n \n**Beak** *ATT* **+3**, *DMG* **+7**, *RNG* **1m**,
+      *Pierce*\n**Talons** *ATT* **+3**, *DMG* **+8**, *RNG* **1m**, *Slash*\n\n####
+      Abilities\n-\n**Fly [Movement] -** This creature can fly at a speed of 1m per
+      movement point spent.\n\n**Shriek [Action] -** This creature is capable of
+      letting out a terrible scream causing all enemy targets within 10m to suffer
+      from a number of Stress points equal to this creature's Willpower - their Willpower.\n\n**Charging
+      [Attack] -** When this creature performs a movement action of at least 5m before
+      performing an attack, they gain a boost on their first attack. Additionally
+      their attack gains the Push and Slam traits.\n\n**Knockdown [Action] -** This
+      creature can perform a Trip maneuver against a target that they caused damage
+      to that hits automatically.\n\n)\n/\n\n/\n\n## Wark\n-\nLarge flightless birds
+      who are grealty valued for their delicious meat and beautiful feathers, often
+      fool the unlearned onlooker into thinking that they are harmless and benign.
+      Nothign could be further from the truth.\n/\n#### Wark, Hen\nitem(\n# Uncommon\n##
+      Bird\n-\n*DEF* **7**, *ARM* **1**, *WND* **6**, *VIG* **8**, *WIL* **7**\n*Perception:*
+      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **13**;
+      *Carrying Capacity* **90**\n*Size* **Enormous [3]**, ENC **40**; *Threat level*
+      **6**\n#### Action Points [3]\n-\n \n**Peck** *ATT* **+2**, *DMG* **+4**, *RNG*
+      **1m**, *Pierce*\n\n#### Abilities\n-\n**Sprinter [Initiative] -** This creature
+      gains +10 movement points instead of +5 on the first AP spent.\n\n)\n|\n####
+      Wark, Rooster\nitem(\n# Uncommon\n## Bird\n-\n*DEF* **7**, *ARM* **2**, *WND*
+      **9**, *VIG* **10**, *WIL* **9**\n*Perception:* *Range* **60m**, *Score* **3**;
+      *Initiative* **+2**\n*Movement Points* **14**; *Carrying Capacity* **155**\n*Size*
       **Tremendous [5]**, ENC **50**; *Threat level* **10**\n#### Action Points [4]\n-\n
       \n**Peck** *ATT* **+3**, *DMG* **+6**, *RNG* **1m**, *Pierce*\n\n#### Abilities\n-\n**Sprinter
       [Initiative] -** This creature gains +10 movement points instead of +5 on the
@@ -3918,7 +4027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c177a7438dfb51f48aeab1da29019bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  result: {fileID: 662195930}
+  result: {fileID: 70345199}
   voronoiGenerator: {fileID: 7200000, guid: 420cfded7f159ea43b25defe86f25c71, type: 3}
   visualizer: {fileID: 2100000, guid: 1b44be87f565cb74da841b7046513d89, type: 2}
   parameters:
@@ -17682,6 +17791,7 @@ MonoBehaviour:
           traits: Push
         abilities:
         - Trample
+        commands: []
       - title: Bagrunn, Mount
         description: 
         encumbrance: 12
@@ -17709,6 +17819,7 @@ MonoBehaviour:
         abilities:
         - Trample
         - Sprinter
+        commands: []
       - title: Bagrunn, Draft
         description: 
         encumbrance: 14
@@ -17735,6 +17846,7 @@ MonoBehaviour:
           traits: Push
         abilities:
         - Trample
+        commands: []
       - title: Bagrunn, Battlemount
         description: 
         encumbrance: 16
@@ -17761,6 +17873,7 @@ MonoBehaviour:
           traits: Push
         abilities:
         - Trample
+        commands: []
     - title: Canid
       description: 
       beasts:
@@ -17790,6 +17903,7 @@ MonoBehaviour:
           traits: Slash
         abilities:
         - Pack Mentality
+        commands: []
       - title: Canid, Guard
         description: 
         encumbrance: 5
@@ -17816,6 +17930,7 @@ MonoBehaviour:
           traits: Slash
         abilities:
         - Pack Mentality
+        commands: []
       - title: Canid, Warmount
         description: 
         encumbrance: 8
@@ -17843,6 +17958,7 @@ MonoBehaviour:
         abilities:
         - Pack Mentality
         - Sprinter
+        commands: []
       - title: Canid, Battle
         description: 
         encumbrance: 10
@@ -17870,6 +17986,7 @@ MonoBehaviour:
         abilities:
         - Pack Mentality
         - Intimidation +2
+        commands: []
     - title: Felinid
       description: 
       beasts:
@@ -17900,6 +18017,7 @@ MonoBehaviour:
         abilities:
         - Stealth +2
         - Pounce Attack
+        commands: []
       - title: Felinid, Assault
         description: 
         encumbrance: 6
@@ -17927,6 +18045,7 @@ MonoBehaviour:
         abilities:
         - Stealth +2
         - Roar
+        commands: []
       - title: Felinid, Mount
         description: 
         encumbrance: 8
@@ -17954,6 +18073,7 @@ MonoBehaviour:
         abilities:
         - Stealth +2
         - Sprinter
+        commands: []
       - title: Felinid, Battlebred
         description: 
         encumbrance: 12
@@ -17981,6 +18101,7 @@ MonoBehaviour:
         abilities:
         - Roar
         - Pounce Attack
+        commands: []
     - title: Lockjaw
       description: 
       beasts:
@@ -18011,6 +18132,7 @@ MonoBehaviour:
         abilities:
         - Charging Gore
         - Knockdown
+        commands: []
       - title: Lockjaw, Warmount
         description: 
         encumbrance: 10
@@ -18039,6 +18161,7 @@ MonoBehaviour:
         - Charging Gore
         - Knockdown
         - Sprinter
+        commands: []
       - title: Lockjaw, Battlebred
         description: 
         encumbrance: 12
@@ -18067,6 +18190,7 @@ MonoBehaviour:
         - Charging Gore
         - Knockdown
         - Roar
+        commands: []
       - title: Lockjaw, Scourge
         description: 
         encumbrance: 14
@@ -18095,6 +18219,7 @@ MonoBehaviour:
         - Charging Gore
         - Knockdown
         - Roar
+        commands: []
     - title: Raptor
       description: 
       beasts:
@@ -18125,6 +18250,7 @@ MonoBehaviour:
         abilities:
         - Fly
         - Stealth +3
+        commands: []
       - title: Raptor, Stalking
         description: 
         encumbrance: 5
@@ -18153,6 +18279,7 @@ MonoBehaviour:
         - Fly
         - Stealth +1
         - Charging
+        commands: []
       - title: Raptor, Warbred
         description: 
         encumbrance: 8
@@ -18181,6 +18308,7 @@ MonoBehaviour:
         - Fly
         - Shriek
         - Charging
+        commands: []
       - title: Raptor, Battlemount
         description: 
         encumbrance: 12
@@ -18210,6 +18338,7 @@ MonoBehaviour:
         - Shriek
         - Charging
         - Knockdown
+        commands: []
     - title: Wark
       description: 
       beasts:
@@ -18234,6 +18363,7 @@ MonoBehaviour:
           traits: Pierce
         abilities:
         - Sprinter
+        commands: []
       - title: Wark, Battle
         description: 
         encumbrance: 8
@@ -18255,6 +18385,7 @@ MonoBehaviour:
           traits: Pierce
         abilities:
         - Sprinter
+        commands: []
       - title: Wark, Warmount
         description: 
         encumbrance: 10
@@ -18277,6 +18408,7 @@ MonoBehaviour:
         abilities:
         - Sprinter
         - Shriek
+        commands: []
       - title: Wark, Imperial
         description: 
         encumbrance: 12
@@ -18299,6 +18431,7 @@ MonoBehaviour:
         abilities:
         - Sprinter
         - Shriek
+        commands: []
     output: "# Clan Stable\n-\n## Bagrunn Cattle\n-\n/\n#### Bagrunn, Domesticated\nitem(\n#
       Common\n## Mammal\n-\n*DEF* **6**, *ARM* **2**, *WND* **5**, *VIG* **10**,
       *WIL* **8**\n*Perception:* *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement
@@ -18619,43 +18752,6 @@ MonoBehaviour:
 
     24
     | Wark, Imperial [Bird Legendary 11] | 3'
---- !u!84 &662195930
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 4
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1 &1020085665
 GameObject:
   m_ObjectHideFlags: 0
@@ -18665,6 +18761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1020085666}
+  - component: {fileID: 1020085667}
   m_Layer: 0
   m_Name: Clan Stable
   m_TagString: Untagged
@@ -18687,6 +18784,1248 @@ Transform:
   m_Children: []
   m_Father: {fileID: 507829397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1020085667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020085665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04cfc551a049c4f44a53e96fe8539224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chapter:
+    abilities:
+    - title: Acid
+      type: 6
+      description: "When a creature is hit with this attack in addition to any other
+        type of damage, 1 DUR is reduced from the target\u2019s armour."
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Aura of Fascination
+      type: 3
+      description: Enemies that start their turn or enter within 1m of this creature
+        gain 2 intensity of fascination.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Aura of Fear
+      type: 3
+      description: Enemies that start their turn or enter within 1m of this creature
+        gain a stress point.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Burrow
+      type: 0
+      description: This creature is capable of moving underground through soft terrain
+        at 1m per movement point spent. While underground it can only be attacked
+        by other creatures with burrow.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Cannibalize
+      type: 6
+      description: When this creature causes damage with their close combat attacks,
+        they restore 1 wound.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Charging
+      type: 6
+      description: When this creature performs a movement action of at least 5m before
+        performing an attack, they gain a boost on their first attack. Additionally
+        their attack gains the Push and Slam traits.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Charging Gore
+      type: 2
+      description: When this creature performs a movement action of at least 5m before
+        performing an attack, they gain a boost on their first attack. Additionally
+        their horn attack gains the Pierce and Slash traits.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Construct
+      type: 3
+      description: This creature is immune to Conditions.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Encase
+      type: 1
+      description: This creature can use the encase ability to perform a ranged attack
+        against a target suffering from entangled. If the attack hits the target
+        becomes helpless until freed with 3AP.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Filth
+      type: 6
+      description: When a target gets hit with this attack they gain a number of
+        nauseated intensity equal to the margin of success.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Fly
+      type: 0
+      description: This creature can fly at a speed of 1m per movement point spent.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Grapple
+      type: 1
+      description: This creature is adept at using the Grapple maneuver. If it is
+        performing a grapple, it does so with a boost on its dice roll. Any attacks
+        performed against a grappled target are also boosted.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Hamstring
+      type: 6
+      description: Whenever this creature hits a target with an attack, that target
+        gains a number of hamstring intensity equal to the margin of success.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: 'Horde [5]'
+      type: 3
+      description: "This creature is a collection of other creatures in a crowd.
+        When dealing damage all attacks are critical hits. Every X amount of wounds
+        dealt this creature\u2019s ATT i2 reduced by 1."
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Immovable
+      type: 3
+      description: This creature cannot be affected by knockdown, trip, push or slam.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Impermeable
+      type: 3
+      description: This creature cannot be affected by fire, cold or shock effects.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Intimidation +2
+      type: 1
+      description: This creature is capable of using the intimidation skill to coerce.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Invincible
+      type: 3
+      description: This creature cannot be affected by pierce or slash effects.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Knockdown
+      type: 1
+      description: This creature can perform a Trip maneuver against a target that
+        they caused damage to that hits automatically.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Pack Mentality
+      type: 3
+      description: This creature gains a boost on all attacks as long as there is
+        an ally within 2m of them.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Pierce Resistant
+      type: 3
+      description: This creature is resistant to Pierce effects and gains a +2 bonus
+        to soak against attacks with Pierce.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Pounce Attack
+      type: 6
+      description: When this creature performs a movement action of at least 5m before
+        performing an attack, they gain a boost on their first attack.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Roar
+      type: 1
+      description: This creature can let out a terrible roar causing all enemy targets
+        within 10m suffer from 2 Stunned intensity.
+      hasVariable: 1
+      valueVariable: 10
+      textVariable: 
+    - title: Shriek
+      type: 1
+      description: This creature is capable of letting out a terrible scream causing
+        all enemy targets within 10m to suffer from a number of Stress points equal
+        to this creature's Willpower - their Willpower.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Slow
+      type: 4
+      description: This creature must give up on its main action, bonus action or
+        movement points at the beginning of its turn.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Spider Climb
+      type: 0
+      description: This creature can climb at 1m per movement point up any surface
+        without penalties.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Stealth +1
+      type: 0
+      description: This creature is capable of using the stealth skill to hide.
+      hasVariable: 1
+      valueVariable: 1
+      textVariable: 
+    - title: Stealth +2
+      type: 0
+      description: This creature is capable of using the stealth skill to hide.
+      hasVariable: 1
+      valueVariable: 2
+      textVariable: 
+    - title: Stealth +3
+      type: 0
+      description: This creature is capable of using the stealth skill to hide.
+      hasVariable: 1
+      valueVariable: 3
+      textVariable: 
+    - title: 'Swallow Whole [10]'
+      type: 2
+      description: "This creature can swallow a target of ENC 10 or less. A swallowed
+        target is automatically grappled and slowed. At the end of a swallowed target\u2019s
+        turn this creature may perform a free boosted attack on that target. This
+        creature can only have one target swallowed at any one time."
+      hasVariable: 1
+      valueVariable: 10
+      textVariable: 
+    - title: Swarm
+      type: 0
+      description: This is a collection of small creatures that all move and attack
+        in unison. For every 2 wounds that this swarm suffers it loses 1 Action point
+        and 1 attack bonus but it gains +1 DEF
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Trample
+      type: 6
+      description: When this creature knocks a target down, it immediately gains
+        a movement point which it may use on walking. The first target that it comes
+        into contact with during this movement may be targeted with a free attack.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Undead Physiology
+      type: 3
+      description: This creature is immune to poisons, diseases, bloodloss and infection
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Zombification
+      type: 5
+      description: 'The target of this attack receives a number of Zombification
+        intensity equal to the margin of success. '
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Sprinter
+      type: 4
+      description: This creature gains +10 movement points instead of +5 on the first
+        AP spent.
+      hasVariable: 0
+      valueVariable: 0
+      textVariable: 
+    - title: Regeneration
+      type: 1
+      description: This creature can spend an action point to restore 1 Wound.
+      hasVariable: 1
+      valueVariable: 3
+      textVariable: 
+    title: Clan Stable
+    description: 
+    categories:
+    - title: Bagrunn Cattle
+      description: 
+      beasts:
+      - title: Bagrunn, Domesticated
+        description: 
+        encumbrance: 50
+        type: 0
+        rarity: 0
+        perception: 1
+        closeCombat: 1
+        rangedCombat: 0
+        conditioning: 4
+        conviction: 2
+        athletics: 1
+        soakBonus: 1
+        durability: 0
+        attacks:
+        - title: Crest
+          type: 0
+          damage: 3
+          range: 1
+          traits: Slam, Sweep, Slow
+        - title: Stomp
+          type: 0
+          damage: 2
+          range: 1
+          traits: Push
+        abilities:
+        - Trample
+        commands:
+        - Follow
+        - Summon
+        - 'Support [Agriculture]'
+      - title: Bagrunn, Mount
+        description: 
+        encumbrance: 60
+        type: 1
+        rarity: 1
+        perception: 1
+        closeCombat: 1
+        rangedCombat: 0
+        conditioning: 3
+        conviction: 2
+        athletics: 3
+        soakBonus: 1
+        durability: 0
+        attacks:
+        - title: Crest
+          type: 0
+          damage: 3
+          range: 1
+          traits: Slam, Sweep, Slow
+        - title: Stomp
+          type: 0
+          damage: 2
+          range: 1
+          traits: Push
+        abilities:
+        - Trample
+        commands:
+        - Heel
+        - Ride
+        - Summon
+      - title: Bagrunn, Draft
+        description: 
+        encumbrance: 65
+        type: 1
+        rarity: 2
+        perception: 1
+        closeCombat: 1
+        rangedCombat: 0
+        conditioning: 4
+        conviction: 2
+        athletics: 2
+        soakBonus: 1
+        durability: 0
+        attacks:
+        - title: Crest
+          type: 0
+          damage: 3
+          range: 1
+          traits: Slam, Sweep, Slow
+        - title: Stomp
+          type: 0
+          damage: 2
+          range: 1
+          traits: Push
+        abilities:
+        - Trample
+        commands:
+        - Ride
+        - Home
+        - Summon
+      - title: Bagrunn, Battlemount
+        description: 
+        encumbrance: 60
+        type: 1
+        rarity: 3
+        perception: 1
+        closeCombat: 2
+        rangedCombat: 0
+        conditioning: 4
+        conviction: 3
+        athletics: 4
+        soakBonus: 2
+        durability: 0
+        attacks:
+        - title: Crest
+          type: 0
+          damage: 3
+          range: 1
+          traits: Slam, Sweep, Slow
+        - title: Stomp
+          type: 0
+          damage: 2
+          range: 1
+          traits: Push
+        abilities:
+        - Trample
+        commands:
+        - Heel
+        - Attack
+        - Ride
+        - Threaten
+    - title: Canid
+      description: 
+      beasts:
+      - title: Canid, Hunting
+        description: 
+        encumbrance: 15
+        type: 1
+        rarity: 0
+        perception: 4
+        closeCombat: 2
+        rangedCombat: 0
+        conditioning: 1
+        conviction: 1
+        athletics: 2
+        soakBonus: 0
+        durability: 0
+        attacks:
+        - title: Canines
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce, Slam
+        - title: Claws
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Pack Mentality
+        commands:
+        - Track
+        - Find
+        - Follow
+        - Point
+      - title: Canid, Guard
+        description: 
+        encumbrance: 20
+        type: 1
+        rarity: 1
+        perception: 4
+        closeCombat: 3
+        rangedCombat: 0
+        conditioning: 1
+        conviction: 1
+        athletics: 2
+        soakBonus: 0
+        durability: 0
+        attacks:
+        - title: Canines
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce, Slam
+        - title: Claws
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Pack Mentality
+        commands:
+        - Attack
+        - Follow
+        - Guard
+        - Heel
+      - title: Canid, Warmount
+        description: 
+        encumbrance: 35
+        type: 1
+        rarity: 2
+        perception: 4
+        closeCombat: 3
+        rangedCombat: 0
+        conditioning: 2
+        conviction: 1
+        athletics: 3
+        soakBonus: 1
+        durability: 0
+        attacks:
+        - title: Canines
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce, Slam
+        - title: Claws
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Pack Mentality
+        - Sprinter
+        commands:
+        - Attack
+        - Heel
+        - Ride
+        - Summon
+      - title: Canid, Battle
+        description: 
+        encumbrance: 45
+        type: 1
+        rarity: 3
+        perception: 4
+        closeCombat: 4
+        rangedCombat: 0
+        conditioning: 3
+        conviction: 2
+        athletics: 3
+        soakBonus: 1
+        durability: 0
+        attacks:
+        - title: Canines
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce, Slam
+        - title: Claws
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Pack Mentality
+        - Sprinter
+        commands:
+        - Attack
+        - Guard
+        - Heel
+        - Ride
+        - Summon
+    - title: Felinid
+      description: 
+      beasts:
+      - title: Felinid, Domestic
+        description: 
+        encumbrance: 15
+        type: 1
+        rarity: 0
+        perception: 3
+        closeCombat: 2
+        rangedCombat: 0
+        conditioning: 1
+        conviction: 0
+        athletics: 3
+        soakBonus: 0
+        durability: 0
+        attacks:
+        - title: Fangs
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce, Maim
+        - title: Talons
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Stealth +2
+        - Pounce Attack
+        commands:
+        - Summon
+        - Home
+        - Distract
+      - title: Felinid, Assault
+        description: 
+        encumbrance: 30
+        type: 1
+        rarity: 1
+        perception: 3
+        closeCombat: 3
+        rangedCombat: 0
+        conditioning: 1
+        conviction: 0
+        athletics: 3
+        soakBonus: 0
+        durability: 0
+        attacks:
+        - title: Fangs
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce, Maim
+        - title: Talons
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Stealth +2
+        - Roar
+        commands:
+        - Summon
+        - Heel
+        - Attack
+      - title: Felinid, Mount
+        description: 
+        encumbrance: 40
+        type: 1
+        rarity: 2
+        perception: 3
+        closeCombat: 3
+        rangedCombat: 0
+        conditioning: 1
+        conviction: 0
+        athletics: 4
+        soakBonus: 1
+        durability: 0
+        attacks:
+        - title: Fangs
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce, Maim
+        - title: Talons
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Stealth +2
+        - Sprinter
+        commands:
+        - Attack
+        - Ride
+        - Heel
+        - Summon
+      - title: Felinid, Battlebred
+        description: 
+        encumbrance: 50
+        type: 1
+        rarity: 3
+        perception: 3
+        closeCombat: 4
+        rangedCombat: 0
+        conditioning: 2
+        conviction: 1
+        athletics: 3
+        soakBonus: 1
+        durability: 0
+        attacks:
+        - title: Fangs
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce, Maim
+        - title: Talons
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Pounce Attack
+        - Roar
+        commands:
+        - Attack
+        - Guard
+        - Heel
+        - Summon
+    - title: Lockjaw
+      description: 
+      beasts:
+      - title: Lockjaw, Stride
+        description: 
+        encumbrance: 40
+        type: 0
+        rarity: 0
+        perception: 1
+        closeCombat: 2
+        rangedCombat: 0
+        conditioning: 2
+        conviction: 1
+        athletics: 1
+        soakBonus: 2
+        durability: 0
+        attacks:
+        - title: Horn
+          type: 0
+          damage: 3
+          range: 1
+          traits: Pierce, Slow
+        - title: Spiked Tail
+          type: 0
+          damage: 1
+          range: 2
+          traits: Fluid, Push
+        abilities:
+        - Charging Gore
+        - Knockdown
+        commands:
+        - Threaten
+        - Heel
+        - Follow
+      - title: Lockjaw, Warmount
+        description: 
+        encumbrance: 50
+        type: 0
+        rarity: 1
+        perception: 1
+        closeCombat: 2
+        rangedCombat: 0
+        conditioning: 3
+        conviction: 1
+        athletics: 1
+        soakBonus: 2
+        durability: 0
+        attacks:
+        - title: Horn
+          type: 0
+          damage: 3
+          range: 1
+          traits: Pierce, Slow
+        - title: Spiked Tail
+          type: 0
+          damage: 1
+          range: 2
+          traits: Fluid, Push
+        abilities:
+        - Charging Gore
+        - Knockdown
+        - Sprinter
+        commands:
+        - Threaten
+        - Heel
+        - Ride
+      - title: Lockjaw, Battlebred
+        description: 
+        encumbrance: 60
+        type: 0
+        rarity: 2
+        perception: 1
+        closeCombat: 2
+        rangedCombat: 0
+        conditioning: 3
+        conviction: 1
+        athletics: 1
+        soakBonus: 3
+        durability: 0
+        attacks:
+        - title: Horn
+          type: 0
+          damage: 3
+          range: 1
+          traits: Pierce, Slow
+        - title: Spiked Tail
+          type: 0
+          damage: 1
+          range: 2
+          traits: Fluid, Push
+        abilities:
+        - Charging Gore
+        - Knockdown
+        - Roar
+        commands:
+        - Threaten
+        - Heel
+        - Attack
+      - title: Lockjaw, Scourge
+        description: 
+        encumbrance: 70
+        type: 0
+        rarity: 3
+        perception: 1
+        closeCombat: 3
+        rangedCombat: 0
+        conditioning: 3
+        conviction: 1
+        athletics: 1
+        soakBonus: 3
+        durability: 0
+        attacks:
+        - title: Horn
+          type: 0
+          damage: 3
+          range: 1
+          traits: Pierce, Slow
+        - title: Spiked Tail
+          type: 0
+          damage: 1
+          range: 2
+          traits: Fluid, Push
+        abilities:
+        - Charging Gore
+        - Knockdown
+        - Roar
+        commands:
+        - Threaten
+        - Heel
+        - Attack
+        - Guard
+    - title: Raptor
+      description: 
+      beasts:
+      - title: Raptor, Preying
+        description: 
+        encumbrance: 15
+        type: 5
+        rarity: 0
+        perception: 2
+        closeCombat: 2
+        rangedCombat: 0
+        conditioning: 0
+        conviction: 0
+        athletics: 4
+        soakBonus: 0
+        durability: 0
+        attacks:
+        - title: Beak
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce
+        - title: Talons
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Fly
+        - Stealth +3
+        commands:
+        - Follow
+        - Fetch
+        - Find
+        - 'Support [Hunting]'
+      - title: Raptor, Stalking
+        description: 
+        encumbrance: 25
+        type: 5
+        rarity: 1
+        perception: 2
+        closeCombat: 3
+        rangedCombat: 0
+        conditioning: 1
+        conviction: 0
+        athletics: 4
+        soakBonus: 0
+        durability: 0
+        attacks:
+        - title: Beak
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce
+        - title: Talons
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Fly
+        - Stealth +1
+        - Charging
+        commands:
+        - Follow
+        - Fetch
+        - Heel
+        - Attack
+      - title: Raptor, Warbred
+        description: 
+        encumbrance: 40
+        type: 5
+        rarity: 2
+        perception: 2
+        closeCombat: 4
+        rangedCombat: 0
+        conditioning: 1
+        conviction: 0
+        athletics: 4
+        soakBonus: 1
+        durability: 0
+        attacks:
+        - title: Beak
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce
+        - title: Talons
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Fly
+        - Shriek
+        - Charging
+        commands:
+        - Follow
+        - Heel
+        - Attack
+        - Guard
+      - title: Raptor, Battlemount
+        description: 
+        encumbrance: 60
+        type: 5
+        rarity: 3
+        perception: 3
+        closeCombat: 4
+        rangedCombat: 0
+        conditioning: 2
+        conviction: 1
+        athletics: 4
+        soakBonus: 2
+        durability: 0
+        attacks:
+        - title: Beak
+          type: 0
+          damage: 0
+          range: 1
+          traits: Pierce
+        - title: Talons
+          type: 0
+          damage: 0
+          range: 1
+          traits: Slash
+        abilities:
+        - Fly
+        - Shriek
+        - Charging
+        - Knockdown
+        commands:
+        - Follow
+        - Heel
+        - Attack
+        - Guard
+        - Ride
+    - title: Wark
+      description: 
+      beasts:
+      - title: Wark, Gallop
+        description: 
+        encumbrance: 25
+        type: 5
+        rarity: 0
+        perception: 2
+        closeCombat: 1
+        rangedCombat: 0
+        conditioning: 1
+        conviction: 1
+        athletics: 4
+        soakBonus: 0
+        durability: 0
+        attacks:
+        - title: Peck
+          type: 0
+          damage: 1
+          range: 1
+          traits: Pierce
+        - title: Talons
+          type: 0
+          damage: 1
+          range: 1
+          traits: Slash
+        abilities:
+        - Sprinter
+        - Shriek
+        commands:
+        - Ride
+        - Heel
+        - Summon
+    output: "# Clan Stable\n-\n## Bagrunn Cattle\n-\n/\n#### Bagrunn, Domesticated\nitem(\n#
+      Common\n## Lizard\n-\n*DEF* **5**, *ARM* **3**, *WND* **10**, *VIG* **11**,
+      *WIL* **9**\n*Perception:* *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement
+      Points* **8**; *Carrying Capacity* **190**\n*Size* **Tremendous [5]**, ENC
+      **50**; *Threat level* **7**\n#### Action Points [2]\n-\n \n**Crest** *ATT*
+      **+1**, *DMG* **+8**, *RNG* **1m**, *Slam, Sweep, Slow*\n**Stomp** *ATT* **+1**,
+      *DMG* **+7**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample [Attack]
+      -** When this creature knocks a target down, it immediately gains a movement
+      point which it may use on walking. The first target that it comes into contact
+      with during this movement may be targeted with a free attack.\n\n#### Commands\n-\nFollow,
+      Summon, Support [Agriculture], \n)\n|\n#### Bagrunn, Mount\nitem(\n# Uncommon\n##
+      Mammal\n-\n*DEF* **4**, *ARM* **3**, *WND* **11**, *VIG* **10**, *WIL* **9**\n*Perception:*
+      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **12**;
+      *Carrying Capacity* **195**\n*Size* **Humongous [7]**, ENC **60**; *Threat
+      level* **7**\n#### Action Points [2]\n-\n \n**Crest** *ATT* **+1**, *DMG* **+10**,
+      *RNG* **1m**, *Slam, Sweep, Slow*\n**Stomp** *ATT* **+1**, *DMG* **+9**, *RNG*
+      **1m**, *Push*\n\n#### Abilities\n-\n**Trample [Attack] -** When this creature
+      knocks a target down, it immediately gains a movement point which it may use
+      on walking. The first target that it comes into contact with during this movement
+      may be targeted with a free attack.\n\n#### Commands\n-\nHeel, Ride, Summon,
+      \n)\n/\n#### Bagrunn, Draft\nitem(\n# Rare\n## Mammal\n-\n*DEF* **3**, *ARM*
+      **3**, *WND* **13**, *VIG* **12**, *WIL* **10**\n*Perception:* *Range* **40m**,
+      *Score* **2**; *Initiative* **+1**\n*Movement Points* **11**; *Carrying Capacity*
+      **265**\n*Size* **Humongous [8]**, ENC **65**; *Threat level* **8**\n#### Action
+      Points [2]\n-\n \n**Crest** *ATT* **+1**, *DMG* **+11**, *RNG* **1m**, *Slam,
+      Sweep, Slow*\n**Stomp** *ATT* **+1**, *DMG* **+10**, *RNG* **1m**, *Push*\n\n####
+      Abilities\n-\n**Trample [Attack] -** When this creature knocks a target down,
+      it immediately gains a movement point which it may use on walking. The first
+      target that it comes into contact with during this movement may be targeted
+      with a free attack.\n\n#### Commands\n-\nRide, Home, Summon, \n)\n|\n#### Bagrunn,
+      Battlemount\nitem(\n# Legendary\n## Mammal\n-\n*DEF* **5**, *ARM* **4**, *WND*
+      **12**, *VIG* **11**, *WIL* **10**\n*Perception:* *Range* **40m**, *Score*
+      **2**; *Initiative* **+1**\n*Movement Points* **14**; *Carrying Capacity* **240**\n*Size*
+      **Humongous [7]**, ENC **60**; *Threat level* **10**\n#### Action Points [3]\n-\n
+      \n**Crest** *ATT* **+2**, *DMG* **+10**, *RNG* **1m**, *Slam, Sweep, Slow*\n**Stomp**
+      *ATT* **+2**, *DMG* **+9**, *RNG* **1m**, *Push*\n\n#### Abilities\n-\n**Trample
+      [Attack] -** When this creature knocks a target down, it immediately gains
+      a movement point which it may use on walking. The first target that it comes
+      into contact with during this movement may be targeted with a free attack.\n\n####
+      Commands\n-\nHeel, Attack, Ride, Threaten, \n)\n/\n\n/\n\n## Canid\n-\n/\n####
+      Canid, Hunting\nitem(\n# Common\n## Mammal\n-\n*DEF* **9**, *ARM* **0**, *WND*
+      **1**, *VIG* **6**, *WIL* **6**\n*Perception:* *Range* **100m**, *Score* **5**;
+      *Initiative* **+4**\n*Movement Points* **8**; *Carrying Capacity* **15**\n*Size*
+      **Tiny [-2]**, ENC **15**; *Threat level* **2**\n#### Action Points [3]\n-\n
+      \n**Canines** *ATT* **+1**, *DMG* **+0**, *RNG* **1m**, *Pierce, Slam*\n**Claws**
+      *ATT* **+1**, *DMG* **+0**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Pack
+      Mentality [Passive] -** This creature gains a boost on all attacks as long
+      as there is an ally within 2m of them.\n\n#### Commands\n-\nTrack, Find, Follow,
+      Point, \n)\n|\n#### Canid, Guard\nitem(\n# Uncommon\n## Mammal\n-\n*DEF* **10**,
+      *ARM* **0**, *WND* **1**, *VIG* **6**, *WIL* **6**\n*Perception:* *Range* **100m**,
+      *Score* **5**; *Initiative* **+4**\n*Movement Points* **8**; *Carrying Capacity*
+      **25**\n*Size* **Small [-1]**, ENC **20**; *Threat level* **2**\n#### Action
+      Points [4]\n-\n \n**Canines** *ATT* **+2**, *DMG* **+0**, *RNG* **1m**, *Pierce,
+      Slam*\n**Claws** *ATT* **+2**, *DMG* **+0**, *RNG* **1m**, *Slash*\n\n####
+      Abilities\n-\n**Pack Mentality [Passive] -** This creature gains a boost on
+      all attacks as long as there is an ally within 2m of them.\n\n#### Commands\n-\nAttack,
+      Follow, Guard, Heel, \n)\n/\n#### Canid, Warmount\nitem(\n# Rare\n## Mammal\n-\n*DEF*
+      **8**, *ARM* **2**, *WND* **5**, *VIG* **8**, *WIL* **7**\n*Perception:* *Range*
+      **100m**, *Score* **5**; *Initiative* **+4**\n*Movement Points* **11**; *Carrying
+      Capacity* **75**\n*Size* **Huge [2]**, ENC **35**; *Threat level* **7**\n####
+      Action Points [4]\n-\n \n**Canines** *ATT* **+3**, *DMG* **+2**, *RNG* **1m**,
+      *Pierce, Slam*\n**Claws** *ATT* **+3**, *DMG* **+2**, *RNG* **1m**, *Slash*\n\n####
+      Abilities\n-\n**Pack Mentality [Passive] -** This creature gains a boost on
+      all attacks as long as there is an ally within 2m of them.\n\n**Sprinter [Initiative]
+      -** This creature gains +10 movement points instead of +5 on the first AP spent.\n\n####
+      Commands\n-\nAttack, Heel, Ride, Summon, \n)\n|\n#### Canid, Battle\nitem(\n#
+      Legendary\n## Mammal\n-\n*DEF* **8**, *ARM* **2**, *WND* **8**, *VIG* **10**,
+      *WIL* **9**\n*Perception:* *Range* **100m**, *Score* **5**; *Initiative* **+4**\n*Movement
+      Points* **12**; *Carrying Capacity* **135**\n*Size* **Gigantic [4]**, ENC **45**;
+      *Threat level* **11**\n#### Action Points [5]\n-\n \n**Canines** *ATT* **+4**,
+      *DMG* **+4**, *RNG* **1m**, *Pierce, Slam*\n**Claws** *ATT* **+4**, *DMG* **+4**,
+      *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Pack Mentality [Passive] -**
+      This creature gains a boost on all attacks as long as there is an ally within
+      2m of them.\n\n**Sprinter [Initiative] -** This creature gains +10 movement
+      points instead of +5 on the first AP spent.\n\n#### Commands\n-\nAttack, Guard,
+      Heel, Ride, Summon, \n)\n/\n\n/\n\n## Felinid\n-\n/\n#### Felinid, Domestic\nitem(\n#
+      Common\n## Mammal\n-\n*DEF* **9**, *ARM* **0**, *WND* **1**, *VIG* **6**, *WIL*
+      **5**\n*Perception:* *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement
+      Points* **10**; *Carrying Capacity* **15**\n*Size* **Tiny [-2]**, ENC **15**;
+      *Threat level* **2**\n#### Action Points [3]\n-\n \n**Fangs** *ATT* **+1**,
+      *DMG* **+0**, *RNG* **1m**, *Pierce, Maim*\n**Talons** *ATT* **+1**, *DMG*
+      **+0**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Stealth +2 [Movement]
+      -** This creature is capable of using the stealth skill to hide.\n\n**Pounce
+      Attack [Attack] -** When this creature performs a movement action of at least
+      5m before performing an attack, they gain a boost on their first attack.\n\n####
+      Commands\n-\nSummon, Home, Distract, \n)\n|\n#### Felinid, Assault\nitem(\n#
+      Uncommon\n## Mammal\n-\n*DEF* **9**, *ARM* **1**, *WND* **3**, *VIG* **7**,
+      *WIL* **6**\n*Perception:* *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement
+      Points* **11**; *Carrying Capacity* **45**\n*Size* **Large [1]**, ENC **30**;
+      *Threat level* **5**\n#### Action Points [4]\n-\n \n**Fangs** *ATT* **+3**,
+      *DMG* **+1**, *RNG* **1m**, *Pierce, Maim*\n**Talons** *ATT* **+3**, *DMG*
+      **+1**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Stealth +2 [Movement]
+      -** This creature is capable of using the stealth skill to hide.\n\n**Roar
+      [Action] -** This creature can let out a terrible roar causing all enemy targets
+      within 10m suffer from 2 Stunned intensity.\n\n#### Commands\n-\nSummon, Heel,
+      Attack, \n)\n/\n#### Felinid, Mount\nitem(\n# Rare\n## Mammal\n-\n*DEF* **8**,
+      *ARM* **2**, *WND* **5**, *VIG* **7**, *WIL* **6**\n*Perception:* *Range* **80m**,
+      *Score* **4**; *Initiative* **+3**\n*Movement Points* **13**; *Carrying Capacity*
+      **65**\n*Size* **Enormous [3]**, ENC **40**; *Threat level* **7**\n#### Action
+      Points [4]\n-\n \n**Fangs** *ATT* **+3**, *DMG* **+3**, *RNG* **1m**, *Pierce,
+      Maim*\n**Talons** *ATT* **+3**, *DMG* **+3**, *RNG* **1m**, *Slash*\n\n####
+      Abilities\n-\n**Stealth +2 [Movement] -** This creature is capable of using
+      the stealth skill to hide.\n\n**Sprinter [Initiative] -** This creature gains
+      +10 movement points instead of +5 on the first AP spent.\n\n#### Commands\n-\nAttack,
+      Ride, Heel, Summon, \n)\n|\n#### Felinid, Battlebred\nitem(\n# Legendary\n##
+      Mammal\n-\n*DEF* **8**, *ARM* **3**, *WND* **8**, *VIG* **9**, *WIL* **8**\n*Perception:*
+      *Range* **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **12**;
+      *Carrying Capacity* **120**\n*Size* **Tremendous [5]**, ENC **50**; *Threat
+      level* **11**\n#### Action Points [5]\n-\n \n**Fangs** *ATT* **+4**, *DMG*
+      **+5**, *RNG* **1m**, *Pierce, Maim*\n**Talons** *ATT* **+4**, *DMG* **+5**,
+      *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Pounce Attack [Attack] -** When
+      this creature performs a movement action of at least 5m before performing an
+      attack, they gain a boost on their first attack.\n\n**Roar [Action] -** This
+      creature can let out a terrible roar causing all enemy targets within 10m suffer
+      from 2 Stunned intensity.\n\n#### Commands\n-\nAttack, Guard, Heel, Summon,
+      \n)\n/\n\n/\n\n## Lockjaw\n-\n/\n#### Lockjaw, Stride\nitem(\n# Common\n##
+      Lizard\n-\n*DEF* **7**, *ARM* **3**, *WND* **6**, *VIG* **8**, *WIL* **7**\n*Perception:*
+      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **7**;
+      *Carrying Capacity* **90**\n*Size* **Enormous [3]**, ENC **40**; *Threat level*
+      **8**\n#### Action Points [3]\n-\n \n**Horn** *ATT* **+2**, *DMG* **+6**, *RNG*
+      **1m**, *Pierce, Slow*\n**Spiked Tail** *ATT* **+2**, *DMG* **+4**, *RNG* **2m**,
+      *Fluid, Push*\n\n#### Abilities\n-\n**Charging Gore [Main] -** When this creature
+      performs a movement action of at least 5m before performing an attack, they
+      gain a boost on their first attack. Additionally their horn attack gains the
+      Pierce and Slash traits.\n\n**Knockdown [Action] -** This creature can perform
+      a Trip maneuver against a target that they caused damage to that hits automatically.\n\n####
+      Commands\n-\nThreaten, Heel, Follow, \n)\n|\n#### Lockjaw, Warmount\nitem(\n#
+      Uncommon\n## Lizard\n-\n*DEF* **6**, *ARM* **4**, *WND* **9**, *VIG* **10**,
+      *WIL* **8**\n*Perception:* *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement
+      Points* **8**; *Carrying Capacity* **155**\n*Size* **Tremendous [5]**, ENC
+      **50**; *Threat level* **10**\n#### Action Points [3]\n-\n \n**Horn** *ATT*
+      **+2**, *DMG* **+8**, *RNG* **1m**, *Pierce, Slow*\n**Spiked Tail** *ATT* **+2**,
+      *DMG* **+6**, *RNG* **2m**, *Fluid, Push*\n\n#### Abilities\n-\n**Charging
+      Gore [Main] -** When this creature performs a movement action of at least 5m
+      before performing an attack, they gain a boost on their first attack. Additionally
+      their horn attack gains the Pierce and Slash traits.\n\n**Knockdown [Action]
+      -** This creature can perform a Trip maneuver against a target that they caused
+      damage to that hits automatically.\n\n**Sprinter [Initiative] -** This creature
+      gains +10 movement points instead of +5 on the first AP spent.\n\n#### Commands\n-\nThreaten,
+      Heel, Ride, \n)\n/\n#### Lockjaw, Battlebred\nitem(\n# Rare\n## Lizard\n-\n*DEF*
+      **5**, *ARM* **5**, *WND* **11**, *VIG* **10**, *WIL* **8**\n*Perception:*
+      *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement Points* **8**;
+      *Carrying Capacity* **195**\n*Size* **Humongous [7]**, ENC **60**; *Threat
+      level* **11**\n#### Action Points [3]\n-\n \n**Horn** *ATT* **+2**, *DMG* **+10**,
+      *RNG* **1m**, *Pierce, Slow*\n**Spiked Tail** *ATT* **+2**, *DMG* **+8**, *RNG*
+      **2m**, *Fluid, Push*\n\n#### Abilities\n-\n**Charging Gore [Main] -** When
+      this creature performs a movement action of at least 5m before performing an
+      attack, they gain a boost on their first attack. Additionally their horn attack
+      gains the Pierce and Slash traits.\n\n**Knockdown [Action] -** This creature
+      can perform a Trip maneuver against a target that they caused damage to that
+      hits automatically.\n\n**Roar [Action] -** This creature can let out a terrible
+      roar causing all enemy targets within 10m suffer from 2 Stunned intensity.\n\n####
+      Commands\n-\nThreaten, Heel, Attack, \n)\n|\n#### Lockjaw, Scourge\nitem(\n#
+      Legendary\n## Lizard\n-\n*DEF* **5**, *ARM* **5**, *WND* **13**, *VIG* **11**,
+      *WIL* **9**\n*Perception:* *Range* **40m**, *Score* **2**; *Initiative* **+1**\n*Movement
+      Points* **9**; *Carrying Capacity* **235**\n*Size* **Humongous [9]**, ENC **70**;
+      *Threat level* **14**\n#### Action Points [4]\n-\n \n**Horn** *ATT* **+3**,
+      *DMG* **+12**, *RNG* **1m**, *Pierce, Slow*\n**Spiked Tail** *ATT* **+3**,
+      *DMG* **+10**, *RNG* **2m**, *Fluid, Push*\n\n#### Abilities\n-\n**Charging
+      Gore [Main] -** When this creature performs a movement action of at least 5m
+      before performing an attack, they gain a boost on their first attack. Additionally
+      their horn attack gains the Pierce and Slash traits.\n\n**Knockdown [Action]
+      -** This creature can perform a Trip maneuver against a target that they caused
+      damage to that hits automatically.\n\n**Roar [Action] -** This creature can
+      let out a terrible roar causing all enemy targets within 10m suffer from 2
+      Stunned intensity.\n\n#### Commands\n-\nThreaten, Heel, Attack, Guard, \n)\n/\n\n/\n\n##
+      Raptor\n-\n/\n#### Raptor, Preying\nitem(\n# Common\n## Bird\n-\n*DEF* **9**,
+      *ARM* **0**, *WND* **1**, *VIG* **5**, *WIL* **5**\n*Perception:* *Range* **60m**,
+      *Score* **3**; *Initiative* **+2**\n*Movement Points* **12**; *Carrying Capacity*
+      **15**\n*Size* **Tiny [-2]**, ENC **15**; *Threat level* **2**\n#### Action
+      Points [3]\n-\n \n**Beak** *ATT* **+1**, *DMG* **+0**, *RNG* **1m**, *Pierce*\n**Talons**
+      *ATT* **+1**, *DMG* **+0**, *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Fly
+      [Movement] -** This creature can fly at a speed of 1m per movement point spent.\n\n**Stealth
+      +3 [Movement] -** This creature is capable of using the stealth skill to hide.\n\n####
+      Commands\n-\nFollow, Fetch, Find, Support [Hunting], \n)\n|\n#### Raptor, Stalking\nitem(\n#
+      Uncommon\n## Bird\n-\n*DEF* **9**, *ARM* **1**, *WND* **2**, *VIG* **7**, *WIL*
+      **6**\n*Perception:* *Range* **60m**, *Score* **3**; *Initiative* **+2**\n*Movement
+      Points* **13**; *Carrying Capacity* **35**\n*Size* **Medium [0]**, ENC **25**;
+      *Threat level* **4**\n#### Action Points [4]\n-\n \n**Beak** *ATT* **+3**,
+      *DMG* **+0**, *RNG* **1m**, *Pierce*\n**Talons** *ATT* **+3**, *DMG* **+0**,
+      *RNG* **1m**, *Slash*\n\n#### Abilities\n-\n**Fly [Movement] -** This creature
+      can fly at a speed of 1m per movement point spent.\n\n**Stealth +1 [Movement]
+      -** This creature is capable of using the stealth skill to hide.\n\n**Charging
+      [Attack] -** When this creature performs a movement action of at least 5m before
+      performing an attack, they gain a boost on their first attack. Additionally
+      their attack gains the Push and Slam traits.\n\n#### Commands\n-\nFollow, Fetch,
+      Heel, Attack, \n)\n/\n#### Raptor, Warbred\nitem(\n# Rare\n## Bird\n-\n*DEF*
+      **9**, *ARM* **2**, *WND* **5**, *VIG* **7**, *WIL* **6**\n*Perception:* *Range*
+      **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **13**; *Carrying
+      Capacity* **65**\n*Size* **Enormous [3]**, ENC **40**; *Threat level* **9**\n####
+      Action Points [5]\n-\n \n**Beak** *ATT* **+4**, *DMG* **+3**, *RNG* **1m**,
+      *Pierce*\n**Talons** *ATT* **+4**, *DMG* **+3**, *RNG* **1m**, *Slash*\n\n####
+      Abilities\n-\n**Fly [Movement] -** This creature can fly at a speed of 1m per
+      movement point spent.\n\n**Shriek [Action] -** This creature is capable of
+      letting out a terrible scream causing all enemy targets within 10m to suffer
+      from a number of Stress points equal to this creature's Willpower - their Willpower.\n\n**Charging
+      [Attack] -** When this creature performs a movement action of at least 5m before
+      performing an attack, they gain a boost on their first attack. Additionally
+      their attack gains the Push and Slam traits.\n\n#### Commands\n-\nFollow, Heel,
+      Attack, Guard, \n)\n|\n#### Raptor, Battlemount\nitem(\n# Legendary\n## Bird\n-\n*DEF*
+      **7**, *ARM* **4**, *WND* **10**, *VIG* **9**, *WIL* **8**\n*Perception:* *Range*
+      **80m**, *Score* **4**; *Initiative* **+3**\n*Movement Points* **14**; *Carrying
+      Capacity* **150**\n*Size* **Humongous [7]**, ENC **60**; *Threat level* **13**\n####
+      Action Points [5]\n-\n \n**Beak** *ATT* **+4**, *DMG* **+7**, *RNG* **1m**,
+      *Pierce*\n**Talons** *ATT* **+4**, *DMG* **+7**, *RNG* **1m**, *Slash*\n\n####
+      Abilities\n-\n**Fly [Movement] -** This creature can fly at a speed of 1m per
+      movement point spent.\n\n**Shriek [Action] -** This creature is capable of
+      letting out a terrible scream causing all enemy targets within 10m to suffer
+      from a number of Stress points equal to this creature's Willpower - their Willpower.\n\n**Charging
+      [Attack] -** When this creature performs a movement action of at least 5m before
+      performing an attack, they gain a boost on their first attack. Additionally
+      their attack gains the Push and Slam traits.\n\n**Knockdown [Action] -** This
+      creature can perform a Trip maneuver against a target that they caused damage
+      to that hits automatically.\n\n#### Commands\n-\nFollow, Heel, Attack, Guard,
+      Ride, \n)\n/\n\n/\n\n## Wark\n-\n#### Wark, Gallop\nitem(\n# Common\n## Bird\n-\n*DEF*
+      **7**, *ARM* **1**, *WND* **2**, *VIG* **7**, *WIL* **7**\n*Perception:* *Range*
+      **60m**, *Score* **3**; *Initiative* **+2**\n*Movement Points* **13**; *Carrying
+      Capacity* **35**\n*Size* **Medium [0]**, ENC **25**; *Threat level* **3**\n####
+      Action Points [2]\n-\n \n**Peck** *ATT* **+1**, *DMG* **+1**, *RNG* **1m**,
+      *Pierce*\n**Talons** *ATT* **+1**, *DMG* **+1**, *RNG* **1m**, *Slash*\n\n####
+      Abilities\n-\n**Sprinter [Initiative] -** This creature gains +10 movement
+      points instead of +5 on the first AP spent.\n\n**Shriek [Action] -** This creature
+      is capable of letting out a terrible scream causing all enemy targets within
+      10m to suffer from a number of Stress points equal to this creature's Willpower
+      - their Willpower.\n\n#### Commands\n-\nRide, Heel, Summon, \n)\n|\n\n/\n"
+  list: '# Dangerous Encounters
+
+    -
+
+    /
+
+    d% | Result | DL
+
+    -- | --
+
+    1
+    | Canid, Hunting [Mammal Common 2] | 1
+
+    2 | Canid, Guard [Mammal Uncommon
+    2] | 1
+
+    3 | Felinid, Domestic [Mammal Common 2] | 1
+
+    4 | Raptor, Preying
+    [Bird Common 2] | 1
+
+    5 | Wark, Gallop [Bird Common 3] | 1
+
+    6 | Raptor,
+    Stalking [Bird Uncommon 4] | 1
+
+    7 | Felinid, Assault [Mammal Uncommon 5]
+    | 1
+
+    8 | Bagrunn, Domesticated [Lizard Common 7] | 1
+
+    9 | Bagrunn, Mount
+    [Mammal Uncommon 7] | 1
+
+    10 | Canid, Warmount [Mammal Rare 7] | 1
+
+    11
+    | Felinid, Mount [Mammal Rare 7] | 2
+
+    12 | Bagrunn, Draft [Mammal Rare 8]
+    | 2
+
+    13 | Lockjaw, Stride [Lizard Common 8] | 2
+
+    14 | Raptor, Warbred
+    [Bird Rare 9] | 2
+
+    15 | Bagrunn, Battlemount [Mammal Legendary 10] | 2
+
+    16
+    | Lockjaw, Warmount [Lizard Uncommon 10] | 2
+
+    17 | Canid, Battle [Mammal
+    Legendary 11] | 2
+
+    18 | Felinid, Battlebred [Mammal Legendary 11] | 2
+
+    19
+    | Lockjaw, Battlebred [Lizard Rare 11] | 2
+
+    20 | Raptor, Battlemount [Bird
+    Legendary 13] | 2
+
+    21 | Lockjaw, Scourge [Lizard Legendary 14] | 3'
 --- !u!1 &1823688464
 GameObject:
   m_ObjectHideFlags: 0
