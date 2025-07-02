@@ -237,6 +237,21 @@ public class Entry
         var box2 = boxes is { Count: > 2 } ? boxes[2].GetEntry("note") : "";
         var box3 = boxes is { Count: > 3 } ? boxes[3].GetEntry("note") : "";
         var box4 = boxes is { Count: > 4 } ? boxes[4].GetEntry("note") : "";
+        var box5 = boxes is { Count: > 5 } ? boxes[5].GetEntry("note") : "";
+        var box6 = boxes is { Count: > 6 } ? boxes[6].GetEntry("note") : "";
+        var box7 = boxes is { Count: > 7 } ? boxes[7].GetEntry("note") : "";
+        var box8 = boxes is { Count: > 8 } ? boxes[8].GetEntry("note") : "";
+        var box9 = boxes is { Count: > 9 } ? boxes[9].GetEntry("note") : "";
+        var box10 = boxes is { Count: > 10 } ? boxes[10].GetEntry("note") : "";
+        var box11 = boxes is { Count: > 11 } ? boxes[11].GetEntry("note") : "";
+        var box12 = boxes is { Count: > 12 } ? boxes[12].GetEntry("note") : "";
+        var box13 = boxes is { Count: > 13 } ? boxes[13].GetEntry("note") : "";
+        var box14 = boxes is { Count: > 14 } ? boxes[14].GetEntry("note") : "";
+        var box15 = boxes is { Count: > 15 } ? boxes[15].GetEntry("note") : "";
+        var box16 = boxes is { Count: > 16 } ? boxes[16].GetEntry("note") : "";
+        var box17 = boxes is { Count: > 17 } ? boxes[17].GetEntry("note") : "";
+        var box18 = boxes is { Count: > 18 } ? boxes[18].GetEntry("note") : "";
+        var box19 = boxes is { Count: > 19 } ? boxes[19].GetEntry("note") : "";
         
         var item0 = items is { Count: > 0 } ? items[0].GetEntry("item") : "";
         var item1 = items is { Count: > 1 } ? items[1].GetEntry("item") : "";
@@ -248,6 +263,16 @@ public class Entry
         var item7 = items is { Count: > 7 } ? items[7].GetEntry("item") : "";
         var item8 = items is { Count: > 8 } ? items[8].GetEntry("item") : "";
         var item9 = items is { Count: > 9 } ? items[9].GetEntry("item") : "";
+        var item10 = items is { Count: > 10 } ? items[10].GetEntry("item") : "";
+        var item11 = items is { Count: > 11 } ? items[11].GetEntry("item") : "";
+        var item12 = items is { Count: > 12 } ? items[12].GetEntry("item") : "";
+        var item13 = items is { Count: > 13 } ? items[13].GetEntry("item") : "";
+        var item14 = items is { Count: > 14 } ? items[14].GetEntry("item") : "";
+        var item15 = items is { Count: > 15 } ? items[15].GetEntry("item") : "";
+        var item16 = items is { Count: > 16 } ? items[16].GetEntry("item") : "";
+        var item17 = items is { Count: > 17 } ? items[17].GetEntry("item") : "";
+        var item18 = items is { Count: > 18 } ? items[18].GetEntry("item") : "";
+        var item19 = items is { Count: > 19 } ? items[19].GetEntry("item") : "";
 
         var tableText = tables.Aggregate("", (prev, next) => $"{prev}\n\n{next.Text}");
         
@@ -296,6 +321,21 @@ public class Entry
             .Replace("[BOX2]", $"\n{box2}")
             .Replace("[BOX3]", $"\n{box3}")
             .Replace("[BOX4]", $"\n{box4}")
+            .Replace("[BOX5]", $"\n{box5}")
+            .Replace("[BOX6]", $"\n{box6}")
+            .Replace("[BOX7]", $"\n{box7}")
+            .Replace("[BOX8]", $"\n{box8}")
+            .Replace("[BOX9]", $"\n{box9}")
+            .Replace("[BOX10]", $"\n{box10}")
+            .Replace("[BOX11]", $"\n{box11}")
+            .Replace("[BOX12]", $"\n{box12}")
+            .Replace("[BOX13]", $"\n{box13}")
+            .Replace("[BOX14]", $"\n{box14}")
+            .Replace("[BOX15]", $"\n{box15}")
+            .Replace("[BOX16]", $"\n{box16}")
+            .Replace("[BOX17]", $"\n{box17}")
+            .Replace("[BOX18]", $"\n{box18}")
+            .Replace("[BOX19]", $"\n{box19}")
             .Replace("[ITEMS]", $"\n{itemText}")
             .Replace("[UITEMS]", $"\n{uItemText}")
             .Replace("[ITEM0]", $"\n{item0}")
@@ -308,6 +348,16 @@ public class Entry
             .Replace("[ITEM7]", $"\n{item7}")
             .Replace("[ITEM8]", $"\n{item8}")
             .Replace("[ITEM9]", $"\n{item9}")
+            .Replace("[ITEM10]", $"\n{item10}")
+            .Replace("[ITEM11]", $"\n{item11}")
+            .Replace("[ITEM12]", $"\n{item12}")
+            .Replace("[ITEM13]", $"\n{item13}")
+            .Replace("[ITEM14]", $"\n{item14}")
+            .Replace("[ITEM15]", $"\n{item15}")
+            .Replace("[ITEM16]", $"\n{item16}")
+            .Replace("[ITEM17]", $"\n{item17}")
+            .Replace("[ITEM18]", $"\n{item18}")
+            .Replace("[ITEM19]", $"\n{item19}")
             .Replace("[BOXES2]", $"\n{boxes2}")
             .Replace("[TABLES]", $"\n{tableText}");
         return $"{titleEntry.GetTitle()}{contentText}";
@@ -348,6 +398,7 @@ public class SubEntry
 
 public class EntryManager : MonoBehaviour
 {
+    public BestiaryManager bestiaryManager;
     public string input;
     public List<BoxEntry> entries;
     public List<ListEntry> list;
@@ -440,6 +491,7 @@ public class EntryManager : MonoBehaviour
     {
         if (_equipmentManager == null) _equipmentManager = FindFirstObjectByType<EquipmentManager>();
         var equipmentChapter = _equipmentManager.output;
+        var bestiaryChapter = bestiaryManager.chapter.output;
         
         output = "";
         output += "watermark (";
@@ -447,7 +499,9 @@ public class EntryManager : MonoBehaviour
         output += "\n)\n";
         output += "title (\nMain Rulebook\n)\n";
         output += chapters.Aggregate("", (prev, next) => $"{prev}{next.chapter}");
-        output += equipmentChapter;
+        output = output.Replace("[EQUIPMENT]", equipmentChapter);
+        output = output.Replace("[BESTIARY]", bestiaryChapter);
+        //output += equipmentChapter;
         output = output.Replace(@"[\n]", "\n");
     }
 }

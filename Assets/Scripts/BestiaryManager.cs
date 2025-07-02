@@ -114,6 +114,7 @@ public class Category
                 output += "\n/\n";
         }
         output += "\n/\n";
+        output += "\n=\n";
         return output;
     }
 }
